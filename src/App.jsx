@@ -28,7 +28,7 @@ function App() {
         </ul>
       </nav>
       <main>
-        <h1>Liputoimkond</h1>
+        <h1>Eesti Liputoimkondade Liit</h1>
         <div className = "text">
           <p>
           {fileContent}
