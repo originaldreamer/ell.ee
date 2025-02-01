@@ -24,7 +24,7 @@ function App() {
             <li><button className = "about_me">Dokumendid</button></li>
             <li><button className = "about_me">Tutvustus</button></li>
             <li><button className = "about_me">Lisa</button></li>
-            <li><button className = "about_me">Kontaktid kontaktid</button></li>
+            <li><button className = "about_me">Kontaktid</button></li>
         </ul>
       </nav>
       <main>
