@@ -14,15 +14,12 @@ body {
   background-color: aliceblue;
 }
 
-nav ul {
+nav ul{
   display: flex;
   justify-content: space-evenly;
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.your-class {
   height: 2%;
   background-color: #020066;
 }
