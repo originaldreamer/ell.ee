@@ -66,7 +66,9 @@ Eesti liputoimkonnad mängivad olulist rolli meie rahvuslike sümbolite hoidmise
       <section></section>
       <article></article>
       <aside></aside>
-      <footer></footer>
+      <footer>
+        <a href = "https://www.murg.ee/">MURGI KODULEHT</a>
+      </footer>
     </body>
     </>
   )
