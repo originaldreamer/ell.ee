@@ -21,10 +21,10 @@ function App() {
 
       <nav>
         <ul class = "your-class">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact--</a></li>
+            <li><button className = "about_me">Dokumendid</button></li>
+            <li><button className = "about_me">Tutvustus</button></li>
+            <li><button className = "about_me">Lisa</button></li>
+            <li><button className = "about_me">Kontaktid</button></li>
         </ul>
       </nav>
       <main>

@@ -27,11 +27,12 @@ nav ul {
   background-color: #020066;
 }
 
-a {
+.about_me {
   text-align: center;
   font-weight: 600;
   color: aliceblue;
   text-decoration: inherit;
+  background-color: #020066;
 }
 
 .text {
