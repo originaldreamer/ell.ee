@@ -20,13 +20,9 @@ nav ul{
   list-style: none;
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-  width: 100%;
 }
 
 .your-class {
-=======
->>>>>>> ab3eccc51c76c1652e5519f21d303aafd5c53b7f
   height: 2%;
   background-color: #020066;
 }
