@@ -39,6 +39,10 @@ nav ul{
   font-weight: 200;
 }
 
+.link {
+  color:aqua;
+}
+
 .h1 {
   size: 1200px;
   color: #020066;

@@ -5,13 +5,6 @@ import './App.css'
 function App() {
   const [fileContent, setFileContent] = useState('');
 
-
-  /*useEffect(() => {
-    fetch('/esileheKirjeldus.txt')
-      .then((response) => response.text())
-      .then((data) => setFileContent(data));
-  }, []);*/
-
   return (
     <>
     <body>
@@ -67,7 +60,7 @@ Eesti liputoimkonnad mängivad olulist rolli meie rahvuslike sümbolite hoidmise
       <article></article>
       <aside></aside>
       <footer>
-        <a href = "https://www.murg.ee/">MURGI KODULEHT</a>
+        <a href = "https://www.murg.ee/" className = "link">MURGI KODULEHT</a>
       </footer>
     </body>
     </>
