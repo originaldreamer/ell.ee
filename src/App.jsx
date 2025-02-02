@@ -16,7 +16,14 @@ function App() {
         <ul>
             <li><button className = "about_me">Dokumendid</button></li>
             <li><button className = "about_me">Tutvustus</button></li>
-            <li><button className = "about_me">Lisa</button></li>
+            <li class="dropdown">
+            <button class="dropbtn">Lisa ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Pildidt</a></li>
+                <li><a href="#">Uudised</a></li>
+                <li><a href="#">Informatsioon</a></li>
+              </ul>
+            </li>
             <li><button className = "about_me">Kontaktid</button></li>
         </ul>
       </nav>
