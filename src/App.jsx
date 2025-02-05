@@ -11,13 +11,21 @@ function TopNavigationBarButtons() {
   return (
     <nav>
       <ul>
-
-        <TopNaviagtionButton text="Dokumendid" />
-        <TopNaviagtionButton text="Tutvustus" />
-        <TopNaviagtionButton text="Lisa" />
-        <TopNaviagtionButton text="Kontaktid" />
-        <suurVahe />
-        <suurVahe />
+            <TopNaviagtionButton text="Dokumendid" />
+            <TopNaviagtionButton text="Tutvustus" />
+            <li class="dropdown">
+            <button class="dropbtn">Lisa ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Pildidt</a></li>
+                <li><a href="#">Uudised</a></li>
+                <li><a href="#">Informatsioon</a></li>
+              </ul>
+            </li>
+            <TopNaviagtionButton text="Kontaktid" />
+            <suurVahe />
+            <suurVahe />
+        
+      
       </ul>
     </nav>
       
@@ -43,7 +51,8 @@ function App() {
       </header>
 
 
-        
+      
+
       <main>
         
         <h1>Eesti Liputoimkondade Liit</h1>
