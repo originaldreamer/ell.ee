@@ -14,23 +14,44 @@ body {
   background-color: aliceblue;
 }
 
+.h1 {
+  size: 1200px;
+  color: #020066;
+}
+
+
+
+nav {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 200%;
+  z-index: 1000; 
+}
+
+
 nav ul{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
   height: 5%;
-  background-color: #020066;
+  background-color: #0072CE;
+  align-items: center;
+  gap: 100px;
 }
 
 .about_me {
   text-align: center;
-  font-weight: 600;
+  font-weight: 200;
   color: aliceblue;
   text-decoration: inherit;
-  background-color: #020066;
+  background-color: transparent;
   border: none;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 .text {
@@ -43,7 +64,7 @@ nav ul{
   color:aqua;
 }
 
-.h1 {
-  size: 1200px;
-  color: #020066;
+.suurVahe {
+  display: inline-block;
+  width: 16px; 
 }

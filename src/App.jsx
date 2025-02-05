@@ -2,6 +2,36 @@ import { useState } from 'react'
 import './App.css'
 
 
+function TopNaviagtionButton({text}) {
+  return <li><button className = "about_me">{text}</button></li>
+}
+
+
+function TopNavigationBarButtons() {
+  return (
+    <nav>
+      <ul>
+
+        <TopNaviagtionButton text="Dokumendid" />
+        <TopNaviagtionButton text="Tutvustus" />
+        <TopNaviagtionButton text="Lisa" />
+        <TopNaviagtionButton text="Kontaktid" />
+        <suurVahe />
+        <suurVahe />
+      </ul>
+    </nav>
+      
+  );
+}
+
+function TopNavigationBar() {
+  return (
+    <div>
+      <TopNavigationBarButtons />
+    </div>
+  );
+}
+
 function App() {
   const [fileContent, setFileContent] = useState('');
 
@@ -9,18 +39,13 @@ function App() {
     <>
     <body>
       <header>
-
+        <TopNavigationBar />
       </header>
 
-      <nav>
-        <ul>
-            <li><button className = "about_me">Dokumendid</button></li>
-            <li><button className = "about_me">Tutvustus</button></li>
-            <li><button className = "about_me">Lisa</button></li>
-            <li><button className = "about_me">Kontaktid</button></li>
-        </ul>
-      </nav>
+
+        
       <main>
+        
         <h1>Eesti Liputoimkondade Liit</h1>
         <div className = "text">
           <p>
