@@ -33,17 +33,31 @@ function TopNavigationBarButtons() {
   return (
     <nav>
       <ul>
-            <TopNaviagtionButton text="Dokumendid" />
-            <TopNaviagtionButton text="Tutvustus" />
+            <TopNaviagtionButton text="Kirjeldus" />
             <li class="dropdown">
-            <button class="dropbtn">Lisa ▼</button>
+            <button class="dropbtn">Liikmeskond ▼</button>
               <ul class="dropdown-content">
-                <li><a href="#">Pildidt</a></li>
-                <li><a href="#">Uudised</a></li>
-                <li><a href="#">Informatsioon</a></li>
+                <li><a href="#">Parlament</a></li>
+                <li><a href="#">MURG</a></li>
+                <li><a href="#">21.</a></li>
               </ul>
             </li>
-            <TopNaviagtionButton text="Kontaktid" />
+            <li class="dropdown">
+            <button class="dropbtn">Sümboolika ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Vappide Kirjeldus</a></li>
+                <li><a href="#">Lugu</a></li>
+                <li><a href="#">Kasutus</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+            <button class="dropbtn">Dokumendid ▼</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Põhikiri</a></li>
+                <li><a href="#">item_1</a></li>
+                <li><a href="#">item_2</a></li>
+              </ul>
+            </li>
             <suurVahe />
             <suurVahe />
         
