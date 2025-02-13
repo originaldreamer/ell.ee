@@ -43,6 +43,7 @@ nav ul{
   margin: 0;
   height: 10%;
   background-color: #0072CE;
+  /*background-color: #efa900;*/
   align-items: center;
   gap: 100px;
 }
@@ -61,7 +62,7 @@ nav ul{
   left: 160px;
   z-index: 2000;
   text-align: left;
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: 600;
   font-size: 25px;
   line-height: 1.2;
