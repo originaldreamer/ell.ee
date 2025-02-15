@@ -26,24 +26,30 @@ function App() {
   const [fileContent, setFileContent] = useState('');
 
   return (
-    <>
-    <body>
+    <div className='body'>
       <header>
         <TopNavigationBar />
       </header>
 
-      <main>
+      <div className='main'>
         <h1>Eesti Liputoimkondade Liit</h1>
         <TextArea content = {esilehePeamineKirjeldus}/>
-      </main>
-      <section></section>
+      </div>
+
+
+
+
+      <BottomNavigationBar/ >
+
+      
+      {/*<section></section>
       <article></article>
-      <aside></aside>
-      <footer>
-        <BottomNavigationBar />
-      </footer>
-    </body>
-    </>
+      <aside></aside>*/}
+
+      
+      
+    </div>
+
   )
 }
 

@@ -13,7 +13,7 @@ function Pilt( {pilt,kirjeldus, size}) {
 
 function TopNaviagtionButton({text}) {
   function handleClick() {
-    console.log('clicked!');
+    console.log('clicked!'); 
   }
 
   return (
