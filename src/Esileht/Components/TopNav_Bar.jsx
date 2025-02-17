@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './TopNav_Bar.css'
 
 
 //imported images
@@ -70,7 +70,7 @@ function TopNavigationBarButtons() {
 
 export default function TopNavigationBar() {
   return (
-    <>
+    <div className='topNavBar'>
 
       <div className='logo'>
         <Pilt pilt = {detailneLogo} kirjeldus = {"Eesti Liputoimkondade Liidu Logo"} size = {70}/>
@@ -86,6 +86,6 @@ export default function TopNavigationBar() {
       </div>
 
       <TopNavigationBarButtons />
-    </>
+    </div>
   );
 }

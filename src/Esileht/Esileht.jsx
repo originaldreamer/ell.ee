@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../App.css'
 
 //imported components
@@ -27,15 +28,16 @@ export default function Esileht() {
 
   return (
     <div className='body'>
-      <header>
-        <TopNavigationBar />
-      </header>
+
+      <TopNavigationBar />
+
 
       <div className='main'>
         <h1>Eesti Liputoimkondade Liit</h1>
         <TextArea content = {esilehePeamineKirjeldus}/>
-      </div>
 
+        <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
+      </div>
 
 
 
