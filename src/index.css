@@ -21,7 +21,7 @@ header {
 
 
 .body {
-  background-color: aliceblue;
+  background-color: white;
   min-height: 100vh;            
   display: flex;
   flex-direction: column; 
@@ -89,14 +89,14 @@ nav ul{
   height: 10%;
   background-color: #02265A;
   align-items: center;
-  gap: 100px;
+  gap: 5%;
 }
 
 .logo {
   position: fixed; 
   top: 10px; 
   left: 80px;
-  z-index: 2000;
+  z-index: 9000;
   cursor: pointer;
 }
 
@@ -104,7 +104,7 @@ nav ul{
   position:  fixed; 
   top: 40px; 
   left: 160px;
-  z-index: 2000;
+  z-index: 9000;
   font-family: Cambria;
   text-align: left;
   color: #F5F5F5;

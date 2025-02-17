@@ -1,7 +1,7 @@
 .footer {
     width: 100vw;
     margin-top: auto;
-    margin-bottom: 0;
+    margin-bottom: -500px;
     height: 490px;
     background-color: #02265A;
     z-index: 2000; 
@@ -112,7 +112,7 @@
 .footer-kontaktid {
     position: relative;
     margin-top: 0px;
-    margin-left: 25%;
+    margin-right: -5%
 }
 
 .footer-kontaktid-taust {
@@ -140,7 +140,7 @@
     flex-direction: column; 
     align-items: flex-start;
     margin-top: 20px;
-    margin-left: -5%;
+    margin-left: -10%;
     gap: 15px;
 }
 
@@ -185,3 +185,23 @@
 .footer-link-pealink-text.hovered::after {
     background-color: #EFA900; 
 }
+
+/*
+/*Scaling
+@media (max-width: 1000px) {
+    .footer-logo {
+        margin-left: 10px;
+        transform: scale(0.9, 0.9);
+        transform-origin: top;
+    }   
+
+    .footer-lingid {
+        margin-left: 30px;
+    }
+
+    .footer-kontaktid {
+        transform: scale(0.8, 0.8);
+        transform-origin: top;
+    }
+    
+}*/

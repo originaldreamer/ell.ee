@@ -1,41 +1,47 @@
 const esilehePeamineKirjeldus = `
-MURG liputoimkond on Mustamäe Riigigümnaasiumi õpilasorganisatsioon, mille eesmärgiks on kooli ja Eesti Vabariigi lipu väärikas esindamine. 
-Liputoimkond osaleb riiklikel ja koolisisestel pidulikel üritustel, olles vastutav lipu heiskamise ja langetamise eest. Samuti esindavad nad kooli pidulikul viisil 
-ja hoolitsevad lipu korrashoiu eest. Liputoimkonna tegevus on tihedalt seotud Eesti riikliku ajaloo ja traditsioonidega, kuna nad on kohal mitmesugustes mälestusüritustes, 
-nagu iseseisvuspäev ja Vabadussõja langenute mälestushetked. Toimkond aitab edendada kooli identiteedi ja traditsioonide säilitamist, olles oma kohalolekuga osa kooli väärtuslikest tavadest.
+[AI] Eesti Liputoimkondade Liit on Eesti lipukultuuri ja selle väärtuste hoidmisele pühendunud organisatsioon, 
+mille täpsed asutamise ajad ja eesmärgid on jäänud tihti varju, kuid mille mõju ja tähendus on paljudele selge. 
+Liit ühendab inimesi, kes hindavad lippude kui rahvuslike, ajalooliste ja kultuuriliste sümbolite sügavat tähendust. 
+Organisatsioon keskendub mitte ainult lippude valmistamisele ja kasutamisele, vaid ka nende tähenduse mõtestamisele 
+ja väärtustamisele Eesti ühiskonnas. Tegu on kogukonnaga, mis on osa suuremast liikumisest, mille eesmärgiks on 
+säilitada ja edasi arendada lippude traditsioone, et nad saaksid jätkuvalt olla rahvusliku ühtsuse ja identiteedi kandjad.
 
-MURG-i liputoimkonna liikmed on kooli õpilased, kes on valitud oma usaldusväärsuse ja väärikuse tõttu. Liputoimkonnal on oma juhatus, kuhu kuuluvad ülem, aseülem ja vanemlippurid. 
-Ülem vastutab liputoimkonna igapäevase juhtimise eest, samas kui vanemlippurid hoolitsevad lipu kandmise ja esitlemise eest pidulikel üritustel. Kõik liikmed peavad olema koolis aktiivsed 
-ja valmis esindama oma kooli mitte ainult kooliüritustel, vaid ka riigi tähtsamatel hetkedel.
+Liidu liikmed korraldavad regulaarselt kokkusaamisi ja seminare, kus arutatakse lipu ajaloolisi juurikaid, nende 
+semantikat ja mõju Eesti kultuurilisele maastikule. Üks tähtsamaid üritusi on iga-aastane lipufestival, kus liidu liikmed 
+ja külalised saavad arutada teemasid nagu „Lipu visuaalne identiteet ja selle ajalugu“, „Lipu õiguslik tähendus ja 
+staatuse määratlus“ ning „Lipu tähendus rahvusvahelises kontekstis“. Lisaks sellele viiakse läbi mitmesuguseid praktilisi 
+töötoad, kus tutvustatakse lipuväljapanemise traditsioone, arutatakse lipu värvikombinatsioonide ja mustrite tähendusi 
+ning õpetatakse, kuidas lippu õigesti käsitseda ja hoida.
 
-Üks liputoimkonna tähtsamaid ülesandeid on lipu korrektne käsitlemine ja kaitsmine. Seda tehakse igal hetkel, kui Eesti Vabariigi lipp on kohal, et rõhutada lipu sümboolset tähendust 
-ja traditsioonide järgimist. Lisaks sellele, et toimkond täidab oma ülesandeid suure pühendumusega, pakuvad nad ka teistele õpilastele võimalust oma riigi ja kooli eest seista.
+Kuulduste kohaselt hoiab Eesti Liputoimkondade Liit ka oma erakordset ja salajast lipuarhiivi, kus on säilinud haruldased 
+ja väärtuslikud dokumendid, mis käsitlevad Eesti lipu arengut läbi ajaloo. Arhiivis leidub mitmeid ajaloolisi dokumente, 
+mis räägivad esimestest lipuvõistlustest, lipukomplektide valmistamise saladustest ning rahva lipuväljapanemise rituaalidest. 
+Kuigi liidu arhiivi ei ole kunagi ametlikult avatud olnud, räägitakse, et sellele pääsemiseks peab liidu liikmel olema erakordne 
+teadmiste ja pühendumuse tase lipukultuuri vallas.
 
-MURG-i liputoimkond on saanud tunnustust oma professionaalsuse ja kohusetunde eest. Nad on osalenud mitmetel üritustel, kus esindavad kooli väärikalt, andes teistele õpilastele 
-eeskuju oma tegevuses ja hoiakus. Üks selline ülesanne oli Vabadussõjas langenute mälestusüritus, kus liputoimkond kandis kooli lipu kõrgel, sümboliseerides kooli pühendumust 
-Eesti riigi ajaloole ja traditsioonidele.
+Lisaks akadeemilistele aruteludele ja ajaloolistele uurimistöödele, korraldab liit ka mitmeid rahvapeo ja kogukonnaüritusi, 
+kus lippude lehvimine ja lipukultuuri tutvustamine mängib keskset rolli. Erinevad lipuvõistlused, kus osalejad esitavad oma ainulaadseid 
+ideid lipu kujundamisel ja paigutamisel, on muutunud iga-aastaseks traditsiooniks. Seda tüüpi üritustel osalevad inimesed saavad jagada 
+oma loomingulisi ideid ja mõtteid, mis aitavad kaasa lipu esteetilise ja sümboolse tähenduse arengule. Ürituste käigus korraldatakse 
+ka lipuga seotud meelelahutusprogramme, kus arutatakse, kuidas lippude kasutamine on mõjutanud Eesti ajalugu ja kultuuri, tuues esile 
+nende tähtsuse rahvuslike ürituste ja igapäevaelu osana.
 
-Kooli õpilased ja õpetajad hindavad liputoimkonna panust, sest see meeskond on osa kooli hingest. Nad aitavad koolil jääda truuks oma väärtustele, andes õpilastele võimaluse 
-osaleda riigi tähtsates mälestushetkedes. Liputoimkond ei ole ainult lipu hoidjad, vaid ka kooli traditsioonide ja kultuuri elavdaja.
+Eesti Liputoimkondade Liit ei oma traditsioonilist kontorit ega ametlikku veebilehte, mis teeb organisatsiooni kohaloleku tavainimestele 
+pigem müstiliseks ja peidetuks. Siiski usuvad paljud, et liidu liikmed ilmuvad alati õigel hetkel, et pakkuda nõu, vastuseid ja suuniseid, 
+kui keegi otsib vastuseid küsimustele lipu tähenduse, ülespaneku või hooldamise kohta. Liidu liikmed ei ole lihtsalt kultuurihoidjad, 
+vaid ka lipu tõelised austajad, kes jagavad oma teadmisi ja entusiasmi järgmistele põlvkondadele. Nad on valmis alati jagama oma teadmisi, 
+olgu tegemist ajalooga seotud küsimustega või praktilise nõuandega lipu õigeks lehvimiseks.
 
-MURG liputoimkond on Mustamäe Riigigümnaasiumi õpilasorganisatsioon, mille eesmärgiks on kooli ja Eesti Vabariigi lipu väärikas esindamine. 
-Liputoimkond osaleb riiklikel ja koolisisestel pidulikel üritustel, olles vastutav lipu heiskamise ja langetamise eest. Samuti esindavad nad kooli pidulikul viisil 
-ja hoolitsevad lipu korrashoiu eest. Liputoimkonna tegevus on tihedalt seotud Eesti riikliku ajaloo ja traditsioonidega, kuna nad on kohal mitmesugustes mälestusüritustes, 
-nagu iseseisvuspäev ja Vabadussõja langenute mälestushetked. Toimkond aitab edendada kooli identiteedi ja traditsioonide säilitamist, olles oma kohalolekuga osa kooli väärtuslikest tavadest.
+Liidu esindajad on tuntud oma kõrgetasemelise professionaalsuse ja pühendumuse poolest. Nad ei piirdu vaid lipu füüsiliste omadustega, 
+vaid uurivad ka selle psühholoogilist ja emotsionaalset mõju. Mitu korda on korraldatud eraldi arutelusid selle üle, kuidas erinevad värvid 
+ja mustrid võivad mõjutada rahva meeleolu või kuidas lipu õigesti lehvitamine võib edendada rahu ja ühtsust. Samuti on liidu liikmed 
+pidevalt teadlikud lipu mõju avalikus ruumis, näiteks riigiüritustel ja meeleavaldustel, kus lipu õige esitlemine võib olla oluline osa 
+rahvusliku identiteedi kujundamises.
 
-MURG-i liputoimkonna liikmed on kooli õpilased, kes on valitud oma usaldusväärsuse ja väärikuse tõttu. Liputoimkonnal on oma juhatus, kuhu kuuluvad ülem, aseülem ja vanemlippurid. 
-Ülem vastutab liputoimkonna igapäevase juhtimise eest, samas kui vanemlippurid hoolitsevad lipu kandmise ja esitlemise eest pidulikel üritustel. Kõik liikmed peavad olema koolis aktiivsed 
-ja valmis esindama oma kooli mitte ainult kooliüritustel, vaid ka riigi tähtsamatel hetkedel.
-
-Üks liputoimkonna tähtsamaid ülesandeid on lipu korrektne käsitlemine ja kaitsmine. Seda tehakse igal hetkel, kui Eesti Vabariigi lipp on kohal, et rõhutada lipu sümboolset tähendust 
-ja traditsioonide järgimist. Lisaks sellele, et toimkond täidab oma ülesandeid suure pühendumusega, pakuvad nad ka teistele õpilastele võimalust oma riigi ja kooli eest seista.
-
-MURG-i liputoimkond on saanud tunnustust oma professionaalsuse ja kohusetunde eest. Nad on osalenud mitmetel üritustel, kus esindavad kooli väärikalt, andes teistele õpilastele 
-eeskuju oma tegevuses ja hoiakus. Üks selline ülesanne oli Vabadussõjas langenute mälestusüritus, kus liputoimkond kandis kooli lipu kõrgel, sümboliseerides kooli pühendumust 
-Eesti riigi ajaloole ja traditsioonidele.
-
-Kooli õpilased ja õpetajad hindavad liputoimkonna panust, sest see meeskond on osa kooli hingest. Nad aitavad koolil jääda truuks oma väärtustele, andes õpilastele võimaluse 
-osaleda riigi tähtsates mälestushetkedes. Liputoimkond ei ole ainult lipu hoidjad, vaid ka kooli traditsioonide ja kultuuri elavdaja.
+Liidu ametlik moto, „Lipp lehvib, rahvas tõuseb“, peegeldab sügavat usku, et igal lipul on oma eriline ja ainulaadne tähendus. See ei ole pelgalt 
+dekoratiivne eseme, vaid elav sümbol, mis ühendab rahvast, kannab edasi ajalugu ja väärtusi ning edendab rahu ja harmooniat. Eesti 
+Liputoimkondade Liit usub, et iga lipp, mis lehvib tuules, kannab endas sügavat tähendust, mis on seotud mitte ainult selle riigi, vaid ka 
+selle inimeste, nende ajaloo ja kultuuriga.
 `;
 
 export default esilehePeamineKirjeldus;

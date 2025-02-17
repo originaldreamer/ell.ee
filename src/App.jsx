@@ -1,56 +1,23 @@
-import { useState } from 'react'
-import './App.css'
-
-//imported components
-import TopNavigationBar from './Esileht/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from './Esileht/Components/BottomNav_Bar.jsx';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
-//imported texts
-import esilehePeamineKirjeldus from './Esileht/esilehePeamineKirjeldus.js'
-//imported images
-import detailneLogo from './assets/General/Vapp detailsem.png'
-import lihtneLogo from './assets/General/Vapp lihtne.png'
+// Imported pages
+import Esileht from './Esileht/Esileht.jsx';
+import Liikmed from './Liikmed/Liikmed.jsx';
+import Error404 from './Error404/Error404.jsx';
 
-
-
-function TextArea( {content} ) {
+function App() {
   return (
-    <div className = "text">
-        <p> {content} </p>  
-      </div>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Esileht />} />
+        <Route path="/esileht" element={<Esileht />} />
+        <Route path="/liikmed" element={<Liikmed />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-function App() {
-  const [fileContent, setFileContent] = useState('');
-
-  return (
-    <div className='body'>
-      <header>
-        <TopNavigationBar />
-      </header>
-
-      <div className='main'>
-        <h1>Eesti Liputoimkondade Liit</h1>
-        <TextArea content = {esilehePeamineKirjeldus}/>
-      </div>
-
-
-
-
-      <BottomNavigationBar/ >
-
-      
-      {/*<section></section>
-      <article></article>
-      <aside></aside>*/}
-
-      
-      
-    </div>
-
-  )
-}
-
-export default App
+export default App;
