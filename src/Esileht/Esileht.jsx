@@ -33,7 +33,7 @@ export default function Esileht() {
 
 
       <div className='main'>
-        <h1>Eesti Liputoimkondade Liit</h1>
+        <h1>Eesti Koolide Liputoimkondade Liit</h1>
         <TextArea content = {esilehePeamineKirjeldus}/>
 
         <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
