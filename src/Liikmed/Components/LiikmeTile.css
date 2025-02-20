@@ -1,0 +1,39 @@
+.liikmetile {
+    width: 400px;
+    background-color: #02265A;
+    background-color:  #52575F;
+    border: 20px solid #EFA900;
+    border-width: 4px;
+    border-radius: 50px;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow: hidden;
+    position: relative;
+}
+
+.liikmetile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.title {
+    z-index: 500;
+    font-family: Cambria;
+    text-align: center;
+    color: #F5F5F5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #02275a8e;
+    padding: 15px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}

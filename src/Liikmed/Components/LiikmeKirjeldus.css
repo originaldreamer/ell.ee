@@ -1,0 +1,29 @@
+.kirjeldus {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 60000;
+    background: linear-gradient(to bottom, #02265A 60%, #52575F);
+    color: rgb(255, 255, 255);
+    width: max(400px, 50%);
+    height: 80%;
+    border-radius: 25px;
+    border: 2px solid #EFA900;
+}
+
+.kirjeldus img {
+    margin-top: 15px;
+}
+
+
+.background {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 110vw;
+    height: 110vh;
+    z-index: 50000;
+    background-color: #52575f3a;
+}
