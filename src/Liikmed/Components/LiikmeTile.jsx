@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../../App.css'
-import './liikmeTile.css'
+import './LiikmeTile.css'
 
 //later do from datasheet
 
