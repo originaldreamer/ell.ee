@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './liikmed.css'
+import './Liikmed.css'
 
 //imported components
 import TopNavigationBar from '../Esileht/Components/TopNav_Bar.jsx';
