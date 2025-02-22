@@ -1,9 +1,5 @@
 .topNavBar {
     margin-bottom: 200px;
     z-index: 10000000;
-    pointer-events: none;
-}
 
-.topNavBar .interactive {
-    pointer-events: auto;
 }
