@@ -9,6 +9,7 @@
     box-sizing: border-box; 
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 .liikmetile img {

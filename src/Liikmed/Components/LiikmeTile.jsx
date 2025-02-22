@@ -7,8 +7,9 @@ import './LiikmeTile.css'
 
 
 
-export default function LiikmeTile({pilt, pildikirjeldus, title})
-{
+export default function LiikmeTile({pilt, pildikirjeldus, title, handleClick})
+{ 
+
     function handleMouseEnter() {
 
     }
@@ -17,9 +18,7 @@ export default function LiikmeTile({pilt, pildikirjeldus, title})
 
     }
 
-    function handleClick() {
 
-    }
     return (
         <button 
           className='liikmetile'
