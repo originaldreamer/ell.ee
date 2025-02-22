@@ -1,0 +1,22 @@
+.liikmeteGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); 
+    justify-items: center;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    width: 120%;
+    margin-left: -10%;
+    margin-right: -10%; 
+    max-width: min(80vw, 1270px);
+}
+
+
+/*Scaling*/
+@media (max-width: 1550px) {
+    .liikmeteGrid {
+        margin-top: 50px;
+    }
+    
+}
