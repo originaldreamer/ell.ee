@@ -31,7 +31,7 @@ export default function Liikmed() {
 
   return (
       <div>
-          <div className='body'>
+          <div className='liikmed-body'>
               <TopNavigationBar />
 
               <div className='text'>Liikmed</div>
