@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Liikmed.css'
 import data from './Content/liikmeteKirjeldused.json'
 
@@ -14,6 +14,13 @@ export default function Liikmed() {
   const [kirjelduseSisu, setKirjelduseSisu] = useState(data[0]);
   const [curKirjelduseSisuIndex, setCurKirjelduseSisuIndex] = useState(0);
 
+  const loadKirjeldusContent = (index) => {
+    const selectedContent = data[index];
+    setCurKirjelduseSisuIndex(index);
+    setKirjelduseSisu(selectedContent); 
+};
+
+
 
   const changeShowKirjeldusState = (state) => {
       setShowKirjeldus(state);
@@ -25,29 +32,39 @@ export default function Liikmed() {
       }
 }
 
-  const increaseKirjelduseContentIndex = () => {
+    const increaseKirjelduseContentIndex = () => {
+        setCurKirjelduseSisuIndex(prevIndex => {
+        const newIndex = prevIndex === data.length - 1 ? 0 : prevIndex + 1;
+        setKirjelduseSisu(data[newIndex]);
+        return newIndex;
+        });
+    };
 
-    if (curKirjelduseSisuIndex === data.length - 1) {
-      loadKirjeldusContent(0);
-    } else {
-      loadKirjeldusContent(curKirjelduseSisuIndex + 1); 
-    }
-  }
+    const decreaseKirjelduseContentIndex = () => {
+        setCurKirjelduseSisuIndex(prevIndex => {
+        const newIndex = prevIndex === 0 ? data.length - 1 : prevIndex - 1;
+        setKirjelduseSisu(data[newIndex]);
+        return newIndex;
+        });
+    };
 
-  const decreaseKirjelduseContentIndex = () => {
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowRight') {
+        increaseKirjelduseContentIndex();
+      }
+      if (event.key === 'ArrowLeft') {
+        decreaseKirjelduseContentIndex();
+      }
+    };
+  
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
-    if (curKirjelduseSisuIndex === 0) {
-      loadKirjeldusContent(data.length - 1);
-    } else {
-      loadKirjeldusContent(curKirjelduseSisuIndex - 1); 
-    }
-  }
-
-  const loadKirjeldusContent = (index) => {
-      const selectedContent = data[index];
-      setCurKirjelduseSisuIndex(index);
-      setKirjelduseSisu(selectedContent); 
-  };
+  
 
   return (
       <div>
