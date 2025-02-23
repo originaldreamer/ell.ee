@@ -180,7 +180,7 @@ export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,mo
 
           <div className="kirjeldus">
         
-              <Top nimi={content.liikmeNimi} pilt={koolimajaPilt} />
+              <Top nimi={content.liikmeNimi} pilt={content.liputoimkonnaPilt} />
 
               <Line />
               <div className="kirjeldus-text">{content.kirjelduseText}</div>
