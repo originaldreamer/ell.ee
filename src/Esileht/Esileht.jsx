@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import '../App.css'
+import './Esileht.css'
 
 //imported components
 import TopNavigationBar from './Components/TopNav_Bar.jsx';
@@ -17,7 +18,7 @@ import lihtneLogo from '../assets/General/Vapp lihtne.png'
 
 function TextArea( {content} ) {
   return (
-    <div className = "text">
+    <div className = "normal-text">
         <p> {content} </p>  
       </div>
   );
@@ -27,23 +28,28 @@ export default function Esileht() {
   const [fileContent, setFileContent] = useState('');
 
   return (
-    <div className='body'>
+    <>
+      <div className='esileht-bg' />
 
-      <TopNavigationBar />
+      <div className='esileht-body'>
+        
+        <TopNavigationBar />
 
 
-      <div className='main'>
-        <h1>Eesti Koolide Liputoimkondade Liit</h1>
-        <TextArea content = {esilehePeamineKirjeldus}/>
+        <div className='esileht-main'>
+          <h1>Eesti Koolide Liputoimkondade Liit</h1>
+          <TextArea content = {esilehePeamineKirjeldus}/>
 
-        <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
+          <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
+        </div>
+
+
+
+        <BottomNavigationBar />
+
       </div>
-
-
-
-      <BottomNavigationBar />
-      
-    </div>
+    </>
+    
 
   );
 }

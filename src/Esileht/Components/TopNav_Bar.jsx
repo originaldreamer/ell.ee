@@ -16,54 +16,57 @@ function TopNaviagtionButton({text}) {
     console.log('clicked!'); 
   }
 
-  return (
-    <li>
-      <button 
-        className = "about_me"
-        onClick = {handleClick}
-        >
-          {text}
-        </button></li>
+  return ( 
+    
+    <button 
+      className = "about_me"
+      onClick = {handleClick}
+      >
+
+      {text}
+      
+    </button>
   );
 }
 
 
 function TopNavigationBarButtons() {
   return (
-    <nav>
-      <ul>
-            <TopNaviagtionButton text="Kirjeldus" />
-            <li class="dropdown">
-            <button class="dropbtn">Liikmeskond ▼</button>
-              <ul class="dropdown-content">
-                <li><a href="#">Liikmed</a></li>
-                <li><a href="#">Juhatus</a></li>
-                <li><a href="#">Kontakt</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-            <button class="dropbtn">Sümboolika ▼</button>
-              <ul class="dropdown-content">
-                <li><a href="#">Vappide Kirjeldus</a></li>
-                <li><a href="#">Lugu</a></li>
-                <li><a href="#">Kasutus</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-            <button class="dropbtn">Dokumendid ▼</button>
-              <ul class="dropdown-content">
-                <li><a href="#">Põhikiri</a></li>
-                <li><a href="#">item_1</a></li>
-                <li><a href="#">item_2</a></li>
-              </ul>
-            </li>
+    <div className='topBar-buttons'>
 
-            <suurVahe />
-            <suurVahe />
+            <TopNaviagtionButton text="Kirjeldus" />
+
+            <div className="dropdown">
+            <button className="dropbtn">Liikmeskond ▼</button>
+              <div className="dropdown-content">
+                <div><a href="#">Liikmed</a></div>
+                <div><a href="#">Juhatus</a></div>
+                <div><a href="#">Kontakt</a></div>
+              </div>
+            </div>
+
+            <div className="dropdown">
+            <button className="dropbtn">Sümboolika ▼</button>
+              <div className="dropdown-content">
+                <div><a href="#">Vappide Kirjeldus</a></div>
+                <div><a href="#">Lugu</a></div>
+                <div><a href="#">Kasutus</a></div>
+              </div>
+            </div>
+
+            <div className="dropdown">
+            <button className="dropbtn">Dokumendid ▼</button>
+              <div className="dropdown-content">
+                <div><a href="#">Põhikiri</a></div>
+                <div><a href="#">item_1</a></div>
+                <div><a href="#">item_2</a></div>
+              </div>
+            </div>
+
         
       
-      </ul>
-    </nav>
+ 
+    </div>
       
   );
 }

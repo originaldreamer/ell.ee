@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import '../../App.css'
 import './LiikmeteGrid.css'
 
 
@@ -11,10 +10,10 @@ import LiikmeTile from './LiikmeTile'
 
 
 
-export default function LiikmeteGrid({clickFunction, layer}) 
+export default function LiikmeteGrid({clickFunction}) 
 {
     return (
-        <div className='liikmeteGrid' style={{zIndex:layer}}>
+        <div className='liikmeteGrid'>
             <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium" handleClick={clickFunction}/>
             <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>
             <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>

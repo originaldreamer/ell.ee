@@ -9,7 +9,6 @@ import LiikmeKirjeldus from './Components/LiikmeKirjeldus.jsx';
 
 export default function Liikmed() {
   const [showKirjeldus, setShowKirjeldus] = useState(false);
-  const [liikmeteGridLayer, setLiikmeteGridLayer] = useState(100000);
   
   // Declare state variables with their setter functions
   const [liikmeNimi, setLiikmeNimi] = useState("Mustamäe Riigigümnaasium");
@@ -22,11 +21,7 @@ export default function Liikmed() {
   const changeShowKirjeldusState = (state) => {
       setShowKirjeldus(state);
 
-      if (state) {
-          setLiikmeteGridLayer(50000);
-      } else {
-          setLiikmeteGridLayer(55000);
-      }
+     
   };
 
   return (
@@ -36,7 +31,7 @@ export default function Liikmed() {
 
               <div className='text'>Liikmed</div>
 
-              <LiikmeteGrid clickFunction={() => changeShowKirjeldusState(true)} layer={liikmeteGridLayer} />
+              <LiikmeteGrid clickFunction={() => changeShowKirjeldusState(true)} />
 
               {showKirjeldus && (
                   <LiikmeKirjeldus 
