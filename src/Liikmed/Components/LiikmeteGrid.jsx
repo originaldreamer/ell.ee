@@ -10,15 +10,21 @@ import LiikmeTile from './LiikmeTile'
 
 
 
-export default function LiikmeteGrid({clickFunction}) 
+export default function LiikmeteGrid({functionShowKirjeldus, loadContentFunction}) 
 {
     return (
         <div className='liikmeteGrid'>
-            <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium" handleClick={clickFunction}/>
-            <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>
-            <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>
-            <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>
-            <LiikmeTile pilt={koolimajaPilt} pildiKirjeldus="Mustamäe Riigigümnaasiumi liputoimkond" title="Mustamäe Riigigümnaasium"/>
+            {[...Array(11)].map((_, index) => (
+                <LiikmeTile 
+                    key={index}  // Ensure each component has a unique key
+                    pilt={koolimajaPilt} 
+                    index={index}  // Pass the increasing index value
+                    handleClick={() => { 
+                        functionShowKirjeldus(); 
+                        loadContentFunction(index);  // Pass the corresponding index
+                    }}
+                />
+            ))}
         </div>
         
     );

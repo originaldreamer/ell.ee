@@ -8,6 +8,7 @@
     background: linear-gradient(to bottom, #02265A 60%, #52575F);
     width: 850px;
     max-height: 85%;
+    height: 680px;
     border-radius: 25px;
     border: 2px solid #EFA900;
     display: flex; 
@@ -15,7 +16,8 @@
     align-items: center; 
     padding: 0px;
     box-sizing: border-box; 
-    overflow: auto;
+    overflow-x: hidden; 
+    overflow-y: auto;
 }
 
 
@@ -27,7 +29,7 @@
 
 
 
-.line {
+.kirjeldus-line {
     content: "";
     z-index: 1000;
     margin-top: 22px;
@@ -52,55 +54,81 @@
 }
 
 
-.top {
-    margin-top: 15px;
+
+
+.liikmed-arrows {
+    position: fixed;
+    bottom: -12px;
+    right: 30px;
+    z-index: 50000;    
+    display: flex;
+    padding: 40px;
+}
+
+.liikmed-arrow {
+    color: #F5F5F5;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 34px;;
+}
+
+.liikmed-arrow img {
+    width: 40px;
+}
+
+.liikmed-top {
+    margin-top: 13px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     width: 100%;
+    margin-bottom: 5px;
 }
 
-.top img {
+.liikmed-top img {
     margin-right: 15px;
     margin-left: auto;
     border-radius: 50px;
+    z-index: 2000;
 }
 
 .header {
     position: relative;
     flex-grow: 1; 
     text-align: center; 
-    padding: 18px;
+    padding: 20px;
     z-index: 2000;
     font-family: Cambria;
     color: #F5F5F5;
     font-weight: 500;
     font-size: 28px;
-    line-height: 1.2;
+    line-height: 1.25;
+
 }
 
-.header::after {
+.header-line{
     content: "";
     position: absolute;
-    z-index: -1000;
-    left: 50%;
+    z-index: -2000;
+    left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 88%;
-    height: 100px;
+    width: 1000px;
+    height: 100%;
     background-color: #52575F;
-    border-radius: 8px;
 }
 
 
-.background {
+.liikmed-background {
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
     height: 100vh;
     z-index: 50000;
-    background-color: #52575f3a;
+    background: linear-gradient(to top, #02275a 8%,#02275aef 35%, #52575f9d);
     border-color: transparent;
 }
 
@@ -127,16 +155,30 @@
 @media (max-width: 1345px) {
     .kirjeldus {
         width: max(480px, 60%);
+        height: 80%;
     }
 
-    .top {
+    .liikmed-arrows {
+        right: -20px;
+    }
+
+    .liikmed-arrow {
+        margin-left: 25px;
+    }
+
+    .liikmed-arrow img {
+        width: 35px;
+    }
+
+    .liikmed-top {
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        justify-content: space-between; 
+        justify-content: space-between;
+        margin-bottom: 10px; 
     }
     
-    .top img {
+    .liikmed-top img {
         margin-right: auto;
         margin-left: auto;
         max-width: 520px;
@@ -147,14 +189,20 @@
     .header {
         font-size: 26px;
     }
-    
-    .header::after {
-        width: 90%;
-        height: 80px;
-        border-radius: 20px;
+
+    .header-line{
+        left: 50%;
+        height: 110%;
     }
+    
 
     .line {
+        width: 90%;
+    }
+}
+
+@media (max-width: 530px) {
+    .kirjeldus {
         width: 90%;
     }
 }

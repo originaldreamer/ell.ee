@@ -1,0 +1,29 @@
+.liikmed-page-header {
+    margin-top: 220px;
+    margin-bottom: 60px;
+    width: 100vw;
+    position: relative; /* This makes the header a positioning context for the background */
+}
+
+.liikmed-page-header-text {
+    z-index: 3000;
+    font-family: Cambria;
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.2;
+    position: relative; /* Ensure text stays on top of the background */
+}
+
+.liikmed-page-header-bg {
+    content: "";
+    position: absolute;
+    z-index: -2000; /* Keep background behind text */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center the background */
+    width: 100vw; /* Full width of the screen */
+    height: 120px; /* Adjust the height as needed */
+    background-color: #52575F;
+}

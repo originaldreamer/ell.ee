@@ -1,16 +1,25 @@
 .liikmetile {
-    width: 400px;
+    width: 100%; /* Adapt to grid column */
+    max-width: 360px; /* Prevent elements from getting too large */
+    min-width: 300px; 
     background-color: #02265A;
     background-color:  #52575F;
     border: 20px solid #EFA900; 
     border-width: 4px;
-    border-radius: 50px;
+    border-radius: 35px;
     padding: 0;
     box-sizing: border-box; 
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    margin-bottom: 2%;
+    transition: transform 0.3s ease;
 }
+
+.liikmetile:hover {
+    transform: scale(1.05);
+}
+
 
 .liikmetile img {
     display: block;
@@ -23,11 +32,10 @@
     z-index: 500;
     font-family: Cambria;
     text-align: center;
-    color: #F5F5F5;
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2;
     position: absolute;
     bottom: 0;
@@ -37,4 +45,19 @@
     padding: 15px;
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px;
+}
+
+/*Scaling*/
+@media (max-width: 1010px) {
+    .liikmetile {
+        max-width: 370px;
+    }
+    
+}
+
+@media (max-width: 670px) {
+    .liikmetile {
+        min-width: 90%;
+    }
+    
 }

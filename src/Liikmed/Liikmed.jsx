@@ -1,27 +1,52 @@
 import { useState } from 'react'
 import './Liikmed.css'
+import data from './Content/liikmeteKirjeldused.json'
 
 //imported components
 import TopNavigationBar from '../Esileht/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../Esileht/Components/BottomNav_Bar.jsx';
 import LiikmeteGrid from './Components/LiikmeteGrid.jsx';
 import LiikmeKirjeldus from './Components/LiikmeKirjeldus.jsx';
+import LiikmedHeader from './Components/LiikmedHeader.jsx';
 
 export default function Liikmed() {
   const [showKirjeldus, setShowKirjeldus] = useState(false);
-  
-  // Declare state variables with their setter functions
-  const [liikmeNimi, setLiikmeNimi] = useState("Mustamäe Riigigümnaasium");
-  const [kirjelduseText, setKirjelduseText] = useState("[AI] Mustamäe Riigigümnaasiumi liputoimkond on õpilasorganisatsioon, mille peamine ülesanne on väärikalt esitada, heisata ja kaitsta Eesti Vabariigi ning kooli lippu. Liputoimkond osaleb riigi- ja koolipühade puhul pidulikel liputseremooniatel, esindades kooli nii sise- kui ka välisüritustel.");
-  const [kontakt, setKontakt] = useState("Andrus Lepikult, Andrus.Lepikult@edu.murg.ee");
-  const [liitumisKuupaev, setLiitumisKuupaev] = useState("20.02.2025");
-  const [instagram, setInstagram] = useState("https://murg.ee/");
-  const [facebook, setFacebook] = useState("https://murg.ee/");
+  const [kirjelduseSisu, setKirjelduseSisu] = useState(data[0]);
+  const [curKirjelduseSisuIndex, setCurKirjelduseSisuIndex] = useState(0);
+
 
   const changeShowKirjeldusState = (state) => {
       setShowKirjeldus(state);
 
-     
+      if (state) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+}
+
+  const increaseKirjelduseContentIndex = () => {
+
+    if (curKirjelduseSisuIndex === data.length - 1) {
+      loadKirjeldusContent(0);
+    } else {
+      loadKirjeldusContent(curKirjelduseSisuIndex + 1); 
+    }
+  }
+
+  const decreaseKirjelduseContentIndex = () => {
+
+    if (curKirjelduseSisuIndex === 0) {
+      loadKirjeldusContent(data.length - 1);
+    } else {
+      loadKirjeldusContent(curKirjelduseSisuIndex - 1); 
+    }
+  }
+
+  const loadKirjeldusContent = (index) => {
+      const selectedContent = data[index];
+      setCurKirjelduseSisuIndex(index);
+      setKirjelduseSisu(selectedContent); 
   };
 
   return (
@@ -29,19 +54,19 @@ export default function Liikmed() {
           <div className='liikmed-body'>
               <TopNavigationBar />
 
-              <div className='text'>Liikmed</div>
+              <LiikmedHeader title="Liikmed"/>
 
-              <LiikmeteGrid clickFunction={() => changeShowKirjeldusState(true)} />
+              <LiikmeteGrid 
+                functionShowKirjeldus={() => changeShowKirjeldusState(true)} 
+                loadContentFunction={loadKirjeldusContent}
+              />
 
               {showKirjeldus && (
                   <LiikmeKirjeldus 
-                      liikmeNimi={liikmeNimi}
-                      kirjelduseText={kirjelduseText}
-                      kontakt={kontakt}
-                      liitumisKuupaev={liitumisKuupaev}
-                      instagram={instagram}
-                      facebook={facebook}
                       turnOffKirjeldus={() => changeShowKirjeldusState(false)}
+                      content={kirjelduseSisu}
+                      moveLeft={decreaseKirjelduseContentIndex}
+                      moveRight={increaseKirjelduseContentIndex}
                   />
               )}
 

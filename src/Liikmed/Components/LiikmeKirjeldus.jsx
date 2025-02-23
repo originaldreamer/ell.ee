@@ -2,11 +2,17 @@ import React, { useState, useEffect } from 'react';
 import '../../App.css'
 import './LiikmeKirjeldus.css'
 
-//imported logos
+//imported elements
 import facebookLogoWhite from '../../assets/General/facebook logo white.svg'
 import facebookLogoYellow from '../../assets/General/faceook logo yellow.svg'
 import instagramLogoWhite from '../../assets/General/instagram logo white.svg'
 import instagramLogoYellow from '../../assets/General/instagram logo yellow.svg'
+import arrowLeftWhite from '../Design Elements/arrow left white.svg'
+import arrowLeftYellow from '../Design Elements/arrow left yellow.svg'
+import arrowRightWhite from '../Design Elements/arrow right white.svg'
+import arrowRightYellow from '../Design Elements/arrow right yellow.svg'
+
+
 
 
 //later do from datasheet
@@ -67,11 +73,52 @@ function Background({handleClick})
 {
     return (
         <button 
-            className= 'background' 
+            className= 'liikmed-background ' 
             onClick={handleClick}
         >
         </button>
     );
+}
+function Arrows({leftFunction, rightFunction}) {
+  return (
+    <div className='liikmed-arrows'>
+      <Arrow symbolNormal={arrowLeftWhite} symbolClicked={arrowLeftYellow} handleClick={leftFunction} />
+      <Arrow symbolNormal={arrowRightWhite} symbolClicked={arrowRightYellow} handleClick={rightFunction}/>
+    </div>
+  );
+}
+
+function Arrow({symbolNormal, symbolClicked, handleClick}) {
+  const [symbol, setSymbol] = useState(symbolNormal);
+
+  // Handle mouse enter (hover)
+  function handleMouseEnter() {
+    setSymbol(symbolClicked);
+  }
+
+  // Handle mouse leave (hover out)
+  function handleMouseLeave() {
+    setSymbol(symbolNormal);
+  }
+
+  // Add a handleClick function to prevent error
+
+
+  return (
+    <button 
+      className='liikmed-arrow'
+      onClick={handleClick} // Use the newly defined handleClick function
+      onMouseEnter={handleMouseEnter}  
+      onMouseLeave={handleMouseLeave}
+    >
+      <div>
+        <img
+          src={symbol}
+          alt="arrow"
+        />
+      </div>
+    </button>
+  );
 }
 
 function Top({nimi, pilt})
@@ -96,16 +143,22 @@ function Top({nimi, pilt})
   }, []);
 
   return (
-    <div className='top'>
+    <div className='liikmed-top'>
     {isSmallScreen ? (
         <div>
             <img src={pilt} alt={imageName} width='400px' />
-            <div className='header'>{nimi}</div>
+            <div className='header'>
+              <div className='header-line' />
+              {nimi}
+            </div>
         </div>
     ) : (
-        <div className='top'>
-            <div className='header'>{nimi}</div>
-            <img src={pilt} alt={imageName} width='400px' />
+        <div className='liikmed-top'>
+            <div className='header'>
+              <div className='header-line' />
+              {nimi}
+            </div>
+            <img src={pilt} alt={imageName} width='410px' />
         </div>
     )}
     </div>
@@ -114,46 +167,45 @@ function Top({nimi, pilt})
 
 function Line()
 {
-    return <div className='line' />
+    return <div className='kirjeldus-line' />
 }
 
-export default function LiikmeKirjeldus({liikmeNimi, kirjelduseText, kontakt, liitumisKuupaev, instagram, facebook, turnOffKirjeldus})
-{
 
-    return (
-        <div>
-
-            <Background handleClick={turnOffKirjeldus} />
-
-            <div className="kirjeldus">
-                <Top nimi={liikmeNimi} pilt={koolimajaPilt}/>
-
-                <Line />
-                <div className="kirjeldus-text">{kirjelduseText}</div>
-
-                <Line />
-
-                <div className="kirjeldus-text">
-                Kontakt: {kontakt}
-                </div>
-
-                <Line />
-
-                <div className="kirjeldus-text">Liitunud EKLL-ga: {liitumisKuupaev}</div>
-                
-
-                <Line />
-
-                <SotsMeediaLingid 
-                    instagramLink={instagram}
-                    facebookLink={facebook} 
-                />
-
-            </div>
+export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,moveRight}) {
 
 
-        </div>
+  return (
+      <div>
+          <Background handleClick={turnOffKirjeldus} />
+
+          <div className="kirjeldus">
         
-        
-    );
+              <Top nimi={content.liikmeNimi} pilt={content.liputoimkonnaPilt} />
+
+              <Line />
+              <div className="kirjeldus-text">{content.kirjelduseText}</div>
+
+              <Line />
+
+              <div className="kirjeldus-text">
+                  Kontakt: {content.kontakt}
+              </div>
+
+              <Line />
+
+              <div className="kirjeldus-text">Liitunud EKLL-ga: {content.liitumisKuupaev}</div>
+
+              <Line />
+
+              <SotsMeediaLingid 
+                  instagramLink={content.instagram} 
+                  facebookLink={content.facebook} 
+              />
+
+             
+          </div>
+
+          <Arrows leftFunction={moveLeft} rightFunction={moveRight}/>
+      </div>
+  );
 }

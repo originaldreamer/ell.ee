@@ -142,7 +142,7 @@ function Kontakt({symbolNormal, symbolClicked, text, size}) {
     setSymbol(symbolNormal);
   }
 
-  function handleClick() {
+  function handleClick() { 
     setClicked(true);
 
     setTimeout(() => {
