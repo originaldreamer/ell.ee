@@ -4,7 +4,7 @@ import './BottomNav_Bar.css'
 
 
 //imported images
-import detailneLogo from '../Design elements/Vapp detailne.png';
+import detailneLogo from '../Design elements/Vapp detailne.png'
 import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg';
 import gmailLogo from '../Design elements/gmail logo.svg';
 import instagramLogo from '../Design elements/instagram logo.svg';
