@@ -1,0 +1,63 @@
+.page-headerLines {
+    margin-top: 180px;
+    margin-bottom: 30px;
+    position: relative; /* This makes the header a positioning context for the background */
+}
+
+.page-headerLines-text {
+    z-index: 3000;
+    font-family: Cambria;
+    text-align: center;
+    color: #F5F5F5;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.2;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.page-headerLines-line {
+    content: "";
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-width: 75vw;
+    height: 4.5px;
+    z-index: 50;
+    border-radius: 50px;
+    background-color: #EFA900;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .page-headerLines-line{
+        width: 90vw;
+    }
+    
+}
+
+@media (max-width: 1010px) {
+    .page-headerLines-line{
+        width: 85vw;
+    }
+    
+}
+
+
+@media (max-width: 670px) {
+    .page-headerLines-line {
+        width: 100vw;
+    }
+    
+}
+
+
+
+

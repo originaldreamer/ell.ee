@@ -3,7 +3,6 @@ import '../../App.css'
 import './LiikmeTile.css'
 import data from '../Content/liikmeteKirjeldused.json'
 
-//later do from datasheet
 
 
 

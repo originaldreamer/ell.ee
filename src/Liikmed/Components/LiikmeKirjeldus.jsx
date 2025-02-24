@@ -37,7 +37,7 @@ function SotsMeediaLingid({instagramLink, facebookLink})
 
 function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
     const [symbol, setSymbol] = useState(symbolNormal);
-  
+
     function handleMouseEnter() {
       setSymbol(symbolClicked)
     }
@@ -150,14 +150,18 @@ function Top({nimi, pilt})
             <div className='header'>
               <div className='header-line' />
               {nimi}
+              <div className='header-line' />
             </div>
+
         </div>
     ) : (
         <div className='liikmed-top'>
             <div className='header'>
               <div className='header-line' />
               {nimi}
+              <div className='header-line' />
             </div>
+            
             <img src={pilt} alt={imageName} width='410px' />
         </div>
     )}
@@ -172,7 +176,19 @@ function Line()
 
 
 export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,moveRight}) {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1345);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
       <div>
@@ -182,7 +198,7 @@ export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,mo
         
               <Top nimi={content.liikmeNimi} pilt={content.liputoimkonnaPilt} />
 
-              <Line />
+              {!isSmallScreen && <Line />}
               <div className="kirjeldus-text">{content.kirjelduseText}</div>
 
               <Line />

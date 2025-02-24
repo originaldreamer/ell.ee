@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './LiikmeteGrid.css'
 
+import data from '../Content/liikmeteKirjeldused.json'
+
 
 
 //imported logos
@@ -14,7 +16,7 @@ export default function LiikmeteGrid({functionShowKirjeldus, loadContentFunction
 {
     return (
         <div className='liikmeteGrid'>
-            {[...Array(11)].map((_, index) => (
+            {[...Array(data.length)].map((_, index) => (
                 <LiikmeTile 
                     key={index}  // Ensure each component has a unique key
                     pilt={koolimajaPilt} 

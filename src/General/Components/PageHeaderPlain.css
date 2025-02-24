@@ -1,0 +1,30 @@
+.pageHeaderPlain-container {
+    margin-top: 200px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .pageHeaderPlainTitle {
+    z-index: 2000;
+    font-family: Cambria;
+    text-align: center;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 1.2;
+    color: #EFA900;
+  }
+
+  .pageHeaderPlainTitle:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 2px;
+    border-radius: 2px;
+    height: 4px;
+    width: 102%;
+    background-color: #EFA900;
+  }
+  
+
+  

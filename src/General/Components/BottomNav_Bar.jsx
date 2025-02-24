@@ -4,13 +4,12 @@ import './BottomNav_Bar.css'
 
 
 //imported images
-import detailneLogo from '../Design elements/Vapp detailsem.svg';
-import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg'
-import gmailLogo from '../Design elements/gmail logo.svg'
-import instagramLogo from '../Design elements/instagram logo.svg'
-import gmailLogoClicked from '../Design elements/gmail logo clicked.svg'
-import instagramLogoClicked from '../Design elements/instagram logo clicked.svg'
-import lihtneLogo from '../../assets/General/Vapp lihtne.png'
+import detailneLogo from '../Design elements/Vapp detailne.png';
+import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg';
+import gmailLogo from '../Design elements/gmail logo.svg';
+import instagramLogo from '../Design elements/instagram logo.svg';
+import gmailLogoClicked from '../Design elements/gmail logo clicked.svg';
+import instagramLogoClicked from '../Design elements/instagram logo clicked.svg';
 
 
 function Pilt( {pilt,kirjeldus, size}) {
@@ -193,7 +192,7 @@ function Kontaktid() {
 
 export default function BottomNavigationBar() {
   return (
-    <div className='footer'>
+    <div className='footer' style={{ width: `${document.documentElement.clientWidth}px` }}>
       <div className='top-gray-box'></div>
 
       <div  className='footer-content'>
@@ -202,7 +201,7 @@ export default function BottomNavigationBar() {
         <Kontaktid />
 
       </div>
-     
+      
 
 
 
