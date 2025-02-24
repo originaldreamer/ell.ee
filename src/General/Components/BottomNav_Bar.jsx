@@ -10,7 +10,6 @@ import gmailLogo from '../Design elements/gmail logo.svg'
 import instagramLogo from '../Design elements/instagram logo.svg'
 import gmailLogoClicked from '../Design elements/gmail logo clicked.svg'
 import instagramLogoClicked from '../Design elements/instagram logo clicked.svg'
-import lihtneLogo from '../../assets/General/Vapp lihtne.png'
 
 
 function Pilt( {pilt,kirjeldus, size}) {
