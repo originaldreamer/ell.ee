@@ -28,12 +28,12 @@ export default function Esileht() {
   const [fileContent, setFileContent] = useState('');
 
   return (
-    <>
+    <div className='esileht-container'>
       <div className='esileht-bg' />
 
       <div className='esileht-body'>
         
-        <TopNavigationBar />
+        <TopNavigationBar /> 
 
 
         <div className='esileht-main'>
@@ -48,7 +48,7 @@ export default function Esileht() {
         <BottomNavigationBar />
 
       </div>
-    </>
+    </div>
     
 
   );

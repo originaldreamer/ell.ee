@@ -193,7 +193,7 @@ function Kontaktid() {
 
 export default function BottomNavigationBar() {
   return (
-    <div className='footer'>
+    <div className='footer' style={{ width: `${document.documentElement.clientWidth}px` }}>
       <div className='top-gray-box'></div>
 
       <div  className='footer-content'>
@@ -202,7 +202,7 @@ export default function BottomNavigationBar() {
         <Kontaktid />
 
       </div>
-     
+      
 
 
 

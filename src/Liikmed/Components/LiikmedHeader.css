@@ -1,7 +1,6 @@
 .liikmed-page-header {
-    margin-top: 220px;
-    margin-bottom: 60px;
-    width: 100vw;
+    margin-top: 180px;
+    margin-bottom: 30px;
     position: relative; /* This makes the header a positioning context for the background */
 }
 
@@ -11,19 +10,59 @@
     text-align: center;
     color: #F5F5F5;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 55px;
     line-height: 1.2;
-    position: relative; /* Ensure text stays on top of the background */
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.liikmed-page-header-bg {
+
+.liikmed-page-header-line {
     content: "";
-    position: absolute;
-    z-index: -2000; /* Keep background behind text */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Center the background */
-    width: 100vw; /* Full width of the screen */
-    height: 120px; /* Adjust the height as needed */
-    background-color: #52575F;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-width: 75vw;
+    height: 4.5px;
+    z-index: 50;
+    border-radius: 50px;
+    background-color: #EFA900;
 }
+
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .liikmed-page-header-line {
+        width: 90vw;
+    }
+    
+}
+
+@media (max-width: 1010px) {
+    .liikmed-page-header-line {
+        width: 85vw;
+    }
+    
+}
+
+
+@media (max-width: 670px) {
+    .liikmed-page-header-line {
+        width: 100vw;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .liikmetile {
+        min-width: 90%;
+    }
+    
+}
+
+

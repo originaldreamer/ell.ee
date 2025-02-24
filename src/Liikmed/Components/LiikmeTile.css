@@ -57,6 +57,13 @@
 
 @media (max-width: 670px) {
     .liikmetile {
+        min-width: 83%;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .liikmetile {
         min-width: 90%;
     }
     

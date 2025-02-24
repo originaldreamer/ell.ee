@@ -9,6 +9,8 @@ import LiikmeteGrid from './Components/LiikmeteGrid.jsx';
 import LiikmeKirjeldus from './Components/LiikmeKirjeldus.jsx';
 import LiikmedHeader from './Components/LiikmedHeader.jsx';
 
+
+
 export default function Liikmed() {
   const [showKirjeldus, setShowKirjeldus] = useState(false);
   const [kirjelduseSisu, setKirjelduseSisu] = useState(data[0]);
@@ -67,9 +69,12 @@ export default function Liikmed() {
   
 
   return (
-      <div>
+      <div className='liikmed-container'>
+          <div className='liikmed-bg' />
+
           <div className='liikmed-body'>
               <TopNavigationBar />
+
 
               <LiikmedHeader title="Liikmed"/>
 
@@ -86,6 +91,7 @@ export default function Liikmed() {
                       moveRight={increaseKirjelduseContentIndex}
                   />
               )}
+
 
               <BottomNavigationBar />
           </div>

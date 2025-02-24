@@ -128,7 +128,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 50000;
-    background: linear-gradient(to top, #02275a 8%,#02275aef 35%, #52575f9d);
+    background: linear-gradient(to top, #02275a 8%,#02275aef 35%, #52575fb8);
     border-color: transparent;
 }
 
