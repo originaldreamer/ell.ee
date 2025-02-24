@@ -5,11 +5,11 @@ import './BottomNav_Bar.css'
 
 //imported images
 import detailneLogo from '/src/General/Design elements/Vapp detailne.png'
-import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg'
-import gmailLogo from '../Design elements/gmail logo.svg'
-import instagramLogo from '../Design elements/instagram logo.svg'
-import gmailLogoClicked from '../Design elements/gmail logo clicked.svg'
-import instagramLogoClicked from '../Design elements/instagram logo clicked.svg'
+import kontaktideTaust from '/src/General/Design elements/Kontaktide taust lipukujuline.svg'
+import gmailLogo from '/src/General/Design elements/gmail logo.svg'
+import instagramLogo from '/src/General/Design elements/instagram logo.svg'
+import gmailLogoClicked from '/src/General/Design elements/gmail logo clicked.svg'
+import instagramLogoClicked from '/src/General/Design elements/instagram logo clicked.svg'
 
 
 function Pilt( {pilt,kirjeldus, size}) {
