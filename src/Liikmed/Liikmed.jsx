@@ -3,11 +3,11 @@ import './Liikmed.css'
 import data from './Content/liikmeteKirjeldused.json'
 
 //imported components
-import TopNavigationBar from '../Esileht/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '../Esileht/Components/BottomNav_Bar.jsx';
+import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '/src/General/Components/BottomNav_Bar.jsx';
 import LiikmeteGrid from './Components/LiikmeteGrid.jsx';
 import LiikmeKirjeldus from './Components/LiikmeKirjeldus.jsx';
-import LiikmedHeader from './Components/LiikmedHeader.jsx';
+import PageHeaderLines from '../General/Components/PageHeaderLines.jsx';
 
 
 
@@ -76,7 +76,7 @@ export default function Liikmed() {
               <TopNavigationBar />
 
 
-              <LiikmedHeader title="Liikmed"/>
+              <PageHeaderLines title="Liikmed"/>
 
               <LiikmeteGrid 
                 functionShowKirjeldus={() => changeShowKirjeldusState(true)} 

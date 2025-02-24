@@ -51,12 +51,46 @@
   line-height: 1.2;
 }
 
+/*For Normal Text Content*/
+.textContent-container {
+  margin-top: 0;
+  width: 80%;
+  margin-bottom: 160px;
+}
+
+
+.big-header {
+  z-index: 2000;
+  font-family: Cambria;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.sub-header {
+  z-index: 2000;
+  font-family: Cambria;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 300;
+
+  font-size: 23.5px;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
 .normal-text {
   color: black;
+  font-family: 'Merriweather' ;
   text-align: left;
   font-weight: 200;
-  font-size: 18px;
-  background-color: transparent;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 32px;
 }
 
 
@@ -67,3 +101,4 @@
   position: relative;
   cursor: pointer;
 }
+/*---------------*/

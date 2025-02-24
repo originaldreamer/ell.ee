@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 // Imported pages
 import Esileht from './Esileht/Esileht.jsx';
 import Liikmed from './Liikmed/Liikmed.jsx';
+import Pohikiri from './Pohikiri/Pohikiri.jsx';
 import Error404 from './Error404/Error404.jsx';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/" element={<Esileht />} />
         <Route path="/esileht" element={<Esileht />} />
         <Route path="/liikmed" element={<Liikmed />} />
+        <Route path="/pohikiri" element={<Pohikiri />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

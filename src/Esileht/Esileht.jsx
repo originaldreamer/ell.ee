@@ -4,8 +4,8 @@ import '../App.css'
 import './Esileht.css'
 
 //imported components
-import TopNavigationBar from './Components/TopNav_Bar.jsx';
-import BottomNavigationBar from './Components/BottomNav_Bar.jsx';
+import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '/src/General/Components/BottomNav_Bar.jsx';
 
 
 //imported texts
@@ -41,6 +41,8 @@ export default function Esileht() {
           <TextArea content = {esilehePeamineKirjeldus}/>
 
           <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
+          <br />
+          <Link className='link' to="./pohikiri">Pohikiri lehekülg</Link>
         </div>
 
 

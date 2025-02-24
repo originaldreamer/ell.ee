@@ -1,10 +1,10 @@
-.liikmed-page-header {
+.page-headerLines {
     margin-top: 180px;
     margin-bottom: 30px;
     position: relative; /* This makes the header a positioning context for the background */
 }
 
-.liikmed-page-header-text {
+.page-headerLines-text {
     z-index: 3000;
     font-family: Cambria;
     text-align: center;
@@ -20,7 +20,7 @@
 }
 
 
-.liikmed-page-header-line {
+.page-headerLines-line {
     content: "";
     position: relative;
     margin-top: 0;
@@ -37,14 +37,14 @@
 
 /*Scaling*/
 @media (max-width: 1500px) {
-    .liikmed-page-header-line {
+    .page-headerLines-line{
         width: 90vw;
     }
     
 }
 
 @media (max-width: 1010px) {
-    .liikmed-page-header-line {
+    .page-headerLines-line{
         width: 85vw;
     }
     
@@ -52,7 +52,7 @@
 
 
 @media (max-width: 670px) {
-    .liikmed-page-header-line {
+    .page-headerLines-line {
         width: 100vw;
     }
     
