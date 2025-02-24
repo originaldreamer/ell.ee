@@ -4,7 +4,7 @@ import data from './Content/liikmeteKirjeldused.json'
 
 //imported components
 import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '/src/General/Components/BottomNav_Bar.jsx';
+import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
 import LiikmeteGrid from './Components/LiikmeteGrid.jsx';
 import LiikmeKirjeldus from './Components/LiikmeKirjeldus.jsx';
 import PageHeaderLines from '../General/Components/PageHeaderLines.jsx';
