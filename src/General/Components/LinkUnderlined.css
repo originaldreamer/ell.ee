@@ -1,0 +1,64 @@
+.link {
+    color: #EFA900;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 19px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 0;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 2px;
+}
+
+.link:hover {
+    transform: translateY(-4px);
+}
+
+.link:after {
+    content: "";
+    position: absolute;
+    bottom: 3.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #EFA900;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+.link.hover:after {  /* Apply the hover effects */
+    opacity: 1;
+    animation: lineAppearFromMiddle 0.2s ease-in-out;
+}
+
+@keyframes lineAppearFromMiddle {
+    0% {
+        transform: scale(5%, 1);
+    }
+    100% {
+        transform: scale(100%, 1);
+    }
+}
+
+@keyframes lineDisappearToMiddle {
+    0% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    99% {
+        transform: scaleX(0.04);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+.link.return:after {  /* Apply the "return" animation when not hovering */
+    animation: lineDisappearToMiddle 0.4s ease-out;
+}

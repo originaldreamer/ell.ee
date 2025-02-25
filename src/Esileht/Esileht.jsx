@@ -1,11 +1,12 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom';
 import '../App.css'
 import './Esileht.css'
 
 //imported components
 import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
+import LinkUnderlined from '../General/Components/LinkUnderlined.jsx';
+
 
 
 //imported texts
@@ -40,9 +41,11 @@ export default function Esileht() {
           <h1>Eesti Koolide Liputoimkondade Liit</h1>
           <TextArea content = {esilehePeamineKirjeldus}/>
 
-          <Link className='link' to="./liikmed">Liikmete lehekülg</Link>
+          <LinkUnderlined to="./liikmed" display="Liikmete lehekülg" />
           <br />
-          <Link className='link' to="./pohikiri">Pohikiri lehekülg</Link>
+          <LinkUnderlined to="./pohikiri" display="Pohikiri lehekülg" />
+          <br />
+          <LinkUnderlined to="./dokumendid" display="Dokumendid lehekülg" />
         </div>
 
 

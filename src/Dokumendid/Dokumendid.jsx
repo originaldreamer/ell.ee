@@ -1,17 +1,14 @@
-import { useState, useEffect } from 'react'
-import '../General/Design styles/PlainContentPage.css'
+import '../General/Design styles/PlainContentPage.css';
 import '../index.css';
 
 //imported components
 import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
 import PageHeaderPlain from '../General/Components/PageHeaderPlain.jsx';
-import PohikiriSisu from './Components/PohikiriSisu.jsx';
+import DokumendidSisu from './Components/DokumendidSisu.jsx';
 
 
-
-
-export default function Pohikiri() {
+export default function Dokumendid() {
 
   return (
       <div className='plain-container'>
@@ -23,9 +20,9 @@ export default function Pohikiri() {
               <TopNavigationBar />
 
 
-              <PageHeaderPlain title="Põhikiri"/>
+              <PageHeaderPlain title="Dokumendid"/>
             
-              <PohikiriSisu />
+              <DokumendidSisu />
               
 
 
