@@ -25,8 +25,8 @@ function Logo() {
           <Pilt pilt = {detailneLogo} kirjeldus = {"Eesti Liputoimkondade Liidu Logo"} size = {200}/>
         </div>
         
-        <div className='footer-logo-pealkiri'>
-          <p className='h1'>Eesti Liputoimkondade</p>
+        <div className='footer-logo-pealkiri'> 
+          <p className='h1'>Eesti Liputoimkondadee</p>
           <p className='h1'>Liit</p>
         </div>
         
