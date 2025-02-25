@@ -14,7 +14,7 @@ import detailneLogo from '../Design elements/Vapp detailne.png';
 
 function Pilt( {pilt,kirjeldus, size}) {
   return <img src={pilt} alt={kirjeldus} style={{ width: size, height: 'auto' }} />;
-}
+} /* */
 
 
 function Logo() {
