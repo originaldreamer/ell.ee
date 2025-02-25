@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './BottomNav_Bar.css'
 
-
+/*
 
 //imported images
 import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg';
@@ -188,7 +188,7 @@ function Kontaktid() {
     </div>
     
   )
-}
+}*/
 
 export default function BottomNavigationBar() {
   return (
@@ -196,9 +196,10 @@ export default function BottomNavigationBar() {
       <div className='top-gray-box'></div>
 
       <div  className='footer-content'>
-        <Logo />
+        {/*<Logo />
         <Lingid />
-        <Kontaktid />
+        <Kontaktid />*/}
+        Tere
 
       </div>
       
