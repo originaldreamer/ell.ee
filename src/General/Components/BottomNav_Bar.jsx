@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './BottomNav_Bar.css'
 
 
-
+{/*
 //imported images
 import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg';
 import gmailLogo from '../Design elements/gmail logo.svg';
@@ -14,7 +14,7 @@ import detailneLogo from '../Design elements/Vapp detailne.png';
 
 function Pilt( {pilt,kirjeldus, size}) {
   return <img src={pilt} alt={kirjeldus} style={{ width: size, height: 'auto' }} />;
-} /* */
+} 
 
 
 function Logo() {
@@ -188,7 +188,7 @@ function Kontaktid() {
     </div>
     
   )
-}
+}*/}
 
 export default function BottomNavigationBar() {
   return (
@@ -196,9 +196,11 @@ export default function BottomNavigationBar() {
       <div className='top-gray-box'></div>
 
       <div  className='footer-content'>
-        <Logo />
+        {/*<Logo />
         <Lingid />
-        <Kontaktid />
+        <Kontaktid /> */}
+
+        tt
 
       </div>
       
