@@ -2,18 +2,21 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './LinkUnderlined.css';
 
-export default function LinkUnderlined({ display, to, file }) {
+export default function LinkUnderlined({ display, displayHovered,to, file }) {
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
+    const [text, setText] = useState(display);
 
     const handleMouseEnter = () => {
         setIsHovering(true);
         setNeedToReturn(false);
+        if (displayHovered) {setText(displayHovered)}
     }
 
     const handleMouseLeave = () => {
         setIsHovering(false);
         setNeedToReturn(true);
+        setText(display)
     }
 
     const handleClick = () => {
@@ -31,7 +34,7 @@ export default function LinkUnderlined({ display, to, file }) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            {display}
+            {text}
         </div>
     );
 }

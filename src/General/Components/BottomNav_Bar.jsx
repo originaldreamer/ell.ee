@@ -192,7 +192,7 @@ function Kontaktid() {
 
 export default function BottomNavigationBar() {
   return (
-    <div className='footer' style={{ width: `${document.documentElement.clientWidth}px` }}>
+    <div className='footer' >
       <div className='top-gray-box'></div>
 
       <div  className='footer-content'>

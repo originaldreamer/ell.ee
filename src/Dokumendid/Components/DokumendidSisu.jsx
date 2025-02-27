@@ -1,6 +1,7 @@
 import '../../index.css';
 
 import dokumentIcon from '../Design elements/file icon.svg';
+import dokumentIconClicked from '../Design elements/file icon Clicked.svg';
 import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
 
 
@@ -21,6 +22,10 @@ function Dokument({text, file}) {
       file={file} 
       display={<>
         <img src={dokumentIcon} style={{ width: '22px', marginRight: '6px' }} />
+        {text}
+      </>}
+      displayHovered={<>
+        <img src={dokumentIconClicked} style={{ width: '22px', marginRight: '6px' }} />
         {text}
       </>}
     />

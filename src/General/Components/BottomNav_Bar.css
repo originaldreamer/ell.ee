@@ -5,6 +5,7 @@
     background-color: #02265A;
     z-index: 6000; 
     margin-left: 0;
+    width: 100vw;
 }
 
 .footer-content {

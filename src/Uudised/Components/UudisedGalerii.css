@@ -1,0 +1,48 @@
+.uudisedGalerii-container {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.uudisedGalerii-grid {
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));  /* Create responsive columns */ 
+    gap: 5px 5px;
+    justify-items: center;  
+    align-items: center; 
+    margin: 0px auto;
+    width: 100%; 
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.uudisedGalerii-line {
+    content: "";
+    z-index: 1000;
+    margin-top: 0px;
+    width: 100%;
+    height: 3.5px;
+    background-color: #EFA900;
+    flex-shrink: 0;
+}
+
+/*Scaling*/
+@media (max-width: 760px) {
+    .uudisedGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)); 
+    }
+    
+}
+
+@media (max-width: 535px) {
+    .uudisedGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 2fr)); 
+    }
+    
+}
+
+@media (max-width: 370px) {
+    .uudisedGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)); 
+    }
+    
+}

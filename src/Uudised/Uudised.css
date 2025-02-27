@@ -1,0 +1,40 @@
+.uudised-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-top: 110px;
+    margin-bottom: 200px;
+}
+
+.uudised-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.uudised-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    background-color: var(--softYellow);
+    background-size: cover;
+    z-index: -5;
+}
+
+.uudised-sisu {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+

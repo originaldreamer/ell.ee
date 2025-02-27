@@ -1,5 +1,5 @@
 .link {
-    color: #EFA900;
+    color: #000000;
     font-family: 'Merriweather';
     font-weight: 300;
     font-size: 19px;
@@ -16,6 +16,7 @@
 
 .link:hover {
     transform: translateY(-4px);
+    color: #EFA900;
 }
 
 .link:after {
