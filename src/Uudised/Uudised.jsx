@@ -6,12 +6,14 @@ import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
 import UudisedHeader from './Components/UudisedHeader.jsx'
 import UudisedGalerii from './Components/UudisedGalerii.jsx';
+import VaataVeel from './Components/VaataVeel.jsx';
 
 //imported content
 import tempPicture from './Content/2025_liputoimkond.jpg';
 import tempPicture2 from './Content/temp2.jpg';
 import tempPicture3 from  './Content/temp3.jpg';
 import tempPicture4 from   './Content/temp4.jpg';
+import tempPicture5 from './Content/testPilt.jpg'
 import Sisu from './Content/Sisu.jsx';
 
 
@@ -38,13 +40,13 @@ export default function Uudised() {
 
                 <UudisedGalerii 
                     pildid={[
-                        tempPicture2,
+                        tempPicture5,
                         tempPicture4,
                         tempPicture3,
-                        tempPicture3,
+                        tempPicture2,
                         tempPicture,
                         tempPicture2,
-                        tempPicture3,
+                        tempPicture5,
                         tempPicture2,
                         tempPicture4,
                         tempPicture2,
@@ -52,9 +54,12 @@ export default function Uudised() {
                     ]}   
                 />
 
+                <VaataVeel />
+
+
 
               <BottomNavigationBar />
           </div>
       </div>
   );
-}
+} 

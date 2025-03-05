@@ -15,7 +15,7 @@
     margin-top: 40px;
 }
 
-.uudisedGalerii-line {
+.uudisedGalerii-line { 
     content: "";
     z-index: 1000;
     margin-top: 0px;

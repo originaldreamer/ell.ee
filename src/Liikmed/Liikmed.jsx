@@ -28,9 +28,9 @@ export default function Liikmed() {
       setShowKirjeldus(state);
 
       if (state) {
-        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
       } else {
-        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
       }
 }
 
@@ -57,6 +57,9 @@ export default function Liikmed() {
       }
       if (event.key === 'ArrowLeft') {
         decreaseKirjelduseContentIndex();
+      }
+      if (event.key === 'Escape') {
+        changeShowKirjeldusState(false);
       }
     };
   
