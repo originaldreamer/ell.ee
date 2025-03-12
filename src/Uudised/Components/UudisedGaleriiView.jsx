@@ -21,7 +21,7 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
         <img
             className='UudisedGaleriiView-interactable'
             onMouseEnter={() => setIcon(activatedIcon)}
-            onMouseLeave={() => setIcon(normalIcon)} 
+            onMouseLeave={() => setIcon(normalIcon)}  
             onClick={handleClick}
             src={icon}         
         />
