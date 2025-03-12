@@ -188,7 +188,7 @@
 
 .bulletPoint::before {
   content: '';
-  background-image: url('/src/General/Design elements/bulletDot.svg'); 
+  background-image: url('/Design Elements/bulletDot.svg');
   background-repeat: no-repeat;
   margin-right: 9px;
   width: 5px; 
