@@ -12,58 +12,49 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
-
 .VaataVeel-rohkem-container {
     margin-top: 20px;
-    position: relative;
-    width: 200px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
+    width: 180px;
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center; 
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid #EFA900; /* heavier border to match heading */
+    border-radius: 6px;
+    background-color: transparent; /* no fill, so the border stands out */
     cursor: pointer;
-    padding: 12px 20px;
-    transform: scale(1);
-    border: 1.5px solid #EFA900; 
-    border-radius: 10px;
-    background-color: #FFFAE5; /* Light pastel yellow for normal state */
     transition: transform 0.3s ease, background-color 0.3s ease;
-
-}
-
-.VaataVeel-rohkem-container:hover {
-    transform: scale(1.05) translateY( 0px);
-    background-color: #FFF0B3; /* Subtle hover background effect */
-}
-
-.VaataVeel-rohkem-text {
-    color: black;
+  }
+  
+  .VaataVeel-rohkem-container:hover {
+    transform: scale(1.05);
+    background-color: #FFF4CC; /* subtle highlight on hover */
+  }
+  
+  .VaataVeel-rohkem-text {
     font-family: 'Cambria', serif;
-    font-weight: 300; /* Slightly lighter font weight */
     font-size: 22px;
-    z-index: 1;
+    font-weight: 300; /* adjust to match heading weight */
+    color: #EFA900; /* match “Vaata veel” color */
     transition: color 0.3s ease;
-}
+  }
+  
 
-.VaataVeel-rohkem-text.hovering {
-    color: #EFA900;
-}
-
-.VaataVeel-rohkem-img {
-    width: 26px; /* Smaller icon for balance */
+  
+  .VaataVeel-rohkem-img {
+    width: 24px;
+    margin-left: 10px;
     transition: transform 0.3s ease;
-}
-
-.VaataVeel-rohkem-img.hovering {
-    transform: scale(1.2);
-}
-
-
+  }
+  
+  .VaataVeel-rohkem-img.hovering {
+    transform: scale(1.1);
+  }
+  
 
 /*Scaling*/
 @media (max-width: 1600px) {

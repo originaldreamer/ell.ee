@@ -48,6 +48,8 @@ export default function Esileht() {
           <LinkUnderlined to="./dokumendid" display="Dokumendid lehekülg" />
           <br />
           <LinkUnderlined to="./uudised" display="Uudised lehekülg" />
+          <br />
+          <LinkUnderlined to="./tutvustus" display="Liidu tutvustus" />
         </div>
 
 

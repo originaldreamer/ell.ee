@@ -30,7 +30,7 @@ function Rohkem() {
             </div>
             <img
                 className={`VaataVeel-rohkem-img ${isHovering ? 'hovering' : ''}`}
-                src={isHovering ? plusIconActivated : plusIcon}
+                src={isHovering ? plusIconActivated : plusIconActivated}
                 alt="Plus Icon"
             />
         </div>

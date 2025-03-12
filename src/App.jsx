@@ -11,6 +11,7 @@ import Pohikiri from './Pohikiri/Pohikiri.jsx';
 import Dokumendid from './Dokumendid/Dokumendid.jsx';
 import Uudised from './Uudised/Uudised.jsx';
 import Error404 from './Error404/Error404.jsx';
+import LiiduKirjeldus from './LiiduKirjeldus/LiiduKirjeldus.jsx';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/pohikiri" element={<Pohikiri />} />
         <Route path="/dokumendid" element={<Dokumendid />} />
         <Route path="/uudised" element={<Uudised />} />
+        <Route path="/tutvustus" element={<LiiduKirjeldus />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,27 @@
+.imageAndContent-container {
+    margin-top: 200px;
+    width: 100%;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Ensures items align from left to right */
+    gap: 0px; /* Adds spacing between items */
+    justify-content: center; /* Aligns items to the left */
+    align-items: center; /* Centers items vertically (optional) */
+}
+
+.imageAndContent-content {
+    color: black;
+    width: 50%;
+}
+
+.imageAndContent-image {
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.imageAndContent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

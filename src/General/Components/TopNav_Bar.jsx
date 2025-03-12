@@ -143,10 +143,10 @@ export default function TopNavigationBar() {
 
       <div className='logoTekst'>
         <div className='newLine'>
-          Eesti Liputoimkondade
+          Eesti Koolide
         </div>
         <div className='newLine'>
-          Liit
+          Liputoimkondade Liit
         </div>
       </div>
 

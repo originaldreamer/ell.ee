@@ -95,6 +95,18 @@
   margin-top: 70px;
 }
 
+.big-header2-white {
+  z-index: 2000;
+  font-family: Cambria;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
 
 .mid-header {
   z-index: 2000;
