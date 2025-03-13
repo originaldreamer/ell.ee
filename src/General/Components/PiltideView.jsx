@@ -5,12 +5,12 @@ import './PiltideView.css'
 
 
 //imported elements
-import arrowLeft from '../Design elements/arrow left white.svg';
-import arrowLeftActivated from '../Design elements/arrow left yellow.svg';
-import arrowRight from '../Design elements/arrow right white.svg';
-import arrowRightActivated from '../Design elements/arrow right yellow.svg';
-import quitIcon from '../Design elements/quit icon.svg';
-import quitIconActivated from '../Design elements/quit icon activated.svg';
+import arrowLeft from '../Design Elements/arrow left white.svg';
+import arrowLeftActivated from '../Design Elements/arrow left yellow.svg';
+import arrowRight from '../Design Elements/arrow right white.svg';
+import arrowRightActivated from '../Design Elements/arrow right yellow.svg';
+import quitIcon from '../Design Elements/quit icon.svg';
+import quitIconActivated from '../Design Elements/quit icon activated.svg';
 
 
 
