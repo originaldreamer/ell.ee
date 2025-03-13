@@ -12,7 +12,7 @@ import ImageAndContent from '../General/Components/ImageAndContent.jsx';
 import headerImage from './Content/mets.jpg'; 
 import turtleImage from './Content/turtle.jpg'
 import paikeImage from './Content/paike.jpg'
-import koskImage from './Content/kosk.jpg'
+import koskImage from './Content/kosk-tere-esa.jpg'
 import lossLippImage from './Content/lossLipp.jpg'
 
 

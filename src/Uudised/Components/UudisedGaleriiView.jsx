@@ -40,7 +40,7 @@ export default function UudisedGaleriiView({curIndex, piltideCount, pilt, leftFu
             <div className='UudisedGaleriiView-quitIcon'><Interactable normalIcon={quitIcon} activatedIcon={quitIconActivated}handleClick={quitFunction}/></div>
 
             <div className='UudisedGaleriiView-kirjeldus'>
-                <div className='UudisedGaleriiView-text'>{pilt.split('/').pop().replace(/\.[^/.]+$/, '')}</div>
+                <div className='UudisedGaleriiView-text'>{pilt.split('/').pop().replace(/\.[^/.]+$/, '').split('-')[0]}</div>
                 <div className='UudisedGaleriiView-text'>({curIndex+1}/{piltideCount})</div> 
             </div>
         
