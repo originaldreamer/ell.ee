@@ -7,11 +7,11 @@ import '../../index.css'
 
 
 
-export default function PageHeaderImage({title, image}) {
+export default function PageHeaderImage({title, image, offsetY = "50%"}) {
   return (
       <div className='pageHeaderImage-container'>
         <div className='pageHeaderImage-bg'>
-            <img src={image}/>
+            <img src={image} style={{ objectPosition: `50% ${offsetY}` }}/>
         </div>
         
 

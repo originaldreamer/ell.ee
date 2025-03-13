@@ -1,27 +1,59 @@
 .imageAndContent-container {
-    margin-top: 200px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
     width: 100%;
-    display: flex; /* Enables flexbox layout */
-    flex-direction: row; /* Ensures items align from left to right */
-    gap: 0px; /* Adds spacing between items */
-    justify-content: center; /* Aligns items to the left */
-    align-items: center; /* Centers items vertically (optional) */
+    padding: 30px 0px 20px 0px;
 }
 
 .imageAndContent-content {
     color: black;
     width: 50%;
+    margin-top: 30px;
+}
+
+.imageAndContent-bg {
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position */
+    height: 100%;
+    width: 100vw; /* Set width to cover container */
+    z-index: -1;
+}
+
+.imageAndContent-sisu {
+    width: 100%;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Ensures items align from left to right */
+    gap: 0px; /* Adds spacing between items */
+    justify-content: space-evenly; /* Aligns items to the left */
+    align-items: flex-start; /* Centers items vertically (optional) */
+    padding: 30px 0px 20px 0px;
+    height: 100%;
 }
 
 .imageAndContent-image {
-    width: 500px;
-    height: 250px;
+    width: 80%;
+    height: auto;
     overflow: hidden;
 }
 
 .imageAndContent-image img {
     width: 100%;
     height: 100%;
+    margin-bottom: 35px;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imageAndContent-imageGrid {
+    width: 35%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures images stick to the top */
+    align-items: center;    
+
 }
