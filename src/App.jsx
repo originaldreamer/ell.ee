@@ -12,6 +12,7 @@ import Dokumendid from './Lehekyljed/Dokumendid/Dokumendid.jsx';
 import Uudised from './Lehekyljed/Uudised/Uudised.jsx';
 import Error404 from './Lehekyljed/Error404/Error404.jsx';
 import LiiduKirjeldus from './Lehekyljed/LiiduKirjeldus/LiiduKirjeldus.jsx';
+import SyndmusteList from './Lehekyljed/SyndmusteList/SyndmusteList.jsx'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/dokumendid" element={<Dokumendid />} />
         <Route path="/uudised" element={<Uudised />} />
         <Route path="/tutvustus" element={<LiiduKirjeldus />} />
+        <Route path="/syndmused" element={<SyndmusteList />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

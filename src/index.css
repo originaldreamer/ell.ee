@@ -11,11 +11,15 @@
   --secondary-color: #EFA900;
   --bg-yellow:  #FFF1E6;
   --sub-primary-color: #52575F;
+  --sub-primary-color-dark: #2C3E50;
+
   --soft-white: #F5F5F5; 
   --dark-blue: #02265A;
   --yellow: #EFA900;
   --softYellow:  #FFF1E6;
+  --blue-gray: #2C3E50;
   --gray: #52575F;
+  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 2;
   font-weight: 400;
@@ -135,6 +139,42 @@
   margin-top: 70px;
 }
 
+.mid-header-white {
+  z-index: 2000;
+  font-family: Cambria; 
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.long-mid-header {
+  z-index: 2000;
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  color: black;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.mid-small-header {
+  z-index: 2000;
+  font-family: Cambria;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
 .sub-header {
   z-index: 2000;
   font-family: Cambria;
@@ -145,6 +185,28 @@
   line-height: 1.1;
   margin-top: 30px;
   margin-bottom: 6px;
+}
+
+.long-sub-header {
+  z-index: 2000;
+  font-family:'Roboto Condensed' ;
+  text-align: left;
+  color: black;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 0px;
+}
+
+.long-sub-header-white {
+  z-index: 2000;
+  font-family:'Roboto Condensed' ;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 0px;
 }
 
 .sub-header-white {
@@ -158,6 +220,7 @@
   margin-top: 30px;
   margin-bottom: 6px;
 }
+
 
 .normal-text {
   color: black;
@@ -178,6 +241,17 @@
   line-height: 1.4;
   margin-bottom: 32px;
   display: inline;
+}
+
+.long-small-text {
+  color: black;
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  font-weight: 200;
+  font-size: 19.5px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
 }
 
 .small-text {

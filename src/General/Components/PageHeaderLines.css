@@ -1,6 +1,10 @@
+.page-headerLines-container {
+    margin-top: 110px;
+    position: relative;
+}
+
 .page-headerLines {
-    margin-top: 180px;
-    margin-bottom: 30px;
+    margin-top: 70px;
     position: relative; /* This makes the header a positioning context for the background */
 }
 
@@ -33,7 +37,15 @@
     background-color: #EFA900;
 }
 
-
+.page-headerLines-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 235px;
+    width: 100vw;
+    background: linear-gradient(170deg, #02265A 5%, #2C3E50 100%);
+}
 
 /*Scaling*/
 @media (max-width: 1500px) {

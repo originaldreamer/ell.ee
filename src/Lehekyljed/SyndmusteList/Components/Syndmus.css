@@ -1,0 +1,61 @@
+.Syndmus-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.Syndmus-sisu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px; 
+}
+
+.Syndmus-line {
+    background-color: #EFA900;
+    width: 100%;
+    height: 2.5px;
+    align-self: flex-start;
+}
+
+.Syndmus-kuupaev {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #EFA900;
+    padding: 15px;
+}
+
+.Syndmus-kirjeldus{
+    width: 80%;
+    margin-top: 20px;
+}
+
+
+
+.Syndmus-details {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; /* Ensures items are vertically centered */
+    gap: 20px;
+    width: 100%; /* Optional: Ensure no implicit shrink occurs */
+    margin-bottom: 8px;
+    margin-left: -5px;
+}
+
+.Syndmus-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.Syndmus-detail img{
+    margin-top: -12px;
+}
