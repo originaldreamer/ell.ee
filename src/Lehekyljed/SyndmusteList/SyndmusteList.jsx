@@ -10,7 +10,7 @@ import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx';
 import Syndmus from './Components/Syndmus.jsx';
 
 //imported content
-import puitTaust from './Design elements/puit.jpg'
+import puitTaust from './Design elements/puit.png'
 
 export default function SyndmusteList() {
   return (
