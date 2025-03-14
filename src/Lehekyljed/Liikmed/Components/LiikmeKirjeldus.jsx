@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import '../../App.css'
+import '../../../App.css'
 import './LiikmeKirjeldus.css'
 
 //imported elements
-import facebookLogoWhite from '../../assets/General/facebook logo white.svg'
-import facebookLogoYellow from '../../assets/General/faceook logo yellow.svg'
-import instagramLogoWhite from '../../assets/General/instagram logo white.svg'
-import instagramLogoYellow from '../../assets/General/instagram logo yellow.svg'
+import facebookLogoWhite from '../../../assets/General/facebook logo white.svg'
+import facebookLogoYellow from '../../../assets/General/faceook logo yellow.svg'
+import instagramLogoWhite from '../../../assets/General/instagram logo white.svg'
+import instagramLogoYellow from '../../../assets/General/instagram logo yellow.svg'
 import arrowLeftWhite from '../Design Elements/arrow left white.svg'
 import arrowLeftYellow from '../Design Elements/arrow left yellow.svg'
 import arrowRightWhite from '../Design Elements/arrow right white.svg'

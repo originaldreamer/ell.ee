@@ -3,7 +3,7 @@ import './VaataVeel.css';
 
 //imported components
 import UudisedBigTile from './UudisedBigTile.jsx';
-import HeaderSeparatorOne from '../../General/Components/HeaderSeparatorOne.jsx';
+import HeaderSeparatorOne from '../../../General/Components/HeaderSeparatorOne.jsx';
 
 //imported content
 import Sisu from '../Content/Sisu.jsx';

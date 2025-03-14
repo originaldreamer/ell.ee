@@ -1,8 +1,8 @@
-import '../../index.css';
+import '../../../index.css';
 
 import dokumentIcon from '../Design elements/file icon.svg';
 import dokumentIconClicked from '../Design elements/file icon Clicked.svg';
-import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
+import LinkUnderlined from '../../../General/Components/LinkUnderlined.jsx';
 
 
 //imported documents

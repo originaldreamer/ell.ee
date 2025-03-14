@@ -1,5 +1,5 @@
-import '../../index.css';
-import LinkUnderlined from '../../General/Components/LinkUnderlined';
+import '../../../index.css';
+import LinkUnderlined from '../../../General/Components/LinkUnderlined';
 
 
 /*Guide

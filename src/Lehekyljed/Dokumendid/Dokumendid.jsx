@@ -1,10 +1,10 @@
-import '../General/Design styles/PlainContentPage.css';
-import '../index.css';
+import '../../General/Design styles/PlainContentPage.css';
+import '../../index.css';
 
 //imported components
-import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
-import PageHeaderPlain from '../General/Components/PageHeaderPlain.jsx';
+import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
+import PageHeaderPlain from '../../General/Components/PageHeaderPlain.jsx';
 import DokumendidSisu from './Components/DokumendidSisu.jsx';
 
 

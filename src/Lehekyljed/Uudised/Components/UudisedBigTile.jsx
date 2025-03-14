@@ -5,7 +5,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 
 
 import './UudisedBigTile.css';
-import '../../index.css'
+import '../../../index.css'
 
 //imported images
 import otherUudis1 from '../Content/other uudis 1.jpg';

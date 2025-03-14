@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import './Uudised.css';
 
 //imported components
-import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
+import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import UudisedHeader from './Components/UudisedHeader.jsx'
 import UudisedGalerii from './Components/UudisedGalerii.jsx';
 import VaataVeel from './Components/VaataVeel.jsx';

@@ -5,13 +5,13 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 
 
 // Imported pages
-import Esileht from './Esileht/Esileht.jsx';
-import Liikmed from './Liikmed/Liikmed.jsx';
-import Pohikiri from './Pohikiri/Pohikiri.jsx';
-import Dokumendid from './Dokumendid/Dokumendid.jsx';
-import Uudised from './Uudised/Uudised.jsx';
-import Error404 from './Error404/Error404.jsx';
-import LiiduKirjeldus from './LiiduKirjeldus/LiiduKirjeldus.jsx';
+import Esileht from './Lehekyljed/Esileht/Esileht.jsx';
+import Liikmed from './Lehekyljed/Liikmed/Liikmed.jsx';
+import Pohikiri from './Lehekyljed/Pohikiri/Pohikiri.jsx';
+import Dokumendid from './Lehekyljed/Dokumendid/Dokumendid.jsx';
+import Uudised from './Lehekyljed/Uudised/Uudised.jsx';
+import Error404 from './Lehekyljed/Error404/Error404.jsx';
+import LiiduKirjeldus from './Lehekyljed/LiiduKirjeldus/LiiduKirjeldus.jsx';
 
 
 function App() {

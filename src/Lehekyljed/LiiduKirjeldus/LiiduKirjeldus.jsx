@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import './LiiduKirjeldus.css'
 
 //imported components
-import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
-import PageHeaderLines from '../General/Components/PageHeaderLines.jsx';
-import PageHeaderImage from '../General/Components/PageHeaderImage.jsx'
-import ImageAndContent from '../General/Components/ImageAndContent.jsx';
+import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
+import PageHeaderLines from '../../General/Components/PageHeaderLines.jsx';
+import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx'
+import ImageAndContent from '../../General/Components/ImageAndContent.jsx';
 
 //imported content
 import headerImage from './Content/mets.jpg'; 

@@ -1,19 +1,19 @@
 import { useState } from 'react'
-import '../App.css'
+import '../../App.css'
 import './Esileht.css'
 
 //imported components
-import TopNavigationBar from '../General/Components/TopNav_Bar.jsx';
-import BottomNavigationBar from '../General/Components/BottomNav_Bar.jsx';
-import LinkUnderlined from '../General/Components/LinkUnderlined.jsx';
+import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
+import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
+import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
 
 
 
 //imported texts
 import esilehePeamineKirjeldus from './esilehePeamineKirjeldus.js'
 //imported images
-import detailneLogo from '../assets/General/Vapp detailsem.png'
-import lihtneLogo from '../assets/General/Vapp lihtne.png'
+import detailneLogo from '../../assets/General/Vapp detailsem.png'
+import lihtneLogo from '../../assets/General/Vapp lihtne.png'
 
 
 
