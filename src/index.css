@@ -163,6 +163,18 @@
   margin-bottom: 0px;
 }
 
+.mid-small-top-header {
+  z-index: 2000;
+  font-family: Cambria;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+
 .mid-small-header {
   z-index: 2000;
   font-family: Cambria;

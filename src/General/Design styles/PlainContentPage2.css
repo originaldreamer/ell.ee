@@ -1,0 +1,45 @@
+.plain2-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.plain2-body {
+    position: relative;
+    background-color: transparent;
+    box-shadow: 0 0 0px #02265A;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;      
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+}
+
+.plain2-sisu-left {
+    margin-right: 200px;
+    align-self: flex-start; 
+    text-align: left; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+.plain2-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vw;
+    background-color: #FFF1E6;
+    background-size: cover;
+    z-index: -5;
+}

@@ -36,15 +36,15 @@ function Details({koht, aeg})
 {
     return (
         <div className='Syndmus-details'>
-            <div className='Syndmus-detail'>
+            {koht && <div className='Syndmus-detail'>
                 <img src={FlagIcon}  style={{ width: '39px' }} />
                 <div className='long-small-text'>{koht}</div >
-            </div>
+            </div>}
             
-            <div className='Syndmus-detail'>
+            {aeg && <div className='Syndmus-detail'>
                 <img src={WatchIcon}  style={{ width: '30px' }} />
                 <div className='long-small-text'>{aeg}</div >
-            </div>
+            </div>}
         </div>
     );
 }

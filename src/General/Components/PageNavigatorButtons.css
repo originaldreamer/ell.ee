@@ -1,0 +1,55 @@
+.PageNavigatorButtons-container {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.PageNavigatorButtons-nupp {
+    background-color: transparent;
+    padding: 16px;
+    width: 4px; 
+    height: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.PageNavigatorButtons-nupp img{
+    width: 23px;
+}
+
+.PageNavigatorButtons-nupp:hover {
+    border: 2.5px solid #EFA900;
+}
+
+.PageNavigatorButtons-nupp.selected {
+    background-color: #EFA900;
+}
+
+.PageNavigatorButtons-nupp.selected .long-small-header {
+    color: #F5F5F5;
+}
+
+.PageNavigatorButtons-nupp-deactivated {
+    background-color: transparent;
+    padding: 16px;
+    width: 4px; 
+    height: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.PageNavigatorButtons-nupp-deactivated img {
+    width: 23px;
+    margin-right: 2.5px;
+    opacity: 0.4;
+}
