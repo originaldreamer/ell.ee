@@ -7,129 +7,100 @@ import detailneLogo from '../../assets/General/Vapp detailsem.png';
 import lihtneLogo from '../../assets/General/Vapp lihtne.png'
 
 
+//imported elements
+import arrowDown from '../Design Elements/Dropdown Arrow down.svg'
+
+
 function Pilt( {pilt,kirjeldus, size}) {
   return <img src={pilt} alt={kirjeldus} style={{ width: size, height: 'auto' }} />;
 }
 
-function TopNaviagtionButton({text}) {
-  function handleClick() {
-    console.log('clicked!'); 
-  }
+function TopNaviagtionButtonDropDown({text, links}) {
 
   return ( 
     
-    <button 
-      className = "about_me"
-      onClick = {handleClick}
-      >
-
-      {text}
-      
-    </button>
+    <div className="dropdown">
+      <button className="dropbtn">
+        {text}
+        <img src={arrowDown} />
+      </button>
+        <div className="dropdown-content">
+          {links.map((link, index) => (
+            <div key={index}>
+              <a href={link.href} style={{ color: link.unComplete ? "red" : "black" }}>
+                {link.label}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
   );
 }
+
+function TopNaviagtionButtonNormal({ text, link }) {
+  return ( 
+    <div className="normalbtn">
+      <a href={link} style={{ color: "inherit", textDecoration: "none" }}>
+        {text}
+      </a>
+    </div>
+  );
+}
+
+
 
 
 function TopNavigationBarButtons() {
   return (
     <div className='topBar-buttons'>
 
-<div className="dropdown">
-            <button className="dropbtn">
-            Kirjeldus
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ marginLeft: "5px", transform: "translateY(3px)" }}
-              >
-              <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-              <div className="dropdown-content">
-                <div><a href="#">Liikmed</a></div>
-                <div><a href="#">Juhatus</a></div>
-                <div><a href="#">Kontakt</a></div>
-              </div>
-            </div>
+      <TopNaviagtionButtonDropDown
+        text = "Liit"
+        links={[
+          { href: "./tutvustus", label: "Tutvustus", unComplete: "true"},
+          { href: "./juhatus", label: "Juhatus", unComplete: "true"},
+          { href: "./liikmed", label: "Liikmed" },
+          { href: "./pohikiri", label: "Põhikiri" }
+        ]}
+      />
 
-            <div className="dropdown">
-            <button className="dropbtn">
-            Liikmeskond
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ marginLeft: "5px", transform: "translateY(3px)" }}
-              >
-              <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-              <div className="dropdown-content">
-                <div><a href="#">Liikmed</a></div>
-                <div><a href="#">Juhatus</a></div>
-                <div><a href="#">Kontakt</a></div>
-              </div>
-            </div>
+    <TopNaviagtionButtonDropDown
+        text = "Teated"
+        links={[
+          { href: "./uudised", label: "Uudised", unComplete: "true" },
+          { href: "./syndmused", label: "Sündmused" }
+        ]}
+      />
 
-            <div className="dropdown">
-            <button className="dropbtn">
-              Sümboolika
-              <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ marginLeft: "5px", transform: "translateY(3px)" }}
-              >
-              <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-            </div>
 
-            <div className="dropdown">
-            <button className="dropbtn">
-              Dokumendid
-              <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ marginLeft: "5px", transform: "translateY(3px)" }}
-              >
-              <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-              </button>
-              <div className="dropdown-content">
-                <div><a href="#">Põhikiri</a></div>
-                <div><a href="#">item_1</a></div>
-                <div><a href="#">item_2</a></div>
-              </div>
-            </div>
+    <TopNaviagtionButtonNormal
+        text = "Dokumendid"
+        link = "./dokumendid"
+      />
 
+    <TopNaviagtionButtonNormal
+      text = "Kontakt"
+      link = "./kontakt"
+    />
+          
         
+  
+      </div>
       
- 
-    </div>
-      
+  );
+}
+
+function Logo() {
+  return (
+    <a className='logo' href="./">
+      <img src={detailneLogo} style={{width: '70px'}}/>
+
+      <div className='logoTekst'>
+        Eesti Koolide
+        <br/>
+        Liputoimkondade Liit
+      </div>
+    </a>
   );
 }
 
@@ -137,18 +108,7 @@ export default function TopNavigationBar() {
   return (
     <div className='topNavBar'>
 
-      <div className='logo'>
-        <Pilt pilt = {detailneLogo} kirjeldus = {"Eesti Liputoimkondade Liidu Logo"} size = {70}/>
-      </div>  
-
-      <div className='logoTekst'>
-        <div className='newLine'>
-          Eesti Koolide
-        </div>
-        <div className='newLine'>
-          Liputoimkondade Liit
-        </div>
-      </div>
+      <Logo />
 
       <TopNavigationBarButtons />
     </div>

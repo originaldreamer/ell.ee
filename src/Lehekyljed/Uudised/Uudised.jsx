@@ -24,7 +24,7 @@ export default function Uudised() {
       <div className='uudised-container'>
           <div className='uudised-bg' />
 
-          <div className='uudised-body'>
+          <div className='uudised-body'> 
               <TopNavigationBar />
 
               <UudisedHeader 
