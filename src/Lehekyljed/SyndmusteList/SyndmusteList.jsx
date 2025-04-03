@@ -7,7 +7,7 @@ import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx';
 import Syndmused from './Components/Syndmused.jsx';
-import PageNavigatorButtons from '../../General/Components/pageNavigatorButtons.jsx';
+import PageNavigatorButtons from '../../General/Components/PageNavigatorButtons.jsx';
 
 //imported content
 import puitTaust from './Design elements/puit.png'
