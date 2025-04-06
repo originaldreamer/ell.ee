@@ -14,8 +14,8 @@ import PohikiriSisu from './Components/PohikiriSisu.jsx';
 export default function Pohikiri() {
 
   return (
-      <div className='plain-container'>
-          <div className='plain-bg' />
+      <div className='plain-container' style={{backgroundColor:"white"}}>
+          <div className='plain-bg' style={{backgroundColor:"#F5F5F5"}}/>
 
 
 

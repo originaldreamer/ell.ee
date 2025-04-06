@@ -48,7 +48,7 @@ const changeShowPilditeViewState = (state) => {
     if (state) {
         document.documentElement.style.overflow = 'hidden';
       } else {
-        document.documentElement.style.overflow = 'auto';
+        document.documentElement.style.overflowY = 'auto';
       }
 }
 
@@ -92,7 +92,7 @@ useEffect(() => {
           pilt={curPilt}
           leftFunction={() => decreasePildiIndex()}
           rightFunction={() => increasePildiIndex()}
-          quitFunction={() => changeShowPilditeViewState(false)}
+          quitFunction={() => changeShowPilditeViewState(false)} 
       />}
       </div>
 
@@ -102,9 +102,9 @@ useEffect(() => {
 
 
 
-export default function ImageAndContent({content, images, reverse=false, bgColor='transparent'}) {
+export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%'}) {
   return (
-      <div className='imageAndContent-container'>
+      <div className='imageAndContent-container' style={{marginTop: offsetY}}>
         <div className='imageAndContent-bg' style={{backgroundColor: bgColor}}/>
         
         {reverse ? (

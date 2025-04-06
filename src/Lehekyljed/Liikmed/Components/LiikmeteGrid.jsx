@@ -26,7 +26,7 @@ export default function LiikmeteGrid({functionShowKirjeldus, loadContentFunction
                         loadContentFunction(index);  // Pass the corresponding index
                     }}
                 />
-            ))}
+            ))} 
         </div>
         
     );

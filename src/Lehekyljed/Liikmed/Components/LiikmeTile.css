@@ -5,7 +5,7 @@
     background-color: #02265A;
     background-color:  #52575F;
     border: 20px solid #EFA900; 
-    border-width: 4px;
+    border-width: 3.5px;
     border-radius: 35px;
     padding: 0;
     box-sizing: border-box; 
@@ -17,16 +17,19 @@
 }
 
 .liikmetile:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px)
 }
 
 
 .liikmetile img {
-    display: block;
+    display: block; 
     width: 100%;
     height: auto;
     border-radius: 20px;
 }
+
+
+
 
 .title {
     z-index: 500;
@@ -68,3 +71,13 @@
     }
     
 }
+
+@media (max-width: 550px) {
+    .liikmetile {
+        min-width: unset;
+        width: 90%;
+    }
+    
+}
+
+   

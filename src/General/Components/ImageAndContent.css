@@ -1,6 +1,5 @@
 .imageAndContent-container {
     position: relative;
-    margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
     padding: 30px 0px 20px 0px;
@@ -14,7 +13,7 @@
 
 .imageAndContent-bg {
     position: absolute;
-    left: 50%; /* Center horizontally */
+    left: 50%; /* Center horizontally */ 
     transform: translateX(-50%); /* Adjust position */
     height: 100%;
     width: 100vw; /* Set width to cover container */

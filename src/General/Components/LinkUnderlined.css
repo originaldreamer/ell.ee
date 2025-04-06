@@ -19,6 +19,8 @@
     color: #EFA900;
 }
 
+
+
 .link:after {
     content: "";
     position: absolute;
@@ -36,29 +38,7 @@
     animation: lineAppearFromMiddle 0.2s ease-in-out;
 }
 
-@keyframes lineAppearFromMiddle {
-    0% {
-        transform: scale(5%, 1);
-    }
-    100% {
-        transform: scale(100%, 1);
-    }
-}
 
-@keyframes lineDisappearToMiddle {
-    0% {
-        transform: scaleX(1);
-        opacity: 1;
-    }
-    99% {
-        transform: scaleX(0.04);
-        opacity: 1;
-    }
-    100% {
-        transform: scaleX(0);
-        opacity: 0;
-    }
-}
 
 .link.return:after {  /* Apply the "return" animation when not hovering */
     animation: lineDisappearToMiddle 0.4s ease-out;

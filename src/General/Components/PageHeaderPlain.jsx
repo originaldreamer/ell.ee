@@ -12,7 +12,7 @@ export default function PageHeaderPlain({ title }) {
   }
 
   function handleMouseLeave() {
-    setIsHovering(false);
+    setIsHovering(false); 
   }
 
   return (

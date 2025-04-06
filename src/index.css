@@ -316,3 +316,30 @@
 
 
 /*---------------*/
+
+
+/*GENERAL ANIMATIONS*/
+@keyframes lineAppearFromMiddle {
+  0% {
+      transform: scale(5%, 1);
+  }
+  100% {
+      transform: scale(100%, 1);
+  }
+}
+
+@keyframes lineDisappearToMiddle {
+  0% {
+      transform: scaleX(1);
+      opacity: 1;
+  }
+  99% {
+      transform: scaleX(0.04);
+      opacity: 1;
+  }
+  100% {
+      transform: scaleX(0);
+      opacity: 0;
+  }
+}
+/*----------------*/

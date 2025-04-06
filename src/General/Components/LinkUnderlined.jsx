@@ -12,12 +12,13 @@ export default function LinkUnderlined({ display, displayHovered,to, file }) {
         setNeedToReturn(false);
         if (displayHovered) {setText(displayHovered)}
     }
-
+ 
     const handleMouseLeave = () => {
         setIsHovering(false);
-        setNeedToReturn(true);
+        setNeedToReturn(true); 
         setText(display)
     }
+
 
     const handleClick = () => {
         if (to) {
