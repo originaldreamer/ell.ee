@@ -244,6 +244,17 @@
   margin-bottom: 32px;
 }
 
+.normal-text-white {
+  color: var(--light-color);
+  font-family: 'Merriweather' ;
+  text-align: left;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+
 .bold {
   color: black;
   font-family: 'Merriweather' ;

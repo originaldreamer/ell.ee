@@ -1,209 +1,96 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './BottomNav_Bar.css'
 
 
-{/*
+
 //imported images
-import kontaktideTaust from '../Design elements/Kontaktide taust lipukujuline.svg';
-import gmailLogo from '../Design elements/gmail logo.svg';
-import instagramLogo from '../Design elements/instagram logo.svg';
-import gmailLogoClicked from '../Design elements/gmail logo clicked.svg';
-import instagramLogoClicked from '../Design elements/instagram logo clicked.svg';
-import detailneLogo from '../Design elements/Vapp detailne.png';
+import facebookLogoWhite from '../../assets/General/facebook logo white.svg'
+import facebookLogoYellow from '../../assets/General/faceook logo yellow.svg'
+import instagramLogoWhite from '../../assets/General/instagram logo white.svg'
+import instagramLogoYellow from '../../assets/General/instagram logo yellow.svg'
+import LinkUnderlined from './LinkUnderlined.jsx';
 
-
-function Pilt( {pilt,kirjeldus, size}) {
-  return <img src={pilt} alt={kirjeldus} style={{ width: size, height: 'auto' }} />;
-} 
-
-
-function Logo() {
-  return (
-    <div className='footer-logo'>
-
-        <div className='footer-logo-pilt'>
-          <Pilt pilt = {detailneLogo} kirjeldus = {"Eesti Liputoimkondade Liidu Logo"} size = {200}/>
-        </div>
-        
-        <div className='footer-logo-pealkiri'> 
-          <p className='h1'>Eesti Liputoimkondade</p>
-          <p className='h1'>Liit</p>
-        </div>
-        
-    </div>
-    
-  );
-}
-
-
-
-
-
-
-function PeaLink({text}) {
-  const [textColor, setTextColor] = useState('');
-  const [hovered, setHovered] = useState(false);
+function Kontakt({normalIcon, activatedIcon, link, iconSize})
+{
+  const [curIcon, setCurIcon] = useState(normalIcon);
 
   function handleMouseEnter() {
-    setTextColor('#EFA900');
-    setHovered(true);
-  }
-
-  function handleMouseLeave() {
-    setTextColor('');
-    setHovered(false);
-  }
-
-  function handleClick() {
-
-  }
-
-  return (
-    <button 
-      className= 'footer-link' 
-      onClick={handleClick}
-      onMouseEnter={handleMouseEnter}  
-      onMouseLeave={handleMouseLeave}
-    >
-      <div>
-        <p 
-          className={`footer-link-pealink-text ${hovered ? 'hovered' : ''}`} 
-          style={{ color: textColor }}
-        >
-          {text}
-        </p>
-      </div>
-    </button>
-  );
-}
-
-function Link({text}) {
-  const [textColor, setTextColor] = useState('');
-
-  function handleMouseEnter() {
-    setTextColor('#EFA900');
-  }
-
-  function handleMouseLeave() {
-    setTextColor('');
-  }
-
-  function handleClick() {
-
-  }
-
-  return (
-    <button 
-      className= 'footer-link' 
-      onClick={handleClick}
-      onMouseEnter={handleMouseEnter}  
-      onMouseLeave={handleMouseLeave}
-    >
-      <div>
-        <p className='footer-link-tavalink-text' style={{ color: textColor }}>{text}</p>
-      </div>
-    </button>
-  );
-}
-
-function Lingid() {
-  return (
-    <div className='footer-lingid'>
-      <PeaLink text="Kirjeldus" />
-      <PeaLink text="Liikmeskond" />
-      <Link text="Liikmed" />
-      <Link text="Juhatus" />
-      <Link text="Kontakt" />
-      <PeaLink text="Sümboolika" />
-      <Link text="Vapid" />
-      <Link text="Lugu" />
-      <Link text="Kasutus" />
-    </div>
-  )
-}
-
-
-
-
-function Kontakt({symbolNormal, symbolClicked, text, size}) {
-  const [textColor, setTextColor] = useState('');
-  const [symbol, setSymbol] = useState(symbolNormal);
-  const [clicked, setClicked] = useState(false);
-
-  function handleMouseEnter() {
-    setTextColor('#EFA900');
-    setSymbol(symbolClicked)
+    setCurIcon(activatedIcon)
   }
 
   // Handle hover leave event
   function handleMouseLeave() {
-    setTextColor('');
-    setSymbol(symbolNormal);
+    setCurIcon(normalIcon);
   }
 
-  function handleClick() { 
-    setClicked(true);
-
-    setTimeout(() => {
-      setClicked(false);
-    }, 500);
+  function handleClick() {
+      window.location.href = link;
   }
 
   return (
-    <button 
-      className={`footer-kontakt-button ${clicked ? 'clicked' : ''}`} // Add the "clicked" class when clicked
+    <div 
+      className='footer-kontakt'
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}  
       onMouseLeave={handleMouseLeave}
     >
-      <div>
-        <div className='footer-kontakt-button-symbol'>
-        <img
-          src={symbol}
-          alt="symbol"
-          className={`footer-kontakt-button-symbol ${clicked ? 'clicked' : ''}`} 
-          style={{ width: size, height: 'auto' }}
-        />
-        </div>
-        
-        <p className='h4' style={{ color: textColor }}>{text}</p>
-      </div>
-    </button>
-  );
+      <img src={curIcon} style={{width: iconSize}}/>
+    </div>
+  )
+}
+
+function Kontaktid()
+{
+
+
+
+  return (
+    <div className='footer-kontaktid'>
+
+      <Kontakt
+        normalIcon={instagramLogoWhite}
+        activatedIcon={instagramLogoYellow}
+        link="https://www.instagram.com/liputoimkondade_liit?igsh=MXdtbGUxN2w1cnpmYg%3D%3D&utm_source=qr"
+        iconSize='36px'
+      />
+
+      <Kontakt
+        normalIcon={facebookLogoWhite}
+        activatedIcon={facebookLogoYellow}
+        link="https://www.facebook.com/share/16TbZPQTbg/?mibextid=wwXIfr"
+        iconSize='30px'
+      />
+    </div>
+  )
 }
 
 
-function Kontaktid() {
-  return (
-    <div className='footer-kontaktid'>
-      <div className='footer-kontaktid-taust'>
-        <Pilt pilt = {kontaktideTaust} kirjeldus = {"KontaktideTaust"} size = {220}/>
-      </div>
-
-      <div className='footer-kontaktid-sisu'>
-        <Kontakt symbolNormal = {gmailLogo} symbolClicked={gmailLogoClicked} text = "liputoimkondadeliit@gmail.com"  size = {70}/>
-        <Kontakt symbolNormal = {instagramLogo} symbolClicked={instagramLogoClicked} text = "@liputoimkondadeliit"  size = {58}/>
-      </div>
-      
-    </div>
-    
-  )
-}*/}
 
 export default function BottomNavigationBar() {
+
+
   return (
     <div className='footer' >
-      <div className='top-gray-box'></div>
 
-      <div  className='footer-content'>
-        {/*<Logo />
-        <Lingid />
-        <Kontaktid /> */}
 
-        tt
-
+      <div className='footer-title'>
+        Eesti Koolide Liputoimkondade Liit
       </div>
+
+      {/*<div className='footer-meil'>
+      <div className='normal-text-white'>Võta meiega ühendust: </div>
+      <LinkUnderlined display="liputoimkondade.liit@gmail.com" normalColor='white'/>
+      </div>*/}
+
       
+      
+      
+      
+      <Kontaktid />
+
+      <div className='footer-meil'>
+        <LinkUnderlined display="Võta meiega ühendust: liputoimkondade.liit@gmail.com" normalColor='white'/>
+      </div>
 
 
 

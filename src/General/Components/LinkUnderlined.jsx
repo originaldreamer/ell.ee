@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './LinkUnderlined.css';
 
-export default function LinkUnderlined({ display, displayHovered,to, file }) {
+export default function LinkUnderlined({ display, displayHovered,to, file, normalColor='black' }) {
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
     const [text, setText] = useState(display);
@@ -34,6 +34,7 @@ export default function LinkUnderlined({ display, displayHovered,to, file }) {
             onClick={handleClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            style={{color: isHovering ? '#EFA900' : normalColor}}
         >
             {text}
         </div>
