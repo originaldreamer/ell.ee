@@ -49,6 +49,8 @@ export default function Esileht() {
           <br />
           <LinkUnderlined to="./uudised" display="Uudised lehekülg" />
           <br />
+          <LinkUnderlined to="./uudisview" display="Uudisleht lehekülg" />
+          <br />
           <LinkUnderlined to="./tutvustus" display="Liidu tutvustus" />
           <br />
           <LinkUnderlined to="./syndmused" display="Sündmused" />

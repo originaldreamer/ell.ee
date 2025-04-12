@@ -113,7 +113,7 @@ function TopNavigationBarButtons() {
     <TopNaviagtionButtonDropDown
         text = "Teated"
         links={[
-          { href: "./uudised", label: "Uudised!", unComplete: "true" },
+          { href: "./uudised", label: "Uudised!" },
           { href: "./syndmused", label: "Sündmused" }
         ]}
       />

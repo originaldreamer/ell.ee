@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import './UudisedGalerii.css'
+import './UudisLehtGalerii.css'
 
 //imported components
-import UudisedGaleriiTile from './UudisedGaleriiTile';
-import UudisedGaleriiView from './UudisedGaleriiView';
+import UudisedGaleriiTile from './UudisLehtGaleriiTile';
+import UudisedGaleriiView from './UudisLehtGaleriiView';
 
 
 
-export default function UudisedGalerii({pildid}) {
+export default function UudisLehtGalerii({pildid}) {
     const [pildiIndex, setPildiIndex] = useState(0);
     const [curPilt, setCurPilt] = useState(pildid[0]);
     const [showGaleriiView, setShowGaleriiView] = useState(false);
@@ -63,14 +63,14 @@ export default function UudisedGalerii({pildid}) {
       }, []);
 
     return (
-        <div className='uudisedGalerii-container'>
+        <div className='uudisLehtGalerii-container'>
             {pildid &&
                 <div>
-                    <div className='uudisedGalerii-line' />
+                    <div className='uudisLehtGalerii-line' />
                     <div className='big-header' style={{marginTop:'22px',marginBottom:'22px', textAlign:'center'}}>Galerii</div >
-                    <div className='uudisedGalerii-line' />
+                    <div className='uudisLehtGalerii-line' />
                     
-                    <div className='uudisedGalerii-grid'>
+                    <div className='uudisLehtGalerii-grid'>
                         {pildid.map((pilt, index) => (
                             <UudisedGaleriiTile 
                                 key={index} 

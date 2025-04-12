@@ -1,11 +1,11 @@
-.VaataVeel-container {
+.uudisLeht-VaataVeel-container {
     margin-top: 20px;
     margin-bottom: 100px;
     position: relative;
     width: 100%;
 }
 
-.VaataVeel-elemendid {
+.uudisLeht-VaataVeel-elemendid {
     margin: 0 auto;
     width: 1500px;
     max-width: 1500px; width: 100%;
@@ -14,7 +14,7 @@
     align-items: flex-start;
     margin-bottom: 90px;
 }
-.VaataVeel-rohkem-container {
+.uudisLeht-VaataVeel-rohkem-container {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -30,12 +30,12 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  .VaataVeel-rohkem-container:hover {
+  .uudisLeht-VaataVeel-rohkem-container:hover {
     transform: scale(1.05);
     background-color: #FFF4CC; /* subtle highlight on hover */
   }
   
-  .VaataVeel-rohkem-text {
+  .uudisLeht-VaataVeel-rohkem-text {
     font-family: 'Cambria', serif;
     font-size: 22px;
     font-weight: 300; /* adjust to match heading weight */
@@ -45,34 +45,34 @@
   
 
   
-  .VaataVeel-rohkem-img {
+  .uudisLeht-VaataVeel-rohkem-img {
     width: 24px;
     margin-left: 10px;
     transition: transform 0.3s ease;
   }
   
-  .VaataVeel-rohkem-img.hovering {
+  .uudisLeht-VaataVeel-rohkem-img.hovering {
     transform: scale(1.1);
   }
   
 
 /*Scaling*/
 @media (max-width: 1600px) {
-    .VaataVeel-elemendid {
+    .uudisLeht-VaataVeel-elemendid {
         width: 1100px;
     }
     
 }
 
 @media (max-width: 1220px) {
-    .VaataVeel-elemendid {
+    .uudisLeht-VaataVeel-elemendid {
         width: 920px;
     }
     
 }
 
 @media (max-width: 975px) {
-    .VaataVeel-elemendid {
+    .uudisLeht-VaataVeel-elemendid {
         width: 100%;
         display: grid;  
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

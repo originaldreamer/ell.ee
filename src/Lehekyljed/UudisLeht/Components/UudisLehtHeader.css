@@ -1,4 +1,4 @@
-.uudisedHeader-container{
+.uudisLehtHeader-container{
     position: relative;
     width: 80%;
     padding: 0;
@@ -8,12 +8,12 @@
 }
 
 
-.uudisedHeader {
+.uudisLehtHeader {
     width: 100%;
 }
 
 
-.uudisedHeader-line {
+.uudisLehtHeader-line {
     content: "";
     z-index: 1000;
     margin-top: -24px;
@@ -24,20 +24,20 @@
     flex-shrink: 0;
 }
 
-.uudisedHeader-date {
+.uudisLehtHeader-date {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
 }
 
-.uudisedHeader-pildiAutor {
+.uudisLehtHeader-pildiAutor {
     display: flex;
     justify-content: center;
     margin-top: 16px;
     margin-bottom: 8px;
 }
 
-.uudisedHeader-bg {
+.uudisLehtHeader-bg {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
@@ -48,6 +48,6 @@
     background-color:  #02265A;
 }
 
-.uudisedHeader-pilt {
+.uudisLehtHeader-pilt {
     margin-top: 50px;
 }

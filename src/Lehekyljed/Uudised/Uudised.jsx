@@ -4,21 +4,41 @@ import './Uudised.css';
 //imported components
 import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
-import UudisedHeader from './Components/UudisedHeader.jsx'
-import UudisedGalerii from './Components/UudisedGalerii.jsx';
-import VaataVeel from './Components/VaataVeel.jsx';
+import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx';
+import UudisedTilesGrid from './Components/UudisedTilesGrid.jsx';
+import PageNavigatorButtons from '../../General/Components/PageNavigatorButtons.jsx';
 
 //imported content
-import tempPicture from './Content/2025_liputoimkond.jpg';
-import tempPicture2 from './Content/temp2.jpg';
-import tempPicture3 from  './Content/temp3.jpg';
-import tempPicture4 from   './Content/temp4.jpg';
-import tempPicture5 from './Content/testPilt.jpg'
-import Sisu from './Content/Sisu.jsx';
+import uudisedHeaderImage from './Content/uudisedHeader.jpg'
 
+//imported data
+import uudised_data from './Content/Uudised.json'
 
 export default function Uudised() {
-  
+
+    const [curPageIndex, setCurPageIndex] = useState(0);
+    const maxElementsPerPage = 12;
+    const pageCount = Math.ceil(uudised_data.length / maxElementsPerPage);
+
+
+    const decreaseCurPageIndex = () => {
+        if (curPageIndex > 0)
+        {
+        setCurPageIndex(curPageIndex-1)
+        }
+    };
+
+    const increaseCurPageIndex = () => {
+        if (curPageIndex < pageCount-1)
+        {
+        setCurPageIndex(curPageIndex+1)
+        }
+    };
+
+    useEffect(() => {
+        window.scrollTo({ top: 0});
+    }, [curPageIndex]);
+    
 
   return (
       <div className='uudised-container'>
@@ -27,36 +47,17 @@ export default function Uudised() {
           <div className='uudised-body'> 
               <TopNavigationBar />
 
-              <UudisedHeader 
-                title ="[Temp]Liputoimkondade Liidu asutamine" 
-                date="20.02.2025"
-                pilt={tempPicture}
-                pildiAutor="Keegi tähtis"
+              <PageHeaderImage title="Uudised" image={uudisedHeaderImage} offsetY='52%'/>
+
+              <UudisedTilesGrid uudised={uudised_data} curPageIndex={curPageIndex} maxElementsPerPage={maxElementsPerPage}/>
+
+              <PageNavigatorButtons 
+                curSelectedIndex={curPageIndex} 
+                setPageIndex={setCurPageIndex} 
+                nuppudeCount={pageCount} 
+                leftArrowFunction={decreaseCurPageIndex} 
+                righArrowFunction={increaseCurPageIndex}
               />
-                
-                <div className='uudised-sisu'> 
-                    <Sisu />
-                </div>
-
-                <UudisedGalerii 
-                    pildid={[
-                        tempPicture5,
-                        tempPicture4,
-                        tempPicture3,
-                        tempPicture2,
-                        tempPicture,
-                        tempPicture2,
-                        tempPicture5,
-                        tempPicture2,
-                        tempPicture4,
-                        tempPicture2,
-                        tempPicture4
-                    ]}   
-                />
-
-                <VaataVeel />
-
-
 
               <BottomNavigationBar />
           </div>

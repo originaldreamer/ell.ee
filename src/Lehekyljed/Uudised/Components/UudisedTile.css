@@ -1,0 +1,161 @@
+.UudisedTile-container {
+    margin-bottom: 80px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.UudisedTile-pilt {
+    width: 100%;
+    aspect-ratio: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-pilt.hovering{
+    transform: translateY(-10px);
+}
+
+.UudisedTile-pilt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-pilt.hovering img{
+    transform: scale(1.1);
+}
+
+
+
+
+.UudisedTile-kirjeldus {
+    width: 92%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-kirjeldus.hovering {
+    transform: translateY(-10px);
+}
+
+.UudisedTile-date {
+    color: black;
+    font-family: 'Merriweather' ;
+    text-align: left;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 1px;
+}
+
+.UudisedTile-title {
+    z-index: 2000;
+    font-family: Cambria;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+} 
+
+.UudisedTile-title.hovering {
+    text-decoration: underline;
+}
+
+.UudisedTile-text {
+    color: black;
+    font-family: 'Merriweather' ;
+    text-align: left;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .UudisedTile-container{
+        width: 300px
+    }
+
+    .UudisedTile-date {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 1px;
+    }
+    
+    .UudisedTile-title {
+        font-size: 23px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    } 
+
+    .UudisedTile-text {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .UudisedTile-container{
+        width: 250px;
+        margin-bottom: 60px;
+    }
+
+    .UudisedTile-date {
+        font-size: 14.5px;
+        line-height: 1.4;
+        margin-bottom: 1px;
+    }
+    
+    .UudisedTile-title {
+        font-size: 21px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    } 
+
+    .UudisedTile-text {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .UudisedTile-container{
+        width: unset;
+        padding: 17px;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .UudisedTile-container{
+        margin-bottom: 0px;
+        
+    }
+}
+
+@media (max-width: 570px) {
+    .UudisedTile-pilt.hovering{
+        transform: translateY(-5px);
+    }
+
+    .UudisedTile-kirjeldus.hovering {
+        transform: translateY(-5px);
+    }
+}
+

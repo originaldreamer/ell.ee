@@ -128,7 +128,7 @@ export default function TopNavSidePanel({hidePanelFunction}) {
 
             <DropDown tekst="Teated"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
-                    { href: "./uudised", label: "Uudised!", unComplete: "true"},
+                    { href: "./uudised", label: "Uudised!"},
                     { href: "./syndmused", label: "Sündmused", unComplete: "true"},
             ]}/>
 

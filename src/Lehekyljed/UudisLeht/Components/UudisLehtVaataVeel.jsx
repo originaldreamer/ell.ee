@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './VaataVeel.css';
+import './UudisLehtVaataVeel.css';
 
 //imported components
-import UudisedBigTile from './UudisedBigTile.jsx';
+import UudisLehtBigTile from './UudisLehtBigTile.jsx';
 import HeaderSeparatorOne from '../../../General/Components/HeaderSeparatorOne.jsx';
 
 //imported content
@@ -19,54 +19,58 @@ import plusIconActivated from '../Design elements/plus icon activated.svg';
 function Rohkem() {
     const [isHovering, setIsHovering] = useState(false);
 
+    const handleClick = () => {
+        window.location.href = './uudised';
+    };
+
     return (
         <div
-            className='VaataVeel-rohkem-container'
+            className='uudisLeht-VaataVeel-rohkem-container'
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            onClick={handleClick}
         >
-            <div className={`VaataVeel-rohkem-text ${isHovering ? 'hovering' : ''}`}>
+            <div className={`uudisLeht-VaataVeel-rohkem-text ${isHovering ? 'hovering' : ''}`}>
                 Rohkem
             </div>
-            <img
-                className={`VaataVeel-rohkem-img ${isHovering ? 'hovering' : ''}`}
-                src={isHovering ? plusIconActivated : plusIconActivated}
-                alt="Plus Icon"
-            />
+
         </div>
     );
 }
 
 
-export default function VaataVeel() {
+export default function UudisLehtVaataVeel() {
   
 
   return (
-      <div className='VaataVeel-container'>
+      <div className='uudisLeht-VaataVeel-container'>
         <HeaderSeparatorOne text = "Vaata veel"/>
 
-          <div className='VaataVeel-elemendid' >
+          <div className='uudisLeht-VaataVeel-elemendid' >
 
-            <UudisedBigTile 
+            <UudisLehtBigTile 
                 pilt={otherUudis1}
                 date="24.02.2025"
                 title="Jalutuskäik looduses koos kõigi liputoimkondadega"
                 sisu={<Sisu />}
+                to='./uudisview'
             />
             
 
-            <UudisedBigTile 
+            <UudisLehtBigTile 
                 pilt={otherUudis2}
                 date="15.03.2025"
                 title="Kevadine matk uute avastustega"
                 sisu="Kevade saabumise puhul korraldati traditsiooniline matk, mis viis osalejad läbi maaliliste radade ja võrratute loodusvaadete. Kõik osalejad said nautida värsket õhku, õppida tundma uusi taime- ja loomaliike ning veeta meeldejäävat päeva looduse keskel. Matka lõpetuseks peeti lõkkeõhtu, kus jagati muljeid ja kuulati lugusid minevikust."
+                to='./uudisview'
             />
 
-            <UudisedBigTile 
+            <UudisLehtBigTile 
                 pilt={otherUudis3}
                 date="01.04.2025"
                 title="Aprillinaljade festival tõi naerupahvakuid"
                 sisu="Aprillikuu algust tähistati erilise festivaliga, kus kogukonna liikmed esitasid nalju, sketše ja humoorikaid etteasteid. Üritus tõi kohale hulgaliselt inimesi, kes said osa päevast täis naeru ja lõbusaid üllatusi. Lisaks korraldati töötuba, kus õpetati naljakate lugude kirjutamist ja esitamist. Festivalist kujunes tõeline kogukonnaelu tipphetk."
+                to='./uudisview'
             />
           </div>
 

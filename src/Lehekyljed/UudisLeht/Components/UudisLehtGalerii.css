@@ -1,9 +1,9 @@
-.uudisedGalerii-container {
+.uudisLehtGalerii-container {
     width: 100%;
     margin-top: 0px;
 }
 
-.uudisedGalerii-grid {
+.uudisLehtGalerii-grid {
     display: grid;  
     grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));  /* Create responsive columns */ 
     gap: 5px 5px;
@@ -15,7 +15,7 @@
     margin-top: 40px;
 }
 
-.uudisedGalerii-line { 
+.uudisLehtGalerii-line { 
     content: "";
     z-index: 1000;
     margin-top: 0px;
@@ -27,21 +27,21 @@
 
 /*Scaling*/
 @media (max-width: 760px) {
-    .uudisedGalerii-grid {
+    .uudisLehtGalerii-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)); 
     }
     
 }
 
 @media (max-width: 535px) {
-    .uudisedGalerii-grid {
+    .uudisLehtGalerii-grid {
         grid-template-columns: repeat(auto-fit, minmax(130px, 2fr)); 
     }
     
 }
 
 @media (max-width: 370px) {
-    .uudisedGalerii-grid {
+    .uudisLehtGalerii-grid {
         grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)); 
     }
     

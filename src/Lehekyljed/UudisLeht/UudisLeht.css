@@ -1,4 +1,4 @@
-.uudised-body {
+.uudisLeht-body {
     position: relative;
     background-color: transparent;
     margin: 0;
@@ -14,12 +14,12 @@
     margin-bottom: 0px;
 }
 
-.uudised-container {
+.uudisLeht-container {
     position: relative;
     min-height: 100vh;
 }
 
-.uudised-bg {
+.uudisLeht-bg {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -27,12 +27,11 @@
     width: 100vw;
     height: 100%; 
     background-color: var(--softYellow);
-    background-color: #F5F5F5;
     background-size: cover;
     z-index: -5;
 }
 
-.uudised-sisu {
+.uudisLeht-sisu {
     margin-top: 40px;
     margin-bottom: 60px;
     width: 100%;

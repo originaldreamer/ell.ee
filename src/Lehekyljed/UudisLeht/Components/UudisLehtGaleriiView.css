@@ -1,11 +1,11 @@
-.UudisedGaleriiView-container {
+.UudisLehtGaleriiView-container {
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 10000;
 }
 
-.UudisedGaleriiView-bg {
+.UudisLehtGaleriiView-bg {
     position: fixed;
     left: 0;
     top: 0;
@@ -16,7 +16,7 @@
     border-color: transparent;
 }
 
-.UudisedGaleriiView-pilt {
+.UudisLehtGaleriiView-pilt {
     position: fixed;
     top: 50%;
     max-height: 90%;
@@ -26,7 +26,7 @@
 }
 
 
-.UudisedGaleriiView-leftArrow {
+.UudisLehtGaleriiView-leftArrow {
     position: fixed;
     top: 50%;
     left: 30px;
@@ -35,7 +35,7 @@
     cursor: pointer;
 }
 
-.UudisedGaleriiView-rightArrow {
+.UudisLehtGaleriiView-rightArrow {
     position: fixed;
     top: 50%;
     right: 30px;
@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-.UudisedGaleriiView-quitIcon {
+.UudisLehtGaleriiView-quitIcon {
     position: fixed;
     top: 30px;
     right: 30px;
@@ -52,19 +52,19 @@
     cursor: pointer;
 }
 
-.UudisedGaleriiView-interactable {
+.UudisLehtGaleriiView-interactable {
     width: 110px;
     padding: 30px;
 }
 
-.UudisedGaleriiView-kirjeldus {
+.UudisLehtGaleriiView-kirjeldus {
     position: fixed;
     bottom: 38px;
     left: 80px;
     z-index: 2000;
 }
 
-.UudisedGaleriiView-text {
+.UudisLehtGaleriiView-text {
     z-index: 2000;
     font-family: Cambria;
     text-align: left;
@@ -78,14 +78,14 @@
 
 /*Scaling*/
 @media (max-width: 1750px) {
-    .UudisedGaleriiView-pilt {
+    .UudisLehtGaleriiView-pilt {
         max-height: 74%; 
     }
 
 }
 
 @media (max-width: 1150px) {
-    .UudisedGaleriiView-leftArrow {
+    .UudisLehtGaleriiView-leftArrow {
         top: unset;
         bottom: 5px;
         left: unset;
@@ -93,7 +93,7 @@
         transform: none;
     }
     
-    .UudisedGaleriiView-rightArrow {
+    .UudisLehtGaleriiView-rightArrow {
         top: unset;
         bottom: 5px;
         right: 30px;
@@ -101,17 +101,17 @@
     }
 
     
-    .UudisedGaleriiView-pilt {
+    .UudisLehtGaleriiView-pilt {
         max-width: 90%; 
     }
 
-    .UudisedGaleriiView-kirjeldus {
+    .UudisLehtGaleriiView-kirjeldus {
         left: 7%;
     }
 }
 
 @media (max-width: 600px) {
-    .UudisedGaleriiView-leftArrow {
+    .UudisLehtGaleriiView-leftArrow {
         top: unset;
         bottom: 5px;
         left: unset;
@@ -119,7 +119,7 @@
         transform: none;
     }
     
-    .UudisedGaleriiView-rightArrow {
+    .UudisLehtGaleriiView-rightArrow {
         top: unset;
         bottom: 5px;
         right: 30px;
@@ -127,11 +127,11 @@
     }
 
     
-    .UudisedGaleriiView-pilt {
+    .UudisLehtGaleriiView-pilt {
         max-width: 90%; 
     }
 
-    .UudisedGaleriiView-kirjeldus {
+    .UudisLehtGaleriiView-kirjeldus {
         left: 7%;
     }
 }

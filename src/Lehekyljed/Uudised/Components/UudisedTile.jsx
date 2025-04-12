@@ -4,11 +4,9 @@ import { renderToStaticMarkup } from 'react-dom/server';
 
 
 
-import './UudisedBigTile.css';
+import './UudisedTile.css';
 import '../../../index.css'
 
-//imported images
-import otherUudis1 from '../Content/other uudis 1.jpg';
 
 
 function extractNormalText(sisu) {
@@ -33,7 +31,7 @@ function extractNormalText(sisu) {
   return extractedText;
 }
 
-export default function UudisedBigTile({pilt, date, title, sisu}) {
+export default function UudisedTile({pilt, date, title, sisu, to}) {
     const [isHovering, setIsHovering] = useState(false);
     const wordLimit = 15;
     const normalText = extractNormalText(sisu);
@@ -53,21 +51,26 @@ export default function UudisedBigTile({pilt, date, title, sisu}) {
         return shortenedText + ' ...'; 
     };
 
+    const handleClick = () => {
+        window.location.href = to;
+    };
+
     return (
-        <div className='UudisedBigTile-container'
+        <div className='UudisedTile-container'
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
+            onClick={handleClick}
         >
-            <div className={`UudisedBigTile-pilt ${isHovering ? 'hovering' : ''}`}>
+            <div className={`UudisedTile-pilt ${isHovering ? 'hovering' : ''}`}>
                 <img src={pilt} />
             </div>
 
-            <div className={`UudisedBigTile-kirjeldus ${isHovering ? 'hovering' : ''}`}>
-                <div className='UudisedBigTile-date'>{date}</div>
+            <div className={`UudisedTile-kirjeldus ${isHovering ? 'hovering' : ''}`}>
+                <div className='UudisedTile-date'>{date}</div>
 
-                <div className={`UudisedBigTile-title ${isHovering ? 'hovering' : ''}`}>{title}</div>
+                <div className={`UudisedTile-title ${isHovering ? 'hovering' : ''}`}>{title}</div>
 
-                <div className='UudisedBigTile-text'>
+                <div className='UudisedTile-text'>
                     {shortenText(normalText, wordLimit)}
 
                 </div>
