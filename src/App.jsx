@@ -13,6 +13,7 @@ import Uudised from './Lehekyljed/Uudised/Uudised.jsx'
 import UudisLeht from './Lehekyljed/UudisLeht/UudisLeht.jsx';
 import Error404 from './Lehekyljed/Error404/Error404.jsx';
 import LiiduKirjeldus from './Lehekyljed/LiiduKirjeldus/LiiduKirjeldus.jsx';
+import Juhatus from './Lehekyljed/Juhatus/Juhatus.jsx';
 import SyndmusteList from './Lehekyljed/SyndmusteList/SyndmusteList.jsx'
 import Kontakt from './Lehekyljed/Kontakt/Kontakt.jsx'
 
@@ -30,7 +31,7 @@ function App() {
         <Route path="/uudisview" element={<UudisLeht />} />
         <Route path="/tutvustus" element={<LiiduKirjeldus />} />
         <Route path="/syndmused" element={<SyndmusteList />} />
-        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/juhatus" element={<Juhatus />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

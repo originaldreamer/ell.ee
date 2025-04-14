@@ -1,0 +1,37 @@
+.juhatus-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-bottom: 0px;
+}
+
+.juhatus-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.juhatus-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 105vw;
+    height: 200%;
+    background-color: #2c2c2c;
+    background: url('/src/Lehekyljed/Juhatus/Content/juhatusBg.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+
+
+

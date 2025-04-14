@@ -63,7 +63,7 @@ function TopNaviagtionButtonDropDown({text, links}) {
   );
 }
 
-function TopNaviagtionButtonNormal({ text, link }) {
+function TopNaviagtionButtonNormal({ text, link, scrollTo}) {
   const [isHovering, setIsHovering] = useState(false);
   const [needToReturn, setNeedToReturn] = useState(false);
 
@@ -78,6 +78,16 @@ function TopNaviagtionButtonNormal({ text, link }) {
       setNeedToReturn(true); 
   }
 
+  const handleClick = () => {
+    if (link) {
+        window.location.href = link;  // Navigate to the 'to' URL when clicked
+    } else if (scrollTo) {
+        document.documentElement.style.overflowY = 'auto';
+        window.scrollTo({ top: scrollTo, behavior: "smooth" });
+    }
+    
+  }
+
 
 
   return ( 
@@ -85,8 +95,9 @@ function TopNaviagtionButtonNormal({ text, link }) {
       className={`normalbtn ${isHovering ? 'hover' : ''} ${needToReturn ? 'return' : ''}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
     >
-      <a href={link} style={{ color: "inherit", textDecoration: "none" }}>
+      <a style={{ color: "inherit", textDecoration: "none" }}>
         {text}
       </a>
     </div>
@@ -126,7 +137,7 @@ function TopNavigationBarButtons() {
 
     <TopNaviagtionButtonNormal
       text = "Kontakt"
-      link = "./kontakt"
+      scrollTo = {10*document.documentElement.scrollHeight}
     />
           
         

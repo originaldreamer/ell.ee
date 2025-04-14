@@ -9,6 +9,7 @@ import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
 
 
 
+
 //imported texts
 import esilehePeamineKirjeldus from './esilehePeamineKirjeldus.js'
 //imported images
@@ -38,7 +39,7 @@ export default function Esileht() {
 
 
         <div className='esileht-main'>
-          <h1>Eesti Koolide Liputoimkondade Liit</h1>
+          <h1>Esileht - tegemata <br/>Eesti Koolide Liputoimkondade Liit</h1>
           <TextArea content = {esilehePeamineKirjeldus}/>
 
           <LinkUnderlined to="./liikmed" display="Liikmete lehekülg" />
@@ -55,7 +56,9 @@ export default function Esileht() {
           <br />
           <LinkUnderlined to="./syndmused" display="Sündmused" />
           <br />
-          <LinkUnderlined to="./kontakt" display="Kontakt" />
+          <LinkUnderlined to="./juhatus" display="Juhatus" />
+          <br />
+          <LinkUnderlined scrollTo = {document.documentElement.scrollHeight} display="Kontakt" />
         </div>
 
 

@@ -75,12 +75,19 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
 }
 
  
-function NormalBtn({tekst, link, setIdFunction, hidePanelFunction})
+function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
 {
 
     const handleClick = () => {
         setIdFunction(-1);
         hidePanelFunction();
+        if (link) {
+          window.location.href = link;
+        } else if (scrollTo) {
+          document.documentElement.style.overflowY = 'auto';
+          window.scrollTo({ top: scrollTo, behavior: "smooth" });
+        }
+          
     }
 
     const handleMouseEnter = () => {
@@ -99,7 +106,6 @@ function NormalBtn({tekst, link, setIdFunction, hidePanelFunction})
                 onClick={handleClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                href={link}
             >
                 {tekst}
             </a>
@@ -116,7 +122,7 @@ export default function TopNavSidePanel({hidePanelFunction}) {
     <div className='topNavSidePanel-container'>
         <div className='topNavSidePanel-topLine' />
         <div className='topNavSidePanel-sisu'>
-        
+         
             
             <DropDown tekst="Liit" id = '0'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
@@ -133,7 +139,7 @@ export default function TopNavSidePanel({hidePanelFunction}) {
             ]}/>
 
             <NormalBtn tekst="Dokumendid" link='./dokumendid' setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
-            <NormalBtn tekst="Kontakt" link='./kontakt' setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
+            <NormalBtn tekst="Kontakt" scrollTo = {document.documentElement.scrollHeight} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
             
             
         </div>

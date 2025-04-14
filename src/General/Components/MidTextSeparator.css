@@ -1,0 +1,17 @@
+.MidTextSeparator-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100vw;
+}
+
+.MidTextSeparator-sisu {
+    position: relative;
+       
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 90%;
+}
