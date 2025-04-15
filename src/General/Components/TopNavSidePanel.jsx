@@ -126,8 +126,8 @@ export default function TopNavSidePanel({hidePanelFunction}) {
             
             <DropDown tekst="Liit" id = '0'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
-                    { href: "./tutvustus", label: "Tutvustus", unComplete: "true"},
-                    { href: "./juhatus", label: "Juhatus", unComplete: "true"},
+                    { href: "./tutvustus", label: "Tutvustus"},
+                    { href: "./juhatus", label: "Juhatus"},
                     { href: "./liikmed", label: "Liikmed" },
                     { href: "./pohikiri", label: "Põhikiri" }
             ]}/>
@@ -135,7 +135,7 @@ export default function TopNavSidePanel({hidePanelFunction}) {
             <DropDown tekst="Teated"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
                     { href: "./uudised", label: "Uudised!"},
-                    { href: "./syndmused", label: "Sündmused", unComplete: "true"},
+                    { href: "./syndmused", label: "Sündmused"},
             ]}/>
 
             <NormalBtn tekst="Dokumendid" link='./dokumendid' setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />

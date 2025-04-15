@@ -114,8 +114,8 @@ function TopNavigationBarButtons() {
       <TopNaviagtionButtonDropDown
         text = "Liit"
         links={[
-          { href: "./tutvustus", label: "Tutvustus", unComplete: "true"},
-          { href: "./juhatus", label: "Juhatus", unComplete: "true"},
+          { href: "./tutvustus", label: "Tutvustus"},
+          { href: "./juhatus", label: "Juhatus"},
           { href: "./liikmed", label: "Liikmed" },
           { href: "./pohikiri", label: "Põhikiri" }
         ]}
@@ -200,8 +200,14 @@ export default function TopNavigationBar() {
   // Update the screen width state when the window is resized
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1200);
-      setShowSidePanel(isSmallScreen);
+      const smallScreen = window.innerWidth < 1200;
+      setIsSmallScreen(smallScreen);
+      console.log ("f: " + showSidePanel + " s: " + isSmallScreen);
+      if (!smallScreen)
+      {
+        setShowSidePanel(false);
+      }
+
     };
 
     // Initialize the state on component mount

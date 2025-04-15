@@ -6,4 +6,4 @@ export default function UudisLehtGaleriiTile({pilt, handleClick}) {
             <img src={pilt} />
         </div>
     );
-}
+} 

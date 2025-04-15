@@ -277,6 +277,17 @@
   letter-spacing: 0.01em;
 }
 
+.long-small-text-white {
+  color: var(--light-color);
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  font-weight: 200;
+  font-size: 19.5px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
 .small-text {
   color: black;
   font-family: 'Merriweather' ;

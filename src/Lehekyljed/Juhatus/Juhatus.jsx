@@ -6,8 +6,7 @@ import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import PageHeaderLines from '../../General/Components/PageHeaderLines.jsx';
 import MidTextSeparator from '../../General/Components/MidTextSeparator.jsx';
-
-//imported content
+import JuhatusLiigeGrid from './Components/JuhatusLiigeGrid.jsx';
 
 
 
@@ -35,19 +34,10 @@ export default function Juhatus() {
                 marginTop='70px'
               />
 
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
+              
+
+              <JuhatusLiigeGrid/>
+
 
               
 

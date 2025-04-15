@@ -1,0 +1,64 @@
+.juhatusLiige-container {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.juhatusLiige-pilt {
+    aspect-ratio: 0.8;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transform-origin: bottom center; 
+}
+
+.juhatusLiige-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 226px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: -5px;
+    z-index: 1;
+    background-color: rgb(44, 62, 80);
+}
+
+.juhatusLiige-bottom-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 2px;
+    width: 100%;
+    z-index: 1;
+    background-color: #52575f90;
+    padding: 20px  20px  15px  20px;
+    border-radius: 5px;
+    scale: 0.85;
+}
+
+.juhatusLiige-profile-text {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .juhatusLiige-container {
+        scale: 0.9;
+        margin-bottom: -5px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .juhatusLiige-container {
+        scale: 0.78;
+        margin-bottom: -95px;
+    }
+}
+
