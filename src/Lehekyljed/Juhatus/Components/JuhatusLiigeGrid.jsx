@@ -6,7 +6,7 @@ import './JuhatusLiigeGrid.css'
 import JuhatusLiige from './JuhatusLiige.jsx';
 
 //imported content
-import tempinimene from '../Content/tempinimene.jpg'
+import tempinimene from '../Content/tempInimene.jpg'
 
 export default function JuhatusLiigeGrid() {
     return (
