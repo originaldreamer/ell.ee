@@ -1,0 +1,72 @@
+.Error404-flag {
+  position: absolute;
+  z-index: 50;
+  bottom: 210px;
+  right: -5%;
+  transform: scaleX(1.7) scaleY(2) rotate(-5deg);
+}
+
+.Error404-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Error404-button {
+  padding: 15px;
+  width: 180px;
+  border-radius: 30px;
+  background-color: #52575F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Error404-button-text {
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.Error404-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: #EFA900;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Error404-button:hover .Error404-button-text {
+  color: #FFFFFF;
+}
+
+/*Scaling*/
+
+
+@media (max-width: 1500px) {
+  .Error404-flag {
+    z-index: 0;
+    bottom: 10px;
+    right: 3%;
+    transform: scaleX(1) scaleY(1) rotate(5deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .Error404-flag {
+    z-index: 0;
+    bottom: -35px;
+    right: -1%;
+    transform: scaleX(.7) scaleY(.7) rotate(5deg);
+  }
+
+  .Error404-buttons {
+    margin-top: 0px;
+    gap: 40px;
+  }
+}

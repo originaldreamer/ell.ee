@@ -4,9 +4,7 @@ import '../../index.css';
 //imported components
 import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
-import PageHeaderPlain from '../../General/Components/PageHeaderPlain.jsx';
 import DokumendidSisu from './Components/DokumendidSisu.jsx';
-import ImageAndContent from '../../General/Components/ImageAndContent.jsx';
 import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx';
 
 //imported elements
@@ -16,7 +14,7 @@ export default function Dokumendid() {
 
   return ( 
       <div className='plain-container'>
-          <div className='plain-bg' />
+          <div className='plain-bg-icons-light' />
 
 
 
@@ -31,11 +29,8 @@ export default function Dokumendid() {
                 titleAlignment='left'
               />
 
-              <ImageAndContent content={<DokumendidSisu />} offsetY='-120px'/>
-
+              <DokumendidSisu />
               
-              
-
 
               <BottomNavigationBar />
           </div>

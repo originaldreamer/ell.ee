@@ -1,6 +1,6 @@
 .footer {
     bottom: 0;
-    /*margin-top: auto;*/
+    margin-top: auto;
     margin-bottom: -100px;
     height: 190px;
     background-color: #02265A;
@@ -96,6 +96,29 @@
     .footer-meil {
         scale: 0.8;
         bottom: -88px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer-title {
+        margin-top: 30px;
+        font-size: 23px;
+    }
+
+    .footer-kontaktid {
+        bottom: -48px;
+    }
+
+    .footer-kontakt {
+        scale: 1.15;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.75;
+        bottom: -88px;
+        white-space: nowrap;
     }
 
 }
