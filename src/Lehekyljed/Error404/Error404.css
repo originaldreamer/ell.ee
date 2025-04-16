@@ -85,7 +85,8 @@
 
   .Error404-buttons {
     margin-top: -10px;
-    margin-bottom: 130px
+    margin-bottom: 130px;
+    gap: 15px;
   }
 
 
