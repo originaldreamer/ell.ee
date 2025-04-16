@@ -6,6 +6,8 @@
   transform: scaleX(1.7) scaleY(2) rotate(-5deg);
 }
 
+
+
 .Error404-buttons {
   margin-top: 50px;
   display: flex;
@@ -69,4 +71,22 @@
     margin-top: 0px;
     gap: 40px;
   }
+
+}
+
+@media (max-width: 500px) {
+
+  .Error404-flag {
+    z-index: 0;
+    bottom: -55px;
+    right: -8%;
+    transform: scaleX(.5) scaleY(.5) rotate(5deg);
+  }
+
+  .Error404-buttons {
+    margin-top: -10px;
+    margin-bottom: 130px
+  }
+
+
 }
