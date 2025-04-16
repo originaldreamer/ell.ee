@@ -38,12 +38,12 @@ function Details({koht, aeg})
         <div className='Syndmus-details'>
             {koht && <div className='Syndmus-detail'>
                 <img src={FlagIcon}  style={{ width: '39px' }} />
-                <div className='long-small-text'>{koht}</div >
+                <div className='long-small-text Syndmus-detail-text'>{koht}</div >
             </div>}
             
             {aeg && <div className='Syndmus-detail'>
-                <img src={WatchIcon}  style={{ width: '30px' }} />
-                <div className='long-small-text'>{aeg}</div >
+                <img src={WatchIcon}  style={{ width: '30px', marginLeft: '2px' }} />
+                <div className='long-small-text Syndmus-detail-text'>{aeg}</div >
             </div>}
         </div>
     );
@@ -63,11 +63,19 @@ export default function Syndmus({pealkiri, kuupaev, asukoht, kellaaeg, kirjeldus
             <Kuupaev date={kuupaev} />
 
             <div className='Syndmus-kirjeldus'>
-            <div className='mid-small-header' style={{marginTop: 0}}> {pealkiri} </div >
+                <div className='mid-small-header Syndmus-kirjeldus-pealkiri' style={{marginTop: 0}}> {pealkiri} </div >
 
-            <Details koht={asukoht} aeg={kellaaeg}/>
+                <Details koht={asukoht} aeg={kellaaeg}/>
 
-            <div className='small-text'> {kirjeldus} </div>
+
+                {kirjeldus.map((punkt, index) => (
+                    <div key={index} className="bulletPoint small-text Syndmus-kirjeldus-alapunkt">
+                        {punkt}
+                    </div>
+                ))}
+                
+            
+
             </div>
           </div>
 

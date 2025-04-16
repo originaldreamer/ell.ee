@@ -1,5 +1,18 @@
 .Syndmused-container {
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 20px;
     width: 90%;
+} 
+
+/*Scaling */
+@media (max-width: 600px) {
+    .Syndmused-container {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 550px) {
+    .Syndmused-container {
+        width: 105%;
+    } 
 }

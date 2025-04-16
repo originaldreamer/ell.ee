@@ -30,7 +30,7 @@ function App() {
         <Route path="/uudised" element={<Uudised />} />
         <Route path="/uudisview" element={<UudisLeht />} />
         <Route path="/tutvustus" element={<LiiduKirjeldus />} />
-        <Route path="/syndmused" element={<SyndmusteList />} />
+        <Route path="/kalender" element={<SyndmusteList />} />
         <Route path="/juhatus" element={<Juhatus />} />
         <Route path="*" element={<Error404 />} />
       </Routes>

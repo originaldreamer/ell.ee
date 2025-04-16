@@ -129,13 +129,15 @@ export default function TopNavSidePanel({hidePanelFunction}) {
                     { href: "./tutvustus", label: "Tutvustus"},
                     { href: "./juhatus", label: "Juhatus"},
                     { href: "./liikmed", label: "Liikmed" },
-                    { href: "./pohikiri", label: "Põhikiri" }
+                    { href: "./ajalugu", label: "Ajalugu" },
+                    { href: "./symboolika", label: "Sümboolika" }
             ]}/>
 
-            <DropDown tekst="Teated"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
+            <DropDown tekst="Meedium"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
                     { href: "./uudised", label: "Uudised!"},
-                    { href: "./syndmused", label: "Sündmused"},
+                    { href: "./kalender", label: "Kalender" },
+                    { href: "./galerii", label: "Galerii" }
             ]}/>
 
             <NormalBtn tekst="Dokumendid" link='./dokumendid' setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />

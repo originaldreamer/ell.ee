@@ -30,8 +30,8 @@ export default function Juhatus() {
                 </div>}
               
                 textColor='#F5F5F5'
-                bgColor='rgba(44, 62, 80, 0.25)'
-                marginTop='70px'
+                bgColor='rgba(44, 62, 80, 0.72)'
+                marginTop='60px'
               />
 
               

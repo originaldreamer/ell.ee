@@ -14,10 +14,11 @@
     cursor: pointer;
     margin-bottom: 2%;
     transition: transform 0.3s ease;
+    perspective: 800px;
 }
 
 .liikmetile:hover {
-    transform: translateY(-10px)
+    transform: perspective(800px) scale(0.99) translateY(-2px) rotateY(10deg);
 }
 
 

@@ -80,7 +80,7 @@ export default function BottomNavigationBar() {
       {/*<div className='footer-meil'>
       <div className='normal-text-white'>Võta meiega ühendust: </div>
       <LinkUnderlined display="liputoimkondade.liit@gmail.com" normalColor='white'/>
-      </div>*/}
+      </div>*/} 
 
       
       

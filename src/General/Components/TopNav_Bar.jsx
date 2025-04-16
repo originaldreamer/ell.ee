@@ -53,7 +53,6 @@ function TopNaviagtionButtonDropDown({text, links}) {
           {links.map((link, index) => (
             <div key={index}>
               <a href={link.href}>
-                {link.unComplete ? "-" : ""}
                 {link.label}
               </a>
             </div>
@@ -117,15 +116,17 @@ function TopNavigationBarButtons() {
           { href: "./tutvustus", label: "Tutvustus"},
           { href: "./juhatus", label: "Juhatus"},
           { href: "./liikmed", label: "Liikmed" },
-          { href: "./pohikiri", label: "Põhikiri" }
+          { href: "./ajalugu", label: "Ajalugu" },
+          { href: "./symboolika", label: "Sümboolika" }
         ]}
       />
 
     <TopNaviagtionButtonDropDown
-        text = "Teated"
+        text = "Meedia"
         links={[
-          { href: "./uudised", label: "Uudised!" },
-          { href: "./syndmused", label: "Sündmused" }
+          { href: "./uudised", label: "Uudised" },
+          { href: "./kalender", label: "Kalender" },
+          { href: "./galerii", label: "Galerii" }
         ]}
       />
 
@@ -202,14 +203,14 @@ export default function TopNavigationBar() {
     const handleResize = () => {
       const smallScreen = window.innerWidth < 1200;
       setIsSmallScreen(smallScreen);
-      console.log ("f: " + showSidePanel + " s: " + isSmallScreen);
+
       if (!smallScreen)
       {
         setShowSidePanel(false);
       }
 
     };
-
+ 
     // Initialize the state on component mount
     handleResize();
 

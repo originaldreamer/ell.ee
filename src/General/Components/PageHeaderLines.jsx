@@ -20,7 +20,7 @@ export default function PageHeaderLines({title, includeBg=false})
                 <div className='page-headerLines-line' />
 
                 <div className='page-headerLines-text'> 
-                    {title} 
+                    {title}  
                 </div>
 
                 <div className='page-headerLines-line' />

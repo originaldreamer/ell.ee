@@ -26,7 +26,7 @@ export default function Syndmused({syndmused, curPageIndex,maxElementsPerPage}) 
             kellaaeg={syndmus.kellaaeg}
             kirjeldus={syndmus.kirjeldus}
           />
-        ))}
+        ))} 
 
           
           

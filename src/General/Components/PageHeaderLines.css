@@ -3,7 +3,7 @@
 }
 
 .page-headerLines {
-    margin-top: 70px;
+    margin-top: 80px;
     position: relative; /* This makes the header a positioning context for the background */
 }
 
@@ -11,7 +11,7 @@
     z-index: 3000;
     font-family: Cambria;
     text-align: center;
-    color: #F5F5F5;
+    color: #EFA900;
     font-weight: 500;
     font-size: 55px;
     line-height: 1.2;
@@ -20,7 +20,7 @@
     margin-bottom: 14px;
     margin-left: auto;
     margin-right: auto;
-}
+} 
 
 
 .page-headerLines-line {

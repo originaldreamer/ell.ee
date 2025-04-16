@@ -55,16 +55,47 @@
 
 
 /*Scaling*/
-@media (max-width: 1200px) {
-    .footer-meil {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+@media (max-width: 1000px) {
+    .footer-title {
+        font-size: 29px;
     }
 
-    
+}
+
+@media (max-width: 850px) {
+    .footer-title {
+        font-size: 28px;
+    }
+
+    .footer-kontakt {
+        scale: 1.1;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.9;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer-title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
     .footer-kontaktid {
         bottom: -45px;
+    }
+
+    .footer-kontakt {
+        scale: 1.15;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.8;
+        bottom: -88px;
     }
 
 }

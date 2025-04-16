@@ -1,6 +1,7 @@
 .Syndmus-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 190px;
     width: 100%;
 }
 
@@ -32,6 +33,15 @@
 .Syndmus-kirjeldus{
     width: 80%;
     margin-top: 20px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+
+
+
+.Syndmus-kirjeldus-alapunkt{
+    margin-bottom: 7px;
 }
 
 
@@ -44,7 +54,7 @@
     align-items: center; /* Ensures items are vertically centered */
     gap: 20px;
     width: 100%; /* Optional: Ensure no implicit shrink occurs */
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     margin-left: -5px;
 }
 
@@ -56,6 +66,81 @@
     gap: 5px;
 }
 
+.Syndmus-detail-text {
+    font-size: 19.5px;
+}
+
 .Syndmus-detail img{
     margin-top: -12px;
+}
+
+/*Scaling*/
+@media (max-width: 970px) {
+    .Syndmus-detail-text {
+        font-size: 18px;
+    }
+
+    .Syndmus-detail img{
+        transform: scale(0.95);
+    }
+
+    .Syndmus-sisu {
+        gap: 60px; 
+    }
+}
+
+@media (max-width: 750px) {
+    .Syndmus-kirjeldus-pealkiri {
+        font-size: 24px;
+    }
+
+    .Syndmus-kirjeldus{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .Syndmus-detail-text {
+        font-size: 16.5px;
+    }
+
+    .Syndmus-detail img{
+        transform: scale(0.85);
+    }
+
+    .Syndmus-kirjeldus-alapunkt{
+        font-size: 14px;
+    }
+
+    .Syndmus-sisu {
+        gap: 40px; 
+    }
+
+    .Syndmus-details {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; /* Ensures items are vertically centered */
+        gap: 7px;
+        width: 100%; /* Optional: Ensure no implicit shrink occurs */
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+
+    .Syndmus-sisu {
+        gap: 30px; 
+    }
+}
+
+@media (max-width: 550px) {
+    .Syndmus-kirjeldus-pealkiri {
+        font-size: 23px;
+    }
+
+    .Syndmus-kirjeldus{
+        margin-top: 12px;
+        margin-bottom: 23px;
+        padding-right: 15px;
+    }
 }

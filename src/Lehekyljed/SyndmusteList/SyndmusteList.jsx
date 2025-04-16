@@ -51,7 +51,7 @@ export default function SyndmusteList() {
           <div className='SyndmusteList-body'>
               <TopNavigationBar />
 
-              <PageHeaderImage title="Sündmused" image={puitTaust} offsetY='100%' titleAlignment="left"/>
+              <PageHeaderImage title="Kalender" image={puitTaust} offsetY='100%' titleAlignment="left"/>
               
 
               <Syndmused 
