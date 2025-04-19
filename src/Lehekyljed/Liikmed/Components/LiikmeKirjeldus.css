@@ -175,6 +175,7 @@
     gap: 25px;
     margin-top: 10px;
     margin-bottom: 30px;
+    height: 41.5px;
 }
 
 .sotsiaalMeedia {
@@ -183,6 +184,20 @@
     border: none;
     cursor: pointer;
     z-index: 5000;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.2);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.sotsiaalMeedia-empty {
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 5000;
+    height: 41.5px;
+    width: 20px;
     margin-left: auto;
     margin-right: auto;
     transform: scale(1.2);
@@ -239,6 +254,27 @@
     .header-line:last-child {
         bottom: -4%;
     }
+    .liikmed-quitIcon {
+        top: 32px;
+        right: 32px;
+    }
+    
+    .liikmed-quitIcon img {
+        width: 30px;
+    } 
+
+    .liikmed-arrows {
+        right: 0px;
+        bottom: -20px
+    }
+
+    .liikmed-arrow {
+        margin-left: 20px;
+    }
+
+    .liikmed-arrow img {
+        width: 30px;
+    }
     
 }
 
@@ -254,7 +290,7 @@
     .kirjeldus {
         width: 100vw;
         height: unset;
-        min-height: 640px;
+        min-height: 630px;
         transform: translate(-50%, -50%) scale(0.85);
     }
 

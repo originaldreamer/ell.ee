@@ -15,7 +15,7 @@ import arrowRightWhite from '../Design Elements/arrow right white.svg'
 import arrowRightYellow from '../Design Elements/arrow right yellow.svg'
 import quitIcon from '../Design Elements/quit icon.svg';
 import quitIconActivated from '../Design Elements/quit icon activated.svg';
-
+import empty from '../Design Elements/empty.svg';
 
 
 
@@ -37,6 +37,10 @@ function SotsMeediaLingid({instagramLink, facebookLink})
             {facebookLink !== "none" && (
                 <SotsiaalMeedia symbolNormal={facebookLogoWhite} symbolClicked={facebookLogoYellow} size='30px' link={facebookLink} />
             )}
+
+            {facebookLink === "none" && instagramLink === "none" && (
+                <div className='sotsiaalMeedia-empty' />
+            )}
         </div>
     );
 }
@@ -55,6 +59,8 @@ function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
   
     function handleClick() {
         window.location.href = link;
+      
+        
     }
   
     return (
