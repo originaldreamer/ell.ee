@@ -92,8 +92,8 @@
   {
     "liikmeNimi": "Tallinna 21. Kool",
     "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-    "logo": "/Images/Koolide logod/GAG_logo.png",
-    "logoWidth": "40px",
+    "logo": "/Images/Koolide logod/21k-logo.png",
+    "logoWidth": "50px",
     "kontakt": "[AI] Oliver Ruut, oliver.ruut@example.ee",
     "liitumisKuupaev": "20.02.2025",
     "instagram": "none",
@@ -102,7 +102,7 @@
   {
     "liikmeNimi": "Westholmi Gümnaasium",
     "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logo": "/Images/Koolide logod/westholm_logo.png",
     "logoWidth": "40px",
     "kontakt": "[AI] Eva Reimann, eva.reimann@example.ee",
     "liitumisKuupaev": "20.02.2025",

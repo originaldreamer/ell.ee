@@ -36,7 +36,10 @@
     top: 10px;
     left: 10px;
     border-radius: 0;
+}
 
+.liikmetile-logo img {
+    border-radius: 0;
 }
 
 

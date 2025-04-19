@@ -38,7 +38,7 @@ export default function LiikmeTile({index, handleClick})
             <div className='liikmetile-title' style={{color: textColor}}> {content.liikmeNimi} </div>
 
           
-          </div>
+          </div> 
 
 
         </button>
