@@ -255,6 +255,7 @@
         width: 92vw;
         height: unset;
         min-height: 640px;
+        transform: translate(-50%, -50%) scale(0.8);
     }
 
     .kirjeldus-text {
@@ -300,7 +301,7 @@
     }
     
     .liikmed-quitIcon img {
-        width: 35px;
+        width: 30px;
     } 
 
 
@@ -316,6 +317,10 @@
     .liikmed-arrow {
         padding: 8px;
         margin-left: 15px;
+    }
+
+    .liikmed-arrow img {
+        width: 30px;
     }
     
 

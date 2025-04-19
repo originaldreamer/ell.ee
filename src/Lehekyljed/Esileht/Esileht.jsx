@@ -63,7 +63,7 @@ export default function Esileht() {
 
 
 
-        <BottomNavigationBar />
+        {/*<BottomNavigationBar />*/}
 
       </div>
     </div>
