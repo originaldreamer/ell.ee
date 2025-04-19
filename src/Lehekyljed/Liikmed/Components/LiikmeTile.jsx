@@ -3,6 +3,7 @@ import '../../../App.css'
 import './LiikmeTile.css'
 import data from '../Content/liikmeteKirjeldused.json'
 
+import logo from '/Images/Koolide logod/GAG_logo.png'
 
 
 
@@ -26,12 +27,16 @@ export default function LiikmeTile({index, handleClick})
           className='liikmetile'
           onClick={handleClick}
           onMouseEnter={handleMouseEnter}  
-          onMouseLeave={handleMouseLeave}
+          onMouseLeave={handleMouseLeave} 
         >
           <div>
+            <div className='liikmetile-logo'>
+              <img src={content.logo} style={{width: content.logoWidth}}/>
+            </div>
+
             <img src={content.liputoimkonnaPilt}  />
-            <div className='title' style={{color: textColor}}> {content.liikmeNimi} </div>
-          
+            <div className='liikmetile-title' style={{color: textColor}}> {content.liikmeNimi} </div>
+
           
           </div>
 

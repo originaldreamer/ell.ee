@@ -47,14 +47,7 @@
 }
 
 /*Scaling*/
-@media (max-width: 1500px) {
-    .page-headerLines-line{
-        width: 90vw;
-    }
-    
-}
-
-@media (max-width: 1010px) {
+@media (max-width: 1100px) {
     .page-headerLines-line{
         width: 85vw;
     }

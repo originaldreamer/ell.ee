@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 import '../../../App.css'
 import './LiikmeKirjeldus.css'
 
@@ -11,6 +13,9 @@ import arrowLeftWhite from '../Design Elements/arrow left white.svg'
 import arrowLeftYellow from '../Design Elements/arrow left yellow.svg'
 import arrowRightWhite from '../Design Elements/arrow right white.svg'
 import arrowRightYellow from '../Design Elements/arrow right yellow.svg'
+import quitIcon from '../Design Elements/quit icon.svg';
+import quitIconActivated from '../Design Elements/quit icon activated.svg';
+
 
 
 
@@ -18,6 +23,7 @@ import arrowRightYellow from '../Design Elements/arrow right yellow.svg'
 //later do from datasheet
 
 import koolimajaPilt from '../Design Elements/MURG liputoimkond.jpg'
+
 
 
 /*if link == "none", then don't render that symbol"*/
@@ -58,13 +64,11 @@ function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
         onMouseEnter={handleMouseEnter}  
         onMouseLeave={handleMouseLeave}
       >
-        <div>
-          <img
-            src={symbol}
-            alt="symbol"
-            style={{ width: size, height: 'auto' }}
-          />
-        </div>
+        <img 
+          src={symbol}
+          alt="symbol"
+          style={{ width: size, height: 'auto' }}
+        />
       </button>
     );
 }
@@ -90,6 +94,7 @@ function Arrows({leftFunction, rightFunction}) {
 
 function Arrow({symbolNormal, symbolClicked, handleClick}) {
   const [symbol, setSymbol] = useState(symbolNormal);
+  const isTouch = useIsTouchDevice();
 
   // Handle mouse enter (hover)
   function handleMouseEnter() {
@@ -108,8 +113,11 @@ function Arrow({symbolNormal, symbolClicked, handleClick}) {
     <button 
       className='liikmed-arrow'
       onClick={handleClick} // Use the newly defined handleClick function
-      onMouseEnter={handleMouseEnter}  
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={!isTouch ? handleMouseEnter : undefined} // Apply only if not touch
+      onMouseLeave={!isTouch ? handleMouseLeave : undefined}
+      onTouchStart={isTouch ? handleMouseEnter : undefined} // Apply only if touch
+      onTouchEnd={isTouch ? handleMouseLeave : undefined}
+      onTouchCancel={isTouch ? handleMouseLeave : undefined}
     >
       <div>
         <img
@@ -121,15 +129,45 @@ function Arrow({symbolNormal, symbolClicked, handleClick}) {
   );
 }
 
+function QuitIcon({normalIcon, activatedIcon, handleClick}) {
+  const [icon, setIcon] = useState(normalIcon);
+  const isTouch = useIsTouchDevice();
+
+  const handleMouseEnter = () => {
+    setIcon(activatedIcon);
+  }
+
+  const handleMouseLeave = () => {
+    setIcon(normalIcon);
+  }
+
+  return (
+      <div
+          className='liikmed-quitIcon'
+          onClick={handleClick}
+          onMouseEnter={!isTouch ? handleMouseEnter : undefined} // Apply only if not touch
+          onMouseLeave={!isTouch ? handleMouseLeave : undefined}
+          onTouchStart={isTouch ? handleMouseEnter : undefined} // Apply only if touch
+          onTouchEnd={isTouch ? handleMouseLeave : undefined}
+          onTouchCancel={isTouch ? handleMouseLeave : undefined} 
+      >
+        <img src={icon} />
+      </div>
+          
+  );
+}
+
 function Top({nimi, pilt})
 {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isPhoneScreen, setIsPhoneScreen] = useState(false);
     const imageName = pilt.split('/').pop().split('.')[0];
 
   // Update the screen width state when the window is resized
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1345);
+      setIsSmallScreen(window.innerWidth < 1300);
+      setIsPhoneScreen(window.innerWidth < 530);
     };
 
     // Initialize the state on component mount
@@ -147,6 +185,9 @@ function Top({nimi, pilt})
     {isSmallScreen ? (
         <div>
             <img src={pilt} alt={imageName} width='400px' />
+
+            {isPhoneScreen && <div className='header-top-phoneLine'/>}
+
             <div className='header'>
               <div className='header-line' />
               {nimi}
@@ -178,9 +219,14 @@ function Line()
 export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,moveRight}) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => {moveRight()},
+    onSwipedRight: () => {moveLeft()},
+  });
+
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1345);
+      setIsSmallScreen(window.innerWidth < 1300);
     };
 
     handleResize();
@@ -191,15 +237,16 @@ export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,mo
   }, []);
 
   return (
-      <div>
+      <div {...swipeHandlers} >
           <Background handleClick={turnOffKirjeldus} />
 
           <div className="kirjeldus">
+
+              <div className='kirjeldus-logo'>
+                <img src={content.logo} style={{width: content.logoWidth}}/>
+              </div>
         
               <Top nimi={content.liikmeNimi} pilt={content.liputoimkonnaPilt} />
-
-              {!isSmallScreen && <Line />}
-              <div className="kirjeldus-text">{content.kirjelduseText}</div>
 
               <Line />
 
@@ -218,10 +265,15 @@ export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,mo
                   facebookLink={content.facebook} 
               />
 
+
+
              
           </div>
 
-          <Arrows leftFunction={moveLeft} rightFunction={moveRight}/>
+
+          <QuitIcon normalIcon={quitIcon} activatedIcon={quitIconActivated} handleClick={turnOffKirjeldus}/>
+
+          <Arrows leftFunction={moveLeft} rightFunction={moveRight} handleClick={turnOffKirjeldus}/>
       </div>
   );
 }

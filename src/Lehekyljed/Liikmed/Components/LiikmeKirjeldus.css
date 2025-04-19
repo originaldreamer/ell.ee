@@ -7,8 +7,7 @@
     z-index: 200000000;
     background: linear-gradient(to bottom, #02265A 60%, #52575F);
     width: 850px;
-    max-height: 85%;
-    height: 680px;
+    height: 600px;
     border-radius: 25px;
     border: 2px solid #EFA900;
     display: flex; 
@@ -17,25 +16,31 @@
     padding: 0px;
     box-sizing: border-box; 
     overflow-x: hidden; 
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 
 
-.kirjeldus::-webkit-scrollbar {
+.kirjeldus::-webkit-scrollbar { 
     background: transparent; 
     width: 0px;
 }
 
+.kirjeldus-logo {
+    position: absolute;
+    bottom: 16px;
+    left: 27px;
+    transform: scale(1.3);
+}
 
 
 .kirjeldus-line {
     content: "";
     z-index: 1000;
-    margin-top: 22px;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 22px;
     width: 100%;
-    height: 2px;
+    height: 2.4px;
     background-color:  #EFA900;
     border-radius: 50px;
     flex-shrink: 0;
@@ -53,6 +58,19 @@
 }
 
 
+.liikmed-quitIcon {
+    position: fixed;
+    top: 55px;
+    right: 55px;
+    z-index: 55000;    
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.liikmed-quitIcon img {
+    width: 40px;
+} 
 
 
 .liikmed-arrows {
@@ -70,7 +88,9 @@
     border: none;
     cursor: pointer;
     padding: 8px;
-    margin-left: 34px;;
+    margin-left: 34px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .liikmed-arrow img {
@@ -93,6 +113,17 @@
     z-index: 2000;
 }
 
+.header-top-phoneLine {
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    width: 2000px;
+    height: 2.4px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    background-color: #efa700;
+}
+
 .header {
     position: relative;
     flex-grow: 1; 
@@ -113,7 +144,7 @@
     z-index: -2000;
     transform: translate(-50%, 0%);
     width: 2000px;
-    height: 2px;
+    height: 2.4px;
     background-color: #efa700;
 }
 
@@ -129,9 +160,9 @@
 .liikmed-background {
     position: fixed;
     left: 0;
-    top: 0;
+    top: -2px;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh + 2px);
     z-index: 50000;
     background: linear-gradient(to top, #02275a 8%,#02275aef 35%, #52575fb8);
     border-color: transparent;
@@ -141,8 +172,9 @@
 .sotsMeediaLingid {
     display: flex;        
     justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 50px;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .sotsiaalMeedia {
@@ -153,18 +185,22 @@
     z-index: 5000;
     margin-left: auto;
     margin-right: auto;
+    transform: scale(1.2);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 
+
 /*Scaling*/
-@media (max-width: 1345px) {
+@media (max-width: 1300px) {
     .kirjeldus {
-        width: max(480px, 60%);
-        height: 80%;
+        width: 590px;
+        height: 730px;
     }
 
     .liikmed-arrows {
-        right: -20px;
+        right: 0px;
     }
 
     .liikmed-arrow {
@@ -189,6 +225,7 @@
         max-width: 520px;
         width: 88%;
         margin-bottom: 20px;
+        border-radius: 30px;
     }
 
     .header {
@@ -205,8 +242,81 @@
     
 }
 
+@media (max-width: 670px) {
+    .kirjeldus {
+        width: 90vw;
+        height: 730px;
+    }
+    
+}
+
 @media (max-width: 530px) {
     .kirjeldus {
-        width: 90%;
+        width: 92vw;
+        height: unset;
+        min-height: 640px;
     }
+
+    .kirjeldus-text {
+        z-index: 2000;
+        text-align: left;
+        color: #F5F5F5;
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 1.3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .liikmed-top {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 15px; 
+    }
+    
+    .liikmed-top img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin-top: -14px;
+        border-radius: 0;
+        margin-bottom: -10px;
+    }
+
+    .header{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .sotsiaalMeedia {
+        transform: scale(1.1);
+    }
+
+    .liikmed-quitIcon {
+        top: 30px;
+        right: 30px;
+    }
+    
+    .liikmed-quitIcon img {
+        width: 35px;
+    } 
+
+
+    .liikmed-arrows {
+        position: fixed;
+        bottom: -5px;
+        right: 0px;
+        z-index: 50000;    
+        display: flex;
+        padding: 30px;
+    }
+    
+    .liikmed-arrow {
+        padding: 8px;
+        margin-left: 15px;
+    }
+    
+
 }

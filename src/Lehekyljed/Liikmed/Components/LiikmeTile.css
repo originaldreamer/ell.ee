@@ -6,15 +6,17 @@
     background-color:  #52575F;
     border: 20px solid #EFA900; 
     border-width: 3.5px;
-    border-radius: 35px;
+    border-radius: 10px;
     padding: 0;
     box-sizing: border-box; 
     overflow: hidden;
     position: relative;
     cursor: pointer;
     margin-bottom: 2%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
     perspective: 800px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 
 .liikmetile:hover {
@@ -30,9 +32,19 @@
 }
 
 
+.liikmetile-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 0;
+
+}
 
 
-.title {
+
+
+
+.liikmetile-title {
     z-index: 500;
     font-family: Cambria;
     text-align: center;

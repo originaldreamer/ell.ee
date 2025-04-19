@@ -1,102 +1,112 @@
 [
-    {
-      "liikmeNimi": "Gustav Adolfi Gümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] At Gustav Adolfi Gümnaasiumi Liputoimkond, tradition meets innovation. They orchestrate vibrant ceremonies that celebrate history and youthful energy, creating unforgettable moments of school spirit.",
-      "kontakt": "[AI] Jaan Tamm, jaan.tamm@example.ee",
-      "liitumisKuupaev": "[AI]15.09.2021",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Kadrioru Saksa Gümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] At Kadrioru Saksa Gümnaasiumi Liputoimkond, cultural heritage inspires every step. Their elegant displays and spirited parades pay tribute to a storied past while embracing modern flair.",
-      "kontakt": "[AI] Mari Maas, mari.maas@example.ee",
-      "liitumisKuupaev": "[AI]10.08.2020",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Kohtla-Järve Gümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Kohtla-Järve Gümnaasiumi Liputoimkond blends modern creativity with classic tradition, delivering dynamic performances that resonate with both students and the community.",
-      "kontakt": "[AI] Peeter Oja, peeter.oja@example.ee",
-      "liitumisKuupaev": "[AI]05.05.2022",
-      "instagram": "none",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Sindi Gümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Sindi Gümnaasiumi Liputoimkond transforms everyday ceremonies into dramatic spectacles, combining creativity with deep-rooted tradition to ignite school pride.",
-      "kontakt": "[AI] Liisa Põld, liisa.pold@example.ee",
-      "liitumisKuupaev": "[AI]12.11.2021",
-      "instagram": "https://murg.ee/",
-      "facebook": "none"
-    },
-    {
-      "liikmeNimi": "Tallinna Mustamäe Riigigümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Tallinna Mustamäe Riigigümnaasiumi Liputoimkond radiates bold energy and commitment. Their striking performances and innovative events set a high standard for school celebrations.",
-      "kontakt": "[AI] Kati Kask, kati.kask@example.ee",
-      "liitumisKuupaev": "[Temp]20.02.2025",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Tallinna Inglise Kolledž",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] At Tallinna Inglise Kolledži Liputoimkond, tradition is reimagined with modern sophistication. Their events seamlessly blend cultural heritage with a contemporary twist.",
-      "kontakt": "[AI] Markus Sepp, markus.sepp@example.ee",
-      "liitumisKuupaev": "[AI]30.06.2020",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Tallinna Prantsuse Lütseum",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Tallinna Prantsuse Lütseumi Liputoimkond celebrates excellence with a distinctly French touch. Their graceful parades and innovative displays capture an artistic spirit.",
-      "kontakt": "[AI] Annika Saar, annika.saar@example.ee",
-      "liitumisKuupaev": "[AI]18.03.2022",
-      "instagram": "https://murg.ee/",
-      "facebook": "none"
-    },
-    {
-      "liikmeNimi": "Tallinna Reaalkool",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Known for its spirited approach, Tallinna Reaalkooli Liputoimkond mixes scientific precision with theatrical charm to create performances that are both innovative and timeless.",
-      "kontakt": "[AI] Rasmus Lepp, rasmus.lepp@example.ee",
-      "liitumisKuupaev": "[AI]07.07.2019",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Tallinna Ühisgümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Tallinna Ühisgümnaasiumi Liputoimkond champions community and collaboration. Their vibrant events weave creativity and tradition into every flag-raising ceremony.",
-      "kontakt": "[AI] Triin Lill, triin.lill@example.ee",
-      "liitumisKuupaev": "[AI]25.12.2021",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    },
-    {
-      "liikmeNimi": "Tallinna 21. Kool",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Standing at the crossroads of innovation and legacy, Tallinna 21. Kooli Liputoimkond delivers energetic displays that fuse modern creativity with time-honored practices.",
-      "kontakt": "[AI] Oliver Ruut, oliver.ruut@example.ee",
-      "liitumisKuupaev": "[AI]01.01.2023",
-      "instagram": "none",
-      "facebook": "none"
-    },
-    {
-      "liikmeNimi": "Westholmi Gümnaasium",
-      "liputoimkonnaPilt": "/Liputoimkondade Pildid/MURG liputoimkond.jpg",
-      "kirjelduseText": "[AI] Westholmi Gümnaasiumi Liputoimkond inspires with a perfect balance of tradition and modern artistry, crafting memorable events that celebrate school identity.",
-      "kontakt": "[AI] Eva Reimann, eva.reimann@example.ee",
-      "liitumisKuupaev": "[AI]09.09.2020",
-      "instagram": "https://murg.ee/",
-      "facebook": "https://murg.ee/"
-    }
-  ]
-  
+  {
+    "liikmeNimi": "Gustav Adolfi Gümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Jaan Tamm, jaan.tamm@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Kadrioru Saksa Gümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Mari Maas, mari.maas@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Kohtla-Järve Gümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Peeter Oja, peeter.oja@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "none",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Sindi Gümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Liisa Põld, liisa.pold@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "none"
+  },
+  {
+    "liikmeNimi": "Tallinna Mustamäe Riigigümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Kati Kask, kati.kask@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Tallinna Inglise Kolledž",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Markus Sepp, markus.sepp@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Tallinna Prantsuse Lütseum",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Annika Saar, annika.saar@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "none"
+  },
+  {
+    "liikmeNimi": "Tallinna Reaalkool",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Rasmus Lepp, rasmus.lepp@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Tallinna Ühisgümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Triin Lill, triin.lill@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  },
+  {
+    "liikmeNimi": "Tallinna 21. Kool",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Oliver Ruut, oliver.ruut@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "none",
+    "facebook": "none"
+  },
+  {
+    "liikmeNimi": "Westholmi Gümnaasium",
+    "liputoimkonnaPilt": "/Images/Liputoimkondade Pildid/MURG liputoimkond.jpg",
+    "logo": "/Images/Koolide logod/GAG_logo.png",
+    "logoWidth": "40px",
+    "kontakt": "[AI] Eva Reimann, eva.reimann@example.ee",
+    "liitumisKuupaev": "20.02.2025",
+    "instagram": "https://murg.ee/",
+    "facebook": "https://murg.ee/"
+  }
+]
