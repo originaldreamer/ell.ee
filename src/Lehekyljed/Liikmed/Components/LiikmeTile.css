@@ -1,7 +1,5 @@
 .liikmetile {
-    width: 100%; /* Adapt to grid column */
-    max-width: 360px; /* Prevent elements from getting too large */
-    min-width: 300px; 
+    width: 360px; 
     background-color: #02265A;
     background-color:  #52575F;
     border: 20px solid #EFA900; 
@@ -17,6 +15,7 @@
     perspective: 800px;
     -webkit-tap-highlight-color: transparent;
     outline: none;
+    margin-bottom: 20px;
 }
 
 .liikmetile:hover {
@@ -64,33 +63,94 @@
 }
 
 /*Scaling*/
-@media (max-width: 1010px) {
+@media (max-width: 1500px) {
     .liikmetile {
-        max-width: 370px;
+        width: 330px
+    }
+
+    .liikmetile-title {
+        font-size: 18.5px;
     }
     
 }
 
-@media (max-width: 670px) {
+@media (max-width: 1200px) {
     .liikmetile {
-        min-width: 83%;
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 20px;
     }
     
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
     .liikmetile {
-        min-width: 90%;
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 18.5px;
     }
     
 }
 
-@media (max-width: 550px) {
+
+@media (max-width: 750px) {
     .liikmetile {
-        min-width: unset;
-        width: 90%;
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .liikmetile-title {
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
     }
     
 }
+
+@media (max-width: 600px) {
+    .liikmetile {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 20px;
+        padding: 15px
+        
+    }
+
+    .liikmetile:hover {
+        transform: perspective(800px) scale(0.99) translateY(-2px) rotateX(5deg);
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .liikmetile {
+        transition: transform 0.2s ease; 
+    }
+
+    .liikmetile:hover {
+        transform: perspective(800px) scale(0.99) translateY(-2px);
+    }
+    
+}
+
+
 
    
