@@ -252,7 +252,7 @@
 
 @media (max-width: 530px) {
     .kirjeldus {
-        width: 92vw;
+        width: 100vw;
         height: unset;
         min-height: 640px;
         transform: translate(-50%, -50%) scale(0.85);
