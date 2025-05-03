@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './LiiduKirjeldus.css'
+import '../../General/Design styles/PlainContentPage3.css'
 
 //imported components
 import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
@@ -20,10 +20,10 @@ import lossLippImage from './Content/lossLipp.jpg'
 
 export default function LiiduKirjeldus() {
   return (
-      <div className='liiduKirjeldus-container'>
-          <div className='liiduKirjeldus-bg' />
+      <div className='plain3-container'>
+          <div className='plain3-bg' />
 
-          <div className='liiduKirjeldus-body'>
+          <div className='plain3-body'>
               <TopNavigationBar />
 
 

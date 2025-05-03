@@ -3,7 +3,8 @@ import './ImageAndContent.css'
 import '../../index.css'
 
 //imported components
-import PiltideView from './PiltideView';
+import PiltideView from './PiltideView.jsx';
+import ScrollImages from './ScrollImage.jsx';
 
 
 
@@ -23,7 +24,7 @@ function ImageGrid({ images }) {
 
   const setPilt = (index) => {
     setCurPilt(images[index]);
-    setPildiIndex(index); 
+    setPildiIndex(index);  
 };
 
 const increasePildiIndex = () => {
@@ -103,25 +104,58 @@ useEffect(() => {
 
 
 export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%'}) {
+  const smallScreenSize = '900px'
+
+  const [showScrollImages, setShowScrollImages] = useState(
+    () => window.innerWidth < 950
+  );
+
+  useEffect(() => {
+    const onResize = () => {
+      setShowScrollImages(window.innerWidth < 950);
+    };
+
+    // run once to pick up the initial size
+    onResize();
+    // listen for resizes
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
+
   return (
       <div className='imageAndContent-container' style={{marginTop: offsetY}}>
         <div className='imageAndContent-bg' style={{backgroundColor: bgColor}}/>
+
+        
+
         
         {reverse ? (
         <div className='imageAndContent-sisu'>
-          <ImageGrid images={images} />
+          {!showScrollImages && <ImageGrid images={images} />}
+          
           <div className='imageAndContent-content'>
             {content}
           </div>
         </div>
       ) : (
+        <div>
+          {/*<ScrollImages images={images} />*/}
         <div className='imageAndContent-sisu'>
           <div className='imageAndContent-content'>
             {content}
           </div>
-          <ImageGrid images={images} />
+          {!showScrollImages && <ImageGrid images={images} />}
+        </div>
+
         </div>
       )}
+
+
+      {showScrollImages && 
+        <div className='imageAndContent-scroll'>
+          <ScrollImages images={images} />
+        </div>
+      }
 
       </div>
   );

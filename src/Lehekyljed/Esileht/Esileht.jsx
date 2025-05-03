@@ -58,6 +58,10 @@ export default function Esileht() {
           <br />
           <LinkUnderlined to="./juhatus" display="Juhatus" />
           <br />
+          <LinkUnderlined to="./ajalugu" display="Ajalugu" />
+          <br />
+          <LinkUnderlined to="./symboolika" display="Symboolika" />
+          <br />
           <LinkUnderlined scrollTo = {document.documentElement.scrollHeight} display="Kontakt" />
         </div>
 

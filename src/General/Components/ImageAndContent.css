@@ -1,8 +1,14 @@
 .imageAndContent-container {
     position: relative;
     margin-bottom: 0px;
-    width: 100%;
-    padding: 30px 0px 20px 0px;
+    width: 110%;
+    padding: 0px 0px 20px 0px;
+}
+
+.imageAndContent-scroll {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imageAndContent-content {
@@ -18,7 +24,7 @@
     height: 100%;
     width: 100vw; /* Set width to cover container */
     z-index: -1;
-}
+} 
 
 .imageAndContent-sisu {
     width: 100%;
@@ -27,12 +33,12 @@
     gap: 0px; /* Adds spacing between items */
     justify-content: space-evenly; /* Aligns items to the left */
     align-items: flex-start; /* Centers items vertically (optional) */
-    padding: 30px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     height: 100%;
 }
 
 .imageAndContent-image {
-    width: 80%;
+    width: 81%;
     height: auto;
     overflow: hidden;
 }
@@ -55,4 +61,68 @@
     justify-content: flex-start; /* Ensures images stick to the top */
     align-items: center;    
 
+}
+
+/*Scaling*/
+@media (max-width: 1400px) {
+    .imageAndContent-container {
+        width: 100vw;
+    }
+
+    .imageAndContent-image {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 950px) {
+    .imageAndContent-sisu {
+        width: 100%;
+        display: flex; /* Enables flexbox layout */
+        flex-direction: row; /* Ensures items align from left to right */
+        gap: 0px; /* Adds spacing between items */
+        justify-content: space-evenly; /* Aligns items to the left */
+        align-items: flex-start; /* Centers items vertically (optional) */
+        padding: 0px 0px 20px 0px;
+        height: 100%;
+    }
+
+    .imageAndContent-content {
+        color: black;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .imageAndContent-container {
+        width: 100vw;
+    }
+
+    .imageAndContent-image {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .imageAndContent-scroll {
+        width: 90vw;
+    }
+
+    .imageAndContent-container {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .imageAndContent-sisu {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .imageAndContent-scroll {
+        width: 95vw;
+    }
 }

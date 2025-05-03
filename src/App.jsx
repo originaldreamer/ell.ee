@@ -15,7 +15,8 @@ import Error404 from './Lehekyljed/Error404/Error404.jsx';
 import LiiduKirjeldus from './Lehekyljed/LiiduKirjeldus/LiiduKirjeldus.jsx';
 import Juhatus from './Lehekyljed/Juhatus/Juhatus.jsx';
 import SyndmusteList from './Lehekyljed/SyndmusteList/SyndmusteList.jsx'
-import Kontakt from './Lehekyljed/Kontakt/Kontakt.jsx'
+import Ajalugu from './Lehekyljed/Ajalugu/Ajalugu.jsx'
+import Symboolika from './Lehekyljed/Symboolika/Symboolika.jsx';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
         <Route path="/tutvustus" element={<LiiduKirjeldus />} />
         <Route path="/kalender" element={<SyndmusteList />} />
         <Route path="/juhatus" element={<Juhatus />} />
+        <Route path="/ajalugu" element={<Ajalugu />} />
+        <Route path="/symboolika" element={<Symboolika />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

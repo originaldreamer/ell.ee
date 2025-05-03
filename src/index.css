@@ -332,6 +332,12 @@
   color: inherit;
 }
 
+/*Scaling*/
+@media (max-width: 1400px) {
+  .normal-text {
+    font-size: 20px;
+  }
+}
 
 
 

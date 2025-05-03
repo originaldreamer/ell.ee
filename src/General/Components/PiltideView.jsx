@@ -25,7 +25,7 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
             onClick={handleClick}
             src={icon}         
         />
-    );
+    ); 
 }
 
 export default function PiltideView({curIndex, piltideCount, pilt, leftFunction, rightFunction, quitFunction}) {
