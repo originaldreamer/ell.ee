@@ -15,10 +15,13 @@ function Button({text, handleClick})
 }
 
 export default function TopBanner({title,images}) {
-  const [curIndex, setCurIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState(1);
-  const [switching , setSwitching] = useState(false);
-  const imageCount = images.length;
+    const imageCount = images.length;
+    // pick a random starting index
+    const randomIndex = Math.floor(Math.random() * imageCount);
+
+    const [curIndex, setCurIndex] = useState(randomIndex);
+    const [nextIndex, setNextIndex] = useState((randomIndex + 1) % imageCount);
+    const [switching, setSwitching] = useState(false);
 
   const switchImage = () => {
     if (switching) {return;}
