@@ -8,7 +8,7 @@ export default function MidTextSeparator({text, textColor='black', bgColor = 'wh
         <div className='MidTextSeparator-container' style={{backgroundColor: bgColor, marginTop: marginTop}}>
             
             <div className='MidTextSeparator-sisu'>
-                <div className='normal-text' style={{color: textColor, textAlign: 'center'}}>{text}</div>
+                <div className='normal-text MidTextSeparator-sisu-text' style={{color: textColor}}>{text}</div>
             </div>
         </div>
         

@@ -339,6 +339,25 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .big-header2 {
+    font-size: 40px;
+  }
+  
+  .big-header2-white {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .big-header2 {
+    font-size: 32px;
+  }
+  
+  .big-header2-white {
+    font-size: 32px;
+  }
+}
 
 
 

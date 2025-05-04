@@ -6,15 +6,20 @@ import './Esileht.css'
 import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
+import TopBanner from './Components/TopBanner.jsx';
 
 
 
 
 //imported texts
 import esilehePeamineKirjeldus from './esilehePeamineKirjeldus.js'
+
 //imported images
 import detailneLogo from '../../assets/General/Vapp detailsem.png'
 import lihtneLogo from '../../assets/General/Vapp lihtne.png'
+import banner1 from './Design elements/liputoimkond1.jpg'
+import banner2 from './Design elements/liiv.jpg'
+import banner3 from './Design elements/sygis.jpg'
 
 
 
@@ -36,6 +41,11 @@ export default function Esileht() {
       <div className='esileht-body'>
         
         <TopNavigationBar /> 
+
+        <TopBanner 
+          title="Eesti Koolide Liputoimkondade Liit" 
+          images={[banner1, banner2, banner3]}
+        />
 
 
         <div className='esileht-main'>

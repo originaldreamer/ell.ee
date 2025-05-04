@@ -27,7 +27,7 @@
     padding-bottom: 0px;
     margin-top: -5px;
     z-index: 1;
-    background-color: rgb(44, 62, 80);
+    background-color: #2c3E50;
 }
 
 .juhatusLiige-bottom-tekst {
@@ -37,29 +37,72 @@
     align-items: flex-start;
     margin-top: 2px;
     z-index: 1;
-    background-color: #52575f90;
-    padding: 20px  20px  15px  20px;
+    padding: 20px  5px  15px  5px;
+    margin-left: -30px;
+    margin-top: -14px;
     border-radius: 5px;
     scale: 0.85;
 }
 
 .juhatusLiige-profile-text {
-    margin-bottom: 5px;
+    margin-bottom: 5.5px;
+    text-align: left;
+}
+
+.juhatusLiige-profile-kontakt-text {
+    margin-top: 14px;
+    margin-bottom: -23px;
     text-align: left;
 }
 
 /*Scaling*/
 @media (max-width: 1500px) {
     .juhatusLiige-container {
-        scale: 0.9;
-        margin-bottom: -5px;
+        scale: 0.92;
+        margin-bottom: 25px;
     }
 }
 
 @media (max-width: 1150px) {
     .juhatusLiige-container {
-        scale: 0.78;
-        margin-bottom: -95px;
+        scale: 0.8;
+        margin-bottom: -60px;
     }
-}
+} 
+
+
+@media (max-width: 1000px) {
+    .juhatusLiige-container {
+        scale: 1;
+        margin-bottom: 65px;
+    }
+} 
+
+@media (max-width: 900px) {
+    .juhatusLiige-container {
+        scale: 0.9;
+        margin-bottom: 8px;
+    }
+} 
+
+@media (max-width: 750px) {
+    .juhatusLiige-container {
+        scale: 0.8;
+        margin-bottom: -66px;
+    }
+} 
+
+@media (max-width: 700px) {
+    .juhatusLiige-container {
+        scale: 1.05;
+        margin-bottom: 98px;
+    }
+} 
+
+@media (max-width: 500px) {
+    .juhatusLiige-container {
+        scale: 0.92;
+        margin-bottom: -10px;
+    }
+} 
 
