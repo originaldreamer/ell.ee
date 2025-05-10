@@ -14,7 +14,7 @@ export default function PageHeaderImage({ title, image, offsetY = "50%", titleAl
       } else {
         setAlignment(titleAlignment);
       }
-    }; 
+    };   
 
     window.addEventListener('resize', handleResize);
     // Check on mount as well

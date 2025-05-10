@@ -33,7 +33,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* adjust color and opacity as needed */
     pointer-events: none; /* allows interaction with elements below */
-  }
+  } 
   
   .pageHeaderImage-bg img {
     width: 100%;

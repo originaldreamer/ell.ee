@@ -10,8 +10,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
+    height: 550px;
+    width: auto;
     overflow: hidden;
     z-index: -1;
   }
@@ -19,10 +19,9 @@
   .topBanner-bg-top {
     position: absolute;
     left: 50%;
-    bottom: 0;
     transform: translateX(-50%);
-    width: 100vw;
-    height: 100%;
+    height: 550px;
+    width: auto;
     overflow: hidden;
     z-index: 0;
 
@@ -54,13 +53,15 @@
   }
   
   .topBanner-bg img {
-    width: 100%;
+    height: 550px;
+    width: 100vw;
     object-fit: cover;
     position: relative;
   }
 
   .topBanner-bg-top img {
-    width: 100%;
+    height: 550px;
+    width: 100vw;
     object-fit: cover;
     position: relative;
     clip-path: inset(0 100% 0 0);
@@ -132,7 +133,7 @@
   @media (max-width: 760px) {
     .topBanner-text {
         width: 500px;
-        margin-top: 300px;
+        margin-top: 330px;
     }
     .topBanner-button {
         margin-top: 0px;
