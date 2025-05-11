@@ -27,7 +27,7 @@ export default function Syndmused({syndmused, curPageIndex,maxElementsPerPage}) 
             kirjeldus={syndmus.kirjeldus}
           />
         ))} 
-
+ 
           
           
       </div>

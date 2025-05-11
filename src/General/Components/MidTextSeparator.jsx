@@ -1,7 +1,7 @@
 import '../../index.css'
 import './MidTextSeparator.css'
 
-
+ 
 
 export default function MidTextSeparator({text, textColor='black', bgColor = 'white', marginTop = '0px'}) {
     return (

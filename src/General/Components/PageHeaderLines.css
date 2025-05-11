@@ -51,6 +51,10 @@
     .page-headerLines-line{
         width: 85vw;
     }
+
+    .page-headerLines-text {
+        font-size: 45px;
+    }
     
 }
 
@@ -59,7 +63,6 @@
     .page-headerLines-line {
         width: 100vw;
     }
-    
 }
 
 

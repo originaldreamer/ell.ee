@@ -14,14 +14,14 @@
 
   .esileht-main {
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     background-color: transparent;
   }
   
   .esileht-body {
     position: relative;
     background-color: transparent; 
-    min-height: 100vh;            
+    min-height: 100vh;        
     display: flex;
     flex-direction: column; 
     align-items: center;         
@@ -30,6 +30,10 @@
   .esileht-container {
       position: relative;
       min-height: 100vh;
+  }
+
+  .esileht-slogan-text {
+    color: 'white';
   }
   
 

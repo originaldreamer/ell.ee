@@ -32,7 +32,7 @@ function Kuupaev({date})
     )
 }
 
-function Details({koht, aeg})
+function Details({koht, aeg}) 
 {
     return (
         <div className='Syndmus-details'>

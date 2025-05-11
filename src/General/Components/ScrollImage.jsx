@@ -96,7 +96,7 @@ export default function ScrollImages({ images = [], offsetY = '0%' }) {
 
       
       let id;
-        if (!showPiltideView) {
+        if (!showPiltideView && (piltideCount > 1)) {
             id = setInterval(switchImage, 6000);
         }
 

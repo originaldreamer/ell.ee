@@ -113,7 +113,6 @@ function TopNavigationBarButtons() {
       <TopNaviagtionButtonDropDown
         text = "Liit"
         links={[
-          { href: "./tutvustus", label: "Tutvustus"},
           { href: "./juhatus", label: "Juhatus"},
           { href: "./liikmed", label: "Liikmed" },
           { href: "./ajalugu", label: "Ajalugu" },

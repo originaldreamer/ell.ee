@@ -32,7 +32,7 @@ export default function TopBanner({title,images}) {
         setCurIndex(nextIndex);
         setNextIndex((nextIndex + 1) % imageCount);
         setSwitching(false);
-      }, 3000); 
+      }, 2150); 
   }
 
 
@@ -54,7 +54,10 @@ export default function TopBanner({title,images}) {
             </div>
         }
         
-        <div className='topBanner-bg'>
+        <div 
+          className='topBanner-bg'
+          onClick={switchImage}
+        >
             <img src={images[curIndex]}  alt="header" />
         </div>
 
@@ -65,7 +68,7 @@ export default function TopBanner({title,images}) {
           {title}
         </div>
       </div>
-      <Button text="Meist" handleClick={() => window.location.href = './tutvustus'}/>
+      <Button text="Meist" handleClick={() => window.location.href = './ajalugu'}/>
 
     </div>
   );

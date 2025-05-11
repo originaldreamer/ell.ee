@@ -103,7 +103,7 @@ useEffect(() => {
 
 
 
-export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%'}) {
+export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%'}) {
   const smallScreenSize = '900px'
 
   const [showScrollImages, setShowScrollImages] = useState(
@@ -123,7 +123,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
   }, []);
 
   return (
-      <div className='imageAndContent-container' style={{marginTop: offsetY}}>
+      <div className='imageAndContent-container' style={{marginTop: showScrollImages ? offsetYSmallScreen : offsetY}}>
         <div className='imageAndContent-bg' style={{backgroundColor: bgColor}}/>
 
         
@@ -149,7 +149,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
 
         </div>
       )}
-
+ 
 
       {showScrollImages && 
         <div className='imageAndContent-scroll'>

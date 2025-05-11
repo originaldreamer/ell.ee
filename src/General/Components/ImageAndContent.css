@@ -23,7 +23,7 @@
     transform: translateX(-50%); /* Adjust position */
     height: 100%;
     width: 100vw; /* Set width to cover container */
-    z-index: -1;
+    z-index: -1; 
 } 
 
 .imageAndContent-sisu {
@@ -55,7 +55,7 @@
 
 .imageAndContent-imageGrid {
     width: 35%;
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Ensures images stick to the top */

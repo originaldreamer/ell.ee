@@ -24,7 +24,7 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
             onMouseLeave={() => setIcon(normalIcon)}  
             onClick={handleClick}
             src={icon}         
-        />
+        /> 
     ); 
 }
 
@@ -35,8 +35,8 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
             <div className='PiltideView-bg' />
             <img className='PiltideView-pilt' src={pilt}/>
 
-            <div className='PiltideView-leftArrow'><Interactable normalIcon={arrowLeft} activatedIcon={arrowLeftActivated} handleClick={leftFunction}/></div>
-            <div className='PiltideView-rightArrow'><Interactable normalIcon={arrowRight} activatedIcon={arrowRightActivated} handleClick={rightFunction}/></div>
+            {piltideCount > 1 && <div className='PiltideView-leftArrow'><Interactable normalIcon={arrowLeft} activatedIcon={arrowLeftActivated} handleClick={leftFunction}/></div>}
+            {piltideCount > 1 && <div className='PiltideView-rightArrow'><Interactable normalIcon={arrowRight} activatedIcon={arrowRightActivated} handleClick={rightFunction}/></div>}
             <div className='PiltideView-quitIcon'><Interactable normalIcon={quitIcon} activatedIcon={quitIconActivated}handleClick={quitFunction}/></div>
 
             <div className='PiltideView-kirjeldus'>

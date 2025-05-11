@@ -1,0 +1,158 @@
+import { useRef, useEffect, useState } from 'react';
+import './KalendriPoints.css';
+
+import KalendriPointTile from './KalendriPointTile';
+import data from '../../SyndmusteList/Content/Syndmused.json';
+import PageHeaderLines from '../../../General/Components/PageHeaderLines'
+import normalMoreIcon from '../Design elements/arrow right black.svg'
+import activatedMoreIcon from '../Design elements/arrow right yellow.svg'
+
+
+function Interactable({normalIcon, activatedIcon, handleClick}) {
+    const [icon, setIcon] = useState(normalIcon);
+
+    return (
+        <img
+            className='kalendriPoints-interactable'
+            onMouseEnter={() => setIcon(activatedIcon)}
+            onMouseLeave={() => setIcon(normalIcon)}  
+            onClick={handleClick}
+            src={icon}         
+        /> 
+    ); 
+}
+
+export default function KalendriPoints() {
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let isDown = false;
+    let startX = 0, baseScroll = 0;
+    let lastX = 0, lastTime = 0, velocity = 0;
+    let animID = null;
+
+    const maxScroll = () => slider.scrollWidth - slider.clientWidth;
+
+    // Start drag
+    const onDown = e => {
+      isDown = true;
+      slider.classList.add('dragging');
+      const pageX = e.pageX ?? e.touches[0].pageX;
+      startX = pageX - slider.offsetLeft;
+      baseScroll = slider.scrollLeft;
+      lastX = startX;
+      lastTime = performance.now();
+      cancelAnimationFrame(animID);
+    };
+
+    // During drag
+    const onMove = e => {
+      if (!isDown) return;
+      e.preventDefault();  // needed for touch on some browsers :contentReference[oaicite:2]{index=2}
+      const pageX = e.pageX ?? e.touches[0].pageX;
+      const x = pageX - slider.offsetLeft;
+      const dx = x - startX;
+      let newScroll = baseScroll - dx;
+
+      // Rubber-band effect when over-dragged :contentReference[oaicite:3]{index=3}
+      if (newScroll < 0) {
+        newScroll = -Math.pow(-newScroll, 0.7);
+      } else if (newScroll > maxScroll()) {
+        const extra = newScroll - maxScroll();
+        newScroll = maxScroll() + Math.pow(extra, 0.7);
+      }
+
+      slider.scrollLeft = newScroll;
+
+      // Compute velocity for momentum
+      const now = performance.now();
+      const dt = now - lastTime;
+      if (dt > 0) {
+        velocity = ((x - lastX) / dt) * 10;
+        lastX = x;
+        lastTime = now;
+      }
+    };
+
+    // End drag
+    const onUp = () => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('dragging');
+
+      // If over-scrolled, animate back to edge with ease-out cubic
+      if (slider.scrollLeft < 0 || slider.scrollLeft > maxScroll()) {
+        const target = slider.scrollLeft < 0 ? 0 : maxScroll();
+        const start = slider.scrollLeft;
+        const duration = 300;
+        const t0 = performance.now();
+
+        const bounce = t => {
+          const prog = Math.min((t - t0) / duration, 1);
+          const ease = 1 - Math.pow(1 - prog, 3);  /* cubic ease-out */
+          slider.scrollLeft = start + (target - start) * ease;
+          if (prog < 1) animID = requestAnimationFrame(bounce);
+        };
+        animID = requestAnimationFrame(bounce);
+        return;
+      }
+
+      // Otherwise, start momentum glide
+      const momentum = () => {
+        slider.scrollLeft -= velocity;
+        velocity *= 0.95;               /* friction */
+        if (Math.abs(velocity) > 0.5) {
+          animID = requestAnimationFrame(momentum);
+        }
+      };
+      animID = requestAnimationFrame(momentum);
+    };
+
+    // Bind mouse & touch events, making touchmove non-passive so preventDefault works :contentReference[oaicite:4]{index=4}
+    slider.addEventListener('mousedown', onDown);
+    slider.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+    slider.addEventListener('touchstart', onDown);
+    slider.addEventListener('touchmove', onMove, { passive: false });
+    document.addEventListener('touchend', onUp);
+
+    return () => {
+      slider.removeEventListener('mousedown', onDown);
+      slider.removeEventListener('mousemove', onMove);
+      document.removeEventListener('mouseup', onUp);
+      slider.removeEventListener('touchstart', onDown);
+      slider.removeEventListener('touchmove', onMove);
+      document.removeEventListener('touchend', onUp);
+      cancelAnimationFrame(animID);
+    };
+  }, []);
+
+  return (
+    <div className="kalendriPoints-container">
+        <div className='kalendriPoints-pealkiri'>
+            <PageHeaderLines title="Sündmused" />
+        </div>
+
+        <div ref={sliderRef} className="kalendriPoints-sisu">
+            {data.slice(0, 8).map((syndmus, idx) => (
+                <KalendriPointTile
+                key={idx}
+                className="kalendriPointTile"
+                pealkiri={syndmus.pealkiri}
+                kuupaev={syndmus.kuupaev}
+                asukoht={syndmus.asukoht}
+                />
+            ))}
+
+             <Interactable
+                normalIcon={normalMoreIcon}
+                activatedIcon={activatedMoreIcon}
+                handleClick={() => window.location.href = './kalender'}
+            />
+            
+            </div>
+    </div>
+    
+  );
+}
