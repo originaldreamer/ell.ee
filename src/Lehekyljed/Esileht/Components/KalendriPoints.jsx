@@ -69,7 +69,7 @@ export default function KalendriPoints() {
       const now = performance.now();
       const dt = now - lastTime;
       if (dt > 0) {
-        velocity = ((x - lastX) / dt) * 10;
+        velocity = ((x - lastX) / dt) * 14;
         lastX = x;
         lastTime = now;
       }
@@ -101,7 +101,7 @@ export default function KalendriPoints() {
       // Otherwise, start momentum glide
       const momentum = () => {
         slider.scrollLeft -= velocity;
-        velocity *= 0.95;               /* friction */
+        velocity *= 0.96;               /* friction */
         if (Math.abs(velocity) > 0.5) {
           animID = requestAnimationFrame(momentum);
         }
