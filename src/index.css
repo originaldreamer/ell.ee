@@ -1,3 +1,20 @@
+/* 1. Optional @import instead of <link> (must be first) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300&display=swap');
+
+/* 2. Disable mobile text inflation */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust:    100%;
+  text-size-adjust:         100%;
+}
+
+/* 3. Ensure your root font-family */
+html, body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
