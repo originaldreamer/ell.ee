@@ -284,7 +284,7 @@ html, body {
   font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 22px !important;
   line-height: 1.4;
   margin-bottom: 32px;
 }
@@ -401,6 +401,14 @@ html, body {
   
   .big-header2-white {
     font-size: 32px;
+  }
+
+  .normal-text {
+    font-size: 16px;
+  }
+
+  .bold {
+    font-size: 18px;
   }
 }
 
