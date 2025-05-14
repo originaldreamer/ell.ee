@@ -281,7 +281,7 @@ html, body {
 
 .normal-text {
   color: black;
-  font-family: 'Merriweather' ;
+  font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
   font-size: 22px;
@@ -291,7 +291,7 @@ html, body {
 
 .normal-text-white {
   color: var(--light-color);
-  font-family: 'Merriweather' ;
+  font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
   font-size: 22px;
@@ -302,7 +302,7 @@ html, body {
 
 .bold {
   color: black;
-  font-family: 'Merriweather' ;
+  font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 600;
   font-size: 20px;
@@ -335,7 +335,7 @@ html, body {
 
 .small-text {
   color: black;
-  font-family: 'Merriweather' ;
+  font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
   font-size: 16px;
@@ -344,7 +344,7 @@ html, body {
 
 .small-text-white {
   color: var(--light-color);
-  font-family: 'Merriweather' ;
+  font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
   font-size: 16px;

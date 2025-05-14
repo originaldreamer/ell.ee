@@ -49,7 +49,7 @@
 
 .UudisedTile-date {
     color: black;
-    font-family: 'Merriweather' ;
+    font-family: 'Merriweather', Georgia, serif;
     text-align: left;
     font-weight: 200;
     font-size: 16px;
@@ -74,7 +74,7 @@
 
 .UudisedTile-text {
     color: black;
-    font-family: 'Merriweather' ;
+    font-family: 'Merriweather', Georgia, serif;
     text-align: left;
     font-weight: 200;
     font-size: 17px;

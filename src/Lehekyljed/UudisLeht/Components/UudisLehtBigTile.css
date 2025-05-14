@@ -51,7 +51,7 @@
 
 .UudisLehtBigTile-date {
     color: black;
-    font-family: 'Merriweather' ;
+    font-family: 'Merriweather', Georgia, serif;
     text-align: left;
     font-weight: 200;
     font-size: 18px;
@@ -76,7 +76,7 @@
 
 .UudisLehtBigTile-text {
     color: black;
-    font-family: 'Merriweather' ;
+    font-family: 'Merriweather', Georgia, serif;
     text-align: left;
     font-weight: 200;
     font-size: 18px;
