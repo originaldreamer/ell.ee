@@ -6,7 +6,7 @@
   
   .pageHeaderPlainTitle {
     z-index: 2000;
-    font-family: Cambria; 
+    font-family: 'Cambria', 'Times New Roman', serif;
     text-align: center;
     font-weight: 500;
     font-size: 60px;

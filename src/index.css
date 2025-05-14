@@ -61,7 +61,7 @@ html, body {
 /* Naiteks logo jaoks*/
 .h1 {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #F5F5F5;
   font-weight: 500;
@@ -99,7 +99,7 @@ html, body {
 
 .big-header {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 500;
@@ -111,7 +111,7 @@ html, body {
 
 .big-header2 {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 300;
@@ -123,7 +123,7 @@ html, body {
 
 .big-header2-white {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #F5F5F5;
   font-weight: 300;
@@ -137,7 +137,7 @@ html, body {
 /*like mid-header but without margin-top*/
 .mid-top-header {
   z-index: 2000;
-  font-family: Cambria; 
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 50;
@@ -149,7 +149,7 @@ html, body {
 
 .mid-header {
   z-index: 2000;
-  font-family: Cambria; 
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 50;
@@ -161,7 +161,7 @@ html, body {
 
 .mid-header-white {
   z-index: 2000;
-  font-family: Cambria; 
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #F5F5F5;
   font-weight: 50;
@@ -185,7 +185,7 @@ html, body {
 
 .mid-small-top-header {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 50;
@@ -197,7 +197,7 @@ html, body {
 
 .mid-small-header {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: #EFA900;
   font-weight: 50;
@@ -209,7 +209,7 @@ html, body {
 
 .mid-small-header-black {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: 'black';
   font-weight: 50;
@@ -221,7 +221,7 @@ html, body {
 
 .sub-header {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: var(--secondary-color);
   color: white;
@@ -234,7 +234,7 @@ html, body {
 
 .sub-header-black {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: 'black';
   font-weight: 300;
@@ -268,7 +268,7 @@ html, body {
 
 .sub-header-white {
   z-index: 2000;
-  font-family: Cambria;
+  font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: var(--light-color);
   font-weight: 300;
