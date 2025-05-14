@@ -1,4 +1,10 @@
-
+@font-face {
+  font-family: 'Cambria';
+  src: url('/fonts/Cambria.woff2') format('woff2'),
+       url('/fonts/Cambria.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /* 2. Disable mobile text inflation */
 html {
   -webkit-text-size-adjust: 100%;
@@ -33,7 +39,8 @@ html, body {
   --blue-gray: #2C3E50;
   --gray: #52575F;
   
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Cambria, 'Times New Roman', serif;
   line-height: 2;
   font-weight: 400;
 

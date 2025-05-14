@@ -36,7 +36,7 @@
   }
   
   .uudisLeht-VaataVeel-rohkem-text {
-    font-family: 'Cambria', serif;
+    font-family: 'Cambria', 'Times New Roman', serif;
     font-size: 22px;
     font-weight: 300; /* adjust to match heading weight */
     color: #EFA900; /* match “Vaata veel” color */
