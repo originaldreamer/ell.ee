@@ -3,7 +3,7 @@ import './UudisLehtGalerii.css'
 
 //imported components
 import UudisedGaleriiTile from './UudisLehtGaleriiTile';
-import UudisedGaleriiView from './UudisLehtGaleriiView';
+import PiltideView from '../../../General/Components/PiltideView.jsx';
 
 
 
@@ -84,7 +84,7 @@ export default function UudisLehtGalerii({pildid}) {
                 </div>
             }
 
-            {showGaleriiView && <UudisedGaleriiView 
+            {showGaleriiView && <PiltideView 
                 curIndex={pildiIndex}
                 piltideCount={pildid.length}
                 pilt={curPilt}

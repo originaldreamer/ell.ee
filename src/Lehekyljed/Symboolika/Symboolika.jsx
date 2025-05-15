@@ -9,7 +9,7 @@ import PageHeaderImage from '../../General/Components/PageHeaderImage.jsx'
 import ImageAndContent from '../../General/Components/ImageAndContent.jsx';
 
 //imported content
-import headerImage from './Content/mets.jpg'; 
+import headerImage from './Content/headerImage.jpg'; 
 import turtleImage from './Content/turtle.jpg'
 import paikeImage from './Content/paike.jpg'
 import koskImage from './Content/kosk-tere-esa.jpg'
@@ -27,7 +27,7 @@ export default function Symboolika() {
               <TopNavigationBar />
 
 
-              <PageHeaderImage title="Sümboolika" image={headerImage} offsetY='0%'/>
+              <PageHeaderImage title="Sümboolika" image={headerImage} offsetY='30%'/>
 
               <ImageAndContent content={
                  <div>

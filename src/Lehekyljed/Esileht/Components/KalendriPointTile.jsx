@@ -42,7 +42,7 @@ export default function kalendriPointTile({pealkiri, kuupaev, asukoht}) {
           
         <Kuupaev date={kuupaev} />
         <div className='kalendriPointTile-sisu'>
-            <div className='kalendriPointTile-pealkiri sub-header'>{pealkiri}</div>
+            <div className='kalendriPointTile-pealkiri sub-header-white'>{pealkiri}</div>
 
             {asukoht && <div className='kalendriPointTile-detail'>
                 <img src={FlagIcon}  style={{ width: '39px' }} />

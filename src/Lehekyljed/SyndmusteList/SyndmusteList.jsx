@@ -10,7 +10,7 @@ import Syndmused from './Components/Syndmused.jsx';
 import PageNavigatorButtons from '../../General/Components/PageNavigatorButtons.jsx';
 
 //imported content
-import puitTaust from './Design elements/puit.png'
+import headerImage from './Design elements/kalenderHeader.jpg'
 import data from './Content/Syndmused.json'
 
 export default function SyndmusteList() {
@@ -51,7 +51,7 @@ export default function SyndmusteList() {
           <div className='SyndmusteList-body'>
               <TopNavigationBar />
 
-              <PageHeaderImage title="Kalender" image={puitTaust} offsetY='100%' titleAlignment="left"/>
+              <PageHeaderImage title="Kalender" image={headerImage} offsetY='71%' titleAlignment="left"/>
               
 
               <Syndmused 

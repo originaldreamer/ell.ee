@@ -63,7 +63,7 @@ export default function PageNavigatorButtons({curSelectedIndex, setPageIndex, nu
   return nuppudeCount > 1 ?(
       <div className='PageNavigatorButtons-container'>
         
-        <ArrowNupp
+        <ArrowNupp 
           normalArrow={arrowLeft}
           arrowActivated={arrowLeftActivated}
           indexToDeactivate={0}

@@ -173,7 +173,7 @@ html, body {
 
 .long-mid-header {
   z-index: 2000;
-  font-family: 'Roboto Condensed' ;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: left;
   color: black;
   font-weight: 50;
@@ -186,7 +186,7 @@ html, body {
 .mid-small-top-header {
   z-index: 2000;
   font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
+  text-align: left; 
   color: #EFA900;
   font-weight: 50;
   font-size: 26px;
@@ -224,7 +224,7 @@ html, body {
   font-family: 'Cambria', 'Times New Roman', serif;
   text-align: left;
   color: var(--secondary-color);
-  color: white;
+  color: #EFA900;
   font-weight: 300;
   font-size: 23.5px;
   line-height: 1.1;
@@ -246,7 +246,7 @@ html, body {
 
 .long-sub-header {
   z-index: 2000;
-  font-family:'Roboto Condensed' ;
+  font-family:'Roboto Condensed' , sans-serif;
   text-align: left;
   color: black;
   font-weight: 300;
@@ -257,7 +257,7 @@ html, body {
 
 .long-sub-header-white {
   z-index: 2000;
-  font-family:'Roboto Condensed' ;
+  font-family:'Roboto Condensed', sans-serif;
   text-align: left;
   color: #F5F5F5;
   font-weight: 300;
@@ -284,7 +284,7 @@ html, body {
   font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
-  font-size: 22px !important;
+  font-size: 20px !important;
   line-height: 1.4;
   margin-bottom: 32px;
 }
@@ -294,7 +294,7 @@ html, body {
   font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
   margin-bottom: 32px;
 }
@@ -313,7 +313,7 @@ html, body {
 
 .long-small-text {
   color: black;
-  font-family: 'Roboto Condensed' ;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: left;
   font-weight: 200;
   font-size: 19.5px;
@@ -324,7 +324,7 @@ html, body {
 
 .long-small-text-white {
   color: var(--light-color);
-  font-family: 'Roboto Condensed' ;
+  font-family: 'Roboto Condensed', sans-serif;
   text-align: left;
   font-weight: 200;
   font-size: 19.5px;

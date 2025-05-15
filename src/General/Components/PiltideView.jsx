@@ -40,7 +40,7 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
             <div className='PiltideView-quitIcon'><Interactable normalIcon={quitIcon} activatedIcon={quitIconActivated}handleClick={quitFunction}/></div>
 
             <div className='PiltideView-kirjeldus'>
-                <div className='PiltideView-text'>{pilt.split('/').pop().replace(/\.[^/.]+$/, '').split('-')[0]}</div>
+                <div className='PiltideView-text'>{pilt.split('/').pop().replace(/\.[^/.]+$/, '').replace(/_/g, ' ').split('-')[0]}</div>
                 <div className='PiltideView-text'>({curIndex+1}/{piltideCount})</div> 
             </div>
         

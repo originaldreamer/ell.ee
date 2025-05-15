@@ -4,7 +4,7 @@ import './JuhatusLiigeGrid.css'
 
 
 import JuhatusLiige from './JuhatusLiige.jsx';
-
+ 
 //imported content
 import tempinimene from '../Content/tempInimene.jpg'
 import data from '../Content/juhatuseLiikmed.json'
@@ -28,4 +28,4 @@ export default function JuhatusLiigeGrid() {
             
         </div>
     );
-}
+} 

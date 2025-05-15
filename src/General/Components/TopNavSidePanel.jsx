@@ -132,9 +132,9 @@ export default function TopNavSidePanel({hidePanelFunction}) {
                     { href: "./symboolika", label: "Sümboolika" }
             ]}/>
 
-            <DropDown tekst="Meedium"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
+            <DropDown tekst="Meedia"  id = '1'  selectedId={selectedId} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction}
                 links={[
-                    { href: "./uudised", label: "Uudised!"},
+                    { href: "./uudised", label: "Uudised"},
                     { href: "./kalender", label: "Kalender" },
                     { href: "./galerii", label: "Galerii" }
             ]}/>

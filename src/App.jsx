@@ -17,6 +17,8 @@ import Juhatus from './Lehekyljed/Juhatus/Juhatus.jsx';
 import SyndmusteList from './Lehekyljed/SyndmusteList/SyndmusteList.jsx'
 import Ajalugu from './Lehekyljed/Ajalugu/Ajalugu.jsx'
 import Symboolika from './Lehekyljed/Symboolika/Symboolika.jsx';
+import GaleriiLeht from './Lehekyljed/GaleriiLeht/GaleriiLeht.jsx';
+import Galerii from './Lehekyljed/Galerii/Galerii.jsx';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/juhatus" element={<Juhatus />} />
         <Route path="/ajalugu" element={<Ajalugu />} />
         <Route path="/symboolika" element={<Symboolika />} />
+        <Route path="/pildid" element={<GaleriiLeht />} />
+        <Route path="/galerii" element={<Galerii />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

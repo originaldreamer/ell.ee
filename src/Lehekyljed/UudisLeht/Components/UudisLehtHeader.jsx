@@ -7,12 +7,12 @@ export default function UudisLehtHeader({ title, date, pilt, pildiAutor }) {
             <div className='uudisLehtHeader-bg' />
 
             <div className='uudisLehtHeader'>
-                <div className='big-header2' style={{color:"#F5F5F5"}}>{title}</div>
+                <div className='big-header2' >{title}</div>
 
                 <div className='uudisLehtHeader-line' />
                 
                 <div className='uudisLehtHeader-date'>
-                    <div className='small-text-white' >{date}</div>
+                    <div className='small-text' style={{color: '#EFA900'}}>{date}</div>
 
                 </div>
                 
@@ -20,7 +20,7 @@ export default function UudisLehtHeader({ title, date, pilt, pildiAutor }) {
                 
                 {pildiAutor && 
                     <div className='uudisLehtHeader-pildiAutor'>
-                        <div className='small-text-white' >Foto: {pildiAutor}</div>
+                        <div className='small-text' style={{color: '#EFA900'}}>Foto: {pildiAutor}</div>
                     </div>
                 }
                 

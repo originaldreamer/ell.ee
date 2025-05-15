@@ -1,0 +1,4122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost:5173/galerii/pildid -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Eesti Liputoimkondade Liit_files/client"></script>
+
+    
+
+    <!-- 1. Viewport: ensures 1:1 scaling on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 2. Preconnect & Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+
+    
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@100;200;300;350;400;700&display=swap" rel="stylesheet">*/ -->
+
+    <!-- 3. Favicon -->
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/dist/vapp-lihtne.svg">
+
+    <title>Eesti Liputoimkondade Liit</title>
+
+    <!-- 4. Your global CSS -->
+    <link href="./Eesti Liputoimkondade Liit_files/index.css" rel="stylesheet">
+  <style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/index.css">@font-face {
+  font-family: 'Cambria';
+  src: url('/fonts/Cambria.woff2') format('woff2'),
+       url('/fonts/Cambria.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 2. Disable mobile text inflation */
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust:    100%;
+  text-size-adjust:         100%;
+}
+
+/* 3. Ensure your root font-family */
+html, body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --light-color: #F5F5F5; 
+  --primary-color: #02265A;
+  --secondary-color: #EFA900;
+  --bg-yellow:  #FFF1E6;
+  --sub-primary-color: #52575F;
+  --sub-primary-color-dark: #2C3E50;
+
+  --soft-white: #F5F5F5; 
+  --dark-blue: #02265A;
+  --yellow: #EFA900;
+  --softYellow:  #FFF1E6;
+  --blue-gray: #2C3E50;
+  --gray: #52575F;
+  
+  font-family: 'Merriweather', serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Cambria, 'Times New Roman', serif;
+  line-height: 2;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+
+/* Naiteks logo jaoks*/
+.h1 {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+/* vaike tekst naiteks lingid */
+.h3 {
+  z-index: 2000;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+/* vaike tekst naiteks kontaktid*/
+.h4 {
+  z-index: 2000;
+  text-align: center;
+  color: #F5F5F5;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+/*For Normal Text Content*/
+.textContent-container {
+  margin-top: 0;
+  width: 80%;
+  margin-bottom: 160px;
+}
+
+
+.big-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.big-header2 {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.big-header2-white {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+
+/*like mid-header but without margin-top*/
+.mid-top-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+
+.mid-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.mid-header-white {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  margin-top: 70px;
+}
+
+.long-mid-header {
+  z-index: 2000;
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  color: black;
+  font-weight: 50;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+
+.mid-small-top-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+
+.mid-small-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #EFA900;
+  font-weight: 50;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+.mid-small-header-black {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: 'black';
+  font-weight: 50;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 70px;
+}
+
+.sub-header {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: var(--secondary-color);
+  color: white;
+  font-weight: 300;
+  font-size: 23.5px;
+  line-height: 1.1;
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+
+.sub-header-black {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: 'black';
+  font-weight: 300;
+  font-size: 23.5px;
+  line-height: 1.1;
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+
+.long-sub-header {
+  z-index: 2000;
+  font-family:'Roboto Condensed' ;
+  text-align: left;
+  color: black;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 0px;
+}
+
+.long-sub-header-white {
+  z-index: 2000;
+  font-family:'Roboto Condensed' ;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-top: 0px;
+}
+
+.sub-header-white {
+  z-index: 2000;
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: var(--light-color);
+  font-weight: 300;
+  font-size: 23.5px;
+  line-height: 1.1;
+  margin-top: 30px;
+  margin-bottom: 6px;
+}
+
+
+.normal-text {
+  color: black;
+  font-family: 'Merriweather', Georgia, serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 22px !important;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.normal-text-white {
+  color: var(--light-color);
+  font-family: 'Merriweather', Georgia, serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+
+.bold {
+  color: black;
+  font-family: 'Merriweather', Georgia, serif;
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  display: inline;
+}
+
+.long-small-text {
+  color: black;
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  font-weight: 200;
+  font-size: 19.5px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.long-small-text-white {
+  color: var(--light-color);
+  font-family: 'Roboto Condensed' ;
+  text-align: left;
+  font-weight: 200;
+  font-size: 19.5px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.small-text {
+  color: black;
+  font-family: 'Merriweather', Georgia, serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.small-text-white {
+  color: var(--light-color);
+  font-family: 'Merriweather', Georgia, serif;
+  text-align: left;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.loetelu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 8px;
+  margin-left: 20px;
+  gap: 6px;
+  margin-bottom: 30px;
+}
+
+.bulletPoint {
+  position: relative;
+}
+
+.bulletPoint::before {
+  content: '';
+  background-image: url('/Design Elements/bulletDot.svg');
+  background-repeat: no-repeat;
+  margin-right: 9px;
+  width: 5px; 
+  height: 5px;
+  display: inline-block; 
+  vertical-align: middle; 
+  color: inherit;
+}
+
+/*Scaling*/
+@media (max-width: 1400px) {
+  .normal-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .big-header2 {
+    font-size: 40px;
+  }
+  
+  .big-header2-white {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .big-header2 {
+    font-size: 32px;
+  }
+  
+  .big-header2-white {
+    font-size: 32px;
+  }
+
+  .normal-text {
+    font-size: 16px;
+  }
+
+  .bold {
+    font-size: 18px;
+  }
+}
+
+
+
+/*---------------*/
+
+
+/*GENERAL ANIMATIONS*/
+@keyframes lineAppearFromMiddle {
+  0% {
+      transform: scale(5%, 1);
+  }
+  100% {
+      transform: scale(100%, 1);
+  }
+}
+
+@keyframes lineDisappearToMiddle {
+  0% {
+      transform: scaleX(1);
+      opacity: 1;
+  }
+  99% {
+      transform: scaleX(0.04);
+      opacity: 1;
+  }
+  100% {
+      transform: scaleX(0);
+      opacity: 0;
+  }
+}
+/*----------------*/</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/App.css">#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+html, body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* Prevents iOS/Android from enlarging small text */  
+  -moz-text-size-adjust: 100%;  
+  text-size-adjust: 100%;  
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Esileht/Esileht.css">
+  .suurVahe {
+    display: inline-block;
+    width: 16px; 
+  }
+  
+  .newLine:after {
+    clear: both;
+    content: '';
+    display: table;
+    margin: 0;
+    padding: 0;
+  }
+
+  .esileht-main {
+    margin-top: 0px;
+    margin-bottom: 200px;
+    background-color: transparent;
+  }
+  
+  .esileht-body {
+    position: relative;
+    background-color: transparent; 
+    min-height: 100vh;        
+    display: flex;
+    flex-direction: column; 
+    align-items: center;         
+  }
+
+  .esileht-container {
+      position: relative;
+      min-height: 100vh;
+  }
+
+  .esileht-slogan-text {
+    color: 'white';
+  }
+  
+
+  
+  .esileht-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100%;
+    z-index: -1;          
+    background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.164)), 
+                      url('/src/assets/General/must valge bg logo ajutine.svg');
+    background-repeat: repeat;
+    background-size: 200px 250px; 
+    background-position: 0 1000px, 1000px 400px;
+    background-color: white;
+  
+  }</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/TopNav_Bar.css">.topNavBar {
+  margin-top: -35px;
+  width: 100vw;
+  height: 150px;
+  left: 0px;
+  z-index: 9000;
+  background-color: #02265A;
+  display: flex;
+}
+
+
+
+.topBar-buttons {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+  align-items: center;
+  gap: 9%;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end; /* Align items to the right */
+  margin-top: 70px;
+  margin-right: 140px; /* Adds spacing from the right edge */
+  margin-left: 180px;
+}
+
+
+
+
+
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 0px;
+  z-index: 9000;
+  cursor: pointer;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 70px;
+  margin-right: 15px; /* Adds spacing between the image and text */
+  margin-top: -10px;
+}
+
+.logoTekst {
+  font-family: 'Cambria', 'Times New Roman', serif;
+  text-align: left;
+  color: #F5F5F5;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+  .about_me {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+    background-color: transparent;
+    color: #F5F5F5;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  
+  .normalbtn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+  }
+
+  
+  .normalbtn:after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 14%;
+    width: 74%;
+    height: 2px;
+    background-color: #EFA900;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+
+  .normalbtn.hover {
+    color: #EFA900;
+  }
+
+  
+
+  .normalbtn.hover:after {  
+    opacity: 1;
+    animation: lineAppearFromMiddle 0.25s ease-in-out;
+  }
+
+  .normalbtn.return:after {  /* Apply the "return" animation when not hovering */
+    animation: lineDisappearToMiddle 0.25s ease-out;
+}
+
+
+  .dropbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 25px;
+  }
+
+  
+  .dropbtn:after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 13%;
+    width: 68%;
+    height: 2px;
+    background-color: #EFA900;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+
+  .dropbtn.hover {
+    color: #EFA900;
+  }
+
+  
+
+  .dropbtn.hover:after {  
+    opacity: 1;
+    animation: lineAppearFromMiddle 0.25s ease-in-out;
+  }
+
+  .dropbtn.return:after {  /* Apply the "return" animation when not hovering */
+    animation: lineDisappearToMiddle 0.25s ease-out;
+}
+
+
+
+
+
+  .dropbtn img {
+    width: 28px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5; 
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    padding: 10px 0;
+  }
+  
+
+  
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #EFA900;
+    color:  #F5F5F5; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .topBar-menuIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 50000;
+    margin-left: auto;
+  }
+  
+  
+  .topBar-menuIcon img{
+    margin-right: 7px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 50000; 
+  }
+
+  /*Scaling*/
+@media (max-width: 1200px) {
+  .topNavBar {
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 30px;
+  }
+  
+  .logo {
+    margin-left: -20px;
+    scale: 0.73;
+    padding: 0px;
+  }
+
+  .topNavBar {
+    height: 120px;
+  }
+
+  .logoTekst {
+    font-size: 25px;
+  }
+  
+  
+}
+
+@media (max-width: 600px) {
+  
+  .logo {
+    margin-left: -30px;
+  }
+  
+  
+}
+
+@media (max-width: 450px) {
+  
+  .logo {
+    margin-left: -40px;
+  }
+  
+  
+}
+
+@media (max-width: 400px) {
+  
+  .logo {
+    margin-left: -60px;
+  }
+  
+  
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/TopNavSidePanel.css">.topNavSidePanel-container {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    background-color: #02265A;
+}
+ 
+
+.topNavSidePanel-topLine {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 100px;
+    height: 3px;
+    background-color: #EFA900;
+    margin: 0.7em auto;
+}
+
+.topNavSidePanel-sisu {
+    width: 300px;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 150px;
+}
+
+.topNavSidePanel-normalBtn {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+    width: 85vw;
+    margin-top: -40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.topNavSidePanel-normalBtn:hover {
+    color:#EFA900;
+}
+
+
+
+.topNavSidePanel-dropDown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    padding: 30px;
+    width: 88vw;
+}
+
+.topNavSidePanel-dropDown-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 30px;
+    width: 85vw;
+    margin-top: -70px;
+}
+
+
+
+.topNavSidePanel-dropDown img{
+    width: 36px;
+}
+
+.topNavSidePanel-dropDown-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #EFA900;
+    background-color: transparent;
+    width: 200%;
+    padding: 5px;
+    margin-top: -20px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+.topNavSidePanel-dropDown-content-element {
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 33vw;
+}
+
+.topNavSidePanel-dropDown-content-element:hover {
+    color:#EFA900;
+}
+
+
+
+.topNavSidePanel-dropDown-content-line {
+    position: relative;
+    width: 70vw;
+    height: 1.6px;
+    background-color: #EFA900;
+    margin: 0.7em auto;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/BottomNav_Bar.css">.footer {
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: -100px;
+    height: 190px;
+    background-color: #02265A;
+    z-index: 6000; 
+    margin-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer-title {
+    position: absolute;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: center;
+    color: #EFA900;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin-top: 25px;
+}
+
+.footer-meil {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    bottom: -80px;
+    width: 90vw;
+}
+
+.footer-kontaktid {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    bottom: -40px;
+    align-items: center;
+    width: 130px;
+    z-index: 20;
+}
+
+.footer-kontakt {
+    cursor: pointer;
+    scale: 1.1;
+    padding: 5px;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1000px) {
+    .footer-title {
+        font-size: 29px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .footer-title {
+        font-size: 28px;
+    }
+
+    .footer-kontakt {
+        scale: 1.1;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.9;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer-title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .footer-kontaktid {
+        bottom: -45px;
+    }
+
+    .footer-kontakt {
+        scale: 1.15;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.8;
+        bottom: -88px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer-title {
+        margin-top: 30px;
+        font-size: 23px;
+    }
+
+    .footer-kontaktid {
+        bottom: -48px;
+    }
+
+    .footer-kontakt {
+        scale: 1.15;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.75;
+        bottom: -88px;
+        white-space: nowrap;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .footer-title {
+        margin-top: 32px;
+        font-size: 20px;
+    }
+
+    .footer-kontaktid {
+        bottom: -48px;
+    }
+
+    .footer-kontakt {
+        scale: 1.1;
+        padding: 5px;
+    }
+
+    .footer-meil {
+        scale: 0.65;
+        bottom: -88px;
+        white-space: nowrap;
+    }
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/LinkUnderlined.css">.link {
+    position: relative;
+    color: #000000;
+    font-family: 'Merriweather', Georgia, serif;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 0;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 2px;
+}
+
+.link:hover {
+    transform: translateY(-4px);
+    color: #EFA900;
+}
+
+
+
+.link:after {
+    content: "";
+    position: absolute;
+    bottom: 3.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #EFA900;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+.link.hover:after {  /* Apply the hover effects */
+    opacity: 1;
+    animation: lineAppearFromMiddle 0.2s ease-in-out;
+}
+
+
+
+.link.return:after {  /* Apply the "return" animation when not hovering */
+    animation: lineDisappearToMiddle 0.4s ease-out;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Esileht/Components/TopBanner.css">.topBanner-container {
+    margin-bottom: 0px;
+    width: 100%;
+    height: 620px;
+
+    position: relative;
+}
+
+
+.topBanner-bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 620px;
+    width: auto;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  .topBanner-bg-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 620px;
+    width: auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+
+
+  
+  .topBanner-bg::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background: rgba(0, 0, 0, 0.392); /* adjust color and opacity as needed */
+    pointer-events: none; /* allows interaction with elements below */
+  }
+
+  .topBanner-bg-top::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    background: rgba(0, 0, 0, 0.392); /* adjust color and opacity as needed */
+    pointer-events: none; /* allows interaction with elements below */
+  }
+  
+  .topBanner-bg img {
+    height: 620px;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .topBanner-bg-top img {
+    height: 620px;
+    width: 100vw;
+    object-fit: cover;
+    position: relative;
+    clip-path: inset(0 100% 0 0);
+    animation: revealBanner 2s ease forwards;
+  }
+
+  @keyframes revealBanner {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .topBanner-text {
+    position: relative;
+    width: 80vw;
+    margin-top: 445px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .topBanner-button {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 15px;
+    width: 180px;
+    margin-top: -5px;
+    border-radius: 30px;
+    background-color: #52575F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  .topBanner-button-text {
+    margin: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .topBanner-button:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #EFA900;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .topBanner-button:hover .topBanner-button-text {
+    color: #FFFFFF;
+  }
+
+
+  /*Scaling*/
+@media (max-width: 1000px) {
+    .topBanner-button {
+        margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .topBanner-text {
+        width: 500px;
+        margin-top: 410px;
+    }
+    .topBanner-button {
+        margin-top: 0px;
+    }
+
+    .topBanner-bg::after {
+        height: 38%;
+      }
+    
+      .topBanner-bg-top::after {
+        height: 38%;
+      }
+
+      .topBanner-bg-top img {
+        animation: revealBanner 1.5s ease forwards;
+      }
+
+
+  }
+
+  @media (max-width: 400px) {
+    .topBanner-button {
+        margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .topBanner-text {
+        width: 300px;;
+    }
+
+
+  }
+  </style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/MidTextSeparator.css">.MidTextSeparator-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100vw;
+}
+
+.MidTextSeparator-sisu {
+    position: relative;
+       
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 90%;
+} 
+
+.MidTextSeparator-sisu-text {
+    text-align: center;
+} 
+
+/*Scaling*/
+@media (max-width: 700px) {
+    .MidTextSeparator-sisu-text {
+        font-size: 18px;
+    } 
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/ImageAndContent.css">.imageAndContent-container {
+    position: relative;
+    margin-bottom: 0px;
+    width: 110%;
+    padding: 0px 0px 20px 0px;
+}
+
+.imageAndContent-scroll {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageAndContent-content {
+    color: black;
+    width: 50%;
+    margin-top: 30px;
+}
+
+.imageAndContent-bg {
+    position: absolute;
+    left: 50%; /* Center horizontally */ 
+    transform: translateX(-50%); /* Adjust position */
+    height: 100%;
+    width: 100vw; /* Set width to cover container */
+    z-index: -1; 
+} 
+
+.imageAndContent-sisu {
+    width: 100%;
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Ensures items align from left to right */
+    gap: 0px; /* Adds spacing between items */
+    justify-content: space-evenly; /* Aligns items to the left */
+    align-items: flex-start; /* Centers items vertically (optional) */
+    padding: 20px 0px 20px 0px;
+    height: 100%;
+}
+
+.imageAndContent-image {
+    width: 81%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imageAndContent-image img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 35px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imageAndContent-imageGrid {
+    width: 35%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures images stick to the top */
+    align-items: center;    
+
+}
+
+/*Scaling*/
+@media (max-width: 1400px) {
+    .imageAndContent-container {
+        width: 100vw;
+    }
+
+    .imageAndContent-image {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 950px) {
+    .imageAndContent-sisu {
+        width: 100%;
+        display: flex; /* Enables flexbox layout */
+        flex-direction: row; /* Ensures items align from left to right */
+        gap: 0px; /* Adds spacing between items */
+        justify-content: space-evenly; /* Aligns items to the left */
+        align-items: flex-start; /* Centers items vertically (optional) */
+        padding: 0px 0px 20px 0px;
+        height: 100%;
+    }
+
+    .imageAndContent-content {
+        color: black;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .imageAndContent-container {
+        width: 100vw;
+    }
+
+    .imageAndContent-image {
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .imageAndContent-scroll {
+        width: 90vw;
+    }
+
+    .imageAndContent-container {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .imageAndContent-sisu {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .imageAndContent-scroll {
+        width: 95vw;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/PiltideView.css">.PiltideView-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.PiltideView-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    background: linear-gradient(to top, #02275a 8%, #02275aef 35%, #52575fb8);
+    border-color: transparent;
+}
+
+.PiltideView-pilt {
+    position: fixed;
+    top: 50%;
+    max-height: 90%;
+    max-width: min(1200px, 70%); 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+.PiltideView-leftArrow {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.PiltideView-rightArrow {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.PiltideView-quitIcon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.PiltideView-interactable {
+    width: 105px;
+    padding: 30px;
+}
+
+.PiltideView-kirjeldus {
+    position: fixed;
+    bottom: 38px;
+    left: 80px; 
+    z-index: 2000;
+}
+
+.PiltideView-text {
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: left;
+    color: var(--light-color);
+    font-weight: 300;
+    font-size: 23.5px;
+    line-height: 1.1;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+/*Scaling*/
+@media (max-width: 1750px) {
+    .PiltideView-pilt {
+        max-height: 74%; 
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .PiltideView-leftArrow {
+        top: unset;
+        bottom: 5px;
+        left: unset;
+        right: 120px;
+        transform: none;
+    }
+    
+    .PiltideView-rightArrow {
+        top: unset;
+        bottom: 5px;
+        right: 30px;
+        transform: none;
+    }
+
+    .PiltideView-quitIcon {
+        top: 20px;
+        right: 20px;
+    }
+
+    
+    .PiltideView-pilt {
+        max-width: 90%; 
+    }
+
+    .PiltideView-kirjeldus {
+        left: 7%;
+    }
+
+    .PiltideView-interactable {
+        width: 98px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .PiltideView-leftArrow {
+        top: unset;
+        bottom: 5px;
+        left: unset;
+        right: 80px;
+        transform: none;
+    }
+    
+    .PiltideView-rightArrow {
+        top: unset;
+        bottom: 5px;
+        right: 10px;
+        transform: none;
+    }
+
+    
+    .PiltideView-pilt {
+        max-width: 90%; 
+    }
+
+    .PiltideView-kirjeldus {
+        left: 7%;
+    }
+
+    .PiltideView-quitIcon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .PiltideView-interactable {
+        width: 94px;
+        padding: 30px;
+    }
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/ScrollImage.css">.scrollImage-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* optional vertical centering: */
+    align-items: center;
+    /* just for demo – you can remove this: */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* make this scrollable, and offset via --scroll-offset */
+  .scrollImage-images {
+    display: flex;
+    flex-direction: row;
+    /* hide native scrollbar */
+    overflow: hidden;
+    scroll-behavior: smooth;
+  
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+  /* each image wrapper stays the same */
+  .scrollImage-image {
+    flex: 0 0 auto;            /* don’t shrink or grow */
+    width: 100%;               /* each “page” is full width */
+    aspect-ratio: 1.8;
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+    transform: translateX(var(--scroll-offset));
+  }
+  
+  .scrollImage-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  </style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Esileht/Components/KalendriPoints.css">.kalendriPoints-container {
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -50px;
+}
+
+.kalendriPoints-interactable {
+    cursor: pointer;
+    width: 80px;
+    padding: 20px;
+    align-self: center;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    transform: scale(1.3);
+}
+
+
+
+.kalendriPoints-pealkiri {
+    transform: scale(0.8);
+    margin-bottom: -30px;
+}
+
+.kalendriPoints-sisu {
+  display: flex;                      /* horizontal row of tiles */
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 20px;
+  width: 100vw;
+  height: 250px;
+  overflow-x: auto;                   /* enable scrolling */
+  overflow-y: hidden;
+  cursor: grab;                       /* show grab cursor */
+  user-select: none;                  /* prevent text selection */
+  -webkit-overflow-scrolling: touch;  /* smooth on iOS */
+  padding-right: 200px;
+  padding-left: 100px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* === WebKit scrollbar styling === */
+.kalendriPoints-sisu::-webkit-scrollbar {
+  display: none;
+}
+
+
+.kalendriPoints-sisu.dragging {
+  cursor: grabbing;                   /* when actively dragging */
+}
+
+/*scaling */
+@media (max-width: 1250px) {
+    .kalendriPoints-pealkiri {
+        transform: scale(0.8);
+        margin-bottom: -40px;
+    }
+}
+
+@media (max-width: 880px) {
+    .kalendriPoints-sisu {
+        padding-right: 200px;
+        padding-left: 10px;
+    }
+
+}
+
+
+@media (max-width: 670px) {
+    .kalendriPoints-pealkiri {
+        transform: scale(0.78);
+        margin-bottom: -60px;
+        margin-top: -30px;
+    }
+    .kalendriPoints-container {
+        margin-bottom: -30px;
+    }
+    .kalendriPoints-sisu {
+        padding-right: 200px;
+        padding-left: 0px;
+    }
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Esileht/Components/KalendriPointTile.css">.kalendriPointTile-container {
+    flex: 0 0 auto;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 26px 20px 26px 30px;
+    transform: scale(0.85);
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    background-color: #52575F;
+    scroll-snap-align: start;
+    margin-right: -30px;
+}
+
+.kalendriPointTile-kuupaev {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #EFA900;
+    padding: 16px;
+    border-radius: 7px;
+}
+
+.kalendriPointTile-sisu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22px;
+}
+
+.kalendriPointTile-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.kalendriPointTile-detail-text {
+    font-size: 19.5px;
+    color: #F5F5F5;
+}
+
+.kalendriPointTile-pealkiri {
+    margin-top: 14px;
+    margin-bottom: 16px;
+    margin-left: 10px;
+
+}
+
+/*scaling */
+@media (max-width: 1250px) {
+    .kalendriPointTile-container {
+        transform: scale(0.8);
+        margin-right: -50px;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .kalendriPointTile-container {
+        transform: scale(0.7);
+        margin-right: -120px;
+    }
+}
+
+@media (max-width: 500px) {
+    .kalendriPointTile-container {
+        transform: scale(0.6);
+        margin-right: -140px;
+        margin-left: -50px;
+    }
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/PageHeaderLines.css">.page-headerLines-container {
+    position: relative;
+}
+
+.page-headerLines {
+    margin-top: 80px;
+    position: relative; /* This makes the header a positioning context for the background */
+}
+
+.page-headerLines-text {
+    z-index: 3000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: center;
+    color: #EFA900;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 1.2;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+
+.page-headerLines-line {
+    content: "";
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    min-width: 75vw;
+    height: 4.5px;
+    z-index: 50;
+    border-radius: 50px;
+    background-color: #EFA900;
+}
+
+.page-headerLines-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 235px;
+    width: 100vw;
+    background: linear-gradient(170deg, #02265A 5%, #2C3E50 100%);
+}
+
+/*Scaling*/
+@media (max-width: 1100px) {
+    .page-headerLines-line{
+        width: 85vw;
+    }
+
+    .page-headerLines-text {
+        font-size: 45px;
+    }
+    
+}
+
+
+@media (max-width: 670px) {
+    .page-headerLines-line {
+        width: 100vw;
+    }
+}
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Liikmed/Liikmed.css">.liikmed-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+}
+
+.liikmed-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.liikmed-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100%;
+    z-index: -1;          
+    background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.164)), 
+                      url('/src/assets/General/must valge bg logo ajutine.svg');
+    background-repeat: repeat;
+    background-size: 200px 250px; 
+    background-position: 0 1000px, 1000px 400px;
+    background-color: white;
+}
+
+/*.liikmed-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100%;
+    background-color: #2c2c2c;
+    background: url('/src/Lehekyljed/Liikmed/Design Elements/liikmed-bg.jpg') center center no-repeat;
+    background-size: cover;
+    z-index: -5;
+}*/
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Liikmed/Components/LiikmeteGrid.css">.liikmeteGrid-container {
+    width: 1150px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.liikmeteGrid-elemendid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start; /* Vertically center items in each cell */
+    justify-items: center; 
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .liikmeteGrid-container {
+        width: 1070px;
+    }
+    
+}
+@media (max-width: 1200px) {
+    .liikmeteGrid-container {
+        width: 80vw;
+    }
+
+    .liikmeteGrid-elemendid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .liikmeteGrid-container {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 750px) {
+    .liikmeteGrid-container {
+        width: 95vw;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .liikmeteGrid-container {
+        width: 85vw;
+    }
+
+    .liikmeteGrid-elemendid {
+        grid-template-columns: 1fr;
+    }
+    
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Liikmed/Components/LiikmeTile.css">.liikmetile {
+    width: 360px; 
+    background-color: #02265A;
+    background-color:  #52575F;
+    /*border: 20px solid #EFA900;*/
+    border-width: 3.5px;
+    border-radius: 10px;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2%;
+    transition: transform 0.3s ease; 
+    perspective: 800px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.liikmetile:hover {
+    transform: perspective(800px) scale(0.99) translateY(-2px) rotateY(10deg);
+}
+
+
+.liikmetile img {
+    display: block; 
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.liikmetile-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 0;
+}
+
+.liikmetile-logo img {
+    border-radius: 0;
+}
+
+
+
+
+
+.liikmetile-title {
+    z-index: 500;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #02275a8e;
+    padding: 15px;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px;
+}
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .liikmetile {
+        width: 330px
+    }
+
+    .liikmetile-title {
+        font-size: 18.5px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .liikmetile {
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .liikmetile {
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 18.5px;
+    }
+    
+}
+
+
+@media (max-width: 750px) {
+    .liikmetile {
+        width: unset;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .liikmetile-title {
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .liikmetile {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+        margin-bottom: 25px;
+    }
+
+    .liikmetile-title {
+        font-size: 20px;
+        padding: 15px
+        
+    }
+
+    .liikmetile:hover {
+        transform: perspective(800px) scale(0.99) translateY(-2px) rotateX(5deg);
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .liikmetile {
+        transition: transform 0.2s ease; 
+    }
+
+    .liikmetile:hover {
+        transform: perspective(800px) scale(0.99) translateY(-2px);
+    }
+    
+}
+
+
+
+   </style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Liikmed/Components/LiikmeKirjeldus.css">.kirjeldus {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    z-index: 200000000;
+    background: linear-gradient(to bottom, #02265A 60%, #52575F);
+    width: 850px;
+    height: 600px;
+    border-radius: 25px;
+    border: 2px solid #EFA900;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0px;
+    box-sizing: border-box; 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+
+
+.kirjeldus::-webkit-scrollbar { 
+    background: transparent; 
+    width: 0px;
+}
+
+.kirjeldus-logo {
+    position: absolute;
+    bottom: 16px;
+    left: 27px;
+    transform: scale(1.3);
+}
+
+
+.kirjeldus-line {
+    content: "";
+    z-index: 1000;
+    margin-top: 24px;
+    margin-bottom: 22px;
+    width: 100%;
+    height: 2.4px;
+    background-color:  #EFA900;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+.kirjeldus-text {
+    z-index: 2000;
+    text-align: left;
+    color: #F5F5F5;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.liikmed-quitIcon {
+    position: fixed;
+    top: 55px;
+    right: 55px;
+    z-index: 55000;    
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.liikmed-quitIcon img {
+    width: 40px;
+} 
+
+
+.liikmed-arrows {
+    position: fixed;
+    bottom: -12px;
+    right: 30px;
+    z-index: 50000;    
+    display: flex;
+    padding: 40px;
+}
+
+.liikmed-arrow {
+    color: #F5F5F5;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    margin-left: 34px;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.liikmed-arrow img {
+    width: 40px;
+}
+
+.liikmed-top {
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.liikmed-top img {
+    margin-right: 15px;
+    margin-left: auto;
+    border-radius: 50px;
+    z-index: 2000;
+}
+
+.header-top-phoneLine {
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    width: 2000px;
+    height: 2.4px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    background-color: #efa700;
+}
+
+.header {
+    position: relative;
+    flex-grow: 1; 
+    text-align: center; 
+    padding: 20px;
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    color: #F5F5F5;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+
+.header-line {
+    content: "";
+    position: absolute;
+    z-index: -2000;
+    transform: translate(-50%, 0%);
+    width: 2000px;
+    height: 2.4px;
+    background-color: #efa700;
+}
+
+.header-line:first-child {
+    top: -5%;
+}
+
+.header-line:last-child {
+    bottom: -6%;
+}
+
+
+.liikmed-background {
+    position: fixed;
+    left: 0;
+    top: -2px;
+    width: 100vw;
+    height: calc(100vh + 2px);
+    z-index: 50000;
+    background: linear-gradient(to top, #02275a 8%,#02275aef 35%, #52575fb8);
+    border-color: transparent;
+}
+
+
+.sotsMeediaLingid {
+    display: flex;        
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 41.5px;
+}
+
+.sotsiaalMeedia {
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5000;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.2);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.sotsiaalMeedia-empty {
+    margin-top: 0;
+    background-color: transparent;
+    border: none;
+    z-index: 5000;
+    height: 41.5px;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.2);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1300px) {
+    .kirjeldus {
+        width: 590px;
+        height: 730px;
+    }
+
+    .liikmed-arrows {
+        right: 0px;
+    }
+
+    .liikmed-arrow {
+        margin-left: 25px;
+    }
+
+    .liikmed-arrow img {
+        width: 35px;
+    }
+
+    .liikmed-top {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 15px; 
+    }
+    
+    .liikmed-top img {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 520px;
+        width: 88%;
+        margin-bottom: 20px;
+        border-radius: 30px;
+    }
+
+    .header {
+        font-size: 26px;
+    }
+
+    .header-line:first-child {
+        top: -3%;
+    }
+    
+    .header-line:last-child {
+        bottom: -4%;
+    }
+    .liikmed-quitIcon {
+        top: 32px;
+        right: 32px;
+    }
+    
+    .liikmed-quitIcon img {
+        width: 30px;
+    } 
+
+    .liikmed-arrows {
+        right: 0px;
+        bottom: -20px
+    }
+
+    .liikmed-arrow {
+        margin-left: 20px;
+    }
+
+    .liikmed-arrow img {
+        width: 30px;
+    }
+    
+}
+
+@media (max-width: 670px) {
+    .kirjeldus {
+        width: 90vw;
+        height: 730px;
+    }
+    
+}
+
+@media (max-width: 530px) {
+    .kirjeldus {
+        width: 100vw;
+        height: unset;
+        min-height: 630px;
+        transform: translate(-50%, -50%) scale(0.85);
+    }
+
+    .kirjeldus-text {
+        z-index: 2000;
+        text-align: left;
+        color: #F5F5F5;
+        font-weight: 200;
+        font-size: 15px;
+        line-height: 1.3;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .liikmed-top {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: space-between;
+        margin-bottom: 15px; 
+    }
+    
+    .liikmed-top img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        margin-top: -14px;
+        border-radius: 0;
+        margin-bottom: -10px;
+    }
+
+    .header{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .sotsiaalMeedia {
+        transform: scale(1.1);
+    }
+
+    .liikmed-quitIcon {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .liikmed-quitIcon img {
+        width: 30px;
+    } 
+
+
+    .liikmed-arrows {
+        position: fixed;
+        bottom: -20px;
+        right: 0px;
+        z-index: 50000;    
+        display: flex;
+        padding: 30px;
+    }
+    
+    .liikmed-arrow {
+        padding: 8px;
+        margin-left: 15px;
+    }
+
+    .liikmed-arrow img {
+        width: 30px;
+    }
+    
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Design styles/PlainContentPage.css">.plain-container {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.plain-body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;      
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+}
+
+.plain-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    background-size: cover;
+    z-index: -5;
+}
+
+.plain-bg-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100vw;
+    height: 100%;
+    z-index: -1;          
+    background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.164)), 
+                      url('/src/assets/General/must valge bg logo ajutine.svg');
+    background-repeat: repeat;
+    background-size: 200px 250px; 
+    background-position: 0 1000px, 1000px 400px;
+    background-color: white;
+}
+
+.plain-bg-icons-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%); 
+    width: 100vw;
+    height: 97%;
+    z-index: -1;          
+    background-image: linear-gradient(rgba(255, 255, 255, 0.488), rgba(255, 255, 255, 0.264)), 
+                      url('/src/assets/General/must valge bg logo ajutine.svg');
+    background-repeat: repeat;
+    background-size: 200px 250px; 
+    background-position: 0 1000px, 1000px 400px;
+    background-color: white;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/PageHeaderPlain.css">.pageHeaderPlain-container {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .pageHeaderPlainTitle {
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.2;
+    color: #EFA900;
+  }
+
+  .pageHeaderPlainTitle:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    bottom: 2px;
+    border-radius: 2px;
+    height: 4px;
+    width: 102%;
+    background-color: #EFA900;
+  }
+  
+
+  </style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Dokumendid/Components/DokumendidSisu.css">.DokumendidSisu-container {
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
+.DokumendidSisu-pealkiri {
+    margin-bottom: 10px;
+    margin-top: 50px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/PageHeaderImage.css">.pageHeaderImage-container {
+    margin-bottom: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.pageHeaderImage-text {
+  position: relative;
+  width: 80vw;
+  margin-top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.pageHeaderImage-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .pageHeaderImage-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* adjust color and opacity as needed */
+    pointer-events: none; /* allows interaction with elements below */
+  } 
+  
+  .pageHeaderImage-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Uudised/Uudised.css">.uudised-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-bottom: 0px;
+}
+
+.uudised-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.uudised-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%; 
+    background-color: var(--softYellow);
+    background-color: #F5F5F5;
+    background-size: cover;
+    z-index: -5;
+}
+
+.uudised-sisu {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Uudised/Components/UudisedTilesGrid.css">.UudisedTilesGrid-container {
+    width: 1180px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.UudisedTilesGrid-elemendid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start; /* Vertically center items in each cell */
+    justify-items: center; 
+} 
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .UudisedTilesGrid-container {
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .UudisedTilesGrid-container {
+        width: 850px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .UudisedTilesGrid-container {
+        width: 97vw;
+    }
+
+    .UudisedTilesGrid-elemendid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 570px) {
+    .UudisedTilesGrid-container {
+        width: 97vw;
+    }
+
+    .UudisedTilesGrid-elemendid {
+        grid-template-columns: 1fr;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Uudised/Components/UudisedTile.css">.UudisedTile-container {
+    margin-bottom: 80px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.UudisedTile-pilt {
+    width: 100%;
+    aspect-ratio: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-pilt.hovering{
+    transform: translateY(-10px);
+}
+
+.UudisedTile-pilt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-pilt.hovering img{
+    transform: scale(1.1);
+}
+
+
+
+
+.UudisedTile-kirjeldus {
+    width: 92%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.UudisedTile-kirjeldus.hovering {
+    transform: translateY(-10px);
+}
+
+.UudisedTile-date {
+    color: black;
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 1px;
+}
+
+.UudisedTile-title {
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+} 
+
+.UudisedTile-title.hovering {
+    text-decoration: underline;
+}
+
+.UudisedTile-text {
+    color: black;
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .UudisedTile-container{
+        width: 300px
+    }
+
+    .UudisedTile-date {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 1px;
+    }
+    
+    .UudisedTile-title {
+        font-size: 23px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    } 
+
+    .UudisedTile-text {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .UudisedTile-container{
+        width: 250px;
+        margin-bottom: 60px;
+    }
+
+    .UudisedTile-date {
+        font-size: 14.5px;
+        line-height: 1.4;
+        margin-bottom: 1px;
+    }
+    
+    .UudisedTile-title {
+        font-size: 21px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    } 
+
+    .UudisedTile-text {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .UudisedTile-container{
+        width: unset;
+        padding: 17px;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .UudisedTile-container{
+        margin-bottom: 0px;
+        
+    }
+}
+
+@media (max-width: 570px) {
+    .UudisedTile-pilt.hovering{
+        transform: translateY(-5px);
+    }
+
+    .UudisedTile-kirjeldus.hovering {
+        transform: translateY(-5px);
+    }
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/PageNavigatorButtons.css">.PageNavigatorButtons-container {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.PageNavigatorButtons-nupp {
+    background-color: transparent;
+    padding: 16px;
+    width: 4px; 
+    height: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.PageNavigatorButtons-nupp img{
+    width: 23px;
+}
+
+.PageNavigatorButtons-nupp:hover {
+    border: 2.5px solid #EFA900;
+}
+
+.PageNavigatorButtons-nupp.selected {
+    background-color: #EFA900;
+}
+
+.PageNavigatorButtons-nupp.selected .long-small-header {
+    color: #F5F5F5;
+}
+
+.PageNavigatorButtons-nupp-deactivated {
+    background-color: transparent;
+    padding: 16px;
+    width: 4px; 
+    height: 4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.PageNavigatorButtons-nupp-deactivated img {
+    width: 23px;
+    margin-right: 2.5px;
+    opacity: 0.4;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/UudisLeht.css">.uudisLeht-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-bottom: 0px;
+}
+
+.uudisLeht-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.uudisLeht-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%; 
+    background-color: var(--softYellow);
+    background-size: cover;
+    z-index: -5;
+}
+
+.uudisLeht-sisu {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtHeader.css">.uudisLehtHeader-container{
+    position: relative;
+    width: 80%;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 0px 0px 30px 0px;
+}
+
+
+.uudisLehtHeader {
+    width: 100%;
+}
+
+
+.uudisLehtHeader-line {
+    content: "";
+    z-index: 1000;
+    margin-top: -24px;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 4px;
+    background-color: #F5F5F5; 
+    flex-shrink: 0;
+}
+
+.uudisLehtHeader-date {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.uudisLehtHeader-pildiAutor {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.uudisLehtHeader-bg {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-right: -50vw;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    background-color:  #02265A;
+}
+
+.uudisLehtHeader-pilt {
+    margin-top: 50px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtGalerii.css">.uudisLehtGalerii-container {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.uudisLehtGalerii-grid {
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));  /* Create responsive columns */ 
+    gap: 5px 5px;
+    justify-items: center;  
+    align-items: center; 
+    margin: 0px auto;
+    width: 100%; 
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+.uudisLehtGalerii-line { 
+    content: "";
+    z-index: 1000;
+    margin-top: 0px;
+    width: 100%;
+    height: 3.5px;
+    background-color: #EFA900;
+    flex-shrink: 0;
+}
+
+/*Scaling*/
+@media (max-width: 760px) {
+    .uudisLehtGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)); 
+    }
+    
+}
+
+@media (max-width: 535px) {
+    .uudisLehtGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 2fr)); 
+    }
+    
+}
+
+@media (max-width: 370px) {
+    .uudisLehtGalerii-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)); 
+    }
+    
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtGaleriiTile.css">.uudisLehtGaleriiTile {
+    min-width: 110px;
+    max-width: 290px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2px;
+    cursor: pointer;
+    perspective: 1000px;
+    transform-origin: bottom center; 
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.uudisLehtGaleriiTile:hover {
+    transform: scale(1.05) translateY(-20px);
+    z-index: 2000;
+    box-shadow: 0 8px 20px #f5f5f5ee; 
+}
+
+
+
+
+.uudisLehtGaleriiTile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.3s ease;
+}
+
+.uudisLehtGaleriiTile:hover img {
+    transform: scale(1);
+}
+
+/*Scaling*/
+@media (max-width: 760px) {
+    .uudisLehtGaleriiTile {
+        min-width: 200px;
+        max-width: 380px;
+    }
+    
+}
+
+@media (max-width: 535px) {
+    .uudisLehtGaleriiTile {
+        min-width: 80px;
+        max-width: 190px;
+    }
+    
+}
+
+
+
+@media (max-width: 370px) {
+    .uudisLehtGaleriiTile {
+        min-width: 10px;
+        max-width: 150px;
+    }
+    
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtGaleriiView.css">.UudisLehtGaleriiView-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.UudisLehtGaleriiView-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    background: linear-gradient(to top, #02275a 8%, #02275aef 35%, #52575fb8);
+    border-color: transparent;
+}
+
+.UudisLehtGaleriiView-pilt {
+    position: fixed;
+    top: 50%;
+    max-height: 90%;
+    max-width: min(1200px, 70%); 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+.UudisLehtGaleriiView-leftArrow {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.UudisLehtGaleriiView-rightArrow {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.UudisLehtGaleriiView-quitIcon {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.UudisLehtGaleriiView-interactable {
+    width: 110px;
+    padding: 30px;
+}
+
+.UudisLehtGaleriiView-kirjeldus {
+    position: fixed;
+    bottom: 38px;
+    left: 80px;
+    z-index: 2000;
+}
+
+.UudisLehtGaleriiView-text {
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: left;
+    color: var(--light-color);
+    font-weight: 300;
+    font-size: 23.5px;
+    line-height: 1.1;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+/*Scaling*/
+@media (max-width: 1750px) {
+    .UudisLehtGaleriiView-pilt {
+        max-height: 74%; 
+    }
+
+}
+
+@media (max-width: 1150px) {
+    .UudisLehtGaleriiView-leftArrow {
+        top: unset;
+        bottom: 5px;
+        left: unset;
+        right: 140px;
+        transform: none;
+    }
+    
+    .UudisLehtGaleriiView-rightArrow {
+        top: unset;
+        bottom: 5px;
+        right: 30px;
+        transform: none;
+    }
+
+    
+    .UudisLehtGaleriiView-pilt {
+        max-width: 90%; 
+    }
+
+    .UudisLehtGaleriiView-kirjeldus {
+        left: 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    .UudisLehtGaleriiView-leftArrow {
+        top: unset;
+        bottom: 5px;
+        left: unset;
+        right: 120px;
+        transform: none;
+    }
+    
+    .UudisLehtGaleriiView-rightArrow {
+        top: unset;
+        bottom: 5px;
+        right: 30px;
+        transform: none;
+    }
+
+    
+    .UudisLehtGaleriiView-pilt {
+        max-width: 90%; 
+    }
+
+    .UudisLehtGaleriiView-kirjeldus {
+        left: 7%;
+    }
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtVaataVeel.css">.uudisLeht-VaataVeel-container {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.uudisLeht-VaataVeel-elemendid {
+    margin: 0 auto;
+    width: 1500px;
+    max-width: 1500px; width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 90px;
+}
+.uudisLeht-VaataVeel-rohkem-container {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid #EFA900; /* heavier border to match heading */
+    border-radius: 6px;
+    background-color: transparent; /* no fill, so the border stands out */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .uudisLeht-VaataVeel-rohkem-container:hover {
+    transform: scale(1.05);
+    background-color: #FFF4CC; /* subtle highlight on hover */
+  }
+  
+  .uudisLeht-VaataVeel-rohkem-text {
+    font-family: 'Cambria', 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: 300; /* adjust to match heading weight */
+    color: #EFA900; /* match “Vaata veel” color */
+    transition: color 0.3s ease;
+  }
+  
+
+  
+  .uudisLeht-VaataVeel-rohkem-img {
+    width: 24px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .uudisLeht-VaataVeel-rohkem-img.hovering {
+    transform: scale(1.1);
+  }
+  
+
+/*Scaling*/
+@media (max-width: 1600px) {
+    .uudisLeht-VaataVeel-elemendid {
+        width: 1100px;
+    }
+    
+}
+
+@media (max-width: 1220px) {
+    .uudisLeht-VaataVeel-elemendid {
+        width: 920px;
+    }
+    
+}
+
+@media (max-width: 975px) {
+    .uudisLeht-VaataVeel-elemendid {
+        width: 100%;
+        display: grid;  
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;  
+        align-items: flex-start; 
+        padding: 0 10px
+    }
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/UudisLeht/Components/UudisLehtBigTile.css">.UudisLehtBigTile-container {
+    margin-top: 80px;
+    margin-bottom: -20px;
+    margin-right: 16px;
+    margin-left: 16px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.UudisLehtBigTile-pilt {
+    width: 100%;
+    aspect-ratio: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.UudisLehtBigTile-pilt.hovering{
+    transform: translateY(-10px);
+}
+
+.UudisLehtBigTile-pilt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.3s ease;
+}
+
+.UudisLehtBigTile-pilt.hovering img{
+    transform: scale(1.1);
+}
+
+
+
+
+.UudisLehtBigTile-kirjeldus {
+    width: 92%;
+    transition: transform 0.3s ease;
+}
+
+.UudisLehtBigTile-kirjeldus.hovering {
+    transform: translateY(-10px);
+}
+
+.UudisLehtBigTile-date {
+    color: black;
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.UudisLehtBigTile-title {
+    z-index: 2000;
+    font-family: 'Cambria', 'Times New Roman', serif;
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+} 
+
+.UudisLehtBigTile-title.hovering {
+    text-decoration: underline;
+}
+
+.UudisLehtBigTile-text {
+    color: black;
+    font-family: 'Merriweather', Georgia, serif;
+    text-align: left;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+
+
+
+/*Scaling*/
+@media (max-width: 975px) {
+    .UudisLehtBigTile-container{
+        min-width: 200px;
+        max-width: 440px;
+        width: unset;
+    }
+}
+
+@media (max-width: 620px) {
+    .UudisLehtBigTile-container{
+        width: 93%;
+        max-width: unset;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Components/HeaderSeparatorOne.css">.HeaderSeparatorOne-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.HeaderSeparatorOne-line {
+    content: "";
+    z-index: 100;
+    margin-top: 0px;
+    width: 100%;
+    height: 3.5px;
+    background-color: #EFA900;
+    flex-shrink: 0;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Error404/Error404.css">.Error404-flag {
+  position: absolute;
+  z-index: 50;
+  bottom: 210px;
+  right: -5%;
+  transform: scaleX(1.7) scaleY(2) rotate(-5deg);
+}
+
+
+
+.Error404-buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.Error404-button {
+  padding: 15px;
+  width: 180px;
+  border-radius: 30px;
+  background-color: #52575F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Error404-button-text {
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.Error404-button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: #EFA900;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Error404-button:hover .Error404-button-text {
+  color: #FFFFFF;
+}
+
+/*Scaling*/
+
+
+@media (max-width: 1500px) {
+  .Error404-flag {
+    z-index: 0;
+    bottom: 10px;
+    right: 3%;
+    transform: scaleX(1) scaleY(1) rotate(5deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .Error404-flag {
+    z-index: 0;
+    bottom: -35px;
+    right: -1%;
+    transform: scaleX(.7) scaleY(.7) rotate(5deg);
+  }
+
+  .Error404-buttons {
+    margin-top: 0px;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .Error404-flag {
+    z-index: 0;
+    bottom: -55px;
+    right: -8%;
+    transform: scaleX(.5) scaleY(.5) rotate(5deg);
+  }
+
+  .Error404-buttons {
+    margin-top: -10px;
+    margin-bottom: 130px;
+    gap: 15px;
+  }
+
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/General/Design styles/PlainContentPage3.css">.plain3-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+}
+
+.plain3-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.plain3-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100%;
+    background-color: #F5F5F5;
+    background-size: cover;
+    z-index: -5;
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Juhatus/Juhatus.css">.juhatus-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-bottom: 0px;
+}
+
+.juhatus-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.juhatus-bg {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: 100vw;
+      height: 100%;
+      z-index: -1;          
+      background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.164)), 
+                        url('/src/assets/General/must valge bg logo ajutine.svg');
+      background-repeat: repeat;
+      background-size: 200px 250px; 
+      background-position: 0 1000px, 1000px 400px;
+      background-color: white;
+}
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Juhatus/Components/JuhatusLiigeGrid.css">.juhatusLiigeGrid-container {
+    width: 1030px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.juhatusLiigeGrid-elemendid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start; /* Vertically center items in each cell */
+    justify-items: center;  
+}
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .juhatusLiigeGrid-container {
+        width: 970px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .juhatusLiigeGrid-container {
+        width: 900px;
+        margin-top: -25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .juhatusLiigeGrid-container {
+        width: 740px;
+        margin-top: 50px;
+    }
+
+    .juhatusLiigeGrid-elemendid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .juhatusLiigeGrid-container {
+        width: 655px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 750px) {
+    .juhatusLiigeGrid-container {
+        width: 600px;
+        margin-top: -38px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .juhatusLiigeGrid-container {
+        width: unset;
+        margin-top: 35px;
+    }
+
+    .juhatusLiigeGrid-elemendid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .juhatusLiigeGrid-container {
+        margin-top: -20px;
+    }
+}
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/Juhatus/Components/JuhatusLiige.css">.juhatusLiige-container {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    scale: 0.95;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.juhatusLiige-pilt {
+    aspect-ratio: 0.8;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transform-origin: bottom center; 
+}
+
+.juhatusLiige-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 226px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    margin-top: -5px;
+    z-index: 1;
+    background-color: #2c3E50;
+}
+
+.juhatusLiige-bottom-tekst {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2px;
+    z-index: 1;
+    padding: 20px  5px  15px  5px;
+    margin-left: -30px;
+    margin-top: -14px;
+    border-radius: 5px;
+    scale: 0.85;
+}
+
+.juhatusLiige-profile-text {
+    margin-bottom: 5.5px;
+    text-align: left;
+}
+
+.juhatusLiige-profile-kontakt-text {
+    margin-top: 14px;
+    margin-bottom: -23px;
+    text-align: left;
+}
+
+/*Scaling*/
+@media (max-width: 1500px) {
+    .juhatusLiige-container {
+        scale: 0.92;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .juhatusLiige-container {
+        scale: 0.8;
+        margin-bottom: -60px;
+    }
+} 
+
+
+@media (max-width: 1000px) {
+    .juhatusLiige-container {
+        scale: 1;
+        margin-bottom: 65px;
+    }
+} 
+
+@media (max-width: 900px) {
+    .juhatusLiige-container {
+        scale: 0.9;
+        margin-bottom: 8px;
+    }
+} 
+
+@media (max-width: 750px) {
+    .juhatusLiige-container {
+        scale: 0.8;
+        margin-bottom: -66px;
+    }
+} 
+
+@media (max-width: 700px) {
+    .juhatusLiige-container {
+        scale: 1.05;
+        margin-bottom: 98px;
+    }
+} 
+
+@media (max-width: 500px) {
+    .juhatusLiige-container {
+        scale: 0.92;
+        margin-bottom: -10px;
+    }
+} 
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/SyndmusteList/SyndmusteList.css">.SyndmusteList-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+}
+
+.SyndmusteList-container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.SyndmusteList-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%); 
+    width: 100vw;
+    height: 97%;
+    z-index: -1;          
+    background-image: linear-gradient(rgba(255, 255, 255, 0.488), rgba(255, 255, 255, 0.264)), 
+                      url('/src/assets/General/must valge bg logo ajutine.svg');
+    background-repeat: repeat;
+    background-size: 200px 250px; 
+    background-position: 0 1000px, 1000px 400px;
+    background-color: white;
+}
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/SyndmusteList/Components/Syndmused.css">.Syndmused-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+} 
+
+/*Scaling */
+@media (max-width: 600px) {
+    .Syndmused-container {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 550px) {
+    .Syndmused-container {
+        width: 105%;
+    } 
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/SyndmusteList/Components/Syndmus.css">.Syndmus-container {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    min-height: 190px;
+    width: 100%;
+}
+
+.Syndmus-sisu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px; 
+}
+
+.Syndmus-line {
+    background-color: #EFA900;
+    width: 100%;
+    height: 2.5px;
+    align-self: flex-start;
+}
+
+.Syndmus-kuupaev {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #EFA900;
+    padding: 15px;
+}
+
+.Syndmus-kirjeldus{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+
+
+
+.Syndmus-kirjeldus-alapunkt{
+    margin-bottom: 7px;
+}
+
+
+
+.Syndmus-details {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; /* Ensures items are vertically centered */
+    gap: 20px;
+    width: 100%; /* Optional: Ensure no implicit shrink occurs */
+    margin-bottom: 10px;
+    margin-left: -5px;
+}
+
+.Syndmus-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.Syndmus-detail-text {
+    font-size: 19.5px;
+}
+
+.Syndmus-detail img{
+    margin-top: -12px;
+}
+
+/*Scaling*/
+@media (max-width: 970px) {
+    .Syndmus-detail-text {
+        font-size: 18px;
+    }
+
+    .Syndmus-detail img{
+        transform: scale(0.95);
+    }
+
+    .Syndmus-sisu {
+        gap: 60px; 
+    }
+}
+
+@media (max-width: 750px) {
+    .Syndmus-kirjeldus-pealkiri {
+        font-size: 24px;
+    }
+
+    .Syndmus-kirjeldus{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .Syndmus-detail-text {
+        font-size: 16.5px;
+    }
+
+    .Syndmus-detail img{
+        transform: scale(0.85);
+    }
+
+    .Syndmus-kirjeldus-alapunkt{
+        font-size: 14px;
+    }
+
+    .Syndmus-sisu {
+        gap: 40px; 
+    }
+
+    .Syndmus-details {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; /* Ensures items are vertically centered */
+        gap: 7px;
+        width: 100%; /* Optional: Ensure no implicit shrink occurs */
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+
+    .Syndmus-sisu {
+        gap: 30px; 
+    }
+}
+
+@media (max-width: 550px) {
+    .Syndmus-kirjeldus-pealkiri {
+        font-size: 23px;
+    }
+
+    .Syndmus-kirjeldus{
+        margin-top: 12px;
+        margin-bottom: 23px;
+        padding-right: 15px;
+    }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/rasmu/OneDrive/Desktop/Projektid/Eesti liputoimkondade veebisait/ell.ee/src/Lehekyljed/GaleriiLeht/GaleriiLeht.css">.galeriiLeht-body {
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;    
+    width: 100%;      
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+    z-index: inherit;
+    margin-bottom: 0px;
+}
+
+.galeriiLeht-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.galeriiLeht-bg {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      width: 100vw;
+      height: 100%;
+      z-index: -1;          
+      background-image: linear-gradient(rgba(255, 255, 255, 0.288), rgba(255, 255, 255, 0.164)), 
+                        url('/src/assets/General/must valge bg logo ajutine.svg');
+      background-repeat: repeat;
+      background-size: 200px 250px; 
+      background-position: 0 1000px, 1000px 400px;
+      background-color: white;
+}
+
+
+
+
+</style><script type="text/javascript" data-name="TokenSigning" data-by="Web-eID extension" src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script></head>
+
+  <body>
+    <div id="root"><div class="plain-container"><div class="plain-bg-icons"></div><div class="plain-body"><div class="topNavBar"><a class="logo" href="http://localhost:5173/galerii/"><img src="./Eesti Liputoimkondade Liit_files/Vapp detailsem.png" style="width: 70px;"><div class="logoTekst">Eesti Koolide<br>Liputoimkondade Liit</div></a><div class="topBar-menuIcon"><img src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20?%3e%3csvg%20fill=%27none%27%20height=%2724%27%20viewBox=%270%200%2024%2024%27%20width=%2724%27%20xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath%20d=%27M22%2018.0048C22%2018.5544%2021.5544%2019%2021.0048%2019H12.9952C12.4456%2019%2012%2018.5544%2012%2018.0048C12%2017.4552%2012.4456%2017.0096%2012.9952%2017.0096H21.0048C21.5544%2017.0096%2022%2017.4552%2022%2018.0048Z%27%20fill=%27%23F5F5F5%27/%3e%3cpath%20d=%27M22%2012.0002C22%2012.5499%2021.5544%2012.9954%2021.0048%2012.9954H2.99519C2.44556%2012.9954%202%2012.5499%202%2012.0002C2%2011.4506%202.44556%2011.0051%202.99519%2011.0051H21.0048C21.5544%2011.0051%2022%2011.4506%2022%2012.0002Z%27%20fill=%27%23F5F5F5%27/%3e%3cpath%20d=%27M21.0048%206.99039C21.5544%206.99039%2022%206.54482%2022%205.99519C22%205.44556%2021.5544%205%2021.0048%205H8.99519C8.44556%205%208%205.44556%208%205.99519C8%206.54482%208.44556%206.99039%208.99519%206.99039H21.0048Z%27%20fill=%27%23F5F5F5%27/%3e%3c/svg%3e"></div></div><div class="page-headerLines-container" style="margin-bottom: 30px;"><div class="page-headerLines"><div class="page-headerLines-line"></div><div class="page-headerLines-text">Error</div><div class="page-headerLines-line"></div></div></div><div class="Error404-flag"><img src="data:image/svg+xml,%3csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%20width=&#39;177&#39;%20zoomAndPan=&#39;magnify&#39;%20viewBox=&#39;0%200%20132.75%20238.499993&#39;%20height=&#39;318&#39;%20preserveAspectRatio=&#39;xMidYMid%20meet&#39;%20version=&#39;1.0&#39;%3e%3cdefs%3e%3cclipPath%20id=&#39;16dcb170aa&#39;%3e%3cpath%20d=&#39;M%200.015625%200%20L%20132.488281%200%20L%20132.488281%20237.253906%20L%200.015625%20237.253906%20Z%20M%200.015625%200%20&#39;%20clip-rule=&#39;nonzero&#39;/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20clip-path=&#39;url(%2316dcb170aa)&#39;%3e%3cpath%20fill=&#39;%2302265A&#39;%20d=&#39;M%2099.152344%2027.070312%20C%2085.511719%2024.179688%2071.582031%209.902344%2053.445312%209.621094%20C%2046.199219%209.507812%2040.011719%2010.644531%2036.074219%2011.621094%20L%2036.074219%204.394531%20C%2036.074219%201.894531%2034.046875%20-0.132812%2031.539062%20-0.132812%20C%2029.035156%20-0.132812%2027.007812%201.894531%2027.007812%204.394531%20L%2027.007812%20229.558594%20C%2011.90625%20229.832031%200.300781%20231.433594%200.300781%20233.371094%20C%200.300781%20235.5%2014.289062%20237.226562%2031.539062%20237.226562%20C%2048.792969%20237.226562%2062.78125%20235.5%2062.78125%20233.371094%20C%2062.78125%20231.433594%2051.171875%20229.832031%2036.074219%20229.558594%20L%2036.074219%2066.691406%20C%2040.949219%2065.367188%2049.015625%2062.546875%2056.554688%2056.964844%20C%2073.160156%2044.683594%2082.847656%2053.152344%20100.136719%2050.15625%20C%20118.070312%2047.050781%20132.199219%2024.40625%20132.199219%2024.40625%20C%20132.199219%2024.40625%20112.0625%2029.808594%2099.152344%2027.070312%20Z%20M%2099.152344%2027.070312%20&#39;%20fill-opacity=&#39;1&#39;%20fill-rule=&#39;nonzero&#39;/%3e%3cpath%20fill=&#39;%2302265A&#39;%20d=&#39;M%2099.152344%2027.070312%20C%2085.511719%2024.179688%2071.582031%209.902344%2053.445312%209.621094%20C%2046.199219%209.507812%2040.011719%2010.644531%2036.074219%2011.621094%20L%2036.074219%204.394531%20C%2036.074219%201.894531%2034.046875%20-0.132812%2031.539062%20-0.132812%20C%2029.035156%20-0.132812%2027.007812%201.894531%2027.007812%204.394531%20L%2027.007812%20229.558594%20C%2011.90625%20229.832031%200.300781%20231.433594%200.300781%20233.371094%20C%200.300781%20235.5%2014.289062%20237.226562%2031.539062%20237.226562%20C%2048.792969%20237.226562%2062.78125%20235.5%2062.78125%20233.371094%20C%2062.78125%20231.433594%2051.171875%20229.832031%2036.074219%20229.558594%20L%2036.074219%2066.691406%20C%2040.949219%2065.367188%2049.015625%2062.546875%2056.554688%2056.964844%20C%2073.160156%2044.683594%2082.847656%2053.152344%20100.136719%2050.15625%20C%20118.070312%2047.050781%20132.199219%2024.40625%20132.199219%2024.40625%20C%20132.199219%2024.40625%20112.0625%2029.808594%2099.152344%2027.070312%20Z%20M%2099.152344%2027.070312%20&#39;%20fill-opacity=&#39;1&#39;%20fill-rule=&#39;nonzero&#39;/%3e%3c/g%3e%3c/svg%3e"></div><div class="MidTextSeparator-container" style="background-color: rgb(239, 169, 0); margin-top: 60px;"><div class="MidTextSeparator-sisu"><div class="normal-text MidTextSeparator-sisu-text" style="color: rgb(245, 245, 245);"><div>Paistab, et sa sattusid valele rajale. Palun kontrollige veebiaadressi ja proovige uuesti. <br>Kui tekivad kahtlused, usaldage lippu. <br></div></div></div></div><div class="Error404-buttons"><div class="Error404-button"><div class="mid-header-white Error404-button-text">Tagasi</div></div><div class="Error404-button"><div class="mid-header-white Error404-button-text">Kodu</div></div></div><div class="footer"><div class="footer-title">Eesti Koolide Liputoimkondade Liit</div><div class="footer-kontaktid"><div class="footer-kontakt"><img src="data:image/svg+xml,%3csvg%20viewBox=&#39;0%200%20600%20600&#39;%20xml:space=&#39;preserve&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20fill-rule=&#39;evenodd&#39;%20clip-rule=&#39;evenodd&#39;%20stroke-linejoin=&#39;round&#39;%20stroke-miterlimit=&#39;2&#39;%3e%3cpath%20d=&#39;M251.921.159c-68.418%200-76.997.29-103.867%201.516-26.814%201.224-45.127%205.482-61.152%2011.71-16.566%206.438-30.615%2015.052-44.62%2029.057-14.005%2014.005-22.619%2028.054-29.057%2044.62-6.228%2016.024-10.486%2034.337-11.71%2061.151C.289%20175.083%200%20183.662%200%20252.08c0%2068.417.289%2076.996%201.515%20103.866%201.224%2026.814%205.482%2045.127%2011.71%2061.151%206.438%2016.566%2015.052%2030.615%2029.057%2044.621%2014.005%2014.005%2028.054%2022.619%2044.62%2029.057%2016.025%206.227%2034.338%2010.486%2061.152%2011.709%2026.87%201.226%2035.449%201.516%20103.867%201.516%2068.417%200%2076.996-.29%20103.866-1.516%2026.814-1.223%2045.127-5.482%2061.151-11.709%2016.566-6.438%2030.615-15.052%2044.621-29.057%2014.005-14.006%2022.619-28.055%2029.057-44.621%206.227-16.024%2010.486-34.337%2011.709-61.151%201.226-26.87%201.516-35.449%201.516-103.866%200-68.418-.29-76.997-1.516-103.867-1.223-26.814-5.482-45.127-11.709-61.151-6.438-16.566-15.052-30.615-29.057-44.62-14.006-14.005-28.055-22.619-44.621-29.057-16.024-6.228-34.337-10.486-61.151-11.71C328.917.449%20320.338.159%20251.921.159Zm0%2045.392c67.265%200%2075.233.256%20101.797%201.468%2024.562%201.121%2037.901%205.225%2046.778%208.674%2011.759%204.57%2020.151%2010.03%2028.966%2018.845%208.816%208.815%2014.275%2017.208%2018.845%2028.966%203.45%208.877%207.554%2022.216%208.674%2046.778%201.212%2026.564%201.469%2034.532%201.469%20101.798%200%2067.265-.257%2075.233-1.469%20101.797-1.12%2024.562-5.224%2037.901-8.674%2046.778-4.57%2011.759-10.029%2020.151-18.845%2028.966-8.815%208.816-17.207%2014.275-28.966%2018.845-8.877%203.45-22.216%207.554-46.778%208.674-26.56%201.212-34.527%201.469-101.797%201.469-67.271%200-75.237-.257-101.798-1.469-24.562-1.12-37.901-5.224-46.778-8.674-11.759-4.57-20.151-10.029-28.967-18.845-8.815-8.815-14.275-17.207-18.844-28.966-3.45-8.877-7.554-22.216-8.675-46.778-1.212-26.564-1.468-34.532-1.468-101.797%200-67.266.256-75.234%201.468-101.798%201.121-24.562%205.225-37.901%208.675-46.778%204.569-11.758%2010.029-20.151%2018.844-28.966%208.816-8.815%2017.208-14.275%2028.967-18.845%208.877-3.449%2022.216-7.553%2046.778-8.674%2026.564-1.212%2034.532-1.468%20101.798-1.468Z&#39;%20transform=&#39;translate(44%2043.838)%20scale(1.01619)&#39;%20fill-rule=&#39;nonzero&#39;%20fill=&#39;%23f5f5f5&#39;%20class=&#39;fill-000000&#39;%3e%3c/path%3e%3cpath%20d=&#39;M251.921%20336.053c-46.378%200-83.974-37.596-83.974-83.973%200-46.378%2037.596-83.974%2083.974-83.974%2046.377%200%2083.973%2037.596%2083.973%2083.974%200%2046.377-37.596%2083.973-83.973%2083.973Zm0-213.338c-71.447%200-129.365%2057.918-129.365%20129.365%200%2071.446%2057.918%20129.364%20129.365%20129.364%2071.446%200%20129.364-57.918%20129.364-129.364%200-71.447-57.918-129.365-129.364-129.365ZM416.627%20117.604c0%2016.696-13.535%2030.23-30.231%2030.23-16.695%200-30.23-13.534-30.23-30.23%200-16.696%2013.535-30.23%2030.23-30.23%2016.696%200%2030.231%2013.534%2030.231%2030.23Z&#39;%20transform=&#39;translate(44%2043.838)%20scale(1.01619)&#39;%20fill=&#39;%23f5f5f5&#39;%20fill-rule=&#39;nonzero&#39;%20class=&#39;fill-030404&#39;%3e%3c/path%3e%3c/svg%3e" style="width: 36px;"></div><div class="footer-kontakt"><img src="data:image/svg+xml,%3csvg%20viewBox=&#39;0%200%20512%20512&#39;%20xml:space=&#39;preserve&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20fill-rule=&#39;evenodd&#39;%20clip-rule=&#39;evenodd&#39;%20stroke-linejoin=&#39;round&#39;%20stroke-miterlimit=&#39;2&#39;%3e%3cpath%20d=&#39;m374.244%20285.825%2014.105-91.961h-88.233v-59.677c0-25.159%2012.325-49.682%2051.845-49.682h40.116V6.214S355.67%200%20320.864%200c-72.67%200-120.165%2044.042-120.165%20123.775v70.089h-80.777v91.961h80.777v222.31A320.565%20320.565%200%200%200%20250.408%20512c16.911%200%2033.511-1.324%2049.708-3.865v-222.31h74.128Z&#39;%20fill-rule=&#39;nonzero&#39;%20fill=&#39;%23f5f5f5&#39;%20class=&#39;fill-000000&#39;%3e%3c/path%3e%3c/svg%3e" style="width: 30px;"></div></div><div class="footer-meil"><div class="link  " style="color: white;">Võta meiega ühendust: liputoimkondade.liit@gmail.com</div></div></div></div></div></div>
+
+    <!-- 5. App entrypoint -->
+    <script type="module" src="./Eesti Liputoimkondade Liit_files/main.jsx"></script>
+  
+
+</body></html>

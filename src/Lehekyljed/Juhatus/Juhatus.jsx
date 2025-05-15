@@ -8,7 +8,7 @@ import PageHeaderLines from '../../General/Components/PageHeaderLines.jsx';
 import MidTextSeparator from '../../General/Components/MidTextSeparator.jsx';
 import JuhatusLiigeGrid from './Components/JuhatusLiigeGrid.jsx';
 
-
+ 
 
 export default function Juhatus() {
 

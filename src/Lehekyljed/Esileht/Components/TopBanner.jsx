@@ -51,7 +51,7 @@ export default function TopBanner({title,images}) {
         {switching && 
             <div className='topBanner-bg-top'>
                 <img src={images[nextIndex]}  alt="header" />
-            </div>
+            </div> 
         }
         
         <div 
@@ -68,7 +68,7 @@ export default function TopBanner({title,images}) {
           {title}
         </div>
       </div>
-      <Button text="Meist" handleClick={() => window.location.href = './ajalugu'}/>
+      <Button text="Meist" handleClick={() => window.scrollTo({ top: 1220, behavior: "smooth" })}/>
 
     </div>
   );
