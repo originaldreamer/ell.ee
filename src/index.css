@@ -13,6 +13,15 @@
   src: url("/fonts/Charter-Regular.woff2") format("woff2");
   font-weight: 400; font-style: normal;
 }
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/roboto-condensed-v20-latin-regular.woff2") format("woff2"),
+       url("/fonts/roboto-condensed-v20-latin-regular.woff") format("woff");
+  font-display: swap;
+}
+
 /* 2. Disable mobile text inflation */
 html {
   -webkit-text-size-adjust: 100%;

@@ -25,9 +25,9 @@ export default function TopBanner({ title, images, scrollToElement }) {
         behavior: 'smooth',
         block: 'start',
       });
-      console.log('scrolling to element');
+
     }
-    console.log('presed');
+
   };
 
   const switchImage = () => {

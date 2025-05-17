@@ -21,8 +21,8 @@ function NumberNupp({number, curSelectedIndex, handleClick})
         className={`PageNavigatorButtons-nupp ${curSelectedIndex === number-1 ? 'selected' : ''}`}
         onClick={() => handleClick(number-1)}
       >
-        <div className='long-small-header'>{number}</div>
-      </div>
+        <div className='PageNavigorButtons-text'>{number}</div>
+      </div> 
     );
 }
 

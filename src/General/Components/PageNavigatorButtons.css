@@ -5,6 +5,13 @@
     gap: 15px;
 }
 
+.PageNavigorButtons-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 'black';
+    font-weight: 100;
+    margin-bottom: -2px;
+}
+
 .PageNavigatorButtons-nupp {
     background-color: transparent;
     padding: 16px;
@@ -16,7 +23,7 @@
     justify-content: center;
     cursor: pointer;
     border: 2px solid transparent;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .PageNavigatorButtons-nupp img{
@@ -31,7 +38,7 @@
     background-color: #EFA900;
 }
 
-.PageNavigatorButtons-nupp.selected .long-small-header {
+.PageNavigatorButtons-nupp.selected .PageNavigorButtons-text {
     color: #F5F5F5;
 }
 
