@@ -90,9 +90,15 @@
   }
 
   .Error404-button {
-    transform: scale(0.8);
+    transform: scale(0.9);
     margin-left: -10px;
     margin-right: -10px;
+  }
+
+  .Error404-button.hover {
+    transform: translateY(-5px) scale(0.95);
+    background-color: #EFA900;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   }
 
 
