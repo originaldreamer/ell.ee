@@ -8,6 +8,7 @@ import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import MidTextSeparator from '../../General/Components/MidTextSeparator.jsx';
 import PageHeaderLines from '../../General/Components/PageHeaderLines.jsx';
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 import flag from './Content/flag.svg'
@@ -15,9 +16,24 @@ import flag from './Content/flag.svg'
 
 function Button({text, handleClick})
 {
+    const [hoverActive, setHoverActive] = useState(false);
+    const isTouch = useIsTouchDevice();
+
+
+    const unActivateHover = () => {
+        setTimeout(() => {
+            setHoverActive(false);
+        }, 200);
+    
+    }
 
     return (
-        <div className='Error404-button'
+        <div className={`Error404-button  ${hoverActive ? 'hover' : ''}`} 
+            onMouseEnter={!isTouch ? () => setHoverActive(true) : undefined} 
+            onMouseLeave={!isTouch ? () => setHoverActive(false) : undefined} 
+            onTouchStart={isTouch ? () => setHoverActive(true) : undefined}
+            onTouchEnd={isTouch ? unActivateHover: undefined}
+            onTouchCancel={isTouch ? unActivateHover : undefined}          
             onClick={handleClick}
         >
             <div className='mid-header-white Error404-button-text'>{text}</div>
@@ -43,7 +59,7 @@ export default function Error404()
             </div>
 
 
-            <MidTextSeparator
+            <MidTextSeparator 
                 text = {<div >
                     Paistab, et sa sattusid valele rajale. Palun kontrollige veebiaadressi ja proovige uuesti. <br />
                     Kui tekivad kahtlused, usaldage lippu. <br />

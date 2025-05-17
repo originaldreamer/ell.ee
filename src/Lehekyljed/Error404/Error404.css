@@ -37,13 +37,13 @@
   transition: color 0.3s;
 }
 
-.Error404-button:hover {
+.Error404-button.hover {
   transform: translateY(-5px) scale(1.05);
   background-color: #EFA900;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 
-.Error404-button:hover .Error404-button-text {
+.Error404-button.hover .Error404-button-text {
   color: #FFFFFF;
 }
 

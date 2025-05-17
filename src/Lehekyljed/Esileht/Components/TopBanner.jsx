@@ -11,7 +11,7 @@ function Button({ text, handleClick, isTouch }) {
     setTimeout(() => {
       setHoverActive(false);
     }, 200);
-
+ 
   }
 
   return ( 
