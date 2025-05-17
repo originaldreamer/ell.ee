@@ -61,7 +61,7 @@ function Kontaktid()
       <Kontakt
         normalIcon={instagramLogoWhite}
         activatedIcon={instagramLogoYellow}
-        link="https://www.instagram.com/liputoimkondade_liit?igsh=MXdtbGUxN2w1cnpmYg%3D%3D&utm_source=qr"
+        link="https://www.instagram.com/liputoimkondade_liit/?utm_source=qr#"
         iconSize='36px'
       />
 
