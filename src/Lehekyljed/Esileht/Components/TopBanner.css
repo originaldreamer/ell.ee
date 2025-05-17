@@ -169,7 +169,7 @@
     }
 
     .topBanner-container {
-        height: calc(100vh - 117px);
+        height: calc(100vh - 117px + 50px);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -202,15 +202,15 @@
 
   .topBanner-button {
     margin-top: unset;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
 
   .topBanner-bg::after {
-    height: 220px;
+    height: 260px;
   }
 
   .topBanner-bg-top::after {
-    height: 220px;
+    height: 260px;
   }
 
 

@@ -106,7 +106,7 @@
         overflow-y: auto;                   
         cursor:default;              
         user-select: none;                 
-        -webkit-overflow-scrolling: touch;  
+        -webkit-overflow-scrolling: unset;  
         padding-right: 0px;
         padding-left: 0px;
         -ms-overflow-style: none;
