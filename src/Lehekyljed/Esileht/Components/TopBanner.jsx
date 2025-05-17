@@ -56,7 +56,7 @@ export default function TopBanner({ title, images, scrollToElement }) {
       <div className='topBanner-bg' onClick={switchImage}>
         <img src={images[curIndex]} alt='header' />
       </div>
-
+ 
       <div className='topBanner-text'>
         <div className='big-header2-white' style={{ textAlign: 'center' }}>
           {title}

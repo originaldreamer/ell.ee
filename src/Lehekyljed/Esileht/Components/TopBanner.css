@@ -73,7 +73,7 @@
     from {
       clip-path: inset(0 100% 0 0);
     }
-    to {
+    to { 
       clip-path: inset(0 0 0 0);
     }
   }
@@ -165,8 +165,9 @@
 
   @media (max-width: 450px) {
     .topBanner-text {
-        width: 300px;;
+        width: 300px;
     }
+    
 
 
   }

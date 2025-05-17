@@ -115,7 +115,7 @@ html, body {
   text-align: left;
   color: #EFA900;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 46px;
   line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 70px;
@@ -127,7 +127,7 @@ html, body {
   text-align: left;
   color: #F5F5F5;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 46px;
   line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 70px;
@@ -396,19 +396,19 @@ html, body {
 
 @media (max-width: 450px) {
   .big-header2 {
-    font-size: 30px;
+    font-size: 28px;
   }
   
   .big-header2-white {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .normal-text {
-    font-size: 16px;
+    font-size: 18px !important;
   }
 
   .bold {
-    font-size: 18px;
+    font-size: 16.5px !important;
   }
 
 }
