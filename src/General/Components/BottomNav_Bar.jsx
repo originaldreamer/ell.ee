@@ -68,7 +68,7 @@ function Kontaktid()
       <Kontakt
         normalIcon={facebookLogoWhite}
         activatedIcon={facebookLogoYellow}
-        link="https://www.facebook.com/share/16TbZPQTbg/?mibextid=wwXIfr"
+        link="https://www.facebook.com/profile.php?id=61573531575459"
         iconSize='30px'
       />
     </div>
