@@ -16,7 +16,7 @@
 
 .liikmetile {
     width: 360px; 
-    background-color: #02265A;
+    background-color: #02265A; 
     background-color:  #52575F;
     /*border: 20px solid #EFA900;*/
     border-width: 3.5px;
@@ -34,7 +34,7 @@
     margin-bottom: 20px;
 }
 
-.liikmetile:hover {
+.liikmetile.hover {
     transform: perspective(800px) scale(0.99) translateY(-2px) rotateY(10deg);
 }
 
@@ -153,7 +153,7 @@
         
     }
 
-    .liikmetile:hover {
+    .liikmetile.hover {
         transform: perspective(800px) scale(0.99) translateY(-2px) rotateX(5deg);
     }
     
@@ -164,7 +164,7 @@
         transition: transform 0.2s ease; 
     }
 
-    .liikmetile:hover {
+    .liikmetile.hover {
         transform: perspective(800px) scale(0.99) translateY(-2px);
     }
     

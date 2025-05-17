@@ -53,13 +53,10 @@
     padding: 30px;
     width: 85vw;
     margin-top: -40px;
-    color: white;
+    color: white; 
     margin-bottom: 30px;
 }
 
-.topNavSidePanel-normalBtn:hover {
-    color:#EFA900;
-}
 
 
 
@@ -127,7 +124,7 @@
     padding: 10px 33vw;
 }
 
-.topNavSidePanel-dropDown-content-element:hover {
+.topNavSidePanel-dropDown-content-element.hover {
     color:#EFA900;
 }
 

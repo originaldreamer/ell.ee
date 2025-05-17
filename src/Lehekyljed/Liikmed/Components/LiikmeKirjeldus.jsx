@@ -47,6 +47,7 @@ function SotsMeediaLingid({instagramLink, facebookLink})
 
 function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
     const [symbol, setSymbol] = useState(symbolNormal);
+    const isTouch = useIsTouchDevice();
 
     function handleMouseEnter() {
       setSymbol(symbolClicked)
@@ -59,16 +60,24 @@ function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
   
     function handleClick() {
         window.location.href = link;
-      
-        
     }
+
+    const unActivateHover = () => {
+    setTimeout(() => {
+      setSymbol(symbolNormal);
+    }, 300);
+
+  }
   
     return (
       <button 
         className='sotsiaalMeedia'
         onClick={handleClick}
-        onMouseEnter={handleMouseEnter}  
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+        onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+        onTouchStart={isTouch ? handleMouseEnter : undefined}
+        onTouchEnd={isTouch ? unActivateHover: undefined}
+        onTouchCancel={isTouch ? unActivateHover : undefined}
       >
         <img 
           src={symbol}
@@ -149,7 +158,7 @@ function QuitIcon({normalIcon, activatedIcon, handleClick}) {
 
   return (
       <div
-          className='liikmed-quitIcon'
+          className='liikmed-quitIcon' 
           onClick={handleClick}
           onMouseEnter={!isTouch ? handleMouseEnter : undefined} // Apply only if not touch
           onMouseLeave={!isTouch ? handleMouseLeave : undefined}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './BottomNav_Bar.css'
-
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 //imported images
@@ -13,10 +13,18 @@ import LinkUnderlined from './LinkUnderlined.jsx';
 function Kontakt({normalIcon, activatedIcon, link, iconSize})
 {
   const [curIcon, setCurIcon] = useState(normalIcon);
+  const isTouch = useIsTouchDevice();
+
+  const unActivateHover = () => {
+    setTimeout(() => {
+      setCurIcon(normalIcon);
+    }, 200);
+
+  }
 
   function handleMouseEnter() {
     setCurIcon(activatedIcon)
-  }
+  } 
 
   // Handle hover leave event
   function handleMouseLeave() {
@@ -31,8 +39,11 @@ function Kontakt({normalIcon, activatedIcon, link, iconSize})
     <div 
       className='footer-kontakt'
       onClick={handleClick}
-      onMouseEnter={handleMouseEnter}  
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+      onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+      onTouchStart={isTouch ? handleMouseEnter : undefined}
+      onTouchEnd={isTouch ? unActivateHover: undefined}
+      onTouchCancel={isTouch ? unActivateHover : undefined} 
     >
       <img src={curIcon} style={{width: iconSize}}/>
     </div>

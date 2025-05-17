@@ -7,21 +7,47 @@ import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 import arrowDown from '../Design Elements/Dropdown Arrow down.svg'
 import arrowDownActivated from '../Design Elements/Dropdown Arrow down activated.svg'
 
+function DropDownContentKiri({link, hidePanelFunction}) {
+  const isTouch = useIsTouchDevice();
+  const [hoverActive, setHoverActive] = useState(false);
+
+  const unActivateHover = () => {
+    setTimeout(() => {
+      setHoverActive(false);
+    }, 200);
+  }
+
+  return (
+    <div>
+      <div className='topNavSidePanel-dropDown-content-line' />
+      <a
+        className={`topNavSidePanel-dropDown-content-element ${hoverActive ? 'hover' : ''}`} 
+        href={link.href}
+        onMouseEnter={!isTouch ? () => setHoverActive(true) : undefined} 
+        onMouseLeave={!isTouch ? () => setHoverActive(false) : undefined} 
+        onTouchStart={isTouch ? () => setHoverActive(true) : undefined}
+        onTouchEnd={isTouch ? unActivateHover: undefined}
+        onTouchCancel={isTouch ? unActivateHover : undefined} 
+        onClick={hidePanelFunction}
+      >
+        {link.label}
+      </a>
+      <div className='topNavSidePanel-dropDown-content-line' />
+    </div>
+
+      
+
+  );
+}
+
 function DropDownContent({ links, hidePanelFunction }) {
+  
+
     return (
       <div className="topNavSidePanel-dropDown-content">
         {links.map((link, index) => (
           <div key={index}>
-            <div className="topNavSidePanel-dropDown-content-line" />
-            <a
-              className="topNavSidePanel-dropDown-content-element"
-              href={link.href}
-              onClick={hidePanelFunction}
-            >
-              {link.unComplete ? "-" : ""}
-              {link.label}
-            </a>
-            <div className="topNavSidePanel-dropDown-content-line" />
+            <DropDownContentKiri link={link} hidePanelFunction={hidePanelFunction}/>
           </div>
         ))}
         
@@ -32,7 +58,7 @@ function DropDownContent({ links, hidePanelFunction }) {
 function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunction})
 {
     const [curIcon, setCurIcon] = useState(arrowDown);
-    const [textColor, setTextColor] = useState('white');
+    const [textColor, setTextColor] = useState('#F5F5F5');
     const isTouch = useIsTouchDevice();
 
 
@@ -55,7 +81,7 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
     
       const handleMouseLeave = () => {
             setCurIcon(arrowDown);
-            setTextColor('white')
+            setTextColor('#F5F5F5')
     
           
       }
@@ -66,12 +92,13 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
             
             <div className='topNavSidePanel-dropDown-title' 
                 style={{color: textColor}}
-                onClick={handleClick}
+                
                 onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
                 onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
                 onTouchStart={isTouch ? handleMouseEnter : undefined}
                 onTouchEnd={isTouch ? handleMouseLeave: undefined}
                 onTouchCancel={isTouch ? handleMouseLeave : undefined} 
+                onClick={handleClick}
             >
                 {tekst}
                 <img src={curIcon}/> 
@@ -85,6 +112,7 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
  
 function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
 {
+    const [textColor, setTextColor] = useState('#F5F5F5');
     const isTouch = useIsTouchDevice();
 
     const handleClick = () => {
@@ -104,7 +132,7 @@ function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
         }
     
       const handleMouseLeave = () => {
-          setTextColor('white')
+          setTextColor('#F5F5F5')
       }
     
     return (
@@ -118,6 +146,7 @@ function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
                 onTouchStart={isTouch ? handleMouseEnter : undefined}
                 onTouchEnd={isTouch ? handleMouseLeave: undefined}
                 onTouchCancel={isTouch ? handleMouseLeave : undefined} 
+                style = {{color: textColor}}
             >
                 {tekst}
             </a>

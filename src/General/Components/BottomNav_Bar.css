@@ -13,7 +13,7 @@
   src: url("/fonts/Charter-Regular.woff2") format("woff2");
   font-weight: 400; font-style: normal;
 }
-.footer {
+.footer { 
     bottom: 0;
     margin-top: auto;
     margin-bottom: -100px;
