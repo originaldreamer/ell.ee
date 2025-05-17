@@ -97,9 +97,10 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 150px;
+    height: 250px;
     z-index: 2000;
-    background-color: cyan;
+    background-color: transparent;
+    z-index: -5;
 }
 
 /*Scaling*/

@@ -11,6 +11,8 @@ import arrowRight from '../Design Elements/arrow right white.svg';
 import arrowRightActivated from '../Design Elements/arrow right yellow.svg';
 import quitIcon from '../Design Elements/quit icon.svg';
 import quitIconActivated from '../Design Elements/quit icon activated.svg';
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import { use } from 'react';
 
 
 
@@ -29,11 +31,12 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
 }
 
 export default function PiltideView({curIndex, piltideCount, pilt, leftFunction, rightFunction, quitFunction}) {
-    
+    const isTouch = useIsTouchDevice();
+
     return (
         <div className='PiltideView-container'>
             <div className='PiltideView-bg' />
-            <div className='PiltideView-hiddenQuitButton' />
+            {isTouch && <div className='PiltideView-hiddenQuitButton' onClick={quitFunction}/>}
 
             <img className='PiltideView-pilt' src={pilt}/>
 

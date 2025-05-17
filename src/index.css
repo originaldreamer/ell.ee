@@ -34,6 +34,8 @@ html {
 /* 3. Ensure your root font-family */
 html, body {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 * {
@@ -391,8 +393,6 @@ html, body {
 
   .mid-top-header, .mid-header, .mid-header-white {
     font-size: 24px;
-    margin-bottom: 15px;
-    margin-top: 70px;
   }
 
 }
