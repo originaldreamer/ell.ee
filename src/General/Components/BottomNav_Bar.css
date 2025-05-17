@@ -15,7 +15,7 @@
 
 .footer-title {
     position: absolute;
-    font-family: 'Cambria', 'Times New Roman', serif;
+    font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
     text-align: center;
     color: #EFA900;
     font-weight: 500;
@@ -94,8 +94,9 @@
     }
 
     .footer-meil {
-        scale: 0.8;
+        scale: 0.75;
         bottom: -88px;
+        width: 100vw;
     }
 
 }
@@ -123,7 +124,7 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .footer-title {
         margin-top: 32px;
         font-size: 20px;

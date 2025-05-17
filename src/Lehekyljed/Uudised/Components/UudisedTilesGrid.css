@@ -1,7 +1,7 @@
 .UudisedTilesGrid-container {
     width: 1180px;
     margin-top: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -43,7 +43,9 @@
 @media (max-width: 570px) {
     .UudisedTilesGrid-container {
         width: 97vw;
+        margin-bottom: 60px;
     }
+    
 
     .UudisedTilesGrid-elemendid {
         grid-template-columns: 1fr;

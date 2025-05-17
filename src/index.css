@@ -1,9 +1,17 @@
 @font-face {
-  font-family: 'Cambria';
-  src: url('/fonts/Cambria.woff2') format('woff2'),
-       url('/fonts/Cambria.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Caladea";
+  src: url("/fonts/Caladea-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal;
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("/fonts/SourceSerifPro-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal;
+}
+@font-face {
+  font-family: "Charter";
+  src: url("/fonts/Charter-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal;
 }
 /* 2. Disable mobile text inflation */
 html {
@@ -40,7 +48,6 @@ html, body {
   --gray: #52575F;
   
   font-family: 'Merriweather', serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-family: Cambria, 'Times New Roman', serif;
   line-height: 2;
   font-weight: 400;
 
@@ -61,7 +68,7 @@ html, body {
 /* Naiteks logo jaoks*/
 .h1 {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: #F5F5F5;
   font-weight: 500;
@@ -99,7 +106,7 @@ html, body {
 
 .big-header {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: #EFA900;
   font-weight: 500;
@@ -109,71 +116,56 @@ html, body {
   margin-top: 70px;
 }
 
-.big-header2 {
+
+
+.big-header2, .big-header2-white {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
-  color: #EFA900;
   font-weight: 300;
-  font-size: 46px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 70px;
+}
+
+.big-header2 {
+  color: #EFA900;
 }
 
 .big-header2-white {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
   color: #F5F5F5;
-  font-weight: 300;
-  font-size: 46px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  margin-top: 70px;
 }
 
 
-/*like mid-header but without margin-top*/
-.mid-top-header {
+.mid-top-header, .mid-header, .mid-header-white {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
-  color: #EFA900;
   font-weight: 50;
   font-size: 30px;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 70px;
+}
+
+.mid-top-header {
+  color: #EFA900;
+  margin-top: unset;
 }
 
 
 .mid-header {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
   color: #EFA900;
-  font-weight: 50;
-  font-size: 30px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  margin-top: 70px;
 }
 
 .mid-header-white {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
   color: #F5F5F5;
-  font-weight: 50;
-  font-size: 30px;
-  line-height: 1.2;
-  margin-bottom: 30px;
-  margin-top: 70px;
 }
 
 .long-mid-header {
   z-index: 2000;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: black;
   font-weight: 50;
@@ -185,7 +177,7 @@ html, body {
 
 .mid-small-top-header {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left; 
   color: #EFA900;
   font-weight: 50;
@@ -197,7 +189,7 @@ html, body {
 
 .mid-small-header {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: #EFA900;
   font-weight: 50;
@@ -209,7 +201,7 @@ html, body {
 
 .mid-small-header-black {
   z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: 'black';
   font-weight: 50;
@@ -219,68 +211,53 @@ html, body {
   margin-top: 70px;
 }
 
-.sub-header {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
-  color: var(--secondary-color);
-  color: #EFA900;
-  font-weight: 300;
-  font-size: 23.5px;
-  line-height: 1.1;
-  margin-top: 30px;
-  margin-bottom: 6px;
-}
 
-.sub-header-black {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
-  color: 'black';
-  font-weight: 300;
-  font-size: 23.5px;
-  line-height: 1.1;
-  margin-top: 30px;
-  margin-bottom: 6px;
-}
 
-.long-sub-header {
+.long-sub-header, .long-sub-header-white {
   z-index: 2000;
   font-family:'Roboto Condensed' , sans-serif;
   text-align: left;
-  color: black;
   font-weight: 300;
   font-size: 22px;
   line-height: 1.1;
   margin-top: 0px;
+}
+
+.long-sub-header {
+  color: black;
 }
 
 .long-sub-header-white {
-  z-index: 2000;
-  font-family:'Roboto Condensed', sans-serif;
-  text-align: left;
   color: #F5F5F5;
+}
+
+
+.sub-header, .sub-header-black, .sub-header-white {
+  z-index: 2000;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
+  text-align: left;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 24.5px;
   line-height: 1.1;
-  margin-top: 0px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.sub-header {
+  color: #EFA900;
+}
+
+.sub-header-black {
+  color: 'black';
 }
 
 .sub-header-white {
-  z-index: 2000;
-  font-family: 'Cambria', 'Times New Roman', serif;
-  text-align: left;
   color: var(--light-color);
-  font-weight: 300;
-  font-size: 23.5px;
-  line-height: 1.1;
-  margin-top: 30px;
-  margin-bottom: 6px;
 }
 
 
-.normal-text {
-  color: black;
+.normal-text,
+.normal-text-white {
   font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 200;
@@ -289,14 +266,12 @@ html, body {
   margin-bottom: 32px;
 }
 
+.normal-text {
+  color: black;
+}
+
 .normal-text-white {
   color: var(--light-color);
-  font-family: 'Merriweather', Georgia, serif;
-  text-align: left;
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 32px;
 }
 
 
@@ -305,7 +280,7 @@ html, body {
   font-family: 'Merriweather', Georgia, serif;
   text-align: left;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18.5px !important;
   line-height: 1.4;
   margin-bottom: 32px;
   display: inline;
@@ -385,21 +360,13 @@ html, body {
 }
 
 @media (max-width: 1000px) {
-  .big-header2 {
-    font-size: 40px;
-  }
-  
-  .big-header2-white {
-    font-size: 40px;
+  .big-header2, .big-header2-white {
+    font-size: 36px;
   }
 }
 
 @media (max-width: 450px) {
-  .big-header2 {
-    font-size: 28px;
-  }
-  
-  .big-header2-white {
+  .big-header2, .big-header2-white {
     font-size: 28px;
   }
 

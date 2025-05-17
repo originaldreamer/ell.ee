@@ -24,7 +24,6 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
 
 export default function KalendriPoints() {
   const sliderRef = useRef(null);
-  const [canDrag, setCanDrag] = useState(true);
   const [pointCount, setPointCount] = useState(window.innerWidth >= 450 ? 8 : 3);
 
   useEffect(() => {
@@ -35,11 +34,21 @@ export default function KalendriPoints() {
     let startX = 0, baseScroll = 0;
     let lastX = 0, lastTime = 0, velocity = 0;
     let animID = null;
+    let canDrag = window.innerWidth >= 450;
 
     const handleResize = () => {
       slider.scrollLeft = 0;
-      setCanDrag(window.innerWidth >= 450);
       setPointCount(window.innerWidth >= 450 ? 8 : 3);
+
+      if (window.innerWidth < 450) {
+        isDown = false;
+        slider.classList.remove('dragging');
+        cancelAnimationFrame(animID);
+        canDrag = false;
+      }
+      else {
+        canDrag = true;
+      }
 
     }
 

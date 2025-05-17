@@ -8,11 +8,11 @@
 
 .kalendriPoints-interactable {
     cursor: pointer;
-    width: 100px;
+    width: 95px;
     padding: 25px;
     align-self: center;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 50px; 
     transition: transform 0.3s ease;
 }
 
@@ -31,6 +31,7 @@
   display: flex;                      /* horizontal row of tiles */
   flex-direction: row;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: 20px;
   width: 100vw;
   height: 250px;
@@ -86,8 +87,8 @@
     }
 
     .kalendriPoints-interactable {
-        width: 110px;
-        margin-left: 65px;
+        width: 95px;
+        margin-left: 40px;
     }
 }
 
@@ -103,13 +104,17 @@
         height: unset;
         overflow-x: hidden;   
         overflow-y: auto;                   
-        cursor: none;                      
+        cursor:default;              
         user-select: none;                 
         -webkit-overflow-scrolling: touch;  
         padding-right: 0px;
         padding-left: 0px;
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+
+    .kalendriPoints-sisu.dragging {
+        cursor: default;                   /* when actively dragging */
     }
 
     .kalendriPoints-container {
@@ -121,7 +126,6 @@
     }
 
     .kalendriPoints-interactable {
-        cursor: pointer;
         width: 85px;
         padding: 25px;
         margin-top: 33px;

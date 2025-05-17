@@ -48,7 +48,7 @@ export default function kalendriPointTile({pealkiri, kuupaev, asukoht}) {
                 <img src={FlagIcon}  style={{ width: '39px' }} />
                 <div className='long-small-text kalendriPointTile-detail-text'>{asukoht}</div >
             </div>}
-        </div>
+        </div> 
         
 
         

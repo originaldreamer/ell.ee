@@ -53,7 +53,7 @@
 }
 
 .PiltideView-interactable {
-    width: 105px;
+    width: 95px;
     padding: 30px;
 }
 
@@ -66,7 +66,7 @@
 
 .PiltideView-text {
     z-index: 2000;
-    font-family: 'Cambria', 'Times New Roman', serif;
+    font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
     text-align: left;
     color: var(--light-color);
     font-weight: 300;

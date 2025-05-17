@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import './ImageAndContent.css'
 import '../../index.css'
-
+ 
 //imported components
 import PiltideView from './PiltideView.jsx';
 import ScrollImages from './ScrollImage.jsx';

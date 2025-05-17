@@ -94,7 +94,7 @@
     position: relative;
     padding: 15px;
     width: 180px;
-    margin-top: -5px;
+    margin-top: 10px;
     border-radius: 30px;
     background-color: #52575F;
     display: flex;
@@ -167,7 +167,51 @@
     .topBanner-text {
         width: 300px;
     }
+
+    .topBanner-container {
+        height: calc(100vh - 117px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    .topBanner-bg {
+      height: 100%;
+    }
+
+  .topBanner-bg-top {
+    height: 100%;
+  }
+
+  .topBanner-bg img {
+    height: 100%;
+  }
+
+  .topBanner-bg-top img {
+    height: 100%;
+  }
     
+  .topBanner-text {
+    position: relative;
+    width: 80vw;
+    margin-top: unset;
+    margin-bottom: 0px;
+  }
+
+  .topBanner-button {
+    margin-top: unset;
+    margin-bottom: 40px;
+  }
+
+  .topBanner-bg::after {
+    height: 220px;
+  }
+
+  .topBanner-bg-top::after {
+    height: 220px;
+  }
 
 
   }

@@ -69,7 +69,7 @@
 @media (max-width: 500px) {
     .kalendriPointTile-container {
         transform: scale(0.6);
-        margin-right: -140px;
+        margin-right: -120px;
         margin-left: -50px;
     }
 }

@@ -49,11 +49,11 @@
 }
 
 .logoTekst {
-  font-family: 'Cambria', 'Times New Roman', serif;
+  font-family: "Source Serif Pro", Caladea, Charter, Georgia, serif;
   text-align: left;
   color: #F5F5F5;
-  font-weight: 600;
-  font-size: 23px; 
+  font-weight: 500;
+  font-size: 22px; 
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -287,6 +287,20 @@
   .logo {
     margin-left: -30px;
   }
+
+   .topBar-scrollTopButton {
+    bottom: 50px;
+    right: 33px;
+  }
+
+  .topBar-scrollTopButton::before {
+    bottom: 45px;
+    right: 33px;
+}
+
+  .topBar-scrollTopButton:hover {
+    bottom: 53px;
+  }
   
   
 }
@@ -296,6 +310,8 @@
   .logo {
     margin-left: -40px;
   }
+
+  
   
   
 }

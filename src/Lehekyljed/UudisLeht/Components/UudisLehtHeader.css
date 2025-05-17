@@ -3,7 +3,7 @@
     width: 80%;
     padding: 0;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     padding: 0px 0px 30px 0px;
 }
 
@@ -12,14 +12,25 @@
     width: 100%;
 }
 
+.uudisLehtHeader-line1 {
+    content: "";
+    z-index: 1000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 200vw;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #EFA900;
+    flex-shrink: 0;
+} 
 
 .uudisLehtHeader-line {
     content: "";
     z-index: 1000;
-    margin-top: -24px;
+    margin-top: -20px;
     margin-bottom: 6px;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #EFA900;
     flex-shrink: 0;
 } 
@@ -45,10 +56,20 @@
     width: 100vw;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(180deg,#2C3E50 0%, #02265A 10%);
+    background:  #02265A;
 
 }
 
 .uudisLehtHeader-pilt {
     margin-top: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .uudisLehtHeader-title {
+        font-size: 32px;
+    }
+    .uudisLehtHeader-container {
+        width: 100%;
+    }
 }
