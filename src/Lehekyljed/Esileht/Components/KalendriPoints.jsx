@@ -24,18 +24,31 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
 
 export default function KalendriPoints() {
   const sliderRef = useRef(null);
+  const [canDrag, setCanDrag] = useState(true);
+  const [pointCount, setPointCount] = useState(window.innerWidth >= 450 ? 8 : 3);
 
   useEffect(() => {
+    
+
     const slider = sliderRef.current;
     let isDown = false;
     let startX = 0, baseScroll = 0;
     let lastX = 0, lastTime = 0, velocity = 0;
     let animID = null;
 
+    const handleResize = () => {
+      slider.scrollLeft = 0;
+      setCanDrag(window.innerWidth >= 450);
+      setPointCount(window.innerWidth >= 450 ? 8 : 3);
+
+    }
+
     const maxScroll = () => slider.scrollWidth - slider.clientWidth;
 
     // Start drag
     const onDown = e => {
+      if (!canDrag) return;
+
       isDown = true;
       slider.classList.add('dragging');
       const pageX = e.pageX ?? e.touches[0].pageX;
@@ -48,7 +61,7 @@ export default function KalendriPoints() {
 
     // During drag
     const onMove = e => {
-      if (!isDown) return;
+      if (!isDown || !canDrag) return;
       e.preventDefault();  // needed for touch on some browsers :contentReference[oaicite:2]{index=2}
       const pageX = e.pageX ?? e.touches[0].pageX;
       const x = pageX - slider.offsetLeft;
@@ -77,7 +90,7 @@ export default function KalendriPoints() {
 
     // End drag
     const onUp = () => {
-      if (!isDown) return;
+      if (!isDown || !canDrag) return;
       isDown = false;
       slider.classList.remove('dragging');
 
@@ -100,6 +113,7 @@ export default function KalendriPoints() {
 
       // Otherwise, start momentum glide
       const momentum = () => {
+        if (!canDrag) return;
         slider.scrollLeft -= velocity;
         velocity *= 0.96;               /* friction */
         if (Math.abs(velocity) > 0.5) {
@@ -116,6 +130,7 @@ export default function KalendriPoints() {
     slider.addEventListener('touchstart', onDown);
     slider.addEventListener('touchmove', onMove, { passive: false });
     document.addEventListener('touchend', onUp);
+    window.addEventListener('resize', handleResize);
 
     return () => {
       slider.removeEventListener('mousedown', onDown);
@@ -124,6 +139,7 @@ export default function KalendriPoints() {
       slider.removeEventListener('touchstart', onDown);
       slider.removeEventListener('touchmove', onMove);
       document.removeEventListener('touchend', onUp);
+      window.removeEventListener('resize', handleResize);
       cancelAnimationFrame(animID);
     };
   }, []);
@@ -135,7 +151,7 @@ export default function KalendriPoints() {
         </div>
 
         <div ref={sliderRef} className="kalendriPoints-sisu">
-            {data.slice(0, 8).map((syndmus, idx) => (
+            {data.slice(0, pointCount).map((syndmus, idx) => (
                 <KalendriPointTile
                 key={idx}
                 className="kalendriPointTile"

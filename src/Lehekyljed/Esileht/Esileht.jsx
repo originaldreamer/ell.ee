@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import '../../App.css'
 import './Esileht.css'
 
@@ -32,6 +32,27 @@ function TextArea( {content} ) {
 
 export default function Esileht() {
   const [fileContent, setFileContent] = useState('');
+  const [sloganMargin, setSloganMargin] = useState(window.innerWidth >= 450 ? '-10px' : '-50px');
+  const myRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 450) {
+        setSloganMargin('-10px');
+      } else {
+        setSloganMargin('-50px');
+      }
+    };
+
+    
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }
+  , []);
 
   return (
     <div className='esileht-container'>
@@ -44,10 +65,11 @@ export default function Esileht() {
         <TopBanner 
           title="Eesti Koolide Liputoimkondade Liit" 
           images={[banner1, banner2, banner3, banner4]} 
+          scrollToElement={myRef}
         />
 
 
-
+        <div className='esileht-slogan' style={{marginBottom: sloganMargin}}>
           <MidTextSeparator
             text = {<div >
                 <div className='bold'>„Vexillum signum libertatis“</div> <br/>
@@ -56,10 +78,12 @@ export default function Esileht() {
             bgColor='white'
             marginTop='0px'
           />
+        </div>
+          
 
           <KalendriPoints />
 
-          <ImageAndContent
+          <ImageAndContent myRef={myRef}
             content={
                 <div>
                 <div className="mid-top-header">Ühendame Eesti liputoimkonnad</div>
@@ -76,7 +100,7 @@ export default function Esileht() {
               ]}
           />
 
-          <ImageAndContent
+          <ImageAndContent 
             content={
                 <div>
                 <div className="mid-top-header">Arendame lipukultuuri</div>

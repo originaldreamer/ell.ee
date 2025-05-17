@@ -29,9 +29,9 @@ export default function Juhatus() {
                     Korraldatakse üritusi ja arendatakse koostööd teiste organisatsioonidega.
                 </div>}
               
-                textColor='#F5F5F5'
-                bgColor='rgb(44, 62, 80)'
-                marginTop='40px'
+                textColor='black'
+                bgColor='transparent'
+                marginTop='0px'
               />
 
               

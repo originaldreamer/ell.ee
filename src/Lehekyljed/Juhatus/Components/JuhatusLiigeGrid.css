@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .juhatusLiigeGrid-elemendid {
@@ -27,14 +27,14 @@
 @media (max-width: 1150px) {
     .juhatusLiigeGrid-container {
         width: 900px;
-        margin-top: -25px;
+        margin-top: -55px;
     }
 }
 
 @media (max-width: 1000px) {
     .juhatusLiigeGrid-container {
         width: 740px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .juhatusLiigeGrid-elemendid {
@@ -45,7 +45,7 @@
 @media (max-width: 900px) {
     .juhatusLiigeGrid-container {
         width: 655px;
-        margin-top: 5px;
+        margin-top: -10px;
     }
 }
 
@@ -60,7 +60,7 @@
 @media (max-width: 700px) {
     .juhatusLiigeGrid-container {
         width: unset;
-        margin-top: 35px;
+        margin-top: 20px;
     }
 
     .juhatusLiigeGrid-elemendid {
@@ -70,7 +70,7 @@
 
 @media (max-width: 500px) {
     .juhatusLiigeGrid-container {
-        margin-top: -20px;
+        margin-top: -40px;
     }
 }
 

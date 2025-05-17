@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './ImageAndContent.css'
 import '../../index.css'
 
@@ -103,7 +103,7 @@ useEffect(() => {
 
 
 
-export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%'}) {
+export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%', myRef}) {
   const smallScreenSize = '900px'
 
   const [showScrollImages, setShowScrollImages] = useState(
@@ -123,7 +123,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
   }, []);
 
   return (
-      <div className='imageAndContent-container' style={{marginTop: showScrollImages ? offsetYSmallScreen : offsetY}}>
+      <div className='imageAndContent-container' style={{marginTop: showScrollImages ? offsetYSmallScreen : offsetY}} ref={myRef}  >
         <div className='imageAndContent-bg' style={{backgroundColor: bgColor}}/>
 
         

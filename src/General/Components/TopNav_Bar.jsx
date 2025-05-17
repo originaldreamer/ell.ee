@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './TopNav_Bar.css'
 
 
@@ -12,6 +12,7 @@ import arrowDown from '../Design Elements/Dropdown Arrow down.svg'
 import arrowDownActivated from '../Design Elements/Dropdown Arrow down activated.svg'
 import menuIcon from '../Design Elements/menuIcon.svg'
 import menuIconActivated from '../Design Elements/menuIcon activated.svg'
+import arrowTop from '../Design Elements/arrow top.svg'
 
 //imported components
 import TopNavSidePanel from './TopNavSidePanel.jsx';
@@ -57,7 +58,7 @@ function TopNaviagtionButtonDropDown({text, links}) {
               </a>
             </div>
           ))}
-        </div>
+        </div> 
       </div>
   );
 }
@@ -96,9 +97,9 @@ function TopNaviagtionButtonNormal({ text, link, scrollTo}) {
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
-      <a style={{ color: "inherit", textDecoration: "none" }}>
+      <div style={{ color: "inherit", textDecoration: "none" }}>
         {text}
-      </a>
+      </div>
     </div>
   );
 }
@@ -196,6 +197,9 @@ function MenuIcon ({setIdFunction, showPanelFunction, isShowingSidePanel})
 export default function TopNavigationBar() {
   const [showSidePanel, setShowSidePanel] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [hasScrolledDown, setHasScrolledDown] = useState(false);
+  
+
 
   // Update the screen width state when the window is resized
   useEffect(() => {
@@ -209,20 +213,45 @@ export default function TopNavigationBar() {
       }
 
     };
+    const handleScroll = () => {
+      setHasScrolledDown(window.scrollY > 500);
+      if (window.scrollY > 500)
+      {
+        setScrollToTopButtonPosition('33px');
+      }
+      else
+      {
+        setScrollToTopButtonPosition('0px');
+      }
+    }
  
     // Initialize the state on component mount
     handleResize();
 
     // Add event listener on resize
     window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener on unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    }
+    }, []);
+
+  const scrollToTop = () => { window.scrollTo({ top: 0, behavior: "smooth" });}
 
   return (
     <div className='topNavBar'>
+      {hasScrolledDown && 
+        <div className='topBar-scrollTopButton' onClick={() => scrollToTop()}>
+          <img src={arrowTop} />
+        </div>
+      }
 
+
+      
+      
       <Logo />
       
       {showSidePanel && <TopNavSidePanel hidePanelFunction={() => setShowSidePanel(false)} />}
