@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './UudisLehtVaataVeel.css';
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 //imported components
 import UudisLehtBigTile from './UudisLehtBigTile.jsx';
@@ -18,16 +19,27 @@ import plusIconActivated from '../Design elements/plus icon activated.svg';
 
 function Rohkem() {
     const [isHovering, setIsHovering] = useState(false);
+    const isTouch = useIsTouchDevice();
 
     const handleClick = () => {
         window.location.href = './uudised';
     };
 
+    const unActivateHover = () => {
+        setTimeout(() => {
+            setIsHovering(false);
+        }, 300);
+
+    }
+ 
     return (
         <div
-            className='uudisLeht-VaataVeel-rohkem-container'
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
+            className={`uudisLeht-VaataVeel-rohkem-container ${isHovering ? 'hover' : ''}`}
+            onMouseEnter={!isTouch ? () => setIsHovering(true) : undefined} 
+            onMouseLeave={!isTouch ? () => setIsHovering(false) : undefined} 
+            onTouchStart={isTouch ? () => setIsHovering(true) : undefined}
+            onTouchEnd={isTouch ? unActivateHover : undefined}
+            onTouchCancel={isTouch ? unActivateHover : undefined} 
             onClick={handleClick}
         >
             <div className={`uudisLeht-VaataVeel-rohkem-text ${isHovering ? 'hovering' : ''}`}>

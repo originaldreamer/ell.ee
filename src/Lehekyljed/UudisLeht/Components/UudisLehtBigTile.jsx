@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 import './UudisLehtBigTile.css';
@@ -37,7 +37,8 @@ export default function UudisLehtBigTile({pilt, date, title, sisu, to}) {
     const [isHovering, setIsHovering] = useState(false);
     const wordLimit = 15;
     const normalText = extractNormalText(sisu);
-
+    const isTouch = useIsTouchDevice();
+ 
     const shortenText = (text, limit) => {
         if (!text) return text;
 
@@ -53,14 +54,25 @@ export default function UudisLehtBigTile({pilt, date, title, sisu, to}) {
         return shortenedText + ' ...'; 
     };
 
+    const unActivateHover = () => {
+        setTimeout(() => {
+            setIsHovering(false);
+        }, 200);
+
+    }
+
+
     const handleClick = () => {
         window.location.href = to;
     };
 
     return (
         <div className='UudisLehtBigTile-container'
-            onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
+            onMouseEnter={!isTouch ? () => setIsHovering(true) : undefined} 
+            onMouseLeave={!isTouch ? () => setIsHovering(false) : undefined} 
+            onTouchStart={isTouch ? () => setIsHovering(true) : undefined}
+            onTouchEnd={isTouch ? unActivateHover: undefined}
+            onTouchCancel={isTouch ? unActivateHover : undefined} 
             onClick={handleClick}
         >
             <div className={`UudisLehtBigTile-pilt ${isHovering ? 'hovering' : ''}`}>

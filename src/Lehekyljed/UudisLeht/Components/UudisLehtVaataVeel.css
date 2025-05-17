@@ -19,7 +19,7 @@
     margin-bottom: 100px;
     position: relative;
     width: 100%;
-}
+} 
 
 .uudisLeht-VaataVeel-elemendid {
     margin: 0 auto;
@@ -46,7 +46,7 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  .uudisLeht-VaataVeel-rohkem-container:hover {
+  .uudisLeht-VaataVeel-rohkem-container.hover {
     transform: scale(1.05);
     background-color: #FFF4CC; /* subtle highlight on hover */
   }
