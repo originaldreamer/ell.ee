@@ -169,7 +169,7 @@
     }
 
     .topBanner-container {
-        height: calc(100vh - 117px + 50px);
+        height: calc(100vh - 117px);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
