@@ -34,7 +34,12 @@ export default function KalendriPoints() {
     let startX = 0, baseScroll = 0;
     let lastX = 0, lastTime = 0, velocity = 0;
     let animID = null;
-    let canDrag = window.innerWidth >= 450;
+    let canDrag = false;
+
+    const timer = setTimeout(() => {
+      canDrag = (window.innerWidth >= 450);
+    }, 10);
+
 
     const handleResize = () => {
       slider.scrollLeft = 0;
@@ -57,6 +62,7 @@ export default function KalendriPoints() {
     // Start drag
     const onDown = e => {
       if (!canDrag) return;
+      e.preventDefault();
 
       isDown = true;
       slider.classList.add('dragging');
@@ -132,6 +138,8 @@ export default function KalendriPoints() {
       animID = requestAnimationFrame(momentum);
     };
 
+    
+
     // Bind mouse & touch events, making touchmove non-passive so preventDefault works :contentReference[oaicite:4]{index=4}
     slider.addEventListener('mousedown', onDown);
     slider.addEventListener('mousemove', onMove);
@@ -149,6 +157,7 @@ export default function KalendriPoints() {
       slider.removeEventListener('touchmove', onMove);
       document.removeEventListener('touchend', onUp);
       window.removeEventListener('resize', handleResize);
+       clearTimeout(timer);
       cancelAnimationFrame(animID);
     };
   }, []);
