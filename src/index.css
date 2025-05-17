@@ -21,6 +21,23 @@
        url("/fonts/roboto-condensed-v20-latin-regular.woff") format("woff");
   font-display: swap;
 }
+@font-face {
+  font-family: "Liberation Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/LiberationSans-Regular.woff2") format("woff2"),
+       url("/fonts/LiberationSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Liberation Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/LiberationSans-Bold.woff2") format("woff2"),
+       url("/fonts/LiberationSans-Bold.woff") format("woff");
+  font-display: swap;
+}
 
 /* 2. Disable mobile text inflation */
 html {
