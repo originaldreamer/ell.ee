@@ -1,11 +1,12 @@
 @font-face {
-  font-family: "Liberation Sans";
+  font-family: "Noto Sans";
   font-style: normal;
-  font-weight: 200;
-  src: url("/fonts/LiberationSans-Regular.woff2") format("woff2"),
-       url("/fonts/LiberationSans-Regular.woff") format("woff");
+  font-weight: 100;
+  src: url("/fonts/NotoSans-Regular.woff2") format("woff2"),
+       url("/fonts/NotoSans-Regular.woff") format("woff");
   font-display: swap;
 }
+
 
 .PageNavigatorButtons-container {
     margin-bottom: 70px;
@@ -15,8 +16,8 @@
 }
 
 .PageNavigorButtons-text {
-    font-family: "Liberation Sans", sans-serif;
-    color: 'black';
+    font-family: "Noto Sans", sans-serif;
+    color: black;
     font-weight: 100;
     margin-bottom: -2px;
     z-index: 2000;
@@ -52,7 +53,7 @@
 }
 
 .PageNavigatorButtons-nupp.selected .PageNavigorButtons-text {
-
+    color: #F5F5F5;
 }
 
 .PageNavigatorButtons-nupp-deactivated {
