@@ -396,11 +396,11 @@ html, body {
 
 @media (max-width: 450px) {
   .big-header2 {
-    font-size: 32px;
+    font-size: 30px;
   }
   
   .big-header2-white {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .normal-text {
