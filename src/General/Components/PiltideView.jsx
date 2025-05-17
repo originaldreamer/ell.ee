@@ -33,6 +33,8 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
     return (
         <div className='PiltideView-container'>
             <div className='PiltideView-bg' />
+            <div className='PiltideView-hiddenQuitButton' />
+
             <img className='PiltideView-pilt' src={pilt}/>
 
             {piltideCount > 1 && <div className='PiltideView-leftArrow'><Interactable normalIcon={arrowLeft} activatedIcon={arrowLeftActivated} handleClick={leftFunction}/></div>}
@@ -45,7 +47,7 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
             </div>
         
         </div>
-        
+         
     );
 
 }

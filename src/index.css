@@ -389,6 +389,12 @@ html, body {
     font-size: 16.5px !important;
   }
 
+  .mid-top-header, .mid-header, .mid-header-white {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 70px;
+  }
+
 }
 
 

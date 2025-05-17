@@ -28,7 +28,7 @@ export default function UudisLeht() {
               <TopNavigationBar />
 
               <UudisLehtHeader 
-                title ="[Temp]Liputoimkondade Liidu asutamine" 
+                title ="Liputoimkondade Liidu asutamine" 
                 date="20.02.2025"
                 pilt={tempPicture}
                 pildiAutor="Keegi tähtis"

@@ -44,3 +44,9 @@
 .link.return:after {  /* Apply the "return" animation when not hovering */
     animation: lineDisappearToMiddle 0.4s ease-out;
 }
+
+@media (max-width: 768px) {
+    .link {
+        font-size: 16px;
+    }
+}

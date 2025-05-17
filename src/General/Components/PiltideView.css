@@ -92,6 +92,16 @@
     margin-bottom: 6px;
 }
 
+.PiltideView-hiddenQuitButton {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 150px;
+    z-index: 2000;
+    background-color: cyan;
+}
+
 /*Scaling*/
 @media (max-width: 1750px) {
     .PiltideView-pilt {

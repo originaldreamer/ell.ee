@@ -59,3 +59,14 @@
     }
     
 }
+
+@media (max-width: 450px) {
+    .liikmeteGrid-container {
+        width: 93vw;
+    }
+
+    .liikmeteGrid-elemendid {
+        grid-template-columns: 1fr;
+    }
+    
+}

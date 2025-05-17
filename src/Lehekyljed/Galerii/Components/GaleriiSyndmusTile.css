@@ -161,13 +161,13 @@
 
 @media (max-width: 450px) {
     .galeriiSyndmusTile {
-        transform: scale(0.7);
+        transform: scale(0.72);
         margin-bottom: -50px;
         width: 470px;
     }
 
     .galeriiSyndmusTile:hover {
-        transform: scale(0.7)  translateY(-6px);
+        transform: scale(0.72)  translateY(-6px);
     }
 
     
@@ -176,13 +176,13 @@
 
 @media (max-width: 400px) {
     .galeriiSyndmusTile {
-        transform: scale(0.7);
+        transform: scale(0.72);
         margin-bottom: -50px;
         width: 470px;
     }
 
     .galeriiSyndmusTile:hover {
-        transform: scale(0.7)  translateY(-6px);
+        transform: scale(0.72)  translateY(-6px);
     }
 
     
