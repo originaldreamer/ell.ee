@@ -57,7 +57,7 @@ export default function UudisLehtBigTile({pilt, date, title, sisu, to}) {
     const unActivateHover = () => {
         setTimeout(() => {
             setIsHovering(false);
-        }, 200);
+        }, 400);
 
     }
 

@@ -138,7 +138,7 @@
     }
 
     .PiltideView-kirjeldus {
-        left: 7%;
+        left: 30px;
     }
 
     .PiltideView-interactable {
@@ -169,7 +169,7 @@
     }
 
     .PiltideView-kirjeldus {
-        left: 7%;
+        left: 30px;
     }
 
     .PiltideView-quitIcon {
@@ -206,7 +206,7 @@
     }
 
     .PiltideView-kirjeldus {
-        left: 5%;
+        left: 20px;
         bottom: 10px;
         transform: scale(0.8);
     }

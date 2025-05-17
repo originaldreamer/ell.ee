@@ -21,6 +21,13 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
         setText(display);
     }
 
+    const unActivateHover = () => {
+        setTimeout(() => {
+            setHoverActive(false);
+        }, 300);
+
+    }
+
 
     const handleClick = () => {
         if (to) {
@@ -40,8 +47,8 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
             onMouseEnter={!isTouch ? handleMouseEnter : undefined}  
             onMouseLeave={!isTouch ? handleMouseLeave : undefined}  
             onTouchStart={isTouch ? handleMouseEnter : undefined}
-            onTouchEnd={isTouch ? handleMouseLeave : undefined}
-            onTouchCancel={isTouch ? handleMouseLeave : undefined} 
+            onTouchEnd={isTouch ? unActivateHover : undefined}
+            onTouchCancel={isTouch ? unActivateHover: undefined} 
             style={{color: isHovering ? '#EFA900' : normalColor}}
         >
             {text}
