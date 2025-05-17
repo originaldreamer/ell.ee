@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './LinkUnderlined.css';
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 export default function LinkUnderlined({ display, displayHovered,to, file, scrollTo, normalColor='black' }) {
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
     const [text, setText] = useState(display);
+    const isTouch = useIsTouchDevice();
 
     const handleMouseEnter = () => {
         setIsHovering(true);
@@ -16,7 +18,7 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
     const handleMouseLeave = () => {
         setIsHovering(false);
         setNeedToReturn(true); 
-        setText(display)
+        setText(display);
     }
 
 
@@ -31,12 +33,15 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
         
     }
 
-    return (
+    return ( 
         <div 
             className={`link ${isHovering ? 'hover' : ''} ${needToReturn ? 'return' : ''}`} 
             onClick={handleClick}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={!isTouch ? handleMouseEnter : undefined}  
+            onMouseLeave={!isTouch ? handleMouseLeave : undefined}  
+            onTouchStart={isTouch ? handleMouseEnter : undefined}
+            onTouchEnd={isTouch ? handleMouseLeave : undefined}
+            onTouchCancel={isTouch ? handleMouseLeave : undefined} 
             style={{color: isHovering ? '#EFA900' : normalColor}}
         >
             {text}

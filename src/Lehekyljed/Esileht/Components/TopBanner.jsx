@@ -2,10 +2,24 @@ import { useState, useEffect, useRef } from 'react';
 import './TopBanner.css';
 import '../../../index.css';
 
-function Button({ text, handleClick }) {
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+
+function Button({ text, handleClick, isTouch }) {
+  const [hoverActive, setHoverActive] = useState(false);
+
+
   return (
-    <div className='topBanner-button' onClick={handleClick}>
-      <div className='mid-header-white topBanner-button-text'>{text}</div>
+    <div className={`topBanner-button ${hoverActive ? 'hover' : ''}`} 
+      onClick={() => {handleClick(); }}
+      onMouseEnter={!isTouch ? () => setHoverActive(true) : undefined} 
+      onMouseLeave={!isTouch ? () => setHoverActive(false) : undefined} 
+      onTouchStart={isTouch ? () => setHoverActive(true) : undefined}
+      onTouchEnd={isTouch ? () => setHoverActive(false) : undefined}
+      onTouchCancel={isTouch ? () => setHoverActive(false) : undefined} 
+    >
+      <div className={'mid-header-white topBanner-button-text'}>
+        {text}
+      </div>
     </div>
   );
 }
@@ -13,6 +27,7 @@ function Button({ text, handleClick }) {
 export default function TopBanner({ title, images, scrollToElement }) {
   const imageCount = images.length;
   const randomIndex = Math.floor(Math.random() * imageCount);
+  const isTouch = useIsTouchDevice();
 
   const [curIndex, setCurIndex] = useState(randomIndex);
   const [nextIndex, setNextIndex] = useState((randomIndex + 1) % imageCount);
@@ -63,7 +78,7 @@ export default function TopBanner({ title, images, scrollToElement }) {
         </div>
       </div>
 
-      <Button text='Meist' handleClick={handleScrollClick} />
+      <Button text='Meist' handleClick={handleScrollClick} isTouch={isTouch} />
     </div>
   );
 }

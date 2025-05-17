@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './PageNavigatorButtons.css'
 import '../../index.css'
-
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 //imported design elements
@@ -14,11 +14,17 @@ import arrowRightActivated from '../Design Elements/arrow right yellow.svg';
 
 function NumberNupp({number, curSelectedIndex, handleClick})
 {
-
+    const isTouch = useIsTouchDevice();
+    const [isHovering, setIsHovering] = useState(false);
 
     return (
       <div
-        className={`PageNavigatorButtons-nupp ${curSelectedIndex === number-1 ? 'selected' : ''}`}
+        className={`PageNavigatorButtons-nupp ${curSelectedIndex === number-1 ? 'selected' : isHovering ? 'hover' : ''}`}
+        onMouseEnter={!isTouch ? () => setIsHovering(true)  : undefined} 
+        onMouseLeave={!isTouch ? () => setIsHovering(false)  : undefined} 
+        onTouchStart={isTouch ? () => setIsHovering(true)  : undefined}
+        onTouchEnd={isTouch ? () => setIsHovering(false)  : undefined}
+        onTouchCancel={isTouch ? () => setIsHovering(false) : undefined} 
         onClick={() => handleClick(number-1)}
       >
         <div className='PageNavigorButtons-text'>{number}</div>
@@ -28,27 +34,39 @@ function NumberNupp({number, curSelectedIndex, handleClick})
 
 function ArrowNupp({normalArrow, arrowActivated, curSelectedIndex, indexToDeactivate, handleClick})
 {
+    const isTouch = useIsTouchDevice();
     const [icon, setIcon] = useState(normalArrow);
-
+    const [isHovering, setIsHovering] = useState(false);
+ 
     const handleMouseEnter = () => {
+      
       if (curSelectedIndex != indexToDeactivate)
       {
+        setIsHovering(true);
         setIcon(arrowActivated)
       }
       
     };
 
     const handleMouseLeave = () => {
+      setIsHovering(false);
       setIcon(normalArrow)
     };
 
 
     return (
       <div
-        className={curSelectedIndex != indexToDeactivate ? 'PageNavigatorButtons-nupp' : 'PageNavigatorButtons-nupp-deactivated'}
+        className={
+          curSelectedIndex !== indexToDeactivate
+            ? `PageNavigatorButtons-nupp${isHovering ? ' hover' : ''}`
+            : 'PageNavigatorButtons-nupp-deactivated'
+        }
         onClick={handleClick}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+        onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+        onTouchStart={isTouch ? handleMouseEnter : undefined}
+        onTouchEnd={isTouch ? handleMouseLeave : undefined}
+        onTouchCancel={isTouch ? handleMouseLeave : undefined} 
       >
         <img src={icon} style={indexToDeactivate==0 ? { marginRight: '1.5px' } : { marginLeft: '1.5px'}}/>
       </div>

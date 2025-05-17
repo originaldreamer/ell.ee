@@ -308,12 +308,12 @@
 
    .topBar-scrollTopButton {
     bottom: 50px;
-    right: 33px;
+    right: 40px;
   }
 
   .topBar-scrollTopButton::before {
     bottom: 45px;
-    right: 33px;
+    right: 40px;
 }
 
   .topBar-scrollTopButton:hover {

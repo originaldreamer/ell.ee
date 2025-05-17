@@ -6,16 +6,21 @@ import data from '../../SyndmusteList/Content/Syndmused.json';
 import PageHeaderLines from '../../../General/Components/PageHeaderLines'
 import normalMoreIcon from '../Design elements/arrow right black.svg'
 import activatedMoreIcon from '../Design elements/arrow right yellow.svg'
-
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 function Interactable({normalIcon, activatedIcon, handleClick}) {
+    const isTouch = useIsTouchDevice();
     const [icon, setIcon] = useState(normalIcon);
+    const [hoverActive, setHoverActive] = useState(false);
 
     return (
         <img
-            className='kalendriPoints-interactable'
-            onMouseEnter={() => setIcon(activatedIcon)}
-            onMouseLeave={() => setIcon(normalIcon)}  
+            className={`kalendriPoints-interactable ${hoverActive ? 'hover' : ''}`}
+            onMouseEnter={!isTouch ? () => {setIcon(activatedIcon); setHoverActive(true);} : undefined}  
+            onMouseLeave={!isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined}  
+            onTouchStart={isTouch ? () => {setIcon(activatedIcon); setHoverActive(true);} : undefined}
+            onTouchEnd={isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined}
+            onTouchCancel={isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined} 
             onClick={handleClick}
             src={icon}         
         /> 
@@ -37,7 +42,7 @@ export default function KalendriPoints() {
     let canDrag = false;
 
     const timer = setTimeout(() => {
-      canDrag = (window.innerWidth >= 450);
+      canDrag = (window.innerWidth >= 450); 
     }, 10);
 
 

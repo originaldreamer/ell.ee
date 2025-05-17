@@ -16,7 +16,7 @@
     transition: transform 0.3s ease;
 }
 
-.kalendriPoints-interactable:hover {
+.kalendriPoints-interactable.hover {
     transform: translateX(5px);
 }
 
@@ -99,7 +99,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        margin-left: auto;
+        margin-left: unset;
         margin-right: auto;
         height: unset;
         overflow-x: hidden;   
@@ -107,8 +107,8 @@
         cursor:default;              
         user-select: none;                 
         -webkit-overflow-scrolling: unset;  
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: unset;
+        padding-left: unset;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
@@ -118,10 +118,14 @@
     }
 
     .kalendriPoints-container {
-        width: 100vw;
-        align-items: center;
+        position: relative;
         display: flex;
         flex-direction: column;
+        width: 100vw;
+        margin-left: unset;
+        margin-right: unset;
+        align-items: center; 
+        justify-content: center;
         margin-top: -50px;
     }
 

@@ -12,18 +12,22 @@ import arrowRightActivated from '../Design Elements/arrow right yellow.svg';
 import quitIcon from '../Design Elements/quit icon.svg';
 import quitIconActivated from '../Design Elements/quit icon activated.svg';
 import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
-import { use } from 'react';
+
 
 
 
 function Interactable({normalIcon, activatedIcon, handleClick}) {
-    const [icon, setIcon] = useState(normalIcon);
+    const [icon, setIcon] = useState(normalIcon); 
+    const isTouch = useIsTouchDevice();
 
     return (
         <img
             className='PiltideView-interactable'
-            onMouseEnter={() => setIcon(activatedIcon)}
-            onMouseLeave={() => setIcon(normalIcon)}  
+            onMouseEnter={!isTouch ? () => setIcon(activatedIcon) : undefined} // Apply only if not touch
+            onMouseLeave={!isTouch ? () => setIcon(normalIcon) : undefined}
+            onTouchStart={isTouch ? () => setIcon(activatedIcon) : undefined} // Apply only if touch
+            onTouchEnd={isTouch ? () => setIcon(normalIcon) : undefined}
+            onTouchCancel={isTouch ? () => setIcon(normalIcon) : undefined}
             onClick={handleClick}
             src={icon}         
         /> 

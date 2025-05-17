@@ -158,7 +158,7 @@ function QuitIcon({normalIcon, activatedIcon, handleClick}) {
           onTouchCancel={isTouch ? handleMouseLeave : undefined} 
       >
         <img src={icon} />
-      </div>
+      </div> 
           
   );
 }

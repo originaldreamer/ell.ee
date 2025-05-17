@@ -15,7 +15,7 @@
     padding: 2px;
 }
 
-.link:hover {
+.link.hover {
     transform: translateY(-4px);
     color: #EFA900;
 }
@@ -49,4 +49,4 @@
     .link {
         font-size: 16px;
     }
-}
+} 
