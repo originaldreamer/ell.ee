@@ -7,15 +7,21 @@ import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 function Button({ text, handleClick, isTouch }) {
   const [hoverActive, setHoverActive] = useState(false);
 
+  const unActivateHover = () => {
+    setTimeout(() => {
+      setHoverActive(false);
+    }, 200);
 
-  return (
+  }
+
+  return ( 
     <div className={`topBanner-button ${hoverActive ? 'hover' : ''}`} 
       onClick={() => {handleClick(); }}
       onMouseEnter={!isTouch ? () => setHoverActive(true) : undefined} 
       onMouseLeave={!isTouch ? () => setHoverActive(false) : undefined} 
       onTouchStart={isTouch ? () => setHoverActive(true) : undefined}
-      onTouchEnd={isTouch ? () => setHoverActive(false) : undefined}
-      onTouchCancel={isTouch ? () => setHoverActive(false) : undefined} 
+      onTouchEnd={isTouch ? unActivateHover: undefined}
+      onTouchCancel={isTouch ? unActivateHover : undefined} 
     >
       <div className={'mid-header-white topBanner-button-text'}>
         {text}

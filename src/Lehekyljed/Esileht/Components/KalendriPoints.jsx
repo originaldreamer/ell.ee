@@ -13,14 +13,22 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
     const [icon, setIcon] = useState(normalIcon);
     const [hoverActive, setHoverActive] = useState(false);
 
+    const unActivateHover = () => {
+      setTimeout(() => {
+        setHoverActive(false);
+        setIcon(normalIcon);
+      }, 300);
+
+    }
+
     return (
         <img
             className={`kalendriPoints-interactable ${hoverActive ? 'hover' : ''}`}
             onMouseEnter={!isTouch ? () => {setIcon(activatedIcon); setHoverActive(true);} : undefined}  
             onMouseLeave={!isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined}  
             onTouchStart={isTouch ? () => {setIcon(activatedIcon); setHoverActive(true);} : undefined}
-            onTouchEnd={isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined}
-            onTouchCancel={isTouch ? () => {setIcon(normalIcon); setHoverActive(false);} : undefined} 
+            onTouchEnd={isTouch ? unActivateHover : undefined}
+            onTouchCancel={isTouch ? unActivateHover : undefined} 
             onClick={handleClick}
             src={icon}         
         /> 

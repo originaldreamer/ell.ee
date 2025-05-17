@@ -156,7 +156,7 @@ function Logo() {
       <div className='logoTekst'>
         Eesti Koolide
         <br/>
-        Liputoimkondade Liit
+        Liputoimkondade Liit 
       </div>
     </a>
   );

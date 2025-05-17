@@ -327,7 +327,18 @@
   
   .logo {
     margin-left: -40px;
+    margin-right: -50px;
   }
+
+  .topNavBar {
+    width: 100vw;
+  }
+
+  .topBar-menuIcon img{
+    margin-right: 5px;
+    margin-left: auto; 
+  }
+
 
   
   
@@ -338,7 +349,10 @@
   
   .logo {
     margin-left: -60px;
+    margin-right: unset;
   }
+
+  
   
   
 }

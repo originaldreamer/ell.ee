@@ -13,7 +13,7 @@ import otherUudis1 from '../Content/other uudis 1.jpg';
 
 function extractNormalText(sisu) {
   if (typeof sisu === 'string') {
-    return sisu;
+    return sisu; 
   }
   // Render the JSX to HTML
   const renderedContent = renderToStaticMarkup(sisu);

@@ -71,7 +71,7 @@
 .PiltideView-interactable {
     width: 95px;
     padding: 30px;
-}
+} 
 
 .PiltideView-kirjeldus {
     position: fixed;
@@ -179,6 +179,45 @@
 
     .PiltideView-interactable {
         width: 94px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .PiltideView-leftArrow {
+        top: unset;
+        bottom: -10px;
+        left: unset;
+        right: 70px;
+        transform: none;
+    }
+    
+    .PiltideView-rightArrow {
+        top: unset;
+        bottom: -10px;
+        right: 10px;
+        transform: none;
+    }
+
+    
+    .PiltideView-pilt {
+        max-height: 75vh;
+        max-width: 90%; 
+    }
+
+    .PiltideView-kirjeldus {
+        left: 5%;
+        bottom: 10px;
+        transform: scale(0.8);
+    }
+
+    .PiltideView-quitIcon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .PiltideView-interactable {
+        width: 88px;
         padding: 30px;
     }
 }

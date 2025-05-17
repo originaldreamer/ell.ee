@@ -85,4 +85,8 @@
         padding: 16px;
         transform: scale(0.9);
     }
+
+    .PageNavigatorButtons-nupp.hover {
+        border: 2px solid #EFA900;
+    }
 }

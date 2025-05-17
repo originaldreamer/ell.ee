@@ -20,7 +20,7 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
     const [icon, setIcon] = useState(normalIcon); 
     const isTouch = useIsTouchDevice();
 
-    return (
+    return ( 
         <img
             className='PiltideView-interactable'
             onMouseEnter={!isTouch ? () => setIcon(activatedIcon) : undefined} // Apply only if not touch
