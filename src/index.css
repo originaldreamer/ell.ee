@@ -21,14 +21,7 @@
        url("/fonts/roboto-condensed-v20-latin-regular.woff") format("woff");
   font-display: swap;
 }
-@font-face {
-  font-family: "Liberation Sans";
-  font-style: normal;
-  font-weight: 200;
-  src: url("/fonts/LiberationSans-Regular.woff2") format("woff2"),
-       url("/fonts/LiberationSans-Regular.woff") format("woff");
-  font-display: swap;
-}
+
 
 
 /* 2. Disable mobile text inflation */
@@ -65,7 +58,7 @@ html, body {
   --blue-gray: #2C3E50;
   --gray: #52575F;
   
-  font-family: 'Merriweather', serif,'Liberation Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 2;
   font-weight: 400;
 
