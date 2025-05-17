@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Liberation Sans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("/fonts/LiberationSans-Regular.woff2") format("woff2"),
+       url("/fonts/LiberationSans-Regular.woff") format("woff");
+  font-display: swap;
+}
+
 .PageNavigatorButtons-container {
     margin-bottom: 70px;
     display: flex;
@@ -10,6 +19,10 @@
     color: 'black';
     font-weight: 100;
     margin-bottom: -2px;
+    z-index: 2000;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 .PageNavigatorButtons-nupp {
@@ -39,7 +52,7 @@
 }
 
 .PageNavigatorButtons-nupp.selected .PageNavigorButtons-text {
-    color: #F5F5F5;
+
 }
 
 .PageNavigatorButtons-nupp-deactivated {
