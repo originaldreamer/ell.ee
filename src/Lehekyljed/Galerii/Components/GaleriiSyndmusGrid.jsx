@@ -14,7 +14,7 @@ export default function GaleriiSyndmusGrid({curPageIndex,maxElementsPerPage}) {
     const endIndex = startIndex + maxElementsPerPage;
 
 
-    return (
+    return ( 
         <div className='galeriiSyndmusGrid-container'>
             <div className='galeriiSyndmusGrid-elemendid'>
                 {data.slice(startIndex, endIndex).map((syndmus, i) => (

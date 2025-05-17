@@ -51,7 +51,7 @@ export default function Galerii() {
                 <GaleriiSyndmusGrid 
                     maxElementsPerPage={maxElementsPerPage}
                     curPageIndex={curPageIndex}
-                    syndmused={syndmused}
+                    syndmused={syndmused} 
                 />
 
                 <PageNavigatorButtons 
