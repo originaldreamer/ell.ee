@@ -86,7 +86,13 @@
   .Error404-buttons {
     margin-top: -10px;
     margin-bottom: 130px;
-    gap: 15px;
+    gap: 0px;
+  }
+
+  .Error404-button {
+    transform: scale(0.8);
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
 
