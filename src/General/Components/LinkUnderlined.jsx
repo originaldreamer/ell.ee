@@ -24,6 +24,8 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
     const unActivateHover = () => {
         setTimeout(() => {
             setIsHovering(false);
+            setNeedToReturn(true); 
+            setText(display);
         }, 300);
 
     }
