@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './TopNav_Bar.css'
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 //imported images
@@ -156,7 +157,7 @@ function Logo() {
       <div className='logoTekst'>
         Eesti Koolide
         <br/>
-        Liputoimkondade Liit 
+        Liputoimkondade Liit  
       </div>
     </a>
   );
@@ -164,6 +165,7 @@ function Logo() {
 
 function MenuIcon ({setIdFunction, showPanelFunction, isShowingSidePanel})
 {
+    const isTouch = useIsTouchDevice();
     const [curIcon, setCurIcon] = useState(menuIcon);
 
     const handleClick = () => {
@@ -185,8 +187,11 @@ function MenuIcon ({setIdFunction, showPanelFunction, isShowingSidePanel})
             
         <div className='topBar-menuIcon' 
             onClick={handleClick}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+            onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+            onTouchStart={isTouch ? handleMouseEnter : undefined}
+            onTouchEnd={isTouch ? handleMouseLeave: undefined}
+            onTouchCancel={isTouch ? handleMouseLeave : undefined} 
         >
             <img src={curIcon} />
         </div>

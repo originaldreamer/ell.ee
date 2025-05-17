@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './TopNavSidePanel.css'
+import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 
 //imported elements
@@ -32,6 +33,9 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
 {
     const [curIcon, setCurIcon] = useState(arrowDown);
     const [textColor, setTextColor] = useState('white');
+    const isTouch = useIsTouchDevice();
+
+
 
     const handleClick = () => {
         if (id === selectedId)
@@ -40,7 +44,6 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
         }
         else
         {
-            setTextColor('#EFA900')
             setIdFunction(id);
         }
     }
@@ -51,8 +54,10 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
         }
     
       const handleMouseLeave = () => {
-          setCurIcon(arrowDown);
-          setTextColor('white')
+            setCurIcon(arrowDown);
+            setTextColor('white')
+    
+          
       }
     
     return (
@@ -62,11 +67,14 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
             <div className='topNavSidePanel-dropDown-title' 
                 style={{color: textColor}}
                 onClick={handleClick}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+                onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+                onTouchStart={isTouch ? handleMouseEnter : undefined}
+                onTouchEnd={isTouch ? handleMouseLeave: undefined}
+                onTouchCancel={isTouch ? handleMouseLeave : undefined} 
             >
                 {tekst}
-                <img src={curIcon}/>
+                <img src={curIcon}/> 
             </div>
             
             {id==selectedId && <DropDownContent links={links} hidePanelFunction={hidePanelFunction}/>}
@@ -77,6 +85,7 @@ function DropDown({tekst, links, id, selectedId, setIdFunction, hidePanelFunctio
  
 function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
 {
+    const isTouch = useIsTouchDevice();
 
     const handleClick = () => {
         setIdFunction(-1);
@@ -104,8 +113,11 @@ function NormalBtn({tekst, link, scrollTo, setIdFunction, hidePanelFunction})
             
             <a className='topNavSidePanel-normalBtn' 
                 onClick={handleClick}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
+                onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
+                onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
+                onTouchStart={isTouch ? handleMouseEnter : undefined}
+                onTouchEnd={isTouch ? handleMouseLeave: undefined}
+                onTouchCancel={isTouch ? handleMouseLeave : undefined} 
             >
                 {tekst}
             </a>
