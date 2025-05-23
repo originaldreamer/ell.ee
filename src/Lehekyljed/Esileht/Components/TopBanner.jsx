@@ -25,7 +25,7 @@ function Button({ text, handleClick, isTouch }) {
     >
       <div className={'mid-header-white topBanner-button-text'}>
         {text}
-      </div>
+      </div> 
     </div>
   );
 }
