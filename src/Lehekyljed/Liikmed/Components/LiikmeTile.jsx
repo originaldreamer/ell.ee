@@ -20,7 +20,7 @@ export default function LiikmeTile({index, handleClick})
       setTimeout(() => {
         setHoverActive(false);
         setTextColor('#F5F5F5')
-      }, 500);
+      }, 400);
 
     }
 
