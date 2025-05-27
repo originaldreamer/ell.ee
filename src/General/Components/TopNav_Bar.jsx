@@ -244,7 +244,13 @@ export default function TopNavigationBar() {
     }
     }, []);
 
-  const scrollToTop = () => { window.scrollTo({ top: 0, behavior: "smooth" });}
+  const scrollToTop = () => { 
+    const extra = window.visualViewport?.offsetTop ?? 0;
+    window.scrollTo({
+      top: -extra,
+      behavior: "smooth"
+    });
+  }
 
   return (
     <div className='topNavBar'>
