@@ -193,7 +193,7 @@ function MenuIcon ({setIdFunction, showPanelFunction, isShowingSidePanel})
             onTouchEnd={isTouch ? handleMouseLeave: undefined}
             onTouchCancel={isTouch ? handleMouseLeave : undefined} 
         >
-            <img src={curIcon} />
+            <img src={curIcon} /> 
         </div>
 
     );

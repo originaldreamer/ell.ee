@@ -294,7 +294,7 @@
   }
 
   .logoTekst {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   
   
@@ -336,7 +336,7 @@
 
   .topBar-menuIcon img{
     margin-right: 5px;
-    margin-left: auto; 
+    margin-left: auto;  
   }
 
 
