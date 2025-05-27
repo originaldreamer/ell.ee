@@ -245,12 +245,10 @@ export default function TopNavigationBar() {
     }, []);
 
   const scrollToTop = () => { 
-    const extra = window.visualViewport?.offsetTop ?? 0;
-    window.scrollTo({
-      top: -extra,
-      behavior: "smooth"
-    });
-  }
+    document
+    .getElementById("page-start")
+    .scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <div className='topNavBar'>
