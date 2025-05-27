@@ -176,10 +176,24 @@
 }
 
 @media (max-width: 500px) {
-    .liikmetile {
-
+    .liikmetile.hover {
+        transform: translateY(0px) rotateY(0deg) scale(1);
+        box-shadow: none;
     }
-    
+
+
+    .liikmetile.hover img {
+        transform: scale(1);
+    }
+
+    .liikmetile.hover .liikmetile-logo {
+    transform: scale(1);
+    }
+
+    .liikmetile.hover .liikmetile-title {
+    transform: translateY(0);
+    opacity: 1;
+    }
 }
 
 
