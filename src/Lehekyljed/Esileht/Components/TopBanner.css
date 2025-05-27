@@ -144,7 +144,7 @@
 
     .topBanner-bg::after {
         height: 38%;
-      }
+      } 
     
       .topBanner-bg-top::after {
         height: 38%;
@@ -209,6 +209,7 @@
   .topBanner-button {
     margin-top: unset;
     margin-bottom: 75px;
+    margin-bottom: 130px;
   }
 
   .topBanner-bg::after {

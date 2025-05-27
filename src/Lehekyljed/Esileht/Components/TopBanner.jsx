@@ -82,7 +82,7 @@ export default function TopBanner({ title, images, scrollToElement }) {
         <div className='big-header2-white' style={{ textAlign: 'center' }}>
           {title}
         </div>
-      </div>
+      </div> 
 
       <Button text='Meist' handleClick={handleScrollClick} isTouch={isTouch} />
     </div>
