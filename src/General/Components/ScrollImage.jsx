@@ -5,6 +5,9 @@ import '../../index.css';
 // imported components
 import PiltideView from './PiltideView.jsx';
 
+//imported elements
+import scrollIcon from '../Design Elements/scrollIcon.svg';
+
 function ClickableImage({ image, handleClick, offsetX, animate }) {
   return (
     <div
@@ -15,6 +18,14 @@ function ClickableImage({ image, handleClick, offsetX, animate }) {
       }}
     >
       <img src={image} onClick={handleClick} />
+    </div>
+  );
+}
+
+function Icon() {
+  return (
+    <div className='scrollImage-icon'>
+      <img src={scrollIcon} alt='Scroll Icon' />
     </div>
   );
 }
@@ -103,7 +114,7 @@ export default function ScrollImages({ images = [], offsetY = '0%' }) {
       return () => {
         window.removeEventListener('keydown', handleKeyDown);
         if (id) clearInterval(id);
-      };
+      }; 
 
   }, [switchImage, showPiltideView]);
 
@@ -126,9 +137,12 @@ export default function ScrollImages({ images = [], offsetY = '0%' }) {
             setPilt(nextIndex);
             }}
           offsetX={curOffsetX}
-          animate={animate}
+          animate={animate} 
         />
       </div>
+
+      {piltideCount > 1 && <Icon />}
+
       {showPiltideView && <PiltideView 
             curIndex={pildiIndex}
             piltideCount={images.length}

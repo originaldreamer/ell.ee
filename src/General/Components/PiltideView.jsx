@@ -18,7 +18,7 @@ import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
 function Interactable({normalIcon, activatedIcon, handleClick}) {
     const [icon, setIcon] = useState(normalIcon); 
-    const isTouch = useIsTouchDevice();
+    const isTouch = useIsTouchDevice(); 
 
     return ( 
         <img
@@ -42,7 +42,10 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
             <div className='PiltideView-bg' />
             {isTouch && <div className='PiltideView-hiddenQuitButton' onClick={quitFunction}/>}
 
+
             <img className='PiltideView-pilt' src={pilt}/>
+
+            
 
             {piltideCount > 1 && <div className='PiltideView-leftArrow'><Interactable normalIcon={arrowLeft} activatedIcon={arrowLeftActivated} handleClick={leftFunction}/></div>}
             {piltideCount > 1 && <div className='PiltideView-rightArrow'><Interactable normalIcon={arrowRight} activatedIcon={arrowRightActivated} handleClick={rightFunction}/></div>}

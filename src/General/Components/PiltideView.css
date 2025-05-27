@@ -32,6 +32,16 @@
     border-color: transparent;
 }
 
+.PildideView-pildid {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
 .PiltideView-pilt {
     position: fixed;
     top: 50%;
@@ -102,6 +112,7 @@
     background-color: transparent;
     z-index: -5;
 }
+
 
 /*Scaling*/
 @media (max-width: 1750px) {
@@ -201,8 +212,8 @@
 
     
     .PiltideView-pilt {
-        max-height: 75vh;
-        max-width: 90%; 
+        max-height: 73svh;
+        max-width: 88%; 
     }
 
     .PiltideView-kirjeldus {

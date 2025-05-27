@@ -20,7 +20,7 @@ export default function LiikmeTile({index, handleClick})
       setTimeout(() => {
         setHoverActive(false);
         setTextColor('#F5F5F5')
-      }, 200);
+      }, 500);
 
     }
 
@@ -32,7 +32,7 @@ export default function LiikmeTile({index, handleClick})
     function handleMouseLeave() {
       setTextColor('#F5F5F5')
       setHoverActive(false);
-    }
+    } 
 
 
     return (

@@ -37,20 +37,20 @@ export default function UudisLehtHeader({ title, date, pilt, pildiAutor }) {
             <div className='uudisLehtHeader'>
                 <div className='uudisLehtHeader-line1' />
 
-                <div className='big-header2 uudisLehtHeader-title' >{title}</div>
+                <div className='big-header2-white uudisLehtHeader-title' >{title}</div>
 
                 <div className='uudisLehtHeader-line' />
                 
                 <div className='uudisLehtHeader-date'>
-                    <div className='small-text' style={{color: '#EFA900'}}>{date}</div>
+                    <div className='small-text' style={{color: '#F5F5F5'}}>{date}</div>
 
                 </div>
-                
+                 
                 <img className='uudisLehtHeader-pilt' onClick={() => changeShowPilditeViewState(true)} src={pilt} style={{width: '100%'}}/>
                 
                 {pildiAutor && 
                     <div className='uudisLehtHeader-pildiAutor'>
-                        <div className='small-text' style={{color: '#EFA900'}}>Foto: {pildiAutor}</div>
+                        <div className='small-text' style={{color: '#F5F5F5'}}>Foto: {pildiAutor}</div>
                     </div>
                 }
                 

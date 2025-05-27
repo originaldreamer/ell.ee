@@ -84,6 +84,7 @@ export default function Esileht() {
           <KalendriPoints />
 
           <ImageAndContent myRef={myRef}
+            useOnlyScroll={true}
             content={
                 <div>
                 <div className="mid-top-header">Ühendame Eesti liputoimkonnad</div>
@@ -96,7 +97,7 @@ export default function Esileht() {
               </div>}
               
               images={[
-                  koolitaminePilt
+                  koolitaminePilt, banner2
               ]}
           />
 
@@ -130,7 +131,7 @@ export default function Esileht() {
                   
                 </div>
               </div>}
-              
+               
               images={[
                   banner2
               ]}

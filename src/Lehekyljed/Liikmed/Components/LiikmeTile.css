@@ -34,16 +34,13 @@
     margin-bottom: 20px;
 }
 
-.liikmetile.hover {
-    transform: perspective(800px) scale(0.99) translateY(-2px) rotateY(10deg);
-}
-
 
 .liikmetile img {
     display: block; 
     width: 100%;
     height: auto;
     border-radius: 20px;
+    transition: transform 0.5s ease;
 }
 
 
@@ -52,10 +49,13 @@
     top: 10px;
     left: 10px;
     border-radius: 0;
+    transition: transform 0.5s ease;
+    z-index: 1000;
 }
 
 .liikmetile-logo img {
     border-radius: 0;
+    transition: transform 0.5s ease;
 }
 
 
@@ -79,6 +79,26 @@
     padding: 15px;
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.liikmetile.hover {
+  transform: translateY(-10px) rotateY(12deg) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.liikmetile.hover img {
+  transform: scale(1.1);
+}
+
+.liikmetile.hover .liikmetile-logo {
+  transform: scale(0.9);
+}
+
+.liikmetile.hover .liikmetile-title {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*Scaling*/
@@ -152,20 +172,12 @@
         padding: 15px
         
     }
-
-    .liikmetile.hover {
-        transform: perspective(800px) scale(0.99) translateY(-2px) rotateX(5deg);
-    }
     
 }
 
 @media (max-width: 500px) {
     .liikmetile {
-        transition: transform 0.2s ease; 
-    }
 
-    .liikmetile.hover {
-        transform: perspective(800px) scale(0.99) translateY(-2px);
     }
     
 }

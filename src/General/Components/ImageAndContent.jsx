@@ -90,7 +90,7 @@ useEffect(() => {
       {showPiltideView && <PiltideView 
           curIndex={pildiIndex}
           piltideCount={images.length}
-          pilt={curPilt}
+          pilt={curPilt} 
           leftFunction={() => decreasePildiIndex()}
           rightFunction={() => increasePildiIndex()}
           quitFunction={() => changeShowPilditeViewState(false)} 
@@ -101,9 +101,25 @@ useEffect(() => {
   );
 }
 
+function PiltideOsa({showScrollImages, useOnlyScroll, images}) 
+{
+  return (
+    <>
+      {!showScrollImages && !useOnlyScroll && <ImageGrid images={images} />}
+      
+      {!showScrollImages && useOnlyScroll && 
+        <div className='imageAndContent-scroll-side'>
+          <ScrollImages images={images} />
+        </div>
+        
+      }
+    </>
+  );
+}
 
 
-export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%', myRef}) {
+
+export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%', useOnlyScroll=false,myRef}) {
   const smallScreenSize = '900px'
 
   const [showScrollImages, setShowScrollImages] = useState(
@@ -131,7 +147,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
         
         {reverse ? (
         <div className='imageAndContent-sisu'>
-          {!showScrollImages && <ImageGrid images={images} />}
+          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} />
           
           <div className='imageAndContent-content'>
             {content}
@@ -144,7 +160,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
           <div className='imageAndContent-content'>
             {content}
           </div>
-          {!showScrollImages && <ImageGrid images={images} />}
+          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} />
         </div>
 
         </div>

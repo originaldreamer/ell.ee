@@ -15,13 +15,13 @@
 .uudisLehtHeader-line1 {
     content: "";
     z-index: 1000;
-    margin-left: 50%;
+    margin-left: 50%; 
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100vw;
     transform: translateX(-50%);
     height: 3px;
-    background-color: #EFA900;
+    background-color: #F5F5F5; 
     flex-shrink: 0;
 } 
 
@@ -32,7 +32,7 @@
     margin-bottom: 6px;
     width: 100%;
     height: 3px;
-    background-color: #EFA900;
+    background-color: #F5F5F5; 
     flex-shrink: 0;
 } 
 

@@ -11,6 +11,8 @@
     margin-right: auto;
 }
 
+
+
 .imageAndContent-content {
     color: black;
     width: 50%;
@@ -63,6 +65,15 @@
 
 }
 
+.imageAndContent-scroll-side {
+    width: 31%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensures images stick to the top */
+    align-items: center; 
+}
+
 /*Scaling*/
 @media (max-width: 1400px) {
     .imageAndContent-container {
@@ -73,6 +84,10 @@
         width: 90%;
         height: auto;
         overflow: hidden;
+    }
+
+    .imageAndContent-scroll-side {
+        width: 35%;
     }
 }
 
@@ -120,7 +135,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px) { 
 
     .imageAndContent-scroll {
         width: 95vw;
