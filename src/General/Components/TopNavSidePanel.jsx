@@ -181,7 +181,7 @@ export default function TopNavSidePanel({hidePanelFunction}) {
             ]}/>
 
             <NormalBtn tekst="Dokumendid" link='./dokumendid' setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
-            <NormalBtn tekst="Kontakt" scrollTo = {document.documentElement.scrollHeight} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
+            <NormalBtn tekst="Kontakt" scrollTo = {10*document.documentElement.scrollHeight} setIdFunction={setSelectedId} hidePanelFunction={hidePanelFunction} />
             
             
         </div>

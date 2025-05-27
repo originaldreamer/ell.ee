@@ -139,7 +139,7 @@ function TopNavigationBarButtons() {
 
     <TopNaviagtionButtonNormal
       text = "Kontakt"
-      scrollTo = {10*document.documentElement.scrollHeight}
+      scrollTo = {50*document.documentElement.scrollHeight}
     />
           
         

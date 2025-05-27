@@ -7,11 +7,12 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
     const [text, setText] = useState(display);
+    const isInterractable = (to || file || scrollTo);
     const isTouch = useIsTouchDevice();
 
     const handleMouseEnter = () => {
         setIsHovering(true);
-        setNeedToReturn(false);
+        setNeedToReturn(false); 
         if (displayHovered) {setText(displayHovered)}
     }
  
@@ -48,9 +49,9 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
             onClick={handleClick}
             onMouseEnter={!isTouch ? handleMouseEnter : undefined}  
             onMouseLeave={!isTouch ? handleMouseLeave : undefined}  
-            onTouchStart={isTouch ? handleMouseEnter : undefined}
-            onTouchEnd={isTouch ? unActivateHover : undefined}
-            onTouchCancel={isTouch ? unActivateHover: undefined} 
+            onTouchStart={isTouch && isInterractable ? handleMouseEnter : undefined}
+            onTouchEnd={isTouch && isInterractable ? unActivateHover : undefined}
+            onTouchCancel={isTouch && isInterractable ? unActivateHover: undefined} 
             style={{color: isHovering ? '#EFA900' : normalColor}}
         >
             {text}
