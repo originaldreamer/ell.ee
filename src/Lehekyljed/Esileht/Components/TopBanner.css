@@ -80,10 +80,10 @@
 
   .topBanner-text {
     position: relative;
-    width: 80vw;
+    width: 100%;
     margin-top: 445px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     text-align: center;
     z-index: 2;
   }
@@ -135,7 +135,7 @@
 
   @media (max-width: 760px) {
     .topBanner-text {
-        width: 500px;
+        width: 400px;
         margin-top: 410px;
     }
     .topBanner-button {
@@ -154,8 +154,14 @@
         animation: revealBanner 1.5s ease forwards;
       }
 
+      .topBanner-container {
+        width: 100vw;;
+      }
+
 
   }
+
+  
 
   @media (max-width: 400px) {
     .topBanner-button {
