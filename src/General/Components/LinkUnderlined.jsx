@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './LinkUnderlined.css';
 import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
 
-export default function LinkUnderlined({ display, displayHovered,to, file, scrollTo, normalColor='black' }) {
+export default function LinkUnderlined({ display, displayHovered,to, file, scrollTo, download, downloadName,normalColor='black' }) {
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
     const [text, setText] = useState(display);
@@ -39,6 +39,17 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
             window.open(file, '_blank');  // Open the 'file' link in a new tab
         } else if (scrollTo) {
             window.scrollTo({ top: scrollTo, behavior: "smooth" });
+        }
+        else if (download) {
+            const a = document.createElement('a');
+            a.href = download;
+            // if you want to suggest a filename:
+            if (downloadName) a.download = downloadName;
+            else a.download = ''; 
+            // trigger click
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
         }
         
     }

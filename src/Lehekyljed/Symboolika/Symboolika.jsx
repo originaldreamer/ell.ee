@@ -16,7 +16,7 @@ import koskImage from './Content/kosk-tere-esa.jpg'
 import lossLippImage from './Content/lossLipp.jpg'
 
 
-
+import LinkUnderlined from '../../General/Components/LinkUnderlined.jsx';
 
 export default function Symboolika() {
   return (
@@ -37,7 +37,16 @@ export default function Symboolika() {
                    Kilpkonnad, oma <span className="bold">aeglase ja väärika</span> sammuga, hiilivad tasaselt läbi tihedate metsaaluste ja jõekallaste, otsides <span className="bold">mõnusat paika</span>, kus jalga puhata. <br />
                    Kuigi nad liiguvad kui tõelised <span className="bold">metsakuningad</span>, hoiavad nad silma peal igasugustel kaladel, kes lõbusalt vees sulistavad. <br />
                    Mõni kilpkonn kinnitab, et kalad on nende parimad sõbrad, kuid samas tekib neil kahtlus, et needsamad sabaga lehvitajad võivad neid kogemata suure kalaparve keskel pikali rammida.
+                   Lae alla meie logo   ja kasuta seda oma projektides!
                  </div>
+
+                 <LinkUnderlined
+                  display= "lae alla meie logo"
+                  download="/src/Lehekyljed/Symboolika/Content/Vapp detailsem.png"
+                  downloadName={'EKLL vapp.png'}
+                  normalColor='#52575F'
+                />
+
                  
                  
                  <div className="normal-text">
