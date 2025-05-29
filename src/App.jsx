@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
-
+import { supabase } from "./supabaseClient";
 
 //Imported components
 
@@ -21,6 +21,18 @@ import GaleriiLeht from './Lehekyljed/GaleriiLeht/GaleriiLeht.jsx';
 import Galerii from './Lehekyljed/Galerii/Galerii.jsx';
 
 function App() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    // fetch rows from "posts" table
+    supabase
+      .from("posts")
+      .select("*")
+      .then(({ data, error }) => {
+        if (error) console.error(error);
+        else       setPosts(data);
+      });
+  }, []);
   return (
     <BrowserRouter>
 
