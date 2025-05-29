@@ -7,7 +7,7 @@ export default function LinkUnderlined({ display, displayHovered,to, file, scrol
     const [isHovering, setIsHovering] = useState(false);
     const [needToReturn, setNeedToReturn] = useState(false);
     const [text, setText] = useState(display);
-    const isInterractable = (to || file || scrollTo);
+    const isInterractable = (to || file || scrollTo || download);
     const isTouch = useIsTouchDevice();
 
     const handleMouseEnter = () => {
