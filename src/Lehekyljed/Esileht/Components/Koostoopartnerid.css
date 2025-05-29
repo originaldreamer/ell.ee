@@ -3,6 +3,8 @@
   width: 100vw;
   min-height: 200px;
   margin: 50px 0 0;
+  margin-bottom: -10px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,15 +44,15 @@
 
 .koostoopartnerid-title {
     text-align: center;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 
 .koostoopartnerid-logod {
     display: grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;       /* small gutter between items */
-    width: 90%;
+    width: 600px;
+    gap: 0;
     max-width: 700px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -61,34 +63,20 @@
 
 .koostoopartnerid-partner {
     margin-bottom: 20px;
-    width: 320px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.koostoopartnerid-partner img {
+    transform: scale(0.8);
+}
+
 /*scaling*/
 @media (max-width: 1000px) {
-    .koostoopartnerid-container {
-        margin-bottom: -10px;
-        margin-top: 40px;
-    }
-
-    .koostoopartnerid-logod {
-        width: 600px;
-        gap: 0;
-    }
-
-    .koostoopartnerid-partner img {
-        transform: scale(0.8);
-    }
-
-    .koostoopartnerid-partner {
-        width: 200px;
-        height: 150px;
-    }
 
     .koostoopartnerid-title {
         margin-top: -40px;
