@@ -10,6 +10,7 @@ import TopBanner from './Components/TopBanner.jsx';
 import MidTextSeparator from '../../General/Components/MidTextSeparator.jsx';
 import ImageAndContent from '../../General/Components/ImageAndContent.jsx';
 import KalendriPoints from './Components/KalendriPoints.jsx';
+import Koostoopartnerid from './Components/Koostoopartnerid.jsx';
 
 //imported images
 import detailneLogo from '../../assets/General/Vapp detailsem.png'
@@ -139,6 +140,7 @@ export default function Esileht() {
               offsetYSmallScreen='-35px'
           />
           
+          <Koostoopartnerid />
 
 
 

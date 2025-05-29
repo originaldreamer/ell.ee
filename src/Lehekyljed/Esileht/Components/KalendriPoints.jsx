@@ -178,8 +178,9 @@ export default function KalendriPoints() {
   return (
     <div className="kalendriPoints-container">
         <div className='kalendriPoints-pealkiri'>
-            <PageHeaderLines title="Sündmused" />
+            <PageHeaderLines title="Sündmused" isSmall='true'/> 
         </div>
+
 
         <div ref={sliderRef} className="kalendriPoints-sisu">
             {data.slice(0, pointCount).map((syndmus, idx) => (

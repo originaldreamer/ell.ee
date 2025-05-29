@@ -13,6 +13,6 @@ export default function MidTextSeparator({text, textColor='black', bgColor = 'wh
         </div>
         
 
-        
+         
     );
 }

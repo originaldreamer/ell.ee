@@ -1,0 +1,143 @@
+.koostoopartnerid-container {
+  position: relative;
+  width: 100vw;
+  min-height: 200px;
+  margin: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  overflow-x: hidden;
+
+  /* soft, moving gradient with your colors */
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.koostoopartnerid-container::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: auto;
+  left: auto;
+  width: 2000px;
+  height: 100%;
+  background: rgba(255,255,255,0.15);
+  background-color: #F5F5F5;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(40px);
+  animation: floatBlob 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes floatBlob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%      { transform: translate(-20px, 20px) scale(1.3); }
+}
+
+
+
+
+.koostoopartnerid-title {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.koostoopartnerid-logod {
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;       /* small gutter between items */
+    width: 90%;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+}
+
+.koostoopartnerid-partner {
+    margin-bottom: 20px;
+    width: 320px;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*scaling*/
+@media (max-width: 1000px) {
+    .koostoopartnerid-container {
+        margin-bottom: -10px;
+        margin-top: 40px;
+    }
+
+    .koostoopartnerid-logod {
+        width: 600px;
+        gap: 0;
+    }
+
+    .koostoopartnerid-partner img {
+        transform: scale(0.8);
+    }
+
+    .koostoopartnerid-partner {
+        width: 200px;
+        height: 150px;
+    }
+
+    .koostoopartnerid-title {
+        margin-top: -40px;
+    }
+
+}
+
+
+
+@media (max-width: 700px) {
+    .koostoopartnerid-container {
+        margin-bottom: -35px;
+        margin-top: 0;
+    }
+
+    .koostoopartnerid-title {
+        margin-top: -45px;
+    }
+
+    .koostoopartnerid-logod {
+        width: 390px;
+        gap: 0;
+    }
+
+    .koostoopartnerid-partner img {
+        transform: scale(0.6);
+    }
+
+    .koostoopartnerid-partner {
+        width: 190px;
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .koostoopartnerid-logod {
+        grid-template-columns: 1fr;
+        width: unset;
+    }
+
+    .koostoopartnerid-partner img {
+        transform: scale(0.8);
+    }
+
+    .koostoopartnerid-partner {
+        width: 130px;
+        height: unset;
+        margin-bottom: 50px;
+    }
+
+}
