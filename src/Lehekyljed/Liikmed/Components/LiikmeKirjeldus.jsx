@@ -71,7 +71,7 @@ function SotsiaalMeedia({symbolNormal, symbolClicked, size, link}) {
   
     return (
       <button 
-        className='sotsiaalMeedia'
+        className='sotsiaalMeedia' 
         onClick={handleClick}
         onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
         onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
@@ -199,7 +199,10 @@ function Top({nimi, pilt})
     <div className='liikmed-top'>
     {isSmallScreen ? (
         <div>
-            <img src={pilt} alt={imageName} width='400px' />
+            <div className='liikmed-top-pilt'>
+              <img src={pilt} alt={imageName} />
+            </ div>
+            
 
             {isPhoneScreen && <div className='header-top-phoneLine'/>}
 
@@ -218,7 +221,9 @@ function Top({nimi, pilt})
               <div className='header-line' />
             </div>
             
-            <img src={pilt} alt={imageName} width='410px' />
+            <div className='liikmed-top-pilt'>
+              <img src={pilt} alt={imageName} />
+            </ div>
         </div>
     )}
     </div>
@@ -266,7 +271,7 @@ export default function LiikmeKirjeldus({ turnOffKirjeldus, content, moveLeft,mo
               <Line />
 
               <div className="kirjeldus-text">
-                  Kontakt: {content.kontakt}
+                  {content.kontakt}
               </div>
 
               <Line />

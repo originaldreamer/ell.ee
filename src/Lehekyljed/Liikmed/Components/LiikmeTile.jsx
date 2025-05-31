@@ -50,7 +50,11 @@ export default function LiikmeTile({index, handleClick})
               <img src={content.logo} style={{width: content.logoWidth}}/>
             </div>
 
-            <img src={content.liputoimkonnaPilt}  />
+            <div className='liikmetile-pilt'>
+                <img src={content.liputoimkonnaPilt}  />
+            </ div>
+
+            
             <div className='liikmetile-title' style={{color: textColor}}> {content.liikmeNimi} </div>
 
           

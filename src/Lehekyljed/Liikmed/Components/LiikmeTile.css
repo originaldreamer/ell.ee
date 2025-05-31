@@ -34,12 +34,20 @@
     margin-bottom: 20px;
 }
 
-
-.liikmetile img {
-    display: block; 
+.liikmetile-pilt {
     width: 100%;
-    height: auto;
-    border-radius: 20px;
+    aspect-ratio: 4 / 3;    /* your desired ratio ≈ 1.39:1 */
+    overflow: hidden;           /* crop anything outside the box */
+    border-top-left-radius: 10px;   /* match your tile’s corners */
+    border-top-right-radius: 10px;  /* (or 20px if you prefer) */
+    position: relative;  
+}
+
+.liikmetile-pilt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* scale + crop so it always fills the wrapper */
+    display: block;   
     transition: transform 0.5s ease;
 }
 
@@ -187,7 +195,7 @@
     }
 
     .liikmetile.hover .liikmetile-logo {
-    transform: scale(1);
+    transform: scale(1); 
     }
 
     .liikmetile.hover .liikmetile-title {
