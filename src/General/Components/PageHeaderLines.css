@@ -90,6 +90,9 @@
     .page-headerLines-line {
         width: 100vw;
     }
+    .page-headerLines-text-small {
+        font-size: 39px;
+    }
 
     .page-headerLines-container-small {
         transform: scale(0.78);

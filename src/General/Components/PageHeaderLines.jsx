@@ -17,12 +17,12 @@ export default function PageHeaderLines({title, includeBg=false, isSmall=false})
         >
             {includeBg && <div className='page-headerLines-bg' />}
 
-            <div className='page-headerLines'> 
+            <div className='page-headerLines'>  
 
 
                 <div className='page-headerLines-line' />
 
-                <div className='page-headerLines-text'> 
+                <div className={`page-headerLines-text${isSmall ? ' page-headerLines-text-small' : ''}`}> 
                     {title}  
                 </div>
 
