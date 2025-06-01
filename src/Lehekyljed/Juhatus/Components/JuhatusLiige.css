@@ -18,12 +18,18 @@
     transform-origin: bottom center; 
 }
 
+.juhatusLiige-nimi {
+    align-self: center;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
 .juhatusLiige-bottom {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     height: 226px;
-    padding-top: 5px;
+    padding-top: 5px; 
     padding-bottom: 0px;
     margin-top: -5px;
     z-index: 1;
@@ -35,13 +41,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 2px;
+    justify-content: left;
+    align-self: left;
     z-index: 1;
-    padding: 20px  5px  15px  5px;
-    margin-left: -30px;
-    margin-top: -14px;
-    border-radius: 5px;
-    scale: 0.85;
+    width: 115%;
+    transform-origin: center center; /* or “50% 50%” */
+    transform: scale(0.8) translateX(-24px);
+    padding: 0;
+    
+    margin: 0;
+    margin-left: 0px;
 }
 
 .juhatusLiige-profile-text {
@@ -83,6 +92,12 @@
         scale: 0.9;
         margin-bottom: 8px;
     }
+
+    .juhatusLiige-profile-kontakt-text {
+        transform-origin: left center;
+        transform: scale(1.1);
+        margin-bottom: -20px;
+    }
 } 
 
 @media (max-width: 750px) {
@@ -90,6 +105,8 @@
         scale: 0.8;
         margin-bottom: -66px;
     }
+
+    
 } 
 
 @media (max-width: 700px) {
@@ -103,6 +120,12 @@
     .juhatusLiige-container {
         scale: 0.92;
         margin-bottom: -10px;
+    }
+
+    .juhatusLiige-profile-kontakt-text {
+        transform-origin: left center;
+        transform: scale(1.2);
+        margin-bottom: -17px;
     }
 } 
 

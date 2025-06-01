@@ -1,72 +1,30 @@
 [
     {
-        "nimi": "Kellegi Nimi",
-        "roll": "Juht",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
+        "nimi": "Mattias Viirma",
+        "roll": "Eestseisja",
+        "kool": "Kadrioru Saksa Gümnaasium",
+        "meil": "mattias.viirma@ksg.edu.ee",
+        "telefon": "372 5886 9693"
     },
     {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
+        "nimi": "Adrian Georg Zurbuchen",
+        "roll": "Laekahoidja",
+        "kool": "Tallinna Prantsuse Lütseum",
+        "meil": "adriangeorg.zurbuchen@tpl.edu.ee",
+        "telefon": "372 5253 183"
     },
     {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
+        "nimi": "Andrus Lepikult",
+        "roll": "Kirjatoimetaja",
+        "kool": "Tallinna Mustamäe Riigigümnaasium",
+        "meil": "andrus.lepikult@edu.murg.ee",
+        "telefon": "372 5344 5774"
     },
     {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
-    },
-    {
-        "nimi": "Kellegi Nimi",
-        "roll": "Tähtis isik - roll",
-        "kool": "Mustamäe Riigigümnaasium",
-        "meil": "kellegi.nimi@edu.gmail.com",
-        "telefon": "1234 5678"
+        "nimi": "Ernst Johannes Pae",
+        "roll": "Alaline sekretär",
+        "kool": "Tallinna 21. Kool",
+        "meil": "Ernstjohannes.pae@21k.ee",
+        "telefon": "372 5887 7701"
     }
 ]
