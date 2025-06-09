@@ -15,13 +15,13 @@ import Koostoopartnerid from './Components/Koostoopartnerid.jsx';
 //imported images
 import detailneLogo from '../../assets/General/Vapp detailsem.png'
 import lihtneLogo from '../../assets/General/Vapp lihtne.png'
-import banner1 from './Design elements/liputoimkond1.jpg'
+import banner1 from './Design elements/liputoimkond1.jpg' 
 import banner2 from './Design elements/liputoimkond2.jpg'
 import banner3 from './Design elements/liputoimkond3.jpg'
 import banner4 from './Design elements/liputoimkond4.jpg'
 
 import liit1 from './Design elements/Eesti_Koolide_Liputoimkondade_Liit.jpg'
-import eesmark1 from './Design elements/4. juuni tseremoonia Sindi Gümnaasiumi juures.jpg'
+import eesmark1 from './Design elements/21. kooli liputoimkond.jpg'
 import liputoimkond1 from './Design elements/Liputoimkonnad kõrvuti.jpg'
 
 
