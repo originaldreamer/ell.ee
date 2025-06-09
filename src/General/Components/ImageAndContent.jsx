@@ -72,29 +72,7 @@ useEffect(() => {
     };
   }, []);
 
-  // new “back button” trap
-  useEffect(() => {
-    if (!showPiltideView) return;
-
-    // push dummy entry so “back” fires popstate instead of leaving
-    window.history.pushState(null, '', window.location.href);
-
-    const handlePopState = (e) => {
-      if (showPiltideView) {
-        e.preventDefault();
-        changeShowPilditeViewState(false);
-        // re-trap for the next back
-        window.history.pushState(null, '', window.location.href);
-      }
-    };
-
-    window.addEventListener('popstate', handlePopState);
-    return () => {
-      window.removeEventListener('popstate', handlePopState);
-      // (optional) clean up your dummy entry:
-      // window.history.back();
-    };
-  }, [showPiltideView, changeShowPilditeViewState]);
+  
 
   return (
 
