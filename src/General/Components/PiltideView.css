@@ -217,12 +217,12 @@
     }
 
     .PiltideView-kirjeldus {
-        left: 5px;
+        left: 10px;
         bottom: 10px;
     }
 
     .PiltideView-text {
-        max-width: 200px;
+        width: 200px;
         font-size: 15px;
     }
 
