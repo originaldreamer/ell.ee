@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './LinkUnderlined.css';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 export default function LinkUnderlined({ display, displayHovered,to, file, scrollTo, download, downloadName,normalColor='black' }) {
     const [isHovering, setIsHovering] = useState(false);

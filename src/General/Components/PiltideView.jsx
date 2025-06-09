@@ -11,7 +11,7 @@ import arrowRight from '../Design Elements/arrow right white.svg';
 import arrowRightActivated from '../Design Elements/arrow right yellow.svg';
 import quitIcon from '../Design Elements/quit icon.svg';
 import quitIconActivated from '../Design Elements/quit icon activated.svg';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 
 

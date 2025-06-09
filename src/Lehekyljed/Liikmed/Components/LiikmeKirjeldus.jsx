@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSwipeable } from 'react-swipeable';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 import '../../../App.css'
 import './LiikmeKirjeldus.css'
 

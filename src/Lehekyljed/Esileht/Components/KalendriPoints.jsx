@@ -6,7 +6,7 @@ import data from '../../SyndmusteList/Content/Syndmused.json';
 import PageHeaderLines from '../../../General/Components/PageHeaderLines'
 import normalMoreIcon from '../Design elements/arrow right black.svg'
 import activatedMoreIcon from '../Design elements/arrow right yellow.svg'
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 function Interactable({normalIcon, activatedIcon, handleClick}) {
     const isTouch = useIsTouchDevice();

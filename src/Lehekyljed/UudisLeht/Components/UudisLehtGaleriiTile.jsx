@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import './UudisLehtGaleriiTile.css'
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 export default function UudisLehtGaleriiTile({pilt, handleClick}) {
     const [isHovering, setIsHovering] = useState(false);

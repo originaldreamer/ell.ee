@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import './GaleriiSyndmusTile.css'
 import '../../../index.css';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx'
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx'
 
 export default function GaleriiSyndmusTile({pilt, title, pildistaja, kuupaev, handleClick}) {
     const [hoverActive, setHoverActive] = useState(false);

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './TopNav_Bar.css'
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 
 //imported images

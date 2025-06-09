@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../../../App.css'
 import './LiikmeTile.css'
 import data from '../Content/liikmeteKirjeldused.json'
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 import logo from '/Images/Koolide logod/GAG_logo.png'
 

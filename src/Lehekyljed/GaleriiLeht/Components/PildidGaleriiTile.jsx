@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './PildidGaleriiTile.css'
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 export default function PildidGaleriiTile({pilt, handleClick}) {
     const [hoverActive, setHoverActive] = useState(false);

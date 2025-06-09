@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 
 import './UudisLehtBigTile.css';

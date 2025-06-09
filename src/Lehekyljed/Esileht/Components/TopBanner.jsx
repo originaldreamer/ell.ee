@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import './TopBanner.css';
 import '../../../index.css';
 
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 function Button({ text, handleClick, isTouch }) {
   const [hoverActive, setHoverActive] = useState(false);

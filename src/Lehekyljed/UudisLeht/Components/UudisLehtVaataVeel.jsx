@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './UudisLehtVaataVeel.css';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '/src/hooks/UseIsTouchDevice.jsx';
 
 //imported components
 import UudisLehtBigTile from './UudisLehtBigTile.jsx';
