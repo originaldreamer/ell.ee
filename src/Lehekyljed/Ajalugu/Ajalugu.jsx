@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import '../../General/Design styles/PlainContentPage3.css'
+import '../../General/Design styles/PlainContentPage.css';
 
 //imported components
 import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
@@ -10,18 +11,21 @@ import ImageAndContent from '../../General/Components/ImageAndContent.jsx';
 
 //imported content
 import headerImage from './Content/headerImage.jpg'; 
-import turtleImage from './Content/turtle.jpg'
-import paikeImage from './Content/paike.jpg'
-import koskImage from './Content/kosk-tere-esa.jpg'
-import lossLippImage from './Content/lossLipp.jpg'
+import asutamistseremoonia from './Content/asutamistseremoonia.jpg';
+import asutamistseremoonia2 from './Content/põhikirja_allkirjastamine.jpg';
+import koolitamine from './Content/koolitamine_Sindi_Gümnaasiumis.jpg';
+import edasisedSammud2 from './Content/lipukultuuri_õpetamine_Kohtla_Järve_Gümnaasiumis.jpg'
+import edasisedSammud3 from './Content/märtsiküüditamise_76. aastapäeva_mälestustseremoonia.jpg'
+
+import liiduAsutajad from './Content/liidu asutajad.jpg';
 
 
-
+ 
 
 export default function Ajalugu() {
   return (
       <div className='plain3-container'>
-          <div className='plain3-bg' />
+          <div className='plain-bg-icons' />
 
           <div className='plain3-body'>
               <TopNavigationBar />
@@ -31,99 +35,92 @@ export default function Ajalugu() {
 
               <ImageAndContent content={
                  <div>
-                 <div className="mid-top-header">[AI] Kilpkonnade Jutud Metsas</div>
+                 <div className="mid-top-header">Liidu asutamine</div>
                  
                  <div className="normal-text">
-                   Kilpkonnad, oma <span className="bold">aeglase ja väärika</span> sammuga, hiilivad tasaselt läbi tihedate metsaaluste ja jõekallaste, otsides <span className="bold">mõnusat paika</span>, kus jalga puhata. <br />
-                   Kuigi nad liiguvad kui tõelised <span className="bold">metsakuningad</span>, hoiavad nad silma peal igasugustel kaladel, kes lõbusalt vees sulistavad. <br />
-                   Mõni kilpkonn kinnitab, et kalad on nende parimad sõbrad, kuid samas tekib neil kahtlus, et needsamad sabaga lehvitajad võivad neid kogemata suure kalaparve keskel pikali rammida.
+                   2024. aastal otsustasid erinevate toimkondade esindajad <span className='bold'>Ernst Johannes Pae</span>, 
+                   <span className='bold'> Adrian Georg Zurbuchen</span>, <span className='bold'>Mattias Viirma</span>, 
+                   <span className='bold'> Hendrik Haljasmäe</span> ja 
+                   <span className='bold'> Andrus Lepikult</span> hakata ühendama koolide liputoimkondi. 
+                   Korraldati mitmeid koosolekuid, koostati dokumente ja suheldi paljude organisatsioonide ning koolidega.
+                   <br /> <br />
+                   Kogu protsessi vältel polnud miski kindel. Isegi liidu nimetus oli praegusest erinev: Eesti Liputoimkondade Liit. 
+                   Kui raske töö oli tehtud, oli aeg liit ametlikult välja kuulutada.
                  </div>
-                 
-                 
-                 <div className="normal-text">
-                   Metsas haikalasid just sageli ei kohta, ent kilpkonnad teavad, et meresügavustes võib varitseda tõeline <span className="bold">õudusunenägu</span>. <br />
-                   Kui nad kasvõi korraks kuulevad sõna “<span className="bold">hai</span>”, tõmbuvad nad turvaliselt oma tugeva kilbi alla peitu. <br />
-                   Väidetavalt on mõned kilpkonnad isegi endale veealuseid periskoope ehitanud, et haide tegemistel paremini silma peal hoida – igaks juhuks, kui mõni hai peaks ootamatult jalutuskäigu metsa tegema.
-                 </div>
-                 
-
-                 
-                 <div className="normal-text">
-                   Hoolimata kõigest on kilpkonnad siiski sügavalt rahumeelsed tegelased, kes eelistavad kalade seltsis pigem lõbusalt ringi hulpida, kui end tühja hirmuga vaevata. <br />
-                   Nad naudivad pikki vaikseid hetki, kus ainus heli on vaikne lehtede sahin ja kuskil kauguses vulisev oja. <br />
-                   See mõnus rahu tuletab meile meelde, et vahel on tore lihtsalt aeg maha võtta, kilp kõrvuni tõmmata ja tukkuda – nii ei saa haikaladel ega kellelgi teisel mingit võimalust meid üllatada!
-                 </div>
-                 
-                 
-                 <div className="normal-text">
-                   Nii et kui te järgmine kord metsa jalutama lähete, heitke pilk ka kilpkonnade suunas: võib-olla märkate neid naeratamas, sest nad teavad, et tõeline rõõm peitub aeglases kulgemises ja ettevaatlikus, ent pisut lõbusas suhtumises.
-                 </div>
-                 
-
-                 
-                 <div className="sub-header">Peamised omadused</div>
-                 <div className="normal-text">
-                   Kilpkonnade tunnused:
-                   <div className="loetelu">
-                     <div className="bulletPoint">
-                       <span className="bold">Aeglased</span> ja väärikad liikumine
-                     </div>
-                     <div className="bulletPoint">
-                       Tugev <span className="bold">kilp</span> kaitseks
-                     </div>
-                     <div className="bulletPoint">
-                       Rahulik ja <span className="bold">turvaline</span> suhtumine loodusesse
-                     </div>
-                   </div>
-                 </div>
-               </div>}
+                 </ div>
+              }
                 
                 images={[
-                    headerImage,
-                    turtleImage,
-                    paikeImage
+                    liiduAsutajad
                 ]}
-
-                
 
               />
 
             <ImageAndContent content={
-                <div>
-                <div className="mid-top-header">[AI]Lippude Lummuses: Miks lipud on metsade sümboliks</div>
-                
-                <div className="normal-text">
-                  Metsade varjus elavad lipud - värvikirevad ja graatsilised olendid, keda peetakse metsade tõelisteks sümboliteks. <br />
-                  Lipud lehvivad õrnalt tuules, nagu nad tervitaksid kõiki möödakäijaid. Neile meeldib koguneda avaratesse lagendikesse, kus nad saavad end vabalt välja sirutada ja oma <span className="bold">väljendusrikkaid mustreid</span> demonstreerida. <br />
-                  Eriti uhked on lipud päikesepaistelisel hommikul, mil nende värvid säravad nagu metsa ehted.
-                </div>
-                
-                <div className="normal-text">
-                  Lipud on sotsiaalsed loomad, kes moodustavad tihedaid kogukondi. Nad armastavad arutada <span className='bold'>metsauudiseid</span>, nagu näiteks, milline puu otsustas kõige kõrgemaks kasvada või kuidas jõesilmad peegeldavad nende värve. <br />
-                  Kui mõni puu ümber kukub, kogunevad lipud sinna ja lehvivad selle ümber tseremoniaalselt, nagu mälestusmärgiks. Samas ei unusta nad kunagi pidustusi – lippude kogunemine meenutab alati lõbusat metsapidu.
-                </div>
-                
-                <div className="normal-text">
-                  Ohu korral käituvad lipud julgelt, lehvides metsatuule rütmis, et hoiatada teisi loomi. Mõned lipud on aga teada-tuntud naljahambad, kes armastavad tuulega kaasa lüüa ja üksteise varju pugeda, nagu nad mängiksid peitust. <br />
-                  Lipud naudivad ka uute kohtade avastamist. Kui mets saab uue teeraja, on lipud alati esimesed, kes sellele oma “jälje” jätavad – lehvides, et kõik teaksid, kus on kõige ilusam vaade.
-                </div>
-                
-                <div className="normal-text">
-                  Lippude lemmikhobi on aga <span className='bold'>rahu loomine</span>. Kui metsas puhkeb tüli, kogunevad lipud ja hakkavad harmooniliselt liikuma, justkui tuletades kõigile meelde, et värvide ilu tuleb erinevustest. <br />
-                  Nad on tõelised rahutoojad, kelle liikumine meenutab rahustavat muusikat ja julgustab teisi elanikke unustama oma muresid.
-                </div>
-
-
-              </div>
+                 <div>
+                 <div className="mid-top-header">Asutamistseremoonia</div>
+                 
+                 <div className="normal-text">
+                   Põhikirja allkirjastamine ja asutamislepingu sõlmimine toimusid 
+                   20. veebruaril 2025 Riigikogu Valges Saalis piduliku tseremoonia käigus. 
+                   Allkirjastamistseremoonial osalesid EKLL-i liputoimkonnad, nende koolide direktorid, huvijuhid jpt. 
+                   Üritusel kõnelesid Riigikogu esimees <span className='bold'> Lauri Hussar</span>, 
+                   Eesti Lipu Seltsi esimees <span className='bold'> Jüri Trei</span> ja 
+                   EKLL-i esindaja <span className='bold'> Ernst Johannes Pae</span>, kes rõhutasid lipukultuuri ja EKLL-i tähtsust 
+                   eestlaste patriootlikkuse ja ühise ühtekuuluvustunde kujundamises. 
+                   Muusikalisi elamusi pakkus Tallinna 21. Kooli Noormeestekoor. 
+                   <br /> <br />
+                   Asutajaliikmeteks said üheteistkümne gümnaasiumi liputoimkonnad üle Eesti:
+                   <br />
+                   <div className='loetelu'>
+                      <div className='bulletPoint'>Gustav Adolfi Gümnaasium</div>
+                      <div className='bulletPoint'>Jakob Westholmi Gümnaasium</div>
+                      <div className='bulletPoint'>Kadrioru Saksa Gümnaasium</div>
+                      <div className='bulletPoint'>Kohtla-Järve Gümnaasium</div>
+                      <div className='bulletPoint'>Sindi Gümnaasium</div>
+                      <div className='bulletPoint'>Tallinna 21. Kool</div>
+                      <div className='bulletPoint'>Tallinna Inglise Kolledž</div>
+                      <div className='bulletPoint'>Tallinna Mustamäe Riigigümnaasium</div>
+                      <div className='bulletPoint'>Tallinna Prantsuse Lütseum</div>
+                      <div className='bulletPoint'>Tallinna Reaalkool</div>
+                      <div className='bulletPoint'>Tallinna Ühisgümnaasium</div>
+                  </div> 
+                 </div>
+                 </ div>
               }
                 
                 images={[
-                    koskImage,
-                    lossLippImage
+                    asutamistseremoonia,
+                    asutamistseremoonia2
                 ]}
-                
 
-                bgColor='var(--softYellow)'
+                reverse='true'
+
+              />
+
+              <ImageAndContent content={
+                 <div>
+                 <div className="mid-top-header">Esimesed sammud</div>
+                 
+                 <div className="normal-text">
+                   Pärast ametlikku asutamist moodustati alaline sekretariaat, hakati kavandama koolitusi ja 
+                   tseremooniate korraldust ning algas uute liikmete otsimine. 
+                   2025. aasta juuliks valmis liidu ametlik veebileht, 
+                   mille kujundasid ja realiseerisid veebidisainerid 
+                   <span className='bold'> Rasmus Joel Raidjõe</span> ning <span className='bold'> Mattis Rääbis</span>. 
+                 </div>
+                 </ div>
+              }
+                
+                images={[
+                    koolitamine,
+                    edasisedSammud2,
+                    edasisedSammud3
+                ]}
+
+                useOnlyScroll='true'
+                scrollAspect='1.5'
+
               />
 
 

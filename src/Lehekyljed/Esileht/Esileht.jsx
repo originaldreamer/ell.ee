@@ -19,7 +19,10 @@ import banner1 from './Design elements/liputoimkond1.jpg'
 import banner2 from './Design elements/liputoimkond2.jpg'
 import banner3 from './Design elements/liputoimkond3.jpg'
 import banner4 from './Design elements/liputoimkond4.jpg'
-import koolitaminePilt from './Design elements/koolitamine.jpg'
+
+import liit1 from './Design elements/Eesti_Koolide_Liputoimkondade_Liit.jpg'
+import eesmark1 from './Design elements/4. juuni tseremoonia Sindi Gümnaasiumi juures.jpg'
+import liputoimkond1 from './Design elements/Liputoimkonnad kõrvuti.jpg'
 
 
 
@@ -85,37 +88,36 @@ export default function Esileht() {
           <KalendriPoints />
 
           <ImageAndContent myRef={myRef}
-            useOnlyScroll={true}
             content={
                 <div>
-                <div className="mid-top-header">Ühendame Eesti liputoimkonnad</div>
+                <div className="mid-top-header">Liit</div>
                 
                 <div className="normal-text">
-                  Kilpkonnad, oma <span className="bold">aeglase ja väärika</span> sammuga, hiilivad tasaselt läbi tihedate metsaaluste ja jõekallaste, otsides <span className="bold">mõnusat paika</span>, kus jalga puhata. <br />
-                  Kuigi nad liiguvad kui tõelised <span className="bold">metsakuningad</span>, hoiavad nad silma peal igasugustel kaladel, kes lõbusalt vees sulistavad. <br />
-                  Mõni kilpkonn kinnitab, et kalad on nende parimad sõbrad, kuid samas tekib neil kahtlus, et needsamad sabaga lehvitajad võivad neid kogemata suure kalaparve keskel pikali rammida.
+                  Eesti Koolide Liputoimkondade Liit (EKLL) on gümnaasiumiõpilaste initsiatiivist 
+                  sündinud ühendus, mis koondab koolide liputoimkondi üle Eesti, 
+                  et ühiselt tagada sinimustvalge lipu väärikas heiskamine, 
+                  edendada lipuetiketti ning jagada teadmisi ja kogemusi liputseremooniate 
+                  korraldamisel ning traditsioonide hoidmisel.
                 </div>
               </div>}
               
               images={[
-                  koolitaminePilt, banner2
+                  liit1
               ]}
           />
 
           <ImageAndContent 
             content={
                 <div>
-                <div className="mid-top-header">Arendame lipukultuuri</div>
+                <div className="mid-top-header">Eesmärk</div>
                 
                 <div className="normal-text">
-                  Kilpkonnad, oma <span className="bold">aeglase ja väärika</span> sammuga, hiilivad tasaselt läbi tihedate metsaaluste ja jõekallaste, otsides <span className="bold">mõnusat paika</span>, kus jalga puhata. <br />
-                  Kuigi nad liiguvad kui tõelised <span className="bold">metsakuningad</span>, hoiavad nad silma peal igasugustel kaladel, kes lõbusalt vees sulistavad. <br />
-                  Mõni kilpkonn kinnitab, et kalad on nende parimad sõbrad, kuid samas tekib neil kahtlus, et needsamad sabaga lehvitajad võivad neid kogemata suure kalaparve keskel pikali rammida.
+                   Meie eesmärk on seista Eesti riigilipu ja sümboolika väärika kasutamise eest, arendada lipukultuuri, tutvustada noortele Eesti lipu seadust ja lipuetikettti, kaitsta koolide liputoimkondade ühiseid huve, koolitada uusi liputoimkondi ning vahendada koostööd ja suhtlust Eesti erinevate liputoimkondade vahel. 
                 </div>
               </div>}
               
               images={[
-                  banner2
+                  eesmark1
               ]}
               
               offsetYSmallScreen='-35px'
@@ -125,16 +127,16 @@ export default function Esileht() {
           <ImageAndContent
             content={
                 <div>
-                <div className="mid-top-header">???</div>
+                <div className="mid-top-header">Liputoimkonnad</div>
                 
                 <div className="normal-text">
-                  Kilpkonnad, oma <span className="bold">aeglase ja väärika</span> sammuga, hiilivad tasaselt läbi tihedate metsaaluste ja jõekallaste, otsides <span className="bold">mõnusat paika</span>, kus jalga puhata. <br />
+                  Kooli liputoimkond on vabatahtlik õpilasorganisatsioon, millel on selged tunnused: liikmeskond koosneb õpilastest, toimkonda juhivad samuti õpilased ning sellel on kooli (haridusasutuse) ametlik tunnustus. Liputoimkonna ülesandeks on esindada, heisata, valvata ja kaitsta riigi- ja koolilippu ning edendada koolis ja ühiskonnas Eesti lipukultuuri. 
                   
                 </div>
               </div>}
                
               images={[
-                  banner2
+                  liputoimkond1
               ]}
 
               offsetYSmallScreen='-35px'

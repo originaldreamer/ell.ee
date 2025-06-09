@@ -101,7 +101,7 @@ useEffect(() => {
   );
 }
 
-function PiltideOsa({showScrollImages, useOnlyScroll, images}) 
+function PiltideOsa({showScrollImages, useOnlyScroll, images, scrollAspect}) 
 {
   return (
     <>
@@ -109,7 +109,7 @@ function PiltideOsa({showScrollImages, useOnlyScroll, images})
       
       {!showScrollImages && useOnlyScroll && 
         <div className='imageAndContent-scroll-side'>
-          <ScrollImages images={images} />
+          <ScrollImages images={images} aspectRatio={scrollAspect}/>
         </div>
         
       }
@@ -119,7 +119,7 @@ function PiltideOsa({showScrollImages, useOnlyScroll, images})
 
 
 
-export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%', useOnlyScroll=false,myRef}) {
+export default function ImageAndContent({content, images=[], reverse=false, bgColor='transparent', offsetY='0%', offsetYSmallScreen='0%', useOnlyScroll=false,smallScreenImages, scrollAspect='1.8', myRef}) {
   const smallScreenSize = '900px'
 
   const [showScrollImages, setShowScrollImages] = useState(
@@ -147,7 +147,7 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
         
         {reverse ? (
         <div className='imageAndContent-sisu'>
-          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} />
+          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} scrollAspect={scrollAspect}/>
           
           <div className='imageAndContent-content'>
             {content}
@@ -160,16 +160,16 @@ export default function ImageAndContent({content, images=[], reverse=false, bgCo
           <div className='imageAndContent-content'>
             {content}
           </div>
-          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} />
+          <PiltideOsa showScrollImages={showScrollImages} useOnlyScroll={useOnlyScroll} images={images} scrollAspect={scrollAspect}/>
         </div>
 
-        </div>
+        </div> 
       )}
  
 
       {showScrollImages && 
         <div className='imageAndContent-scroll'>
-          <ScrollImages images={images} />
+          <ScrollImages images={smallScreenImages ? smallScreenImages : images} aspectRatio={scrollAspect}/>
         </div>
       }
 

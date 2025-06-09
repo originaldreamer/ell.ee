@@ -23,15 +23,15 @@ export default function Juhatus() {
 
               <MidTextSeparator
                 text = {<div >
-                    Eesti Koolide Liputoimkondade Liidu juhatus juhib igapäevast tegevust. <br />
-                    Liidu eesmärk on edendada lipukultuuri koolides. <br />
-                    Juhatus koolitab uusi liputoimkondi ja toetab olemasolevaid. <br />
-                    Korraldatakse üritusi ja arendatakse koostööd teiste organisatsioonidega.
+                    Meie liidu juhtorgan koosneb eestseisjast, laekahoidjast, kirjatoimetajast ja alalisest sekretärist. 
+                    Nad vastutavad liidu järjepidevuse eest, koordineerivad koostööd uute koolidega,  
+                    edendavad lipukultuuri, koolitavad uusi liputoimkondi ning toetavad nende tegevust. 
                 </div>}
               
                 textColor='black'
                 bgColor='transparent'
                 marginTop='0px'
+                textWidth='50%'
               />
 
               

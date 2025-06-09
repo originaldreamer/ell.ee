@@ -36,6 +36,14 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
 
 export default function PiltideView({curIndex, piltideCount, pilt, leftFunction, rightFunction, quitFunction}) {
     const isTouch = useIsTouchDevice();
+    const fileName = decodeURIComponent(
+    pilt
+        .split('/')
+        .pop()
+        .replace(/\.[^/.]+$/, '')
+        .replace(/_/g, ' ')
+        .split('-')[0]
+    );
 
     return (
         <div className='PiltideView-container'>
@@ -45,14 +53,14 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
 
             <img className='PiltideView-pilt' src={pilt}/>
 
-            
+             
 
             {piltideCount > 1 && <div className='PiltideView-leftArrow'><Interactable normalIcon={arrowLeft} activatedIcon={arrowLeftActivated} handleClick={leftFunction}/></div>}
             {piltideCount > 1 && <div className='PiltideView-rightArrow'><Interactable normalIcon={arrowRight} activatedIcon={arrowRightActivated} handleClick={rightFunction}/></div>}
             <div className='PiltideView-quitIcon'><Interactable normalIcon={quitIcon} activatedIcon={quitIconActivated}handleClick={quitFunction}/></div>
 
             <div className='PiltideView-kirjeldus'>
-                <div className='PiltideView-text'>{pilt.split('/').pop().replace(/\.[^/.]+$/, '').replace(/_/g, ' ').split('-')[0]}</div>
+                <div className='PiltideView-text'>{fileName}</div>
                 <div className='PiltideView-text'>({curIndex+1}/{piltideCount})</div> 
             </div>
         

@@ -8,13 +8,14 @@ import PiltideView from './PiltideView.jsx';
 //imported elements
 import scrollIcon from '../Design Elements/scrollIcon.svg';
 
-function ClickableImage({ image, handleClick, offsetX, animate }) {
+function ClickableImage({ image, handleClick, offsetX, animate, aspectRatio }) {
   return (
     <div
       className='scrollImage-image'
       style={{
         '--scroll-offset': offsetX,
         transition: animate ? 'transform 0.5s ease' : 'none',
+        aspectRatio: aspectRatio
       }}
     >
       <img src={image} onClick={handleClick} />
@@ -24,13 +25,13 @@ function ClickableImage({ image, handleClick, offsetX, animate }) {
 
 function Icon() {
   return (
-    <div className='scrollImage-icon'>
+    <div className='scrollImage-icon'> 
       <img src={scrollIcon} alt='Scroll Icon' />
     </div>
   );
 }
 
-export default function ScrollImages({ images = [], offsetY = '0%' }) {
+export default function ScrollImages({ images = [], offsetY = '0%', aspectRatio='1.8' }) {
   const piltideCount = images.length;
   const [curIndex, setCurIndex] = useState(0);
   const [nextIndex, setNextIndex] = useState(1 % piltideCount);
@@ -129,6 +130,7 @@ export default function ScrollImages({ images = [], offsetY = '0%' }) {
             }}
           offsetX={curOffsetX}
           animate={animate}
+          aspectRatio={aspectRatio}
         />
         <ClickableImage
           image={images[nextIndex]}
@@ -138,6 +140,7 @@ export default function ScrollImages({ images = [], offsetY = '0%' }) {
             }}
           offsetX={curOffsetX}
           animate={animate} 
+          aspectRatio={aspectRatio}
         />
       </div>
 

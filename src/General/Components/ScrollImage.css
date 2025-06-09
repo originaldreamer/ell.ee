@@ -29,7 +29,6 @@
   .scrollImage-image {
     flex: 0 0 auto;            /* don’t shrink or grow */
     width: 100%;               /* each “page” is full width */
-    aspect-ratio: 1.8;
     box-sizing: border-box;
     position: relative;
     cursor: pointer;
@@ -53,7 +52,7 @@
     clip-path: polygon(
       100% 0,   /* top-right corner */
       100% 100%,/* bottom-right corner */
-      0 100%    /* bottom-left corner */
+      0 100%    /* bottom-left corner */ 
     );
     display: flex;
     align-items: center;
