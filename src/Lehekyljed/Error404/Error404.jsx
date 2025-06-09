@@ -8,7 +8,7 @@ import TopNavigationBar from '../../General/Components/TopNav_Bar.jsx';
 import BottomNavigationBar from '../../General/Components/BottomNav_Bar.jsx';
 import MidTextSeparator from '../../General/Components/MidTextSeparator.jsx';
 import PageHeaderLines from '../../General/Components/PageHeaderLines.jsx';
-import useIsTouchDevice from '/src/hooks/useIsTouchDevice.jsx';
+import useIsTouchDevice from '../../hooks/useIsTouchDevice.jsx';
 
 
 import flag from './Content/flag.svg'
