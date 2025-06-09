@@ -245,6 +245,10 @@ html, body {
   color: #F5F5F5;
 }
 
+.justified {
+  text-align: justify !important;
+}
+
 
 .sub-header, .sub-header-black, .sub-header-white {
   z-index: 2000;
@@ -379,13 +383,15 @@ html, body {
   }
 }
 
+
+
 @media (max-width: 450px) {
   .big-header2, .big-header2-white {
     font-size: 28px;
   }
 
   .normal-text {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 
   .bold {

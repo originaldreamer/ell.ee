@@ -51,7 +51,7 @@ export default function PiltideView({curIndex, piltideCount, pilt, leftFunction,
             {isTouch && <div className='PiltideView-hiddenQuitButton' onClick={quitFunction}/>}
 
 
-            <img className='PiltideView-pilt' src={pilt}/>
+            <img className='PiltideView-pilt' src={pilt}/> 
 
              
 

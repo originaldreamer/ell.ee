@@ -140,4 +140,10 @@
     .imageAndContent-scroll {
         width: 95vw;
     }
+
+    .imageAndContent-content {
+        width: 95%;
+    }
+
+    
 }

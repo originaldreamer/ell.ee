@@ -219,7 +219,11 @@
     .PiltideView-kirjeldus {
         left: 5px;
         bottom: 10px;
-        transform: scale(0.8);
+    }
+
+    .PiltideView-text {
+        max-width: 200px;
+        font-size: 15px;
     }
 
     .PiltideView-quitIcon {
