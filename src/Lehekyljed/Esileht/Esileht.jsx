@@ -21,8 +21,8 @@ import banner3 from './Design elements/liputoimkond3.jpg'
 import banner4 from './Design elements/liputoimkond4.jpg'
 
 import liit1 from './Design elements/Eesti_Koolide_Liputoimkondade_Liit.jpg'
-import eesmark1 from './Design elements/21. kooli liputoimkond.jpg'
-import liputoimkond1 from './Design elements/Liputoimkonnad kõrvuti.jpg'
+import liputoimkond1 from './Design elements/21. kooli liputoimkond.jpg'
+import eesmark1 from './Design elements/Liputoimkonnad kõrvuti.jpg'
 
 
 
