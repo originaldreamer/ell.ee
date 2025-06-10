@@ -11,10 +11,10 @@ import PageNavigatorButtons from '../../General/Components/PageNavigatorButtons.
 
 //imported content
 import headerImage from './Design elements/kalenderHeader.jpg'
-import data from './Content/Syndmused.json'
+/*import data from './Content/Syndmused.json'*/
 
 export default function SyndmusteList() {
-  const syndmused=data;
+  const [syndmused, setSyndmused] = useState([]);
   
 
   const [curPageIndex, setCurPageIndex] = useState(0);
@@ -37,6 +37,11 @@ export default function SyndmusteList() {
   };
 
   useEffect(() => {
+    fetch('http://localhost:8081/syndmused')
+    .then(res => res.json())
+    .then(data => setSyndmused(data))
+    .catch(err => console.log(err));
+
     window.scrollTo({ top: 0});
   }, [curPageIndex]);
 

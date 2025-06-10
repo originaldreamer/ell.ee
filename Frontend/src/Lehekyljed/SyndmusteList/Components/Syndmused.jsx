@@ -18,13 +18,13 @@ export default function Syndmused({syndmused, curPageIndex,maxElementsPerPage}) 
       <div className='Syndmused-container'>
 
         {syndmused.slice(startIndex, endIndex).map((syndmus, index) => (
-          <Syndmus
+          <Syndmus 
             key={index}
             pealkiri={syndmus.pealkiri}
             kuupaev={syndmus.kuupaev}
             asukoht={syndmus.asukoht}
             kellaaeg={syndmus.kellaaeg}
-            kirjeldus={syndmus.kirjeldus}
+            kirjeldus={syndmus.kirjeldus.split(",").map(item => item.trim())}
           />
         ))} 
  

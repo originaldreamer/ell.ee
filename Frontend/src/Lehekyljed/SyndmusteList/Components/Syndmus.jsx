@@ -49,10 +49,16 @@ function Details({koht, aeg})
     );
 }
 
-
+function formatDate(inputDate) {
+  const date = new Date(inputDate);
+  const day = String(date.getDate()).padStart(2, '0');
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const year = date.getFullYear();
+  return `${day}.${month}.${year}`;
+}
 
 export default function Syndmus({pealkiri, kuupaev, asukoht, kellaaeg, kirjeldus}) {
-
+    const formattedKuupaev = formatDate(kuupaev);
   
 
   return (
@@ -60,7 +66,7 @@ export default function Syndmus({pealkiri, kuupaev, asukoht, kellaaeg, kirjeldus
           <div className='Syndmus-line' />
 
           <div className='Syndmus-sisu'>
-            <Kuupaev date={kuupaev} />
+            <Kuupaev date={formattedKuupaev} />
 
             <div className='Syndmus-kirjeldus'>
                 <div className='mid-small-header Syndmus-kirjeldus-pealkiri' style={{marginTop: 0}}> {pealkiri} </div >

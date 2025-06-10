@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import './KalendriPoints.css';
 
 import KalendriPointTile from './KalendriPointTile';
-import data from '../../SyndmusteList/Content/Syndmused.json';
+/*import data from '../../SyndmusteList/Content/Syndmused.json';*/
 import PageHeaderLines from '../../../General/Components/PageHeaderLines'
 import normalMoreIcon from '../Design elements/arrow right black.svg'
 import activatedMoreIcon from '../Design elements/arrow right yellow.svg'
@@ -38,8 +38,13 @@ function Interactable({normalIcon, activatedIcon, handleClick}) {
 export default function KalendriPoints() {
   const sliderRef = useRef(null);
   const [pointCount, setPointCount] = useState(window.innerWidth >= 450 ? 8 : 3);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
+    fetch('http://localhost:8081/syndmused')
+    .then(res => res.json())
+    .then(data => setData(data))
+    .catch(err => console.log(err));
     
 
     const slider = sliderRef.current;
