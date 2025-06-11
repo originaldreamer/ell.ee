@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import './KalendriPoints.css';
 
 import KalendriPointTile from './KalendriPointTile';
-/*import data from '../../SyndmusteList/Content/Syndmused.json';*/
+import data2 from '../../SyndmusteList/Content/Syndmused.json';
 import PageHeaderLines from '../../../General/Components/PageHeaderLines'
 import normalMoreIcon from '../Design elements/arrow right black.svg'
 import activatedMoreIcon from '../Design elements/arrow right yellow.svg'
@@ -188,7 +188,7 @@ export default function KalendriPoints() {
 
 
         <div ref={sliderRef} className="kalendriPoints-sisu">
-            {data.slice(0, pointCount).map((syndmus, idx) => (
+            {data2.slice(0, pointCount).map((syndmus, idx) => (
                 <KalendriPointTile
                 key={idx}
                 className="kalendriPointTile"

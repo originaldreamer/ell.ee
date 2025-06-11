@@ -11,7 +11,7 @@ import PageNavigatorButtons from '../../General/Components/PageNavigatorButtons.
 
 //imported content
 import headerImage from './Design elements/kalenderHeader.jpg'
-/*import data from './Content/Syndmused.json'*/
+import data from './Content/Syndmused.json'
 
 export default function SyndmusteList() {
   const [syndmused, setSyndmused] = useState([]);
@@ -19,7 +19,7 @@ export default function SyndmusteList() {
 
   const [curPageIndex, setCurPageIndex] = useState(0);
   const maxElementsPerPage = 15;
-  const pageCount = Math.ceil(syndmused.length / maxElementsPerPage);
+  const pageCount = Math.ceil(data.length / maxElementsPerPage);
 
 
   const decreaseCurPageIndex = () => {
@@ -62,7 +62,7 @@ export default function SyndmusteList() {
               <Syndmused 
                 maxElementsPerPage={maxElementsPerPage}
                 curPageIndex={curPageIndex}
-                syndmused={syndmused}
+                syndmused={data}
               />
 
               <PageNavigatorButtons 

@@ -9,7 +9,7 @@
 
 .MidTextSeparator-sisu {
     position: relative;
-       
+    width: 800px;
     padding-top: 50px;
     padding-bottom: 20px;
     height: 100%;
@@ -20,8 +20,21 @@
 } 
 
 /*Scaling*/
+@media (max-width: 800px) {
+    .MidTextSeparator-sisu {
+        width: 90%;
+    } 
+}
+
+
 @media (max-width: 700px) {
     .MidTextSeparator-sisu-text {
         font-size: 18px;
+    } 
+}
+
+@media (max-width: 450px) {
+    .MidTextSeparator-sisu {
+        width: 93%;
     } 
 }

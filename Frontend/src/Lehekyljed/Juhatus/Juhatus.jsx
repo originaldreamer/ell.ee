@@ -31,7 +31,6 @@ export default function Juhatus() {
                 textColor='black'
                 bgColor='transparent'
                 marginTop='0px'
-                textWidth='50%'
               />
 
               

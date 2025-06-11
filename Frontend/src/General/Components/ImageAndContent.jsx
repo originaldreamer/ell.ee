@@ -85,7 +85,7 @@ useEffect(() => {
             image={pilt} 
             handleClick={() => {
               changeShowPilditeViewState(true);
-              setPilt(index);
+              setPilt(index); 
           }}/>
         ))}
 

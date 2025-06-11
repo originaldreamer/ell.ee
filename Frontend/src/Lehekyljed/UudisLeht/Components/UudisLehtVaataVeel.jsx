@@ -27,7 +27,7 @@ function Rohkem() {
 
     const unActivateHover = () => {
         setTimeout(() => {
-            setIsHovering(false);
+            setIsHovering(false); 
         }, 300);
 
     }
@@ -37,10 +37,21 @@ function Rohkem() {
             className={`uudisLeht-VaataVeel-rohkem-container ${isHovering ? 'hover' : ''}`}
             onMouseEnter={!isTouch ? () => setIsHovering(true) : undefined} 
             onMouseLeave={!isTouch ? () => setIsHovering(false) : undefined} 
-            onTouchStart={isTouch ? () => setIsHovering(true) : undefined}
-            onTouchEnd={isTouch ? unActivateHover : undefined}
-            onTouchCancel={isTouch ? unActivateHover : undefined} 
-            onClick={handleClick}
+            onClick={event => {
+                if (isTouch) {
+                     setIsHovering(true);
+                     unActivateHover();
+
+                     setTimeout(() => {
+                        handleClick(event);
+                    }, 300);
+                }
+                else {
+                    handleClick(event);
+                }
+                
+                
+            }}
         >
             <div className={`uudisLeht-VaataVeel-rohkem-text ${isHovering ? 'hovering' : ''}`}>
                 Rohkem

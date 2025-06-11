@@ -18,7 +18,7 @@ function extractNormalText(sisu) {
   // Render the JSX to HTML
   const renderedContent = renderToStaticMarkup(sisu);
 
-  // Create a DOM parser
+  // Create a DOM parser 
   const parser = new DOMParser();
   const doc = parser.parseFromString(renderedContent, 'text/html');
 
@@ -70,10 +70,22 @@ export default function UudisLehtBigTile({pilt, date, title, sisu, to}) {
         <div className='UudisLehtBigTile-container'
             onMouseEnter={!isTouch ? () => setIsHovering(true) : undefined} 
             onMouseLeave={!isTouch ? () => setIsHovering(false) : undefined} 
-            onTouchStart={isTouch ? () => setIsHovering(true) : undefined}
-            onTouchEnd={isTouch ? unActivateHover: undefined}
-            onTouchCancel={isTouch ? unActivateHover : undefined} 
-            onClick={handleClick}
+            
+            onClick={event => {
+                if (isTouch) {
+                     setIsHovering(true);
+                     unActivateHover();
+
+                     setTimeout(() => {
+                        handleClick(event);
+                    }, 300);
+                }
+                else {
+                    handleClick(event);
+                }
+                
+                
+            }}
         >
             <div className={`UudisLehtBigTile-pilt ${isHovering ? 'hovering' : ''}`}>
                 <img src={pilt} />

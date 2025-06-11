@@ -16,13 +16,18 @@ export default function GaleriiSyndmusTile({pilt, title, pildistaja, kuupaev, ha
     
     return (
         <div className={`galeriiSyndmusTile ${hoverActive ? 'hover' : ''}`} 
-            onClick={handleClick}
+            onClick={event => {
+                if (isTouch) {
+                     setHoverActive(true);
+                     unActivateHover();
+                }
+                handleClick(event);
+            }}
             onMouseEnter={!isTouch ? () => setHoverActive(true) : undefined} 
             onMouseLeave={!isTouch ? () => setHoverActive(false) : undefined} 
-            onTouchStart={isTouch ? () => setHoverActive(true) : undefined}
             onTouchEnd={isTouch ? unActivateHover: undefined}
             onTouchCancel={isTouch ? unActivateHover : undefined} 
-        >
+        > 
 
             <div className='galeriiSyndmusTile-pilt'>
                 <img src={pilt} />

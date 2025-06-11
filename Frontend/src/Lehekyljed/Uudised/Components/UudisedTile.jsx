@@ -28,7 +28,7 @@ function extractNormalText(sisu) {
     .map(element => element.textContent.trim())
     .join('\n\n');
 
-  return extractedText;
+  return extractedText; 
 }
 
 export default function UudisedTile({pilt, date, title, sisu, to}) {
@@ -68,10 +68,22 @@ export default function UudisedTile({pilt, date, title, sisu, to}) {
         <div className='UudisedTile-container'
             onMouseEnter={!isTouch ? () => setIsHovering(true) : undefined} 
             onMouseLeave={!isTouch ? () => setIsHovering(false) : undefined} 
-            onTouchStart={isTouch ? () => setIsHovering(true) : undefined}
             onTouchEnd={isTouch ? unActivateHover: undefined}
             onTouchCancel={isTouch ? unActivateHover : undefined} 
-            onClick={handleClick}
+            onClick={event => {
+                if (isTouch) {
+                     setIsHovering(true);
+                     unActivateHover();
+
+                     setTimeout(() => {
+                        handleClick(event);
+                    }, 300);
+                }
+                else {
+                    handleClick(event);
+                }
+                
+            }}
         >
             <div className={`UudisedTile-pilt ${isHovering ? 'hovering' : ''}`}>
                 <img src={pilt} />

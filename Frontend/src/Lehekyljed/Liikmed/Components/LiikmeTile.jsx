@@ -20,7 +20,7 @@ export default function LiikmeTile({index, handleClick})
       setTimeout(() => {
         setHoverActive(false);
         setTextColor('#F5F5F5')
-      }, 400);
+      }, 400); 
 
     }
 
@@ -41,9 +41,6 @@ export default function LiikmeTile({index, handleClick})
           onClick={handleClick}
           onMouseEnter={!isTouch ? handleMouseEnter : undefined} 
           onMouseLeave={!isTouch ? handleMouseLeave : undefined} 
-          onTouchStart={isTouch ? handleMouseEnter : undefined}
-          onTouchEnd={isTouch ? unActivateHover: undefined}
-          onTouchCancel={isTouch ? unActivateHover : undefined}
         > 
           <div>
             <div className='liikmetile-logo'>
