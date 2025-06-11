@@ -20,7 +20,7 @@
 .koostoopartnerid-container::before {
   content: "";
   position: absolute;
-  top: -20%;
+  top: 0;
   right: auto;
   left: auto;
   width: 2000px;
@@ -28,9 +28,6 @@
   background: rgba(255,255,255,0.15);
   background-color: #F5F5F5;
   z-index: -1;
-  border-radius: 50%;
-  filter: blur(40px);
-  animation: floatBlob 6s ease-in-out infinite;
   pointer-events: none;
 }
 
